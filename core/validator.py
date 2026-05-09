@@ -38,12 +38,41 @@ def _release_port(port):
         _allocated_ports.discard(port)
 
 
+# Invalid server patterns that should never appear in working configs
+_INVALID_SERVERS = frozenset({
+    '127.0.0.1', 'localhost', '0.0.0.0',
+})
+
+
+def _is_invalid_server(server):
+    """Reject localhost, loopback, and obviously broken servers."""
+    if not server:
+        return True
+    if server.lower() in _INVALID_SERVERS:
+        return True
+    if server.startswith('127.'):
+        return True
+    return False
+
+
 def quick_tcp_prescreen(nodes, max_workers=100, timeout=2):
-    """L1: Fast TCP connectivity pre-screen. UDP protocol nodes skip this."""
+    """L0+L1: Pre-filter invalid servers + TCP connectivity + TLS handshake for TLS protocols. UDP protocols skip L1."""
     UDP_PROTOCOLS = {'hysteria2', 'hy2', 'tuic'}
 
-    tcp_nodes = [n for n in nodes if n.get('type', '').lower() not in UDP_PROTOCOLS]
-    udp_nodes = [n for n in nodes if n.get('type', '').lower() in UDP_PROTOCOLS]
+    # L0: Pre-filter obvious garbage
+    l0_passed = []
+    for node in nodes:
+        server = node.get('server', '')
+        if _is_invalid_server(server):
+            continue
+        l0_passed.append(node)
+    l0_filtered = len(nodes) - len(l0_passed)
+    if l0_filtered:
+        logger = logging.getLogger('Validator')
+        logger.info(f"  L0: filtered {l0_filtered} invalid servers (localhost/loopback/empty)")
+
+    tcp_nodes = [n for n in l0_passed if n.get('type', '').lower() not in UDP_PROTOCOLS]
+    udp_nodes = [n for n in l0_passed if n.get('type', '').lower() in UDP_PROTOCOLS]
 
     def tcp_check(node):
         server = node.get('server')
@@ -52,6 +81,16 @@ def quick_tcp_prescreen(nodes, max_workers=100, timeout=2):
             return None
         try:
             with socket.create_connection((server, int(port)), timeout=timeout):
+                # L1b: For TLS-based protocols, verify TLS handshake succeeds
+                ntype = node.get('type', '').lower()
+                if ntype in ('vless', 'trojan', 'vmess') and node.get('tls'):
+                    import ssl
+                    context = ssl.create_default_context()
+                    context.check_hostname = False
+                    context.verify_mode = ssl.CERT_NONE
+                    with context.wrap_socket(socket.socket(), server_hostname=server) as ssock:
+                        ssock.settimeout(timeout)
+                        ssock.connect((server, int(port)))
                 return node
         except Exception:
             return None
@@ -210,17 +249,17 @@ class Validator:
         original_ip = _get_original_ip()
         logger.info(f"  Original IP: {original_ip or 'unknown'}")
 
-        # L1: TCP prescreen
-        logger.info("  L1: TCP prescreen...")
+        # L0+L1: Pre-filter + TCP/TLS check
+        logger.info("  L0+L1: Pre-filter + TCP/TLS check...")
         tcp_passed = quick_tcp_prescreen(nodes, max_workers=50, timeout=2)
-        logger.info(f"  L1 passed: {len(tcp_passed)}/{len(nodes)}")
+        logger.info(f"  L0+L1 passed: {len(tcp_passed)}/{len(nodes)}")
         if not tcp_passed:
             return []
 
         # L2-L5: Mihomo-based tests
         mihomo_path = _get_mihomo_path()
         if not mihomo_path:
-            logger.warning("  Mihomo not available, skipping L2-L5. All TCP-passed nodes kept.")
+            logger.warning("  Mihomo unavailable, keeping TCP/TLS-passed nodes only.")
             return tcp_passed
 
         from core.converters.clash import to_clash_proxies
@@ -254,7 +293,7 @@ class Validator:
                     'proxies': proxy_names,
                     'url': TEST_URL,
                     'interval': 300,
-                    'tolerance': 50000,
+                    'tolerance': 50,
                     'lazy': False,
                 },
             ],
