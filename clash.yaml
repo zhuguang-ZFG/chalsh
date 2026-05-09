@@ -14,78 +14,89 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: CDN-Bullet
+- name: 🇩🇪 德国 44
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 33
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: '210'
   type: vless
-  server: 188.114.96.0
-  port: 443
-  uuid: 40afa553-1745-4f62-a380-4163c7bb4870
+  server: ciallo-egb.pages.dev
+  port: 8443
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
   tls: true
-  servername: restless-dew-894b.amirhost4.workers.dev
+  servername: CiallO-eGb.pAGEs.Dev
   network: ws
   ws-opts:
-    path: /
+    path: //
     headers:
-      Host: restless-dew-894b.amirhost4.workers.dev
-- name: 🇩🇪 德国 88
+      Host: CiallO-eGb.pAGEs.Dev
+- name: 🇩🇪 德国 26
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: '232'
+- name: '242'
   type: vless
-  server: 104.17.72.206
+  server: 8.6.112.0
   port: 443
   uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
   tls: true
   servername: 2026.hhhhh.eu.org
   network: ws
   ws-opts:
-    path: /222.167.202.31:7443
+    path: /
     headers:
       Host: 2026.hhhhh.eu.org
-- name: '236'
-  type: vless
-  server: 8.6.112.0
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.dynv6.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.dynv6.net
-- name: '145'
-  type: vless
-  server: ciallo-egb.pages.dev
-  port: 443
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  tls: true
-  servername: CiaLLO-egb.PAGeS.dEV
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: CiaLLO-egb.PAGeS.dEV
-- name: 🇺🇸 美国5|@ripaojiedian
+- name: 🇩🇪 德国 27
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
+  cipher: aes-128-gcm
+- name: 🇩🇪 德国 78
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
   cipher: auto
+- name: 🇺🇸 美国 296
+  type: vless
+  server: 84.32.129.194
+  port: 8443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  tls: true
+  servername: 1-aym.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 1-aym.pages.dev
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - CDN-Bullet
-  - 🇩🇪 德国 88
-  - '232'
-  - '236'
-  - '145'
-  - 🇺🇸 美国5|@ripaojiedian
+  - 🇩🇪 德国 44
+  - 🇩🇪 德国 33
+  - '210'
+  - 🇩🇪 德国 26
+  - '242'
+  - 🇩🇪 德国 27
+  - 🇩🇪 德国 78
+  - 🇺🇸 美国 296
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
