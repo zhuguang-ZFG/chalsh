@@ -59,7 +59,7 @@ jobs:
                 out.write(gz.read())
         os.chmod('bin/mihomo', 0o755)
         "
-        bin/mihomo --version
+        bin/mihomo -v
 
     - name: Run Crawler
       env:
