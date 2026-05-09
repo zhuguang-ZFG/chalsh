@@ -14,23 +14,56 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 42
+- name: 🇩🇪 德国 39
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 249
+  type: vless
+  server: witzendcomputing.com
+  port: 2053
+  uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
+  tls: true
+  servername: qyi.fqjd663.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: qyi.fqjd663.ggff.net
+- name: 🇩🇪 德国 16
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 65
   type: vmess
   server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 18
+- name: 🇩🇪 德国 80
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 88
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 50
+- name: 🇩🇪 德国 38
   type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -47,30 +80,44 @@ proxies:
     path: /
     headers:
       Host: CiaLLO-egb.PAGeS.dEV
-- name: 英国 V2CROSS.COM
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 27
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+- name: '256'
+  type: vless
+  server: bestcf.030101.xyz
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.dynv6.net
+  network: ws
+  ws-opts:
+    path: /?proxyip=ip.111000.de5.net:443
+    headers:
+      Host: sni.111000.dynv6.net
+- name: '210'
+  type: vless
+  server: ciallo-egb.pages.dev
+  port: 8443
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  tls: true
+  servername: CiallO-eGb.pAGEs.Dev
+  network: ws
+  ws-opts:
+    path: //
+    headers:
+      Host: CiallO-eGb.pAGEs.Dev
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 42
-  - 🇩🇪 德国 18
-  - 🇩🇪 德国 50
+  - 🇩🇪 德国 39
+  - 🇺🇸 美国 249
+  - 🇩🇪 德国 16
+  - 🇩🇪 德国 65
+  - 🇩🇪 德国 80
+  - 🇩🇪 德国 88
+  - 🇩🇪 德国 38
   - '145'
-  - 英国 V2CROSS.COM
-  - 🇩🇪 德国 27
+  - '256'
+  - '210'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
