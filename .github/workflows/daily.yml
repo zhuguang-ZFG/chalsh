@@ -58,8 +58,9 @@ jobs:
             with open('bin/mihomo', 'wb') as out:
                 out.write(gz.read())
         os.chmod('bin/mihomo', 0o755)
+        print('Mihomo downloaded successfully')
         "
-        bin/mihomo -v
+        echo "Mihomo binary:" && ls -lh bin/mihomo
 
     - name: Run Crawler
       env:
