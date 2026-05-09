@@ -338,6 +338,7 @@ class Validator:
                     name_to_node[tag] = node
 
             l2_passed = []
+            l2_errors = 0
             for name in proxy_names:
                 try:
                     resp = requests.get(
@@ -354,10 +355,17 @@ class Validator:
                             if node:
                                 node['_latency_ms'] = delay
                                 l2_passed.append(node)
+                    else:
+                        l2_errors += 1
                 except Exception:
-                    pass
+                    l2_errors += 1
 
-            logger.info(f"  L2 passed: {len(l2_passed)}/{len(proxy_names)} (HTTP through proxy works)")
+            logger.info(f"  L2 passed: {len(l2_passed)}/{len(proxy_names)} (errors={l2_errors})")
+
+            # Safety fallback: if mihomo test failed for most nodes, keep TCP-passed
+            if len(l2_passed) < len(tcp_passed) * 0.05:
+                logger.warning(f"  L2 suspicious: only {len(l2_passed)}/{len(tcp_passed)} passed, likely mihomo issue. Keeping TCP-passed nodes.")
+                return tcp_passed
 
             # L3: IP change check — sample a few nodes through proxy
             ip_changed_ok = False
