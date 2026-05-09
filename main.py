@@ -319,7 +319,7 @@ def main():
         'mixed-port': 7890,
         'allow-lan': False,
         'bind-address': '*',
-        'mode': 'rule',
+        'mode': 'global',
         'log-level': 'info',
         'dns': {
             'enable': True,
@@ -339,22 +339,15 @@ def main():
                 'interval': 300,
                 'tolerance': 50,
             },
-            {
-                'name': 'PROXY',
-                'type': 'select',
-                'proxies': ['AUTO'] + proxy_names[:10],
-            },
         ],
         'rules': [
-            'DOMAIN-SUFFIX,local,DIRECT',
-            'DOMAIN-KEYWORD,lan,DIRECT',
-            'IP-CIDR,127.0.0.0/8,DIRECT,no-resolve',
-            'IP-CIDR,192.168.0.0/16,DIRECT,no-resolve',
-            'IP-CIDR,10.0.0.0/8,DIRECT,no-resolve',
-            'IP-CIDR,172.16.0.0/12,DIRECT,no-resolve',
-            'GEOSITE,cn,DIRECT',
-            'GEOIP,cn,DIRECT',
-            'MATCH,AUTO',
+            'DOMAIN,storeedge.microsoft.com,DIRECT',
+            'DOMAIN,displaycatalog.mp.microsoft.com,DIRECT',
+            'DOMAIN,login.live.com,DIRECT',
+            'DOMAIN,store-images.microsoft.com,DIRECT',
+            'DOMAIN-SUFFIX,mp.microsoft.com,DIRECT',
+            'DOMAIN-SUFFIX,microsoftstore.com,DIRECT',
+            'DOMAIN-SUFFIX,store.microsoft.com,DIRECT',
         ],
     }
 
