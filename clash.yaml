@@ -14,107 +14,78 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 11
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 26
+- name: CDN-Bullet
+  type: vless
+  server: 188.114.96.0
+  port: 443
+  uuid: 40afa553-1745-4f62-a380-4163c7bb4870
+  tls: true
+  servername: restless-dew-894b.amirhost4.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: restless-dew-894b.amirhost4.workers.dev
+- name: 🇩🇪 德国 88
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
-  cipher: aes-128-gcm
-- name: '197'
-  type: vless
-  server: ciallo-egb.pages.dev
-  port: 8443
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  tls: true
-  servername: CiallO-eGb.pAGEs.Dev
-  network: ws
-  ws-opts:
-    path: //
-    headers:
-      Host: CiallO-eGb.pAGEs.Dev
-- name: 🇩🇪 德国 28
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
   cipher: auto
-- name: '234'
+- name: '232'
   type: vless
-  server: 8.39.125.81
-  port: 2053
-  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
-  tls: true
-  servername: kalami-eew.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kalami-eew.pages.dev
-- name: 🇩🇪 德国 16
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: '235'
-  type: vless
-  server: 8.35.211.92
-  port: 8443
-  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
-  tls: true
-  servername: kalami-eew.pages.dev
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: kalami-eew.pages.dev
-- name: '242'
-  type: vless
-  server: 8.6.112.0
+  server: 104.17.72.206
   port: 443
   uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
   tls: true
   servername: 2026.hhhhh.eu.org
   network: ws
   ws-opts:
-    path: /
+    path: /222.167.202.31:7443
     headers:
       Host: 2026.hhhhh.eu.org
-- name: '298'
+- name: '236'
   type: vless
-  server: 8.39.125.57
-  port: 2096
-  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
+  server: 8.6.112.0
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
-  servername: kalami-eew.pages.dev
+  servername: sni.111000.dynv6.net
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: kalami-eew.pages.dev
+      Host: sni.111000.dynv6.net
+- name: '145'
+  type: vless
+  server: ciallo-egb.pages.dev
+  port: 443
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  tls: true
+  servername: CiaLLO-egb.PAGeS.dEV
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: CiaLLO-egb.PAGeS.dEV
+- name: 🇺🇸 美国5|@ripaojiedian
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 11
-  - 🇩🇪 德国 26
-  - '197'
-  - 🇩🇪 德国 28
-  - '234'
-  - 🇩🇪 德国 16
-  - '235'
-  - '242'
-  - '298'
+  - CDN-Bullet
+  - 🇩🇪 德国 88
+  - '232'
+  - '236'
+  - '145'
+  - 🇺🇸 美国5|@ripaojiedian
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
