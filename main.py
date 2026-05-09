@@ -340,16 +340,6 @@ def main():
                 'tolerance': 50,
             },
             {
-                'name': 'DIRECT',
-                'type': 'select',
-                'proxies': ['DIRECT'],
-            },
-            {
-                'name': 'REJECT',
-                'type': 'select',
-                'proxies': ['REJECT'],
-            },
-            {
                 'name': 'PROXY',
                 'type': 'select',
                 'proxies': ['AUTO'] + proxy_names[:10],
