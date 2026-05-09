@@ -311,12 +311,67 @@ def main():
     # Save outputs
     logger.info("\n[4/4] Saving outputs...")
 
-    # clash.yaml
+    # clash.yaml — full config with proxy-groups and rules
     clash_proxies = to_clash_proxies(valid_nodes)
+    proxy_names = [p.get('name', f'node-{i}') for i, p in enumerate(clash_proxies)]
+
+    full_clash = {
+        'mixed-port': 7890,
+        'allow-lan': False,
+        'bind-address': '*',
+        'mode': 'rule',
+        'log-level': 'info',
+        'dns': {
+            'enable': True,
+            'listen': '0.0.0.0:1053',
+            'enhanced-mode': 'fake-ip',
+            'fake-ip-range': '198.18.0.1/16',
+            'nameserver': ['https://dns.google/dns-query', 'https://1.1.1.1/dns-query'],
+            'fallback': ['https://dns.alidns.com/dns-query'],
+        },
+        'proxies': clash_proxies,
+        'proxy-groups': [
+            {
+                'name': 'AUTO',
+                'type': 'url-test',
+                'proxies': proxy_names,
+                'url': 'https://www.gstatic.com/generate_204',
+                'interval': 300,
+                'tolerance': 50,
+            },
+            {
+                'name': 'DIRECT',
+                'type': 'select',
+                'proxies': ['DIRECT'],
+            },
+            {
+                'name': 'REJECT',
+                'type': 'select',
+                'proxies': ['REJECT'],
+            },
+            {
+                'name': 'PROXY',
+                'type': 'select',
+                'proxies': ['AUTO'] + proxy_names[:10],
+            },
+        ],
+        'rules': [
+            'DOMAIN-SUFFIX,local,DIRECT',
+            'DOMAIN-KEYWORD,lan,DIRECT',
+            'IP-CIDR,127.0.0.0/8,DIRECT,no-resolve',
+            'IP-CIDR,192.168.0.0/16,DIRECT,no-resolve',
+            'IP-CIDR,10.0.0.0/8,DIRECT,no-resolve',
+            'IP-CIDR,172.16.0.0/12,DIRECT,no-resolve',
+            'GEOSITE,cn,DIRECT',
+            'GEOIP,cn,DIRECT',
+            'MATCH,AUTO',
+        ],
+    }
+
     clash_path = os.path.join(output_dir, 'clash.yaml')
     with open(clash_path, 'w', encoding='utf-8') as f:
-        yaml.dump({"proxies": clash_proxies}, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
-    logger.info(f"  Saved: {clash_path}")
+        yaml.dump(full_clash, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
+    logger.info(f"  Saved: {clash_path} ({len(clash_proxies)} proxies)")
 
     # all (base64 subscription)
     links_output = []
