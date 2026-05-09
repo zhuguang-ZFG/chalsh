@@ -27,6 +27,31 @@ jobs:
     - name: Install Dependencies
       run: pip install -r requirements.txt
 
+    - name: Download Mihomo
+      run: |
+        mkdir -p bin
+        python3 -c "
+        import requests, os
+        r = requests.get('https://api.github.com/repos/MetaCubeX/mihomo/releases/latest', timeout=10)
+        assets = r.json().get('assets', [])
+        for a in assets:
+            if 'linux-amd64' in a['name'] and a['name'].endswith('.gz'):
+                url = a['browser_download_url']
+                break
+        print(f'Downloading: {url}')
+        resp = requests.get(url, timeout=60, stream=True)
+        resp.raise_for_status()
+        with open('/tmp/mihomo.gz', 'wb') as f:
+            for chunk in resp.iter_content(8192):
+                f.write(chunk)
+        import gzip
+        with gzip.open('/tmp/mihomo.gz', 'rb') as gz:
+            with open('bin/mihomo', 'wb') as out:
+                out.write(gz.read())
+        os.chmod('bin/mihomo', 0o755)
+        "
+        bin/mihomo --version
+
     - name: Run Crawler
       env:
         EXTRA_URLS: ${{ secrets.EXTRA_URLS }}
