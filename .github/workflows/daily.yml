@@ -34,12 +34,21 @@ jobs:
         import requests, os
         r = requests.get('https://api.github.com/repos/MetaCubeX/mihomo/releases/latest', timeout=10)
         assets = r.json().get('assets', [])
+        url = None
         for a in assets:
-            if 'linux-amd64' in a['name'] and a['name'].endswith('.gz'):
+            name = a['name']
+            if 'linux-amd64' in name and name.endswith('.gz') and 'compatible' in name:
                 url = a['browser_download_url']
                 break
+        if not url:
+            for a in assets:
+                if 'linux-amd64-v1-' in a['name'] and a['name'].endswith('.gz'):
+                    url = a['browser_download_url']
+                    break
+        if not url:
+            raise RuntimeError(f'No matching asset found. Available: {[a[\"name\"] for a in assets[:5]]}')
         print(f'Downloading: {url}')
-        resp = requests.get(url, timeout=60, stream=True)
+        resp = requests.get(url, timeout=120, stream=True)
         resp.raise_for_status()
         with open('/tmp/mihomo.gz', 'wb') as f:
             for chunk in resp.iter_content(8192):
