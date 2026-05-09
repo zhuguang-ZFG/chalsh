@@ -14,51 +14,58 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: '201'
-  type: trojan
-  server: 104.16.80.73
-  port: 443
-  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  sni: sni.111000.dynv6.net
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.dynv6.net
-- name: '334'
+- name: 🇩🇪 德国 11
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 26
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+- name: '197'
   type: vless
-  server: 8.6.112.6
+  server: ciallo-egb.pages.dev
   port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
   tls: true
-  servername: sni.111000.dynv6.net
+  servername: CiallO-eGb.pAGEs.Dev
   network: ws
   ws-opts:
-    path: /
+    path: //
     headers:
-      Host: sni.111000.dynv6.net
-- name: '@V2ray_confiig'
+      Host: CiallO-eGb.pAGEs.Dev
+- name: 🇩🇪 德国 28
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: '234'
   type: vless
-  server: 104.26.13.31
-  port: 80
-  uuid: fe665bb7-a558-42bc-9ba7-a59288ee4b93
+  server: 8.39.125.81
+  port: 2053
+  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
+  tls: true
+  servername: kalami-eew.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: floral-term-d21f.wafajax493.workers.dev
-- name: '267'
-  type: trojan
-  server: 104.20.6.134
-  port: 443
-  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  sni: sni.111000.dynv6.net
-  network: ws
-  ws-opts:
-    path: /?proxyip=ip.111000.de5.net:443
-    headers:
-      Host: sni.111000.dynv6.net
+      Host: kalami-eew.pages.dev
+- name: 🇩🇪 德国 16
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 - name: '235'
   type: vless
   server: 8.35.211.92
@@ -71,26 +78,43 @@ proxies:
     path: /fp=chrome
     headers:
       Host: kalami-eew.pages.dev
-- name: '178'
+- name: '242'
   type: vless
-  server: wangcai15.cloudflare.182682.xyz
-  port: 8880
-  uuid: 7890ce31-9a25-4fd4-90e7-80e5823ff510
+  server: 8.6.112.0
+  port: 443
+  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  tls: true
+  servername: 2026.hhhhh.eu.org
   network: ws
   ws-opts:
-    path: /Telegram🇨🇳@WangCai2/
+    path: /
     headers:
-      Host: frejd.11258.workers.dev
+      Host: 2026.hhhhh.eu.org
+- name: '298'
+  type: vless
+  server: 8.39.125.57
+  port: 2096
+  uuid: df862b4c-2150-4b36-81ac-405036cf9ff6
+  tls: true
+  servername: kalami-eew.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kalami-eew.pages.dev
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - '201'
-  - '334'
-  - '@V2ray_confiig'
-  - '267'
+  - 🇩🇪 德国 11
+  - 🇩🇪 德国 26
+  - '197'
+  - 🇩🇪 德国 28
+  - '234'
+  - 🇩🇪 德国 16
   - '235'
-  - '178'
+  - '242'
+  - '298'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
