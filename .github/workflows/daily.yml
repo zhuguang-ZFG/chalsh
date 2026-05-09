@@ -42,14 +42,6 @@ jobs:
         ls -lh clash.yaml all
         echo "Node count: $(python3 -c "import yaml; d=yaml.safe_load(open('clash.yaml')); print(len(d.get('proxies',[])))")"
 
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: .
-        publish_branch: gh-pages
-        keep_files: false
-
     - name: Commit and Push
       run: |
         git config user.name "github-actions[bot]"
@@ -58,3 +50,24 @@ jobs:
         git diff --staged --quiet || \
           git commit -m "chore: update nodes $(date +'%Y-%m-%d %H:%M UTC')"
         git push
+
+  deploy-pages:
+    needs: crawl
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        ref: main
+        fetch-depth: 1
+
+    - name: Deploy to gh-pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: .
+        publish_branch: gh-pages
+        keep_files: true
+        force_orphan: true
