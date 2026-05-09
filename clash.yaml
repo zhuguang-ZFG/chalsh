@@ -14,51 +14,14 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸 美国 227
+- name: 🇩🇪 德国 43
   type: vmess
-  server: 173.249.209.146
-  port: 20086
-  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-  network: ws
-- name: '334'
-  type: vless
-  server: 8.6.112.6
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.dynv6.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.dynv6.net
-- name: '201'
-  type: trojan
-  server: 104.16.80.73
-  port: 443
-  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  sni: sni.111000.dynv6.net
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.dynv6.net
-- name: '229'
-  type: vless
-  server: ciallo-egb.pages.dev
-  port: 443
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  tls: true
-  servername: CiaLLO-egb.PAGeS.dEV
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: CiaLLO-egb.PAGeS.dEV
-- name: 美国5|@ripaojiedian
+- name: 🇩🇪 德国 38
   type: vmess
   server: 82.198.246.233
   port: 180
@@ -72,18 +35,6 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸 美国 249
-  type: vless
-  server: witzendcomputing.com
-  port: 2053
-  uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
-  tls: true
-  servername: qyi.fqjd663.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: qyi.fqjd663.ggff.net
 - name: 🇩🇪 德国 18
   type: vmess
   server: 82.198.246.37
@@ -91,45 +42,27 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 28
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 79
+- name: '334'
   type: vless
-  server: 137.184.218.169
-  port: 36925
-  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
-  flow: xtls-rprx-vision
+  server: 8.6.112.6
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
-  client-fingerprint: chrome
-- name: 美国+DXC+Technology
-  type: ss
-  server: admin.c1.webramz.co
-  port: 443
-  password: W74XFALLLuw6m5IA
-  cipher: chacha20-ietf-poly1305
+  servername: sni.111000.dynv6.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.dynv6.net
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸 美国 227
-  - '334'
-  - '201'
-  - '229'
-  - 美国5|@ripaojiedian
+  - 🇩🇪 德国 43
+  - 🇩🇪 德国 38
   - 🇩🇪 德国 7
-  - 🇺🇸 美国 249
   - 🇩🇪 德国 18
-  - 🇩🇪 德国 28
-  - 🇺🇸 美国 79
-  - 美国+DXC+Technology
+  - '334'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
