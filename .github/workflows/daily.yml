@@ -1,0 +1,52 @@
+name: Node Crawler (2h)
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 1
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+
+    - name: Install Dependencies
+      run: pip install -r requirements.txt
+
+    - name: Run Crawler
+      env:
+        EXTRA_URLS: ${{ secrets.EXTRA_URLS }}
+        SOURCES_JSON: ${{ secrets.SOURCES_JSON }}
+      run: |
+        python main.py --validate --max-latency 500 --timeout 5 --workers 24 --output .
+
+    - name: Verify Outputs
+      run: |
+        [ -s clash.yaml ] || (echo "ERROR: clash.yaml is empty" && exit 1)
+        [ -s all ] || (echo "ERROR: all is empty" && exit 1)
+        echo "Output files:"
+        ls -lh clash.yaml all
+        echo "Node count: $(python3 -c "import yaml; d=yaml.safe_load(open('clash.yaml')); print(len(d.get('proxies',[])))")"
+
+    - name: Commit and Push
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add clash.yaml all
+        git diff --staged --quiet || \
+          git commit -m "chore: update nodes $(date +'%Y-%m-%d %H:%M UTC')"
+        git push
