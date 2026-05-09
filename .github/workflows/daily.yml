@@ -42,6 +42,14 @@ jobs:
         ls -lh clash.yaml all
         echo "Node count: $(python3 -c "import yaml; d=yaml.safe_load(open('clash.yaml')); print(len(d.get('proxies',[])))")"
 
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: .
+        publish_branch: gh-pages
+        keep_files: false
+
     - name: Commit and Push
       run: |
         git config user.name "github-actions[bot]"
