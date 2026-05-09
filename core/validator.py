@@ -268,6 +268,13 @@ class Validator:
             logger.warning("  No proxies convertible to Clash format")
             return []
 
+        # Limit nodes for mihomo test to avoid CI timeout
+        MAX_MIHOMO_TEST = 100
+        if len(clash_proxies) > MAX_MIHOMO_TEST:
+            logger.info(f"  Limiting mihomo test to {MAX_MIHOMO_TEST} nodes (had {len(clash_proxies)})")
+            clash_proxies = clash_proxies[:MAX_MIHOMO_TEST]
+            tcp_passed = tcp_passed[:MAX_MIHOMO_TEST]
+
         proxy_names = [p.get('name', f'node-{i}') for i, p in enumerate(clash_proxies)]
         api_port = _get_unique_port()
         mixed_port = _get_unique_port()
@@ -322,53 +329,42 @@ class Validator:
                 logger.warning("  Mihomo failed to start, keeping TCP-passed nodes")
                 return tcp_passed
 
-            # L2: Trigger batch HTTP test via url-test group
-            logger.info("  L2: Testing proxy HTTP (gstatic.com through actual protocol)...")
-            try:
-                requests.get(
-                    f'{api_base}/group/AUTO/delay',
-                    headers=auth_headers,
-                    params={'url': TEST_URL, 'timeout': test_timeout_ms},
-                    timeout=120,
-                )
-            except Exception:
-                pass
-
-            # Wait for all tests to complete
-            time.sleep(15)
-
-            # Collect results
-            resp = requests.get(f'{api_base}/proxies', headers=auth_headers, timeout=5)
-            proxies_data = resp.json().get('proxies', {})
-            auto_group = proxies_data.get('AUTO', {}).get('all', [])
-
-            # Build name -> node map
+            # L2: Test each proxy individually via /proxies/{name}/delay endpoint
+            logger.info(f"  L2: Testing {len(proxy_names)} proxies via individual delay API...")
             name_to_node = {}
             for node in tcp_passed:
                 tag = node.get('tag', '')
                 if tag:
                     name_to_node[tag] = node
 
-            # L2: Nodes with valid HTTP delay (passed gstatic.com test)
             l2_passed = []
-            for name in auto_group:
-                proxy_info = proxies_data.get(name, {})
-                history = proxy_info.get('history', [])
-                if history:
-                    last = history[-1]
-                    delay = last.get('delay', 99999)
-                    node = name_to_node.get(name)
-                    if node:
-                        node['_latency_ms'] = delay
-                        l2_passed.append(node)
+            for name in proxy_names:
+                try:
+                    resp = requests.get(
+                        f'{api_base}/proxies/{name}/delay',
+                        headers=auth_headers,
+                        params={'url': TEST_URL, 'timeout': test_timeout_ms},
+                        timeout=10,
+                    )
+                    if resp.status_code == 200:
+                        data = resp.json()
+                        delay = data.get('delay', 99999)
+                        if delay > 0 and delay < test_timeout_ms:
+                            node = name_to_node.get(name)
+                            if node:
+                                node['_latency_ms'] = delay
+                                l2_passed.append(node)
+                except Exception:
+                    pass
 
-            logger.info(f"  L2 passed: {len(l2_passed)}/{len(auto_group)} (HTTP through proxy works)")
+            logger.info(f"  L2 passed: {len(l2_passed)}/{len(proxy_names)} (HTTP through proxy works)")
 
             # L3: IP change check — sample a few nodes through proxy
+            ip_changed_ok = False
+            dns_ok = False
             logger.info("  L3: Checking IP change...")
             if original_ip:
                 # Test through a random passed node to verify IP change works
-                ip_changed_ok = False
                 proxy_ips_seen = set()
                 for node in l2_passed[:5]:  # Check up to 5 nodes
                     tag = node.get('tag', '')
@@ -399,7 +395,6 @@ class Validator:
             # The L2 test already validates this implicitly (mihomo must resolve gstatic.com)
             # Additional check: can we resolve a Chinese domain through the proxy?
             logger.info("  L4: Checking DNS through proxy...")
-            dns_ok = False
             try:
                 session = requests.Session()
                 session.trust_env = False
