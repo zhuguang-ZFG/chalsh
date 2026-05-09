@@ -32,7 +32,7 @@ jobs:
         EXTRA_URLS: ${{ secrets.EXTRA_URLS }}
         SOURCES_JSON: ${{ secrets.SOURCES_JSON }}
       run: |
-        python main.py --validate --max-latency 500 --timeout 5 --workers 24 --output .
+        python main.py --validate --max-latency 100 --timeout 5 --workers 24 --output .
 
     - name: Verify Outputs
       run: |

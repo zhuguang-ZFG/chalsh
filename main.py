@@ -156,7 +156,7 @@ def main():
     parser.add_argument('--validate', action='store_true', help='Validate nodes via HTTP latency')
     parser.add_argument('--output', type=str, default='output', help='Output directory')
     parser.add_argument('--workers', type=int, default=10, help='Number of fetch workers')
-    parser.add_argument('--max-latency', type=int, default=800, help='Max latency in ms for validation (default 800)')
+    parser.add_argument('--max-latency', type=int, default=100, help='Max latency in ms for validation (default 100)')
     parser.add_argument('--timeout', type=int, default=5, help='Test timeout in seconds (default 5)')
     parser.add_argument('--local', action='store_true', help='Local mode: skip TCP checks (GFW environment)')
     parser.add_argument('--serve', action='store_true', help='Start local proxy server after fetching')
