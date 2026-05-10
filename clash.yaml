@@ -14,40 +14,35 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 86
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: '132'
-  type: vless
-  server: ciallo-egb.pages.dev
-  port: 443
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  tls: true
-  servername: CiaLLO-egb.PAGeS.dEV
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: CiaLLO-egb.PAGeS.dEV
-- name: 🇩🇪 德国 68
+- name: 🇩🇪 德国 83
   type: vmess
   server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 78
+- name: 🇩🇪 德国 82
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 34
+- name: 美国5|@ripaojiedian
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 108
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 61
   type: vmess
   server: 82.198.246.37
   port: 180
@@ -58,11 +53,11 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 86
-  - '132'
-  - 🇩🇪 德国 68
-  - 🇩🇪 德国 78
-  - 🇩🇪 德国 34
+  - 🇩🇪 德国 83
+  - 🇩🇪 德国 82
+  - 美国5|@ripaojiedian
+  - 🇩🇪 德国 108
+  - 🇩🇪 德国 61
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
