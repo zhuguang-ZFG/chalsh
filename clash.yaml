@@ -14,100 +14,72 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 63
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 59
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: '334'
-  type: vless
-  server: 8.6.112.6
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.dynv6.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.dynv6.net
-- name: '244'
-  type: vless
-  server: cf5.danfeng.eu.org
-  port: 2053
-  uuid: bafacd98-136a-4530-838d-4e5c51838dac
-  tls: true
-  servername: juzi8186.qea.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /out/comics/document/juzibaipiao
-    headers:
-      Host: juzi8186.qea.ccwu.cc
-- name: 🇺🇸 美国5|@ripaojiedian
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 80
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: '@V2ray_confiig'
-  type: vless
-  server: 104.26.13.31
-  port: 80
-  uuid: fe665bb7-a558-42bc-9ba7-a59288ee4b93
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: floral-term-d21f.wafajax493.workers.dev
-- name: '236'
-  type: vless
-  server: 8.6.112.0
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.dynv6.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.dynv6.net
-- name: 🇩🇪 德国 85
+- name: 🇩🇪 德国 64
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
+- name: 🇩🇪 德国 16
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+- name: 🇩🇪 德国 39
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇹🇷 土耳其 208
+  type: vless
+  server: 91.206.71.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime15.workers.dev
+- name: 🇩🇪 德国 77
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 34
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇨🇾 塞浦路斯 172
+  type: vless
+  server: 195.85.59.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime58.workers.dev
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 63
-  - 🇩🇪 德国 59
-  - '334'
-  - '244'
-  - 🇺🇸 美国5|@ripaojiedian
-  - 🇩🇪 德国 80
-  - '@V2ray_confiig'
-  - '236'
-  - 🇩🇪 德国 85
+  - 🇩🇪 德国 64
+  - 🇩🇪 德国 16
+  - 🇩🇪 德国 39
+  - 🇹🇷 土耳其 208
+  - 🇩🇪 德国 77
+  - 🇩🇪 德国 34
+  - 🇨🇾 塞浦路斯 172
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
