@@ -14,16 +14,46 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇨🇾 塞浦路斯 172
+- name: 🇩🇪 德国 15
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 278
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 368
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: '@V2ray_confiig'
   type: vless
-  server: 195.85.59.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 144.31.4.67
+  port: 443
+  uuid: 94a03e9a-74d5-4036-95e9-563cc19355de
+  tls: true
+  servername: plcdn14.suio.me
+- name: 🌐 WS-TLS | @Express_alaki | src @ConfigV2rayNG
+  type: vless
+  server: www.speedtest.net
+  port: 443
+  uuid: 8a36be1d-7c78-4885-8a1f-bedf5ba7db1c
+  tls: true
+  servername: luCky-LAB-AC6D.CAveyi8071.WoRkeRS.DEV
   network: ws
   ws-opts:
-    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    path: /rN50nmm9L1DeY73C
     headers:
-      Host: vms.lifetime58.workers.dev
+      Host: lucky-lab-ac6d.caveyi8071.workers.dev
 - name: 'Channel : @FreeConfigForYou🏴🏳'
   type: vmess
   server: 165.140.216.141
@@ -31,90 +61,29 @@ proxies:
   uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
   alterId: 0
   cipher: auto
-- name: 🇷🇺 俄罗斯 161
+- name: CDN-Bullet
   type: vless
-  server: 31.12.75.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
-    headers:
-      Host: vms.lifetime21.workers.dev
-- name: 🇩🇪 德国 170
-  type: vless
-  server: 185.135.9.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
-    headers:
-      Host: vms.lifetime50.workers.dev
-- name: 🇩🇪 德国 75
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇳🇱 荷兰 144
-  type: vless
-  server: 45.131.5.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
-    headers:
-      Host: vms.lifetime60.workers.dev
-- name: 🇩🇪 德国 30
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 270
-  type: vless
-  server: 50.62.194.40
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
-    headers:
-      Host: vms.lifetime37.workers.dev
-- name: 🇲🇭 马绍尔群岛 304
-  type: vless
-  server: 185.207.198.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
-    headers:
-      Host: vms.lifetime15.workers.dev
-- name: 美国+DXC+Technology
-  type: ss
-  server: admin.c1.webramz.co
+  server: 188.114.96.0
   port: 443
-  password: W74XFALLLuw6m5IA
-  cipher: chacha20-ietf-poly1305
+  uuid: 40afa553-1745-4f62-a380-4163c7bb4870
+  tls: true
+  servername: restless-dew-894b.amirhost4.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: restless-dew-894b.amirhost4.workers.dev
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇨🇾 塞浦路斯 172
+  - 🇩🇪 德国 15
+  - 🇩🇪 德国 278
+  - 🇩🇪 德国 368
+  - '@V2ray_confiig'
+  - 🌐 WS-TLS | @Express_alaki | src @ConfigV2rayNG
   - 'Channel : @FreeConfigForYou🏴🏳'
-  - 🇷🇺 俄罗斯 161
-  - 🇩🇪 德国 170
-  - 🇩🇪 德国 75
-  - 🇳🇱 荷兰 144
-  - 🇩🇪 德国 30
-  - 🇺🇸 美国 270
-  - 🇲🇭 马绍尔群岛 304
-  - 美国+DXC+Technology
+  - CDN-Bullet
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
