@@ -14,50 +14,107 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 27
+- name: 🇨🇾 塞浦路斯 172
+  type: vless
+  server: 195.85.59.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime58.workers.dev
+- name: 'Channel : @FreeConfigForYou🏴🏳'
   type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 17
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: aes-128-gcm
-- name: 🇩🇪 德国 74
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 美国5|@ripaojiedian
+- name: 🇷🇺 俄罗斯 161
+  type: vless
+  server: 31.12.75.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime21.workers.dev
+- name: 🇩🇪 德国 170
+  type: vless
+  server: 185.135.9.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime50.workers.dev
+- name: 🇩🇪 德国 75
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 34
+- name: 🇳🇱 荷兰 144
+  type: vless
+  server: 45.131.5.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime60.workers.dev
+- name: 🇩🇪 德国 30
   type: vmess
-  server: 82.198.246.37
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
+- name: 🇺🇸 美国 270
+  type: vless
+  server: 50.62.194.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime37.workers.dev
+- name: 🇲🇭 马绍尔群岛 304
+  type: vless
+  server: 185.207.198.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime15.workers.dev
+- name: 美国+DXC+Technology
+  type: ss
+  server: admin.c1.webramz.co
+  port: 443
+  password: W74XFALLLuw6m5IA
+  cipher: chacha20-ietf-poly1305
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 27
-  - 🇩🇪 德国 17
-  - 🇩🇪 德国 74
-  - 美国5|@ripaojiedian
-  - 🇩🇪 德国 34
+  - 🇨🇾 塞浦路斯 172
+  - 'Channel : @FreeConfigForYou🏴🏳'
+  - 🇷🇺 俄罗斯 161
+  - 🇩🇪 德国 170
+  - 🇩🇪 德国 75
+  - 🇳🇱 荷兰 144
+  - 🇩🇪 德国 30
+  - 🇺🇸 美国 270
+  - 🇲🇭 马绍尔群岛 304
+  - 美国+DXC+Technology
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
