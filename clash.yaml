@@ -14,30 +14,54 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 92
+- name: 🇩🇪 德国 54
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 122
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 71
+- name: 🇩🇪 德国 48
   type: vmess
   server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: '272'
-  type: vless
-  server: 104.17.138.160
-  port: 80
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vip.yaml7.ggff.net
+- name: 🇩🇪 德国 85
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 爱尔兰+V2CROSS.COM
+  type: ss
+  server: series-a1.samanehha.co
+  port: 443
+  password: W74XFALLLuw6m5IA
+  cipher: chacha20-ietf-poly1305
+- name: 🇩🇪 德国 93
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 91
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 - name: '209'
   type: vless
   server: 777.ai7777777.xyz
@@ -51,49 +75,25 @@ proxies:
     path: /contact/pages
     headers:
       Host: pagescm.freen34.cc.cd
-- name: 🇩🇪 德国 83
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: '257'
-  type: vless
-  server: 8.35.211.138
-  port: 2096
-  uuid: ae0dd58e-e222-40bf-84ae-365a97532737
-  tls: true
-  servername: pagescm.freen20.cc.cd
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /item
-    headers:
-      Host: pagescm.freen20.cc.cd
-- name: '271'
-  type: vless
-  server: openai.com
-  port: 443
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-  tls: true
-  servername: 2-1ng.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 2-1ng.pages.dev
+- name: 美国+V2CROSS.COM
+  type: ss
+  server: 149.28.255.6
+  port: 816
+  password: GyZ5Xo0ht41vYmW3H4
+  cipher: chacha20-ietf-poly1305
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 92
-  - 🇩🇪 德国 71
-  - '272'
+  - 🇩🇪 德国 54
+  - 🇩🇪 德国 122
+  - 🇩🇪 德国 48
+  - 🇩🇪 德国 85
+  - 爱尔兰+V2CROSS.COM
+  - 🇩🇪 德国 93
+  - 🇩🇪 德国 91
   - '209'
-  - 🇩🇪 德国 83
-  - '257'
-  - '271'
+  - 美国+V2CROSS.COM
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
