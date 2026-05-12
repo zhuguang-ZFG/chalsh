@@ -14,20 +14,40 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 165
+- name: 🇩🇪 德国 68
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 70
+- name: 英国 V2CROSS.COM
   type: vmess
-  server: 82.198.246.37
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
+- name: 🇩🇪 德国 59
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇨🇾 塞浦路斯 229
+  type: vless
+  server: www.csgo.com
+  port: 8443
+  uuid: ae0dd58e-e222-40bf-84ae-365a97532737
+  tls: true
+  servername: pagescm.freen26.cc.cd
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /torrent/section
+    headers:
+      Host: pagescm.freen26.cc.cd
 - name: 🇩🇪 德国 26
   type: vmess
   server: 82.198.246.9
@@ -35,58 +55,37 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 60
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 107
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 125
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 爱尔兰+V2CROSS.COM
-  type: ss
-  server: series-a1.samanehha.co
-  port: 443
-  password: W74XFALLLuw6m5IA
-  cipher: chacha20-ietf-poly1305
-- name: '209'
+- name: '222'
   type: vless
-  server: 777.ai7777777.xyz
+  server: malaysia.com
   port: 443
   uuid: ae0dd58e-e222-40bf-84ae-365a97532737
   tls: true
-  servername: pagescm.freen34.cc.cd
+  servername: pagescm.freen35.cc.cd
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /contact/pages
+    path: /setting/torrent/task
     headers:
-      Host: pagescm.freen34.cc.cd
+      Host: pagescm.freen35.cc.cd
+- name: 🇩🇪 德国 98
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 165
-  - 🇩🇪 德国 70
+  - 🇩🇪 德国 68
+  - 英国 V2CROSS.COM
+  - 🇩🇪 德国 59
+  - 🇨🇾 塞浦路斯 229
   - 🇩🇪 德国 26
-  - 🇩🇪 德国 60
-  - 🇩🇪 德国 107
-  - 🇩🇪 德国 125
-  - 爱尔兰+V2CROSS.COM
-  - '209'
+  - '222'
+  - 🇩🇪 德国 98
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
