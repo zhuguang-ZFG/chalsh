@@ -14,30 +14,44 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 54
+- name: 🇩🇪 德国 165
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 122
+- name: 🇩🇪 德国 70
   type: vmess
-  server: 82.198.246.214
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 48
+- name: 🇩🇪 德国 26
   type: vmess
   server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 85
+- name: 🇩🇪 德国 60
   type: vmess
-  server: 82.198.246.37
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 107
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 125
+  type: vmess
+  server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -48,20 +62,6 @@ proxies:
   port: 443
   password: W74XFALLLuw6m5IA
   cipher: chacha20-ietf-poly1305
-- name: 🇩🇪 德国 93
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 91
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
 - name: '209'
   type: vless
   server: 777.ai7777777.xyz
@@ -75,25 +75,18 @@ proxies:
     path: /contact/pages
     headers:
       Host: pagescm.freen34.cc.cd
-- name: 美国+V2CROSS.COM
-  type: ss
-  server: 149.28.255.6
-  port: 816
-  password: GyZ5Xo0ht41vYmW3H4
-  cipher: chacha20-ietf-poly1305
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 54
-  - 🇩🇪 德国 122
-  - 🇩🇪 德国 48
-  - 🇩🇪 德国 85
+  - 🇩🇪 德国 165
+  - 🇩🇪 德国 70
+  - 🇩🇪 德国 26
+  - 🇩🇪 德国 60
+  - 🇩🇪 德国 107
+  - 🇩🇪 德国 125
   - 爱尔兰+V2CROSS.COM
-  - 🇩🇪 德国 93
-  - 🇩🇪 德国 91
   - '209'
-  - 美国+V2CROSS.COM
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
