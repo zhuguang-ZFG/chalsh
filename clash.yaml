@@ -14,49 +14,56 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 319
+- name: 🇩🇪 德国 277
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 293
+- name: 🇩🇪 德国 318
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 331
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 373
+- name: CDN-Bullet
+  type: vless
+  server: 188.114.96.0
+  port: 443
+  uuid: 40afa553-1745-4f62-a380-4163c7bb4870
+  tls: true
+  servername: restless-dew-894b.amirhost4.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: restless-dew-894b.amirhost4.workers.dev
+- name: 🇩🇪 德国 369
   type: vmess
   server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 英国 V2CROSS.COM
+- name: 🇩🇪 德国 317
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🌐 WS-TLS | @Express_alaki | src @ConfigV2rayNG
-  type: vless
-  server: www.speedtest.net
-  port: 443
-  uuid: 8a36be1d-7c78-4885-8a1f-bedf5ba7db1c
-  tls: true
-  servername: luCky-LAB-AC6D.CAveyi8071.WoRkeRS.DEV
-  network: ws
-  ws-opts:
-    path: /rN50nmm9L1DeY73C
-    headers:
-      Host: lucky-lab-ac6d.caveyi8071.workers.dev
-- name: 🇩🇪 德国 368
+- name: 🇩🇪 德国 353
   type: vmess
-  server: 82.198.246.37
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -65,12 +72,13 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 319
-  - 🇩🇪 德国 293
-  - 🇩🇪 德国 373
-  - 英国 V2CROSS.COM
-  - 🌐 WS-TLS | @Express_alaki | src @ConfigV2rayNG
-  - 🇩🇪 德国 368
+  - 🇩🇪 德国 277
+  - 🇩🇪 德国 318
+  - 🇩🇪 德国 331
+  - CDN-Bullet
+  - 🇩🇪 德国 369
+  - 🇩🇪 德国 317
+  - 🇩🇪 德国 353
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
