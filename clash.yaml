@@ -14,103 +14,86 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 英国 V2CROSS.COM
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 99
+- name: 🇩🇪 德国 92
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 85
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 49
+- name: 🇩🇪 德国 71
   type: vmess
   server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: '193'
+- name: '272'
   type: vless
-  server: www.speedtest.net
-  port: 2053
-  uuid: 9b7cd743-bd37-484c-b9dc-d16077df82eb
-  tls: true
-  servername: BpB.175775.xYZ
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /iJ0xzjzMtRa6U2xK
-    headers:
-      Host: Bpb.175775.xYz
-- name: '@V2ray_confiig'
-  type: vless
-  server: 104.26.13.31
+  server: 104.17.138.160
   port: 80
-  uuid: fe665bb7-a558-42bc-9ba7-a59288ee4b93
+  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: floral-term-d21f.wafajax493.workers.dev
-- name: 🇺🇸 美国 57
-  type: trojan
-  server: 23.169.184.190
-  port: 51243
-  password: a3f617e4-448f-4d95-b56f-99026dfbe699
-  sni: 23.169.184.190
-  skip-cert-verify: true
-- name: '236'
+      Host: vip.yaml7.ggff.net
+- name: '209'
   type: vless
-  server: 8.39.125.254
+  server: 777.ai7777777.xyz
   port: 443
   uuid: ae0dd58e-e222-40bf-84ae-365a97532737
   tls: true
-  servername: pagescm.freen23.cc.cd
+  servername: pagescm.freen34.cc.cd
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /friend/community/apps
+    path: /contact/pages
     headers:
-      Host: pagescm.freen23.cc.cd
-- name: '222'
+      Host: pagescm.freen34.cc.cd
+- name: 🇩🇪 德国 83
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: '257'
   type: vless
-  server: malaysia.com
-  port: 443
+  server: 8.35.211.138
+  port: 2096
   uuid: ae0dd58e-e222-40bf-84ae-365a97532737
   tls: true
-  servername: pagescm.freen35.cc.cd
+  servername: pagescm.freen20.cc.cd
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /setting/torrent/task
+    path: /item
     headers:
-      Host: pagescm.freen35.cc.cd
+      Host: pagescm.freen20.cc.cd
+- name: '271'
+  type: vless
+  server: openai.com
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  tls: true
+  servername: 2-1ng.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 2-1ng.pages.dev
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 英国 V2CROSS.COM
-  - 🇩🇪 德国 99
-  - 🇩🇪 德国 85
-  - 🇩🇪 德国 49
-  - '193'
-  - '@V2ray_confiig'
-  - 🇺🇸 美国 57
-  - '236'
-  - '222'
+  - 🇩🇪 德国 92
+  - 🇩🇪 德国 71
+  - '272'
+  - '209'
+  - 🇩🇪 德国 83
+  - '257'
+  - '271'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
