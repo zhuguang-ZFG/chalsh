@@ -14,78 +14,96 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 68
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 英国 V2CROSS.COM
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 59
+- name: 🇩🇪 德国 100
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇨🇾 塞浦路斯 229
-  type: vless
-  server: www.csgo.com
-  port: 8443
-  uuid: ae0dd58e-e222-40bf-84ae-365a97532737
-  tls: true
-  servername: pagescm.freen26.cc.cd
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /torrent/section
-    headers:
-      Host: pagescm.freen26.cc.cd
-- name: 🇩🇪 德国 26
+- name: 🇩🇪 德国 71
   type: vmess
   server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: '222'
-  type: vless
-  server: malaysia.com
-  port: 443
-  uuid: ae0dd58e-e222-40bf-84ae-365a97532737
-  tls: true
-  servername: pagescm.freen35.cc.cd
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /setting/torrent/task
-    headers:
-      Host: pagescm.freen35.cc.cd
-- name: 🇩🇪 德国 98
+- name: 🇩🇪 德国 61
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 85
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
+- name: '185'
+  type: vless
+  server: cf.877774.xyz
+  port: 443
+  uuid: ae0dd58e-e222-40bf-84ae-365a97532737
+  tls: true
+  servername: pagescm.freen24.cc.cd
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /file/search/faq
+    headers:
+      Host: pagescm.freen24.cc.cd
+- name: 'Channel : @FreeConfigForYou🏴🏳'
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
+- name: 爱尔兰+V2CROSS.COM
+  type: ss
+  server: series-a2.samanehha.co
+  port: 443
+  password: W74XFALLLuw6m5IA
+  cipher: chacha20-ietf-poly1305
+- name: '236'
+  type: vless
+  server: 8.39.125.254
+  port: 443
+  uuid: ae0dd58e-e222-40bf-84ae-365a97532737
+  tls: true
+  servername: pagescm.freen23.cc.cd
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /friend/community/apps
+    headers:
+      Host: pagescm.freen23.cc.cd
+- name: 'کانال تلگرام : Free_VPN_CH@'
+  type: vless
+  server: 104.18.173.174
+  port: 80
+  uuid: 53342b53-157e-4475-9f3a-40439434e689
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c.iamdt.dpdns.org
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 68
-  - 英国 V2CROSS.COM
-  - 🇩🇪 德国 59
-  - 🇨🇾 塞浦路斯 229
-  - 🇩🇪 德国 26
-  - '222'
-  - 🇩🇪 德国 98
+  - 🇩🇪 德国 100
+  - 🇩🇪 德国 71
+  - 🇩🇪 德国 61
+  - 🇩🇪 德国 85
+  - '185'
+  - 'Channel : @FreeConfigForYou🏴🏳'
+  - 爱尔兰+V2CROSS.COM
+  - '236'
+  - 'کانال تلگرام : Free_VPN_CH@'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
