@@ -14,34 +14,35 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 334
+- name: 🇩🇪 德国 354
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 329
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 365
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 375
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+- name: '110'
+  type: vless
+  server: 172.67.155.172
+  port: 80
+  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vip.yaml7.ggff.net
+- name: '316'
+  type: vless
+  server: 777.ai7777777.xyz
+  port: 443
+  uuid: ae0dd58e-e222-40bf-84ae-365a97532737
+  tls: true
+  servername: pagescm.freen34.cc.cd
+  network: ws
+  ws-opts:
+    path: /contact/pages
+    headers:
+      Host: pagescm.freen34.cc.cd
 - name: 'Channel : @FreeConfigForYou🏴🏳'
   type: vmess
   server: 165.140.216.141
@@ -49,52 +50,14 @@ proxies:
   uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
   alterId: 0
   cipher: auto
-- name: '552'
-  type: vless
-  server: xin.usfox.qzz.io
-  port: 443
-  uuid: ae0dd58e-e222-40bf-84ae-365a97532737
-  tls: true
-  servername: pagescm.freen3.de5.net
-  network: ws
-  ws-opts:
-    path: /zh/player/shop
-    headers:
-      Host: pagescm.freen3.de5.net
-- name: '483'
-  type: vless
-  server: ciallo-egb.pages.dev
-  port: 443
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  tls: true
-  servername: CiaLLO-egb.PAGeS.dEV
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: CiaLLO-egb.PAGeS.dEV
-- name: '@V2ray_confiig'
-  type: vless
-  server: 104.26.13.31
-  port: 80
-  uuid: fe665bb7-a558-42bc-9ba7-a59288ee4b93
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: floral-term-d21f.wafajax493.workers.dev
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 334
-  - 🇩🇪 德国 329
-  - 🇩🇪 德国 365
-  - 🇩🇪 德国 375
+  - 🇩🇪 德国 354
+  - '110'
+  - '316'
   - 'Channel : @FreeConfigForYou🏴🏳'
-  - '552'
-  - '483'
-  - '@V2ray_confiig'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
