@@ -14,47 +14,44 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: '110'
-  type: vless
-  server: 172.67.155.172
-  port: 80
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vip.yaml7.ggff.net
-- name: 🇩🇪 德国 381
+- name: 🇩🇪 德国 367
   type: vmess
-  server: 82.198.246.9
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 336
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 346
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 322
+- name: 🇩🇪 德国 324
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 369
+- name: 🇩🇪 德国 342
   type: vmess
-  server: 82.198.246.37
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 430
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 371
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 348
+  type: vmess
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -75,12 +72,12 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - '110'
-  - 🇩🇪 德国 381
-  - 🇩🇪 德国 336
-  - 🇩🇪 德国 346
-  - 🇩🇪 德国 322
-  - 🇩🇪 德国 369
+  - 🇩🇪 德国 367
+  - 🇩🇪 德国 324
+  - 🇩🇪 德国 342
+  - 🇩🇪 德国 430
+  - 🇩🇪 德国 371
+  - 🇩🇪 德国 348
   - '316'
   url: https://www.gstatic.com/generate_204
   interval: 300
