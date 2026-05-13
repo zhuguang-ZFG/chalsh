@@ -14,13 +14,6 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 354
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
 - name: '110'
   type: vless
   server: 172.67.155.172
@@ -31,6 +24,41 @@ proxies:
     path: /
     headers:
       Host: vip.yaml7.ggff.net
+- name: 🇩🇪 德国 381
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 336
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 346
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 322
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 369
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 - name: '316'
   type: vless
   server: 777.ai7777777.xyz
@@ -43,21 +71,17 @@ proxies:
     path: /contact/pages
     headers:
       Host: pagescm.freen34.cc.cd
-- name: 'Channel : @FreeConfigForYou🏴🏳'
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 354
   - '110'
+  - 🇩🇪 德国 381
+  - 🇩🇪 德国 336
+  - 🇩🇪 德国 346
+  - 🇩🇪 德国 322
+  - 🇩🇪 德国 369
   - '316'
-  - 'Channel : @FreeConfigForYou🏴🏳'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
