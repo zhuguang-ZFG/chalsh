@@ -14,6 +14,41 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
+- name: 🇩🇪 德国 337
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 399
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 353
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 365
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 326
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 - name: 🇩🇪 德国 377
   type: vmess
   server: 82.198.246.9
@@ -21,43 +56,29 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 361
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 369
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 335
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 329
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+- name: 🌐 WS-TLS | @Express_alaki | src @ConfigV2rayNG
+  type: vless
+  server: www.speedtest.net
+  port: 443
+  uuid: 8a36be1d-7c78-4885-8a1f-bedf5ba7db1c
+  tls: true
+  servername: luCky-LAB-AC6D.CAveyi8071.WoRkeRS.DEV
+  network: ws
+  ws-opts:
+    path: /rN50nmm9L1DeY73C
+    headers:
+      Host: lucky-lab-ac6d.caveyi8071.workers.dev
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
+  - 🇩🇪 德国 337
+  - 🇩🇪 德国 399
+  - 🇩🇪 德国 353
+  - 🇩🇪 德国 365
+  - 🇩🇪 德国 326
   - 🇩🇪 德国 377
-  - 🇩🇪 德国 361
-  - 🇩🇪 德国 369
-  - 🇩🇪 德国 335
-  - 🇩🇪 德国 329
+  - 🌐 WS-TLS | @Express_alaki | src @ConfigV2rayNG
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
