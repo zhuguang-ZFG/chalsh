@@ -14,30 +14,30 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 151
+- name: 🇩🇪 德国 55
   type: vmess
-  server: 82.198.246.214
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 27
+- name: 🇺🇸 美国4|@ripaojiedian
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 143
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 89
+- name: 🇩🇪 德国 9
   type: vmess
   server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 31
-  type: vmess
-  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -46,10 +46,10 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 151
-  - 🇩🇪 德国 27
-  - 🇩🇪 德国 89
-  - 🇩🇪 德国 31
+  - 🇩🇪 德国 55
+  - 🇺🇸 美国4|@ripaojiedian
+  - 🇩🇪 德国 143
+  - 🇩🇪 德国 9
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
