@@ -14,79 +14,75 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 135
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 32
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 116
+- name: 🇩🇪 德国 151
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 63
+- name: 🇩🇪 德国 83
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 136
+- name: 🇩🇪 德国 103
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 150
+- name: 🇩🇪 德国 114
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸 美国 22
-  type: trojan
-  server: link.honghongai.top
-  port: 8443
-  password: 8f3a2b1c9d4e5f6a7b8c9d0e1f2a3b4c
-  sni: link.honghongai.top
-  skip-cert-verify: true
-- name: '216'
+- name: '224'
   type: vless
-  server: e1-f55.pages.dev
+  server: dnew.cc
   port: 443
-  uuid: 8b5acf77-2c2e-4eed-9ad1-be81851b99ea
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
   tls: true
-  servername: e1-f55.pages.dev
+  servername: 1-gjo.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: e1-f55.pages.dev
+      Host: 1-gjo.pages.dev
+- name: 美国+DXC+Technology
+  type: ss
+  server: series-a1.samanehha.co
+  port: 443
+  password: W74XFALLLuw6m5IA
+  cipher: chacha20-ietf-poly1305
+- name: '329'
+  type: vless
+  server: 104.20.6.134
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.dynv6.net
+  network: ws
+  ws-opts:
+    path: /?Telegram+@v2rayngzendegimamad
+    headers:
+      Host: sni.111000.dynv6.net
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 135
-  - 🇩🇪 德国 32
-  - 🇩🇪 德国 116
-  - 🇩🇪 德国 63
-  - 🇩🇪 德国 136
-  - 🇩🇪 德国 150
-  - 🇺🇸 美国 22
-  - '216'
+  - 🇩🇪 德国 151
+  - 🇩🇪 德国 83
+  - 🇩🇪 德国 103
+  - 🇩🇪 德国 114
+  - '224'
+  - 美国+DXC+Technology
+  - '329'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
