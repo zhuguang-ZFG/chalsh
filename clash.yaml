@@ -14,50 +14,89 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 143
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 155
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 121
+- name: 🇺🇸 美国4|@ripaojiedian
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 62
+- name: 🇩🇪 德国 59
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+- name: 🇩🇪 德国 144
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: '334'
+  type: vless
+  server: 8.34.146.191
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.my111000.tech
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳@WangCai2/
+    headers:
+      Host: sni.my111000.tech
+- name: 🇩🇪 德国 65
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
-  cipher: aes-128-gcm
-- name: 🇩🇪 德国 115
+  cipher: auto
+- name: 🇩🇪 德国 18
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
-  cipher: aes-128-gcm
+  cipher: auto
+- name: '220'
+  type: vless
+  server: 01-qq.com
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  tls: true
+  servername: 3-7ny.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 3-7ny.pages.dev
+- name: '224'
+  type: vless
+  server: dnew.cc
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  tls: true
+  servername: 1-gjo.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 1-gjo.pages.dev
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 143
-  - 🇩🇪 德国 155
-  - 🇩🇪 德国 121
-  - 🇩🇪 德国 62
-  - 🇩🇪 德国 115
+  - 🇺🇸 美国4|@ripaojiedian
+  - 🇩🇪 德国 59
+  - 🇩🇪 德国 144
+  - '334'
+  - 🇩🇪 德国 65
+  - 🇩🇪 德国 18
+  - '220'
+  - '224'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
