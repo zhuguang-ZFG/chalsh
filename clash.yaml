@@ -14,65 +14,65 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸 美国4|@ripaojiedian
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 59
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: aes-128-gcm
-- name: 🇩🇪 德国 144
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: '334'
-  type: vless
-  server: 8.34.146.191
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.my111000.tech
-  network: ws
-  ws-opts:
-    path: Telegram🇨🇳@WangCai2/
-    headers:
-      Host: sni.my111000.tech
-- name: 🇩🇪 德国 65
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 18
+- name: 🇩🇪 德国 86
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: '220'
+- name: 🇩🇪 德国 136
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: '216'
   type: vless
-  server: 01-qq.com
+  server: e1-f55.pages.dev
   port: 443
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  uuid: 8b5acf77-2c2e-4eed-9ad1-be81851b99ea
   tls: true
-  servername: 3-7ny.pages.dev
+  servername: e1-f55.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 3-7ny.pages.dev
+      Host: e1-f55.pages.dev
+- name: 🇩🇪 德国 63
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 114
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 106
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 美国+CloudFlare节点
+  type: vless
+  server: 104.20.6.134
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.indevs.in
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.indevs.in
 - name: '224'
   type: vless
   server: dnew.cc
@@ -89,13 +89,13 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸 美国4|@ripaojiedian
-  - 🇩🇪 德国 59
-  - 🇩🇪 德国 144
-  - '334'
-  - 🇩🇪 德国 65
-  - 🇩🇪 德国 18
-  - '220'
+  - 🇩🇪 德国 86
+  - 🇩🇪 德国 136
+  - '216'
+  - 🇩🇪 德国 63
+  - 🇩🇪 德国 114
+  - 🇩🇪 德国 106
+  - 美国+CloudFlare节点
   - '224'
   url: https://www.gstatic.com/generate_204
   interval: 300
