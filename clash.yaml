@@ -14,13 +14,74 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 29
+- name: 🇩🇪 德国 82
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
+- name: 🇩🇪 德国 115
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+- name: 🇩🇪 德国 67
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: '193'
+  type: vless
+  server: ciallo-egb.pages.dev
+  port: 8443
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  tls: true
+  servername: CiallO-eGb.pAGEs.Dev
+  network: ws
+  ws-opts:
+    path: //
+    headers:
+      Host: CiallO-eGb.pAGEs.Dev
+- name: '204'
+  type: trojan
+  server: cloudflare-ip.mofashi.ltd
+  port: 443
+  password: 2399fe0a-b359-40a9-a3f0-b70c3c177a01
+  sni: aa.beijng.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: aa.beijng.dpdns.org
+- name: '220'
+  type: vless
+  server: 01-qq.com
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  tls: true
+  servername: 3-7ny.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 3-7ny.pages.dev
+- name: '329'
+  type: vless
+  server: 104.20.6.134
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.dynv6.net
+  network: ws
+  ws-opts:
+    path: /?Telegram+@v2rayngzendegimamad
+    headers:
+      Host: sni.111000.dynv6.net
 - name: 🌐 WS-TLS | @Express_alaki | src @ConfigV2rayNG
   type: vless
   server: www.speedtest.net
@@ -33,31 +94,18 @@ proxies:
     path: /rN50nmm9L1DeY73C
     headers:
       Host: lucky-lab-ac6d.caveyi8071.workers.dev
-- name: '196'
-  type: vless
-  server: 104.17.138.160
-  port: 80
-  uuid: 5aa7d17e-7dc2-46dd-9acf-c3c97440259b
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sss.yaml7.ggff.net
-- name: 'Channel : @FreeConfigForYou🏴🏳'
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 29
+  - 🇩🇪 德国 82
+  - 🇩🇪 德国 115
+  - 🇩🇪 德国 67
+  - '193'
+  - '204'
+  - '220'
+  - '329'
   - 🌐 WS-TLS | @Express_alaki | src @ConfigV2rayNG
-  - '196'
-  - 'Channel : @FreeConfigForYou🏴🏳'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
