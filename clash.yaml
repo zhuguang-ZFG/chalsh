@@ -14,89 +14,83 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 86
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 136
+- name: 🇩🇪 德国 84
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
+  cipher: aes-128-gcm
+- name: 🇩🇪 德国 51
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
   cipher: auto
-- name: '216'
-  type: vless
-  server: e1-f55.pages.dev
-  port: 443
-  uuid: 8b5acf77-2c2e-4eed-9ad1-be81851b99ea
-  tls: true
-  servername: e1-f55.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e1-f55.pages.dev
-- name: 🇩🇪 德国 63
+- name: 🇩🇪 德国 64
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 114
+- name: 'Channel : @FreeConfigForYou🏴🏳'
   type: vmess
-  server: 82.198.246.250
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 116
+  type: vmess
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 106
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.20.6.134
+  port: 443
+  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  sni: sni.111000.dynv6.net
+  network: ws
+  ws-opts:
+    path: /?proxyip=ip.111000.de5.net:443
+    headers:
+      Host: sni.111000.dynv6.net
+- name: 🇩🇪 德国 53
   type: vmess
   server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 美国+CloudFlare节点
+- name: '201'
   type: vless
-  server: 104.20.6.134
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.indevs.in
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.indevs.in
-- name: '224'
-  type: vless
-  server: dnew.cc
+  server: ip.sb
   port: 443
   uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
   tls: true
-  servername: 1-gjo.pages.dev
+  servername: 3-7ny.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 1-gjo.pages.dev
+      Host: 3-7ny.pages.dev
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 86
-  - 🇩🇪 德国 136
-  - '216'
-  - 🇩🇪 德国 63
-  - 🇩🇪 德国 114
-  - 🇩🇪 德国 106
+  - 🇩🇪 德国 84
+  - 🇩🇪 德国 51
+  - 🇩🇪 德国 64
+  - 'Channel : @FreeConfigForYou🏴🏳'
+  - 🇩🇪 德国 116
   - 美国+CloudFlare节点
-  - '224'
+  - 🇩🇪 德国 53
+  - '201'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
