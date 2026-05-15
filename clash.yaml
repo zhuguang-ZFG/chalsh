@@ -14,75 +14,50 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 151
+- name: 🇩🇪 德国 143
   type: vmess
-  server: 82.198.246.37
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 83
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 103
+- name: 🇩🇪 德国 155
   type: vmess
   server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 114
+- name: 🇩🇪 德国 121
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: '224'
-  type: vless
-  server: dnew.cc
-  port: 443
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-  tls: true
-  servername: 1-gjo.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 1-gjo.pages.dev
-- name: 美国+DXC+Technology
-  type: ss
-  server: series-a1.samanehha.co
-  port: 443
-  password: W74XFALLLuw6m5IA
-  cipher: chacha20-ietf-poly1305
-- name: '329'
-  type: vless
-  server: 104.20.6.134
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.dynv6.net
-  network: ws
-  ws-opts:
-    path: /?Telegram+@v2rayngzendegimamad
-    headers:
-      Host: sni.111000.dynv6.net
+- name: 🇩🇪 德国 62
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+- name: 🇩🇪 德国 115
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 151
-  - 🇩🇪 德国 83
-  - 🇩🇪 德国 103
-  - 🇩🇪 德国 114
-  - '224'
-  - 美国+DXC+Technology
-  - '329'
+  - 🇩🇪 德国 143
+  - 🇩🇪 德国 155
+  - 🇩🇪 德国 121
+  - 🇩🇪 德国 62
+  - 🇩🇪 德国 115
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
