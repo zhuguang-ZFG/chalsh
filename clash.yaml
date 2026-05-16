@@ -14,6 +14,13 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
+- name: 🇩🇪 德国 130
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 - name: 🇩🇪 德国 28
   type: vmess
   server: 82.198.246.9
@@ -21,42 +28,23 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 79
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 48
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: '@chillguy_vpn'
-  type: vmess
-  server: 104.19.173.68
-  port: 8080
-  uuid: nasnet
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /NASNET/cdn
-    headers:
-      Host: nasnet-571299667.rahavard365.co
-- name: 🇩🇪 德国 163
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 43
+- name: 🇩🇪 德国 23
   type: vmess
   server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 'Channel : @FreeConfigForYou🏴🏳'
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 131
+  type: vmess
+  server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -65,12 +53,11 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
+  - 🇩🇪 德国 130
   - 🇩🇪 德国 28
-  - 🇩🇪 德国 79
-  - 🇩🇪 德国 48
-  - '@chillguy_vpn'
-  - 🇩🇪 德国 163
-  - 🇩🇪 德国 43
+  - 🇩🇪 德国 23
+  - 'Channel : @FreeConfigForYou🏴🏳'
+  - 🇩🇪 德国 131
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
