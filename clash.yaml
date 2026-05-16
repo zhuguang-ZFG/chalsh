@@ -14,30 +14,16 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 66
+- name: 🇩🇪 德国 52
   type: vmess
-  server: 82.198.246.9
+  server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 130
+- name: 🇩🇪 德国 137
   type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 120
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 70
-  type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -54,23 +40,13 @@ proxies:
     public-key: wIFJUBk4GRYT8Oim0-cPDwlGaTHh3kUYP2tOlKz1xlc
     short-id: 9f4380a6
   client-fingerprint: chrome
-- name: 'Channel : @FreeConfigForYou🏴🏳'
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 66
-  - 🇩🇪 德国 130
-  - 🇩🇪 德国 120
-  - 🇩🇪 德国 70
+  - 🇩🇪 德国 52
+  - 🇩🇪 德国 137
   - 🇺🇸 美国 144
-  - 'Channel : @FreeConfigForYou🏴🏳'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
