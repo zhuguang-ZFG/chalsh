@@ -14,41 +14,63 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 53
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 59
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 67
+- name: 🇩🇪 德国 66
   type: vmess
   server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 英国+社会保险安全部
-  type: ss
-  server: series-a2.samanehha.co
+- name: 🇩🇪 德国 130
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 120
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 70
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 144
+  type: vless
+  server: 209.166.46.195
   port: 443
-  password: W74XFALLLuw6m5IA
-  cipher: chacha20-ietf-poly1305
+  uuid: 73c16ed4-d111-4434-8b24-0dfe112a0813
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.microsoft.com
+  reality-opts:
+    public-key: wIFJUBk4GRYT8Oim0-cPDwlGaTHh3kUYP2tOlKz1xlc
+    short-id: 9f4380a6
+  client-fingerprint: chrome
+- name: 'Channel : @FreeConfigForYou🏴🏳'
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 53
-  - 🇩🇪 德国 59
-  - 🇩🇪 德国 67
-  - 英国+社会保险安全部
+  - 🇩🇪 德国 66
+  - 🇩🇪 德国 130
+  - 🇩🇪 德国 120
+  - 🇩🇪 德国 70
+  - 🇺🇸 美国 144
+  - 'Channel : @FreeConfigForYou🏴🏳'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
