@@ -14,83 +14,102 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 84
+- name: 🇩🇪 德国 38
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
-  cipher: aes-128-gcm
-- name: 🇩🇪 德国 51
+  cipher: auto
+- name: 🇩🇪 德国 78
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 64
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 'Channel : @FreeConfigForYou🏴🏳'
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 116
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.20.6.134
-  port: 443
-  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  sni: sni.111000.dynv6.net
-  network: ws
-  ws-opts:
-    path: /?proxyip=ip.111000.de5.net:443
-    headers:
-      Host: sni.111000.dynv6.net
-- name: 🇩🇪 德国 53
+- name: 🇩🇪 德国 67
   type: vmess
   server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: '201'
+- name: 🇩🇪 德国 62
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+- name: '195'
   type: vless
-  server: ip.sb
-  port: 443
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  server: wangcai15.cloudflare.182682.xyz
+  port: 8880
+  uuid: 7890ce31-9a25-4fd4-90e7-80e5823ff510
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳@WangCai2/
+    headers:
+      Host: frejd.11258.workers.dev
+- name: '191'
+  type: vless
+  server: wangcai157.cloudflare.182682.xyz
+  port: 8880
+  uuid: 7890ce31-9a25-4fd4-90e7-80e5823ff510
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳@WangCai2/
+    headers:
+      Host: frejd.11258.workers.dev
+- name: 美国+得克萨斯州达拉斯Cloudflare+Warp节点
+  type: vless
+  server: 8.6.112.0
+  port: 2053
+  uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
   tls: true
-  servername: 3-7ny.pages.dev
+  servername: qyi.fqjd663.ggff.net
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 3-7ny.pages.dev
+      Host: qyi.fqjd663.ggff.net
+- name: '329'
+  type: vless
+  server: 104.20.6.134
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.dynv6.net
+  network: ws
+  ws-opts:
+    path: /?Telegram+@v2rayngzendegimamad
+    headers:
+      Host: sni.111000.dynv6.net
+- name: '207'
+  type: vless
+  server: 104.17.138.160
+  port: 80
+  uuid: 5aa7d17e-7dc2-46dd-9acf-c3c97440259b
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sss.yaml7.ggff.net
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 84
-  - 🇩🇪 德国 51
-  - 🇩🇪 德国 64
-  - 'Channel : @FreeConfigForYou🏴🏳'
-  - 🇩🇪 德国 116
-  - 美国+CloudFlare节点
-  - 🇩🇪 德国 53
-  - '201'
+  - 🇩🇪 德国 38
+  - 🇩🇪 德国 78
+  - 🇩🇪 德国 67
+  - 🇩🇪 德国 62
+  - '195'
+  - '191'
+  - 美国+得克萨斯州达拉斯Cloudflare+Warp节点
+  - '329'
+  - '207'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
