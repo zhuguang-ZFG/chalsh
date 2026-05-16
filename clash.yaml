@@ -14,102 +14,87 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 38
+- name: 🇩🇪 德国 46
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+- name: 美国5|@ripaojiedian
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 78
+- name: 美国4|@ripaojiedian
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 67
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 62
+- name: 🇩🇪 德国 56
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
-  cipher: aes-128-gcm
-- name: '195'
+  cipher: auto
+- name: 🇨🇦 加拿大 303
   type: vless
-  server: wangcai15.cloudflare.182682.xyz
-  port: 8880
-  uuid: 7890ce31-9a25-4fd4-90e7-80e5823ff510
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳@WangCai2/
-    headers:
-      Host: frejd.11258.workers.dev
-- name: '191'
-  type: vless
-  server: wangcai157.cloudflare.182682.xyz
-  port: 8880
-  uuid: 7890ce31-9a25-4fd4-90e7-80e5823ff510
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳@WangCai2/
-    headers:
-      Host: frejd.11258.workers.dev
-- name: 美国+得克萨斯州达拉斯Cloudflare+Warp节点
-  type: vless
-  server: 8.6.112.0
+  server: shop.app
   port: 2053
   uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
   tls: true
   servername: qyi.fqjd663.ggff.net
-  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
     headers:
       Host: qyi.fqjd663.ggff.net
-- name: '329'
+- name: 🇩🇪 德国 90
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: '@V2ray_confiig'
   type: vless
-  server: 104.20.6.134
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.dynv6.net
-  network: ws
-  ws-opts:
-    path: /?Telegram+@v2rayngzendegimamad
-    headers:
-      Host: sni.111000.dynv6.net
-- name: '207'
-  type: vless
-  server: 104.17.138.160
+  server: 104.26.13.31
   port: 80
-  uuid: 5aa7d17e-7dc2-46dd-9acf-c3c97440259b
+  uuid: fe665bb7-a558-42bc-9ba7-a59288ee4b93
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: sss.yaml7.ggff.net
+      Host: floral-term-d21f.wafajax493.workers.dev
+- name: 🇺🇸 美国 14
+  type: vless
+  server: 44.242.50.106
+  port: 36895
+  uuid: 5c875449-ae7d-46f8-b919-5a29f271dfce
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.icloud.com
+  reality-opts:
+    public-key: SKJQzoN8Lh8kqrDEyKzevbHHmfRhKe8XmzBxPYXF2A4
+    short-id: 5a585c3e894bf074
+  client-fingerprint: firefox
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 38
-  - 🇩🇪 德国 78
-  - 🇩🇪 德国 67
-  - 🇩🇪 德国 62
-  - '195'
-  - '191'
-  - 美国+得克萨斯州达拉斯Cloudflare+Warp节点
-  - '329'
-  - '207'
+  - 🇩🇪 德国 46
+  - 美国5|@ripaojiedian
+  - 美国4|@ripaojiedian
+  - 🇩🇪 德国 56
+  - 🇨🇦 加拿大 303
+  - 🇩🇪 德国 90
+  - '@V2ray_confiig'
+  - 🇺🇸 美国 14
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
