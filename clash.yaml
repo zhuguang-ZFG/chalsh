@@ -14,39 +14,89 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 52
+- name: 🇩🇪 德国 40
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 82
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 100
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 107
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 14
+  type: vless
+  server: 44.242.50.106
+  port: 36895
+  uuid: 5c875449-ae7d-46f8-b919-5a29f271dfce
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.icloud.com
+  reality-opts:
+    public-key: SKJQzoN8Lh8kqrDEyKzevbHHmfRhKe8XmzBxPYXF2A4
+    short-id: 5a585c3e894bf074
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 54
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 137
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 144
+- name: 🇺🇸 美国 16
   type: vless
-  server: 209.166.46.195
-  port: 443
-  uuid: 73c16ed4-d111-4434-8b24-0dfe112a0813
+  server: 192.204.45.241
+  port: 24479
+  uuid: fe85e12e-8820-416d-90f5-f93b5274da01
   flow: xtls-rprx-vision
   tls: true
-  servername: www.microsoft.com
+  servername: www.icloud.com
   reality-opts:
-    public-key: wIFJUBk4GRYT8Oim0-cPDwlGaTHh3kUYP2tOlKz1xlc
-    short-id: 9f4380a6
-  client-fingerprint: chrome
+    public-key: jiZqt7Fm9MnXnLD25PuZ2Z1N1j5OKGVyRLPJqa1LSQw
+    short-id: da62ee6c8126787f
+  client-fingerprint: firefox
+- name: 美国+CloudFlare节点
+  type: vless
+  server: ciallo-egb.pages.dev
+  port: 2087
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  tls: true
+  servername: CIallO-egB.pAGes.Dev
+  network: ws
+  ws-opts:
+    path: //
+    headers:
+      Host: CIallO-egB.pAGes.Dev
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 52
-  - 🇩🇪 德国 137
-  - 🇺🇸 美国 144
+  - 🇩🇪 德国 40
+  - 🇩🇪 德国 82
+  - 🇩🇪 德国 100
+  - 🇩🇪 德国 107
+  - 🇺🇸 美国 14
+  - 🇩🇪 德国 54
+  - 🇺🇸 美国 16
+  - 美国+CloudFlare节点
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
