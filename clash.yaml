@@ -14,54 +14,71 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: '@chillguy_vpn'
+- name: 🇩🇪 德国 134
   type: vmess
-  server: 165.154.195.38
-  port: 35034
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 28
+- name: 🇩🇪 德国 44
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 95
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: '187'
-  type: vless
-  server: ciallo-egb.pages.dev
-  port: 8443
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  tls: true
-  servername: CiallO-eGb.pAGEs.Dev
-  network: ws
-  ws-opts:
-    path: //
-    headers:
-      Host: CiallO-eGb.pAGEs.Dev
-- name: 🇩🇪 德国 130
+- name: 未知23
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 36
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 27
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸US美国25
-  type: ss
-  server: tinkered-pennies-puppies.freesocks.work
+- name: 美国+CloudFlare节点
+  type: vless
+  server: 104.16.58.115
   port: 443
-  password: hbGrpfvNrJsUmKmPbR3iY2
-  cipher: chacha20-ietf-poly1305
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.latonyamadeline.ndjp.net
+  network: ws
+  ws-opts:
+    path: /?https://t.me/wangcai2🇨🇳=
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - '@chillguy_vpn'
-  - 🇩🇪 德国 28
-  - '187'
-  - 🇩🇪 德国 130
-  - 🇺🇸US美国25
+  - 🇩🇪 德国 134
+  - 🇩🇪 德国 44
+  - 🇩🇪 德国 95
+  - 未知23
+  - 🇩🇪 德国 36
+  - 🇩🇪 德国 27
+  - 美国+CloudFlare节点
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
