@@ -14,6 +14,13 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
+- name: 🇩🇪 德国 35
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 - name: 🇩🇪 德国 134
   type: vmess
   server: 82.198.246.9
@@ -21,64 +28,72 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 44
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 95
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 未知23
+- name: 'Channel : @FreeConfigForYou🏴🏳'
   type: vmess
   server: 165.140.216.141
   port: 443
   uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 36
+- name: 🇩🇪 德国 165
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 131
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 75
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 27
+- name: 🇩🇪 德国 28
   type: vmess
-  server: 82.198.246.214
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 美国+CloudFlare节点
+- name: 🌐 WS-TLS | @Express_alaki | src @ConfigV2rayNG
   type: vless
-  server: 104.16.58.115
+  server: www.speedtest.net
   port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: 8a36be1d-7c78-4885-8a1f-bedf5ba7db1c
   tls: true
-  servername: sni.latonyamadeline.ndjp.net
+  servername: luCky-LAB-AC6D.CAveyi8071.WoRkeRS.DEV
   network: ws
   ws-opts:
-    path: /?https://t.me/wangcai2🇨🇳=
+    path: /rN50nmm9L1DeY73C
     headers:
-      Host: sni.latonyamadeline.ndjp.net
+      Host: lucky-lab-ac6d.caveyi8071.workers.dev
+- name: 🇬🇧GB英国4
+  type: ss
+  server: 82.38.31.179
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
+  - 🇩🇪 德国 35
   - 🇩🇪 德国 134
-  - 🇩🇪 德国 44
-  - 🇩🇪 德国 95
-  - 未知23
-  - 🇩🇪 德国 36
-  - 🇩🇪 德国 27
-  - 美国+CloudFlare节点
+  - 'Channel : @FreeConfigForYou🏴🏳'
+  - 🇩🇪 德国 165
+  - 🇩🇪 德国 131
+  - 🇩🇪 德国 75
+  - 🇩🇪 德国 28
+  - 🌐 WS-TLS | @Express_alaki | src @ConfigV2rayNG
+  - 🇬🇧GB英国4
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
