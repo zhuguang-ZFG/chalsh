@@ -14,55 +14,73 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 59
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 44
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 67
+- name: '187'
+  type: vless
+  server: ciallo-egb.pages.dev
+  port: 8443
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  tls: true
+  servername: CiallO-eGb.pAGEs.Dev
+  network: ws
+  ws-opts:
+    path: //
+    headers:
+      Host: CiallO-eGb.pAGEs.Dev
+- name: 🇩🇪 德国 103
   type: vmess
   server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 42
+- name: 🇩🇪 德国 85
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇨🇦 加拿大 303
+- name: CDN-Bullet
   type: vless
-  server: shop.app
-  port: 2053
-  uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
+  server: 188.114.96.0
+  port: 443
+  uuid: 40afa553-1745-4f62-a380-4163c7bb4870
   tls: true
-  servername: qyi.fqjd663.ggff.net
+  servername: restless-dew-894b.amirhost4.workers.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: qyi.fqjd663.ggff.net
+      Host: restless-dew-894b.amirhost4.workers.dev
+- name: 🇩🇪 德国 36
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 13
+  type: vless
+  server: 209.166.46.195
+  port: 443
+  uuid: 73c16ed4-d111-4434-8b24-0dfe112a0813
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.microsoft.com
+  reality-opts:
+    public-key: wIFJUBk4GRYT8Oim0-cPDwlGaTHh3kUYP2tOlKz1xlc
+    short-id: 9f4380a6
+  client-fingerprint: chrome
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 59
-  - 🇩🇪 德国 44
-  - 🇩🇪 德国 67
-  - 🇩🇪 德国 42
-  - 🇨🇦 加拿大 303
+  - '187'
+  - 🇩🇪 德国 103
+  - 🇩🇪 德国 85
+  - CDN-Bullet
+  - 🇩🇪 德国 36
+  - 🇺🇸 美国 13
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
