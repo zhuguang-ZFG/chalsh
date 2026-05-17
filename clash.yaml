@@ -14,86 +14,84 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 35
+- name: 🇩🇪 德国 96
   type: vmess
-  server: 82.198.246.214
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 134
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 'Channel : @FreeConfigForYou🏴🏳'
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 165
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 131
+  cipher: aes-128-gcm
+- name: 🇩🇪 德国 153
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 75
+- name: 🇩🇪 德国 40
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 32
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 58
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 101
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 28
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🌐 WS-TLS | @Express_alaki | src @ConfigV2rayNG
+- name: 美国+CloudFlare节点
   type: vless
-  server: www.speedtest.net
-  port: 443
-  uuid: 8a36be1d-7c78-4885-8a1f-bedf5ba7db1c
+  server: 104.20.6.134
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
-  servername: luCky-LAB-AC6D.CAveyi8071.WoRkeRS.DEV
+  servername: sni.111000.dynv6.net
   network: ws
   ws-opts:
-    path: /rN50nmm9L1DeY73C
+    path: /?Telegram @v2rayngzendegimamad
     headers:
-      Host: lucky-lab-ac6d.caveyi8071.workers.dev
-- name: 🇬🇧GB英国4
-  type: ss
-  server: 82.38.31.179
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
+      Host: sni.111000.dynv6.net
+- name: '187'
+  type: vless
+  server: ciallo-egb.pages.dev
+  port: 8443
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  tls: true
+  servername: CiallO-eGb.pAGEs.Dev
+  network: ws
+  ws-opts:
+    path: //
+    headers:
+      Host: CiallO-eGb.pAGEs.Dev
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 35
-  - 🇩🇪 德国 134
-  - 'Channel : @FreeConfigForYou🏴🏳'
-  - 🇩🇪 德国 165
-  - 🇩🇪 德国 131
-  - 🇩🇪 德国 75
-  - 🇩🇪 德国 28
-  - 🌐 WS-TLS | @Express_alaki | src @ConfigV2rayNG
-  - 🇬🇧GB英国4
+  - 🇩🇪 德国 96
+  - 🇩🇪 德国 153
+  - 🇩🇪 德国 40
+  - 🇩🇪 德国 32
+  - 🇩🇪 德国 58
+  - 🇩🇪 德国 101
+  - 美国+CloudFlare节点
+  - '187'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
