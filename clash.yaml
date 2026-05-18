@@ -14,6 +14,13 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
+- name: 🇺🇸 美国 173
+  type: vmess
+  server: 216.106.185.141
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
 - name: 🇩🇪 德国 5
   type: vmess
   server: 82.198.246.214
@@ -21,25 +28,25 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 140
+- name: 🇩🇪 德国 116
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸 美国 167
+- name: 🇩🇪 德国 54
   type: vmess
-  server: 67.220.72.237
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸 美国 170
+- name: 🇩🇪 德国 45
   type: vmess
-  server: 38.114.123.42
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
 - name: 🇺🇸 美国 179
@@ -54,28 +61,51 @@ proxies:
     public-key: nPcUKydxoRI66O3tT9O4QCZpLjOBvkGsiXG7pDX1BBw
     short-id: 6ba85179e30d4fc2
   client-fingerprint: chrome
-- name: '364'
-  type: vless
-  server: 104.17.72.206
+- name: 🇺🇸 美国 167
+  type: vmess
+  server: 67.220.72.237
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 307
+  type: vmess
+  server: sanjose01.zgjok.com
   port: 443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  uuid: 96d21cfe-b264-4bf3-8349-fb076d40837e
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: 2026.hhhhh.eu.org
+  skip-cert-verify: true
   network: ws
-  ws-opts:
-    path: /222.167.202.31:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
+- name: 🇺🇸 美国 203
+  type: vmess
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 223
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
+  - 🇺🇸 美国 173
   - 🇩🇪 德国 5
-  - 🇩🇪 德国 140
-  - 🇺🇸 美国 167
-  - 🇺🇸 美国 170
+  - 🇩🇪 德国 116
+  - 🇩🇪 德国 54
+  - 🇩🇪 德国 45
   - 🇺🇸 美国 179
-  - '364'
+  - 🇺🇸 美国 167
+  - 🇺🇸 美国 307
+  - 🇺🇸 美国 203
+  - 🇺🇸 美国 223
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
