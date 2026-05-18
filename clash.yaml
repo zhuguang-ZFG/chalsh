@@ -14,63 +14,25 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 77
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 64
+- name: 🇩🇪 德国 5
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 125
+- name: 🇩🇪 德国 140
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: '502'
-  type: vless
-  server: 8.34.146.238
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.jpmj.dev
-  network: ws
-  ws-opts:
-    path: /?Telegram🇨🇳 @WangCai2=
-    headers:
-      Host: sni.jpmj.dev
-- name: '360'
-  type: vless
-  server: 104.20.6.134
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.dynv6.net
-  network: ws
-  ws-opts:
-    path: /?Telegram @v2rayngzendegimamad
-    headers:
-      Host: sni.111000.dynv6.net
-- name: 🇺🇸 美国 213
+- name: 🇺🇸 美国 167
   type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 222
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  server: 67.220.72.237
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
 - name: 🇺🇸 美国 170
@@ -80,128 +42,40 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: '486'
+- name: 🇺🇸 美国 179
   type: vless
-  server: dnew.cc
+  server: 80.209.241.47
   port: 443
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  uuid: c8d1c6d3-388f-48fc-a8f0-ed90d955d096
+  flow: xtls-rprx-vision
   tls: true
-  servername: 1-brc.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 1-brc.pages.dev
-- name: 🇺🇸 美国 167
-  type: vmess
-  server: 67.220.72.237
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 102
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸US美国16
-  type: trojan
-  server: 104.20.6.134
-  port: 443
-  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  sni: sni.111000.dynv6.net
-  network: ws
-  ws-opts:
-    path: /?proxyip=ip.111000.de5.net:443
-    headers:
-      Host: sni.111000.dynv6.net
-- name: 🇺🇸 美国 203
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 362
+  servername: www.google.com
+  reality-opts:
+    public-key: nPcUKydxoRI66O3tT9O4QCZpLjOBvkGsiXG7pDX1BBw
+    short-id: 6ba85179e30d4fc2
+  client-fingerprint: chrome
+- name: '364'
   type: vless
-  server: 129.159.119.161
+  server: 104.17.72.206
   port: 443
-  uuid: bafacd98-136a-4530-838d-4e5c51838dac
+  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
   tls: true
-  servername: juzi8186.qea.ccwu.cc
+  servername: 2026.hhhhh.eu.org
   network: ws
   ws-opts:
-    path: /zh-cn/juzibaipiao
+    path: /222.167.202.31:7443
     headers:
-      Host: juzi8186.qea.ccwu.cc
-- name: 🇺🇸 美国 205
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: '358'
-  type: vless
-  server: tajikistan.mfa.gov.ua
-  port: 443
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-  tls: true
-  servername: 3-7v4.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 3-7v4.pages.dev
-- name: '492'
-  type: vless
-  server: 104.16.80.73
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.indevs.in
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.indevs.in
-- name: '265'
-  type: vless
-  server: dx.mmhh.eu.cc
-  port: 443
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: true
-  servername: hhlfy.twiladaphne.ndjp.net
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
+      Host: 2026.hhhhh.eu.org
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 77
-  - 🇩🇪 德国 64
-  - 🇩🇪 德国 125
-  - '502'
-  - '360'
-  - 🇺🇸 美国 213
-  - 🇺🇸 美国 222
-  - 🇺🇸 美国 170
-  - '486'
+  - 🇩🇪 德国 5
+  - 🇩🇪 德国 140
   - 🇺🇸 美国 167
-  - 🇩🇪 德国 102
-  - 🇺🇸US美国16
-  - 🇺🇸 美国 203
-  - 🇺🇸 美国 362
-  - 🇺🇸 美国 205
-  - '358'
-  - '492'
-  - '265'
+  - 🇺🇸 美国 170
+  - 🇺🇸 美国 179
+  - '364'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
