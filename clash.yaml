@@ -14,45 +14,27 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 89
+- name: 🇩🇪 德国 77
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 64
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 99
+- name: 🇩🇪 德国 125
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸 美国 222
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 49
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.20.6.134
-  port: 443
-  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  sni: sni.111000.dynv6.net
-  network: ws
-  ws-opts:
-    path: /?proxyip=ip.111000.de5.net:443
-    headers:
-      Host: sni.111000.dynv6.net
 - name: '502'
   type: vless
   server: 8.34.146.238
@@ -65,13 +47,6 @@ proxies:
     path: /?Telegram🇨🇳 @WangCai2=
     headers:
       Host: sni.jpmj.dev
-- name: 🇺🇸 美国 223
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
 - name: '360'
   type: vless
   server: 104.20.6.134
@@ -84,6 +59,39 @@ proxies:
     path: /?Telegram @v2rayngzendegimamad
     headers:
       Host: sni.111000.dynv6.net
+- name: 🇺🇸 美国 213
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 222
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 170
+  type: vmess
+  server: 38.114.123.42
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: '486'
+  type: vless
+  server: dnew.cc
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  tls: true
+  servername: 1-brc.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 1-brc.pages.dev
 - name: 🇺🇸 美国 167
   type: vmess
   server: 67.220.72.237
@@ -91,6 +99,74 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
+- name: 🇩🇪 德国 102
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸US美国16
+  type: trojan
+  server: 104.20.6.134
+  port: 443
+  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  sni: sni.111000.dynv6.net
+  network: ws
+  ws-opts:
+    path: /?proxyip=ip.111000.de5.net:443
+    headers:
+      Host: sni.111000.dynv6.net
+- name: 🇺🇸 美国 203
+  type: vmess
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 362
+  type: vless
+  server: 129.159.119.161
+  port: 443
+  uuid: bafacd98-136a-4530-838d-4e5c51838dac
+  tls: true
+  servername: juzi8186.qea.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /zh-cn/juzibaipiao
+    headers:
+      Host: juzi8186.qea.ccwu.cc
+- name: 🇺🇸 美国 205
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: '358'
+  type: vless
+  server: tajikistan.mfa.gov.ua
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  tls: true
+  servername: 3-7v4.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 3-7v4.pages.dev
+- name: '492'
+  type: vless
+  server: 104.16.80.73
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.indevs.in
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.indevs.in
 - name: '265'
   type: vless
   server: dx.mmhh.eu.cc
@@ -104,65 +180,28 @@ proxies:
     path: /
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: '330'
-  type: vless
-  server: yd.mmhh.eu.cc
-  port: 443
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: true
-  servername: hhlfy.twiladaphne.ndjp.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: 🇺🇸 美国 173
-  type: vmess
-  server: 216.106.185.141
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 'کانال تلگرام : Free_VPN_CH@'
-  type: vless
-  server: 104.18.173.174
-  port: 80
-  uuid: 53342b53-157e-4475-9f3a-40439434e689
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c.iamdt.dpdns.org
-- name: 🇺🇸 美国 499
-  type: vless
-  server: www.hivenet.com
-  port: 2053
-  uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
-  tls: true
-  servername: qyi.fqjd663.ggff.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: qyi.fqjd663.ggff.net
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 89
-  - 🇩🇪 德国 99
-  - 🇺🇸 美国 222
-  - 🇩🇪 德国 49
-  - 美国+CloudFlare节点
+  - 🇩🇪 德国 77
+  - 🇩🇪 德国 64
+  - 🇩🇪 德国 125
   - '502'
-  - 🇺🇸 美国 223
   - '360'
+  - 🇺🇸 美国 213
+  - 🇺🇸 美国 222
+  - 🇺🇸 美国 170
+  - '486'
   - 🇺🇸 美国 167
+  - 🇩🇪 德国 102
+  - 🇺🇸US美国16
+  - 🇺🇸 美国 203
+  - 🇺🇸 美国 362
+  - 🇺🇸 美国 205
+  - '358'
+  - '492'
   - '265'
-  - '330'
-  - 🇺🇸 美国 173
-  - 'کانال تلگرام : Free_VPN_CH@'
-  - 🇺🇸 美国 499
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
