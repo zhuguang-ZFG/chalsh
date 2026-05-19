@@ -14,30 +14,30 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 193
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 114
+- name: 🇩🇪 德国 124
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 147
+- name: 🇩🇪 德国 142
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 163
+- name: 🇩🇪 德国 132
   type: vmess
-  server: 82.198.246.9
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 194
+  type: vmess
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -49,41 +49,44 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 126
+- name: 🇩🇪 德国 167
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.20.6.134
-  port: 443
-  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  sni: sni.111000.dynv6.net
-- name: 🇺🇸 美国 90
+- name: 'Channel : @FreeConfigForYou🏴🏳'
   type: vmess
-  server: 66.154.106.185
-  port: 48060
-  uuid: f60ecc88-d704-489c-e3b9-082805317e7b
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
   alterId: 0
   cipher: auto
+- name: 美国+CloudFlare节点
+  type: vless
+  server: 104.20.6.134
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.dynv6.net
   network: ws
   ws-opts:
-    path: /
+    path: /?Telegram @v2rayngzendegimamad
+    headers:
+      Host: sni.111000.dynv6.net
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 193
-  - 🇩🇪 德国 114
-  - 🇩🇪 德国 147
-  - 🇩🇪 德国 163
+  - 🇩🇪 德国 124
+  - 🇩🇪 德国 142
+  - 🇩🇪 德国 132
+  - 🇩🇪 德国 194
   - 🇩🇪 德国 153
-  - 🇩🇪 德国 126
+  - 🇩🇪 德国 167
+  - 'Channel : @FreeConfigForYou🏴🏳'
   - 美国+CloudFlare节点
-  - 🇺🇸 美国 90
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
