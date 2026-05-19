@@ -14,14 +14,21 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 170
+- name: 🇩🇪 德国 178
   type: vmess
-  server: 82.198.246.9
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 138
+- name: 🇩🇪 德国 123
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 136
   type: vmess
   server: 82.198.246.233
   port: 180
@@ -30,47 +37,55 @@ proxies:
   cipher: auto
 - name: 美国+CloudFlare节点
   type: vless
-  server: da.mfa.gov.ua
-  port: 443
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  server: 104.20.6.134
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
-  servername: 1-aym.pages.dev
+  servername: sni.111000.dynv6.net
+  network: ws
+  ws-opts:
+    path: /?Telegram @v2rayngzendegimamad
+    headers:
+      Host: sni.111000.dynv6.net
+- name: 🇩🇪 德国 164
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 美国+得克萨斯州达拉斯Cloudflare+Warp节点
+  type: vless
+  server: 8.6.112.0
+  port: 443
+  uuid: bd26c0c3-5eb9-425e-a4b6-2660df94e613
+  tls: true
+  servername: nEO1-3zC.pAGes.DeV
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 1-aym.pages.dev
-- name: 🇩🇪 德国 192
+      Host: nEO1-3zC.pAGes.DeV
+- name: 🇺🇸 美国 90
   type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 66.154.106.185
+  port: 48060
+  uuid: f60ecc88-d704-489c-e3b9-082805317e7b
   alterId: 0
   cipher: auto
-- name: 'Channel : @FreeConfigForYou🏴🏳'
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 109
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+  network: ws
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 170
-  - 🇩🇪 德国 138
+  - 🇩🇪 德国 178
+  - 🇩🇪 德国 123
+  - 🇩🇪 德国 136
   - 美国+CloudFlare节点
-  - 🇩🇪 德国 192
-  - 'Channel : @FreeConfigForYou🏴🏳'
-  - 🇩🇪 德国 109
+  - 🇩🇪 德国 164
+  - 美国+得克萨斯州达拉斯Cloudflare+Warp节点
+  - 🇺🇸 美国 90
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
