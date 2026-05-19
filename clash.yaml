@@ -14,25 +14,6 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 146
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: '486'
-  type: vless
-  server: dnew.cc
-  port: 443
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-  tls: true
-  servername: 1-brc.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 1-brc.pages.dev
 - name: 🇺🇸 美国 170
   type: vmess
   server: 38.114.123.42
@@ -40,61 +21,68 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 18
+- name: 🇩🇪 德国 151
   type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 174
+- name: 🇺🇸 美国 173
   type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 216.106.185.141
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 87
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 307
-  type: vmess
-  server: sanjose01.zgjok.com
-  port: 443
-  uuid: 96d21cfe-b264-4bf3-8349-fb076d40837e
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-- name: 🇩🇪 德国 47
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 319
+- name: '318'
   type: vless
-  server: 72.18.132.149
-  port: 2053
+  server: 188.114.98.0
+  port: 2096
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
   servername: sni.111000.indevs.in
   network: ws
   ws-opts:
-    path: /
+    path: /?Telegram🇨🇳+@WangCai2=
     headers:
       Host: sni.111000.indevs.in
-- name: 🇨🇦 加拿大 202
+- name: 🌐 WS-TLS | @Express_alaki | src @ConfigV2rayNG
+  type: vless
+  server: www.speedtest.net
+  port: 443
+  uuid: 8a36be1d-7c78-4885-8a1f-bedf5ba7db1c
+  tls: true
+  servername: luCky-LAB-AC6D.CAveyi8071.WoRkeRS.DEV
+  network: ws
+  ws-opts:
+    path: /rN50nmm9L1DeY73C
+    headers:
+      Host: lucky-lab-ac6d.caveyi8071.workers.dev
+- name: '502'
+  type: vless
+  server: 8.34.146.238
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.jpmj.dev
+  network: ws
+  ws-opts:
+    path: /?Telegram🇨🇳 @WangCai2=
+    headers:
+      Host: sni.jpmj.dev
+- name: 🇺🇸 美国 222
   type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 79
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
 - name: 🇺🇸 美国 176
@@ -104,6 +92,32 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
+- name: 🇩🇪 德国 34
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 225
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: '368'
+  type: vless
+  server: 8.34.70.191
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.my111000.tech
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳@WangCai2/
+    headers:
+      Host: sni.my111000.tech
 - name: 🇺🇸 美国 227
   type: vless
   server: 15.204.97.206
@@ -116,35 +130,44 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   client-fingerprint: chrome
-- name: 🇺🇸 美国 179
+- name: '486'
   type: vless
-  server: 80.209.241.47
+  server: dnew.cc
   port: 443
-  uuid: c8d1c6d3-388f-48fc-a8f0-ed90d955d096
-  flow: xtls-rprx-vision
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
   tls: true
-  servername: www.google.com
-  reality-opts:
-    public-key: nPcUKydxoRI66O3tT9O4QCZpLjOBvkGsiXG7pDX1BBw
-    short-id: 6ba85179e30d4fc2
-  client-fingerprint: chrome
+  servername: 1-brc.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 1-brc.pages.dev
+- name: 🇺🇸 美国 175
+  type: vmess
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 146
-  - '486'
   - 🇺🇸 美国 170
-  - 🇩🇪 德国 18
-  - 🇩🇪 德国 174
-  - 🇩🇪 德国 87
-  - 🇺🇸 美国 307
-  - 🇩🇪 德国 47
-  - 🇺🇸 美国 319
-  - 🇨🇦 加拿大 202
+  - 🇩🇪 德国 151
+  - 🇺🇸 美国 173
+  - '318'
+  - 🌐 WS-TLS | @Express_alaki | src @ConfigV2rayNG
+  - '502'
+  - 🇺🇸 美国 222
+  - 🇩🇪 德国 79
   - 🇺🇸 美国 176
+  - 🇩🇪 德国 34
+  - 🇩🇪 德国 225
+  - '368'
   - 🇺🇸 美国 227
-  - 🇺🇸 美国 179
+  - '486'
+  - 🇺🇸 美国 175
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
