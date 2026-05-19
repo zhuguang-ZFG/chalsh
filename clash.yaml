@@ -14,59 +14,41 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 178
+- name: 🇩🇪 德国 194
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 123
+- name: 🇩🇪 德国 152
   type: vmess
-  server: 82.198.246.214
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 136
+- name: 🇩🇪 德国 128
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 美国+CloudFlare节点
-  type: vless
-  server: 104.20.6.134
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.dynv6.net
-  network: ws
-  ws-opts:
-    path: /?Telegram @v2rayngzendegimamad
-    headers:
-      Host: sni.111000.dynv6.net
-- name: 🇩🇪 德国 164
+- name: 🇩🇪 德国 161
   type: vmess
   server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 美国+得克萨斯州达拉斯Cloudflare+Warp节点
-  type: vless
-  server: 8.6.112.0
-  port: 443
-  uuid: bd26c0c3-5eb9-425e-a4b6-2660df94e613
-  tls: true
-  servername: nEO1-3zC.pAGes.DeV
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nEO1-3zC.pAGes.DeV
+- name: 🇩🇪 德国 116
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 - name: 🇺🇸 美国 90
   type: vmess
   server: 66.154.106.185
@@ -75,16 +57,17 @@ proxies:
   alterId: 0
   cipher: auto
   network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 178
-  - 🇩🇪 德国 123
-  - 🇩🇪 德国 136
-  - 美国+CloudFlare节点
-  - 🇩🇪 德国 164
-  - 美国+得克萨斯州达拉斯Cloudflare+Warp节点
+  - 🇩🇪 德国 194
+  - 🇩🇪 德国 152
+  - 🇩🇪 德国 128
+  - 🇩🇪 德国 161
+  - 🇩🇪 德国 116
   - 🇺🇸 美国 90
   url: https://www.gstatic.com/generate_204
   interval: 300
