@@ -1,0 +1,155 @@
+mixed-port: 7890
+allow-lan: false
+bind-address: '*'
+mode: global
+log-level: info
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+  - https://dns.google/dns-query
+  - https://1.1.1.1/dns-query
+  fallback:
+  - https://dns.alidns.com/dns-query
+proxies:
+- name: 🇩🇪 德国 142
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 161
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 173
+  type: vless
+  server: 15.204.97.219
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 99
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 174
+  type: vless
+  server: 15.204.97.216
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 144
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 69
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 178
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 美国4|@ripaojiedian
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 190
+  type: vmess
+  server: 23.226.135.232
+  port: 55310
+  uuid: 22066968-ef90-455e-b981-4bf782d25386
+  alterId: 0
+  cipher: auto
+- name: '377'
+  type: vless
+  server: 104.20.6.134
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.dynv6.net
+  network: ws
+  ws-opts:
+    path: /?Telegram @v2rayngzendegimamad
+    headers:
+      Host: sni.111000.dynv6.net
+- name: '351'
+  type: vless
+  server: 104.17.72.206
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.indevs.in
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.indevs.in
+- name: 🇺🇸 美国 175
+  type: vmess
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+proxy-groups:
+- name: AUTO
+  type: url-test
+  proxies:
+  - 🇩🇪 德国 142
+  - 🇩🇪 德国 161
+  - 🇺🇸 美国 173
+  - 🇩🇪 德国 99
+  - 🇺🇸 美国 174
+  - 🇩🇪 德国 144
+  - 🇩🇪 德国 69
+  - 🇺🇸 美国 178
+  - 美国4|@ripaojiedian
+  - 🇺🇸 美国 190
+  - '377'
+  - '351'
+  - 🇺🇸 美国 175
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+rules:
+- DOMAIN,storeedge.microsoft.com,DIRECT
+- DOMAIN,displaycatalog.mp.microsoft.com,DIRECT
+- DOMAIN,login.live.com,DIRECT
+- DOMAIN,store-images.microsoft.com,DIRECT
+- DOMAIN-SUFFIX,mp.microsoft.com,DIRECT
+- DOMAIN-SUFFIX,microsoftstore.com,DIRECT
+- DOMAIN-SUFFIX,store.microsoft.com,DIRECT
