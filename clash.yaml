@@ -14,69 +14,65 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 164
+- name: 🇩🇪 德国 121
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 163
+  type: vmess
+  server: 67.220.72.237
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 1
+  cipher: auto
+- name: 🇩🇪 德国 74
   type: vmess
   server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 119
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 188
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: CDN-Bullet
+- name: 🇺🇸 美国 418
   type: vless
-  server: 188.114.96.0
+  server: 66.81.247.231
   port: 443
-  uuid: 40afa553-1745-4f62-a380-4163c7bb4870
+  uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
   tls: true
-  servername: restless-dew-894b.amirhost4.workers.dev
+  servername: babayaga-6i7.pages.dev
   network: ws
   ws-opts:
-    path: /
+    path: /?Telegram🇨🇳@WangCai2=
     headers:
-      Host: restless-dew-894b.amirhost4.workers.dev
-- name: 🇩🇪 德国 153
+      Host: babayaga-6i7.pages.dev
+- name: 🇩🇪 德国 23
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🌐 WS-TLS | @Express_alaki | src @ConfigV2rayNG
+- name: '377'
   type: vless
-  server: www.speedtest.net
-  port: 443
-  uuid: 8a36be1d-7c78-4885-8a1f-bedf5ba7db1c
-  tls: true
-  servername: luCky-LAB-AC6D.CAveyi8071.WoRkeRS.DEV
-  network: ws
-  ws-opts:
-    path: /rN50nmm9L1DeY73C
-    headers:
-      Host: lucky-lab-ac6d.caveyi8071.workers.dev
-- name: 美国+CloudFlare节点
-  type: trojan
   server: 104.20.6.134
-  port: 443
-  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  sni: sni.111000.dynv6.net
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.dynv6.net
   network: ws
   ws-opts:
-    path: /?proxyip=ip.111000.de5.net:443
+    path: /?Telegram @v2rayngzendegimamad
     headers:
       Host: sni.111000.dynv6.net
+- name: 🇩🇪 德国 227
+  type: vmess
+  server: 45.144.54.183
+  port: 10097
+  uuid: d5b36432-e168-4bc9-85cb-f68c9c22054a
+  alterId: 0
+  cipher: auto
 - name: '@V2ray_confiig'
   type: vless
   server: 104.26.13.31
@@ -87,18 +83,87 @@ proxies:
     path: /
     headers:
       Host: floral-term-d21f.wafajax493.workers.dev
+- name: '375'
+  type: vless
+  server: 104.20.6.134
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.v6.navy
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.v6.navy
+- name: 🇺🇸 美国 166
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦 加拿大 181
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 187
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 178
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 450
+  type: vmess
+  server: 66.154.106.185
+  port: 48060
+  uuid: f60ecc88-d704-489c-e3b9-082805317e7b
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: '298'
+  type: vless
+  server: 188.114.98.0
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.dynv6.net
+  network: ws
+  ws-opts:
+    path: /?Telegram🇨🇳 @WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 164
-  - 🇩🇪 德国 119
-  - 🇩🇪 德国 188
-  - CDN-Bullet
-  - 🇩🇪 德国 153
-  - 🌐 WS-TLS | @Express_alaki | src @ConfigV2rayNG
-  - 美国+CloudFlare节点
+  - 🇩🇪 德国 121
+  - 🇺🇸 美国 163
+  - 🇩🇪 德国 74
+  - 🇺🇸 美国 418
+  - 🇩🇪 德国 23
+  - '377'
+  - 🇩🇪 德国 227
   - '@V2ray_confiig'
+  - '375'
+  - 🇺🇸 美国 166
+  - 🇨🇦 加拿大 181
+  - 🇺🇸 美国 187
+  - 🇺🇸 美国 178
+  - 🇺🇸 美国 450
+  - '298'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
