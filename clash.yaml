@@ -14,16 +14,30 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 136
+- name: 🇩🇪 德国 125
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 34
+- name: 🇩🇪 德国 76
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 65
   type: vmess
   server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 111
+  type: vmess
+  server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -32,8 +46,10 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 136
-  - 🇩🇪 德国 34
+  - 🇩🇪 德国 125
+  - 🇩🇪 德国 76
+  - 🇩🇪 德国 65
+  - 🇩🇪 德国 111
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
