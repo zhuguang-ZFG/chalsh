@@ -14,42 +14,39 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 125
+- name: 🇩🇪 德国 41
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 76
+- name: 🌐 WS-TLS | @Express_alaki | src @ConfigV2rayNG
+  type: vless
+  server: cdnjs.com
+  port: 2096
+  uuid: cdddbb3f-5481-4d12-e3ee-597f97910d21
+  tls: true
+  servername: kh2tiyozkxybazdibomyhih.mahdi383ir.website
+  network: ws
+  ws-opts:
+    path: /@mahdi_383ir
+    headers:
+      Host: kh2tiyozkxybazdibomyhih.mahdi383ir.website
+- name: 'Channel : @FreeConfigForYou🏴🏳'
   type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 65
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 111
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 125
-  - 🇩🇪 德国 76
-  - 🇩🇪 德国 65
-  - 🇩🇪 德国 111
+  - 🇩🇪 德国 41
+  - 🌐 WS-TLS | @Express_alaki | src @ConfigV2rayNG
+  - 'Channel : @FreeConfigForYou🏴🏳'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
