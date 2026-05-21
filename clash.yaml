@@ -14,39 +14,55 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 41
+- name: 🇩🇪 德国 60
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 32
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 102
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🌐 WS-TLS | @Express_alaki | src @ConfigV2rayNG
-  type: vless
-  server: cdnjs.com
-  port: 2096
-  uuid: cdddbb3f-5481-4d12-e3ee-597f97910d21
-  tls: true
-  servername: kh2tiyozkxybazdibomyhih.mahdi383ir.website
-  network: ws
-  ws-opts:
-    path: /@mahdi_383ir
-    headers:
-      Host: kh2tiyozkxybazdibomyhih.mahdi383ir.website
-- name: 'Channel : @FreeConfigForYou🏴🏳'
+- name: 🇩🇪 德国 111
   type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
+- name: '232'
+  type: vless
+  server: 8.34.146.238
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.jpmj.dev
+  network: ws
+  ws-opts:
+    path: /?Telegram🇨🇳+@WangCai2=
+    headers:
+      Host: sni.jpmj.dev
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 41
-  - 🌐 WS-TLS | @Express_alaki | src @ConfigV2rayNG
-  - 'Channel : @FreeConfigForYou🏴🏳'
+  - 🇩🇪 德国 60
+  - 🇩🇪 德国 32
+  - 🇩🇪 德国 102
+  - 🇩🇪 德国 111
+  - '232'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
