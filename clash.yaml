@@ -14,55 +14,50 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 60
+- name: 🇩🇪 德国 55
   type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 32
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 102
+- name: 🇩🇪 德国 36
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 111
+- name: 英国 V2CROSS.COM
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 51
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: '232'
-  type: vless
-  server: 8.34.146.238
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.jpmj.dev
-  network: ws
-  ws-opts:
-    path: /?Telegram🇨🇳+@WangCai2=
-    headers:
-      Host: sni.jpmj.dev
+- name: 🇩🇪 德国 88
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 60
-  - 🇩🇪 德国 32
-  - 🇩🇪 德国 102
-  - 🇩🇪 德国 111
-  - '232'
+  - 🇩🇪 德国 55
+  - 🇩🇪 德国 36
+  - 英国 V2CROSS.COM
+  - 🇩🇪 德国 51
+  - 🇩🇪 德国 88
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
