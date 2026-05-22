@@ -14,96 +14,58 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 62
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 13
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 142
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: '370'
-  type: vless
-  server: liantong.19931101.xyz
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  servername: xy430.albertabobbi.ndjp.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xy430.albertabobbi.ndjp.net
-- name: 🇩🇪 德国 111
+- name: 🇩🇪 德国 115
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: '310'
-  type: vless
-  server: yidong.19931101.xyz
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  servername: xy430.albertabobbi.ndjp.net
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xy430.albertabobbi.ndjp.net
-- name: '321'
-  type: vless
-  server: www.visa.com.tw
-  port: 443
-  uuid: ae0dd58e-e222-40bf-84ae-365a97532737
-  tls: true
-  servername: pagescm.freen32.cc.cd
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /play/settings
-    headers:
-      Host: pagescm.freen32.cc.cd
-- name: '351'
-  type: vless
-  server: yg1.ygkkk.dpdns.org
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  servername: xy430.albertabobbi.ndjp.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: xy430.albertabobbi.ndjp.net
+- name: 🇩🇪 德国 51
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 64
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 美国5|@ripaojiedian
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 58
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 23
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 62
-  - 🇩🇪 德国 13
-  - 🇩🇪 德国 142
-  - '370'
-  - 🇩🇪 德国 111
-  - '310'
-  - '321'
-  - '351'
+  - 🇩🇪 德国 115
+  - 🇩🇪 德国 51
+  - 🇩🇪 德国 64
+  - 美国5|@ripaojiedian
+  - 🇩🇪 德国 58
+  - 🇩🇪 德国 23
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
