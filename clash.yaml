@@ -14,40 +14,38 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 31
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 103
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 132
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: aes-128-gcm
-- name: '310'
+- name: '360'
   type: vless
   server: yidong.19931101.xyz
   port: 443
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   tls: true
   servername: xy430.albertabobbi.ndjp.net
-  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
     headers:
       Host: xy430.albertabobbi.ndjp.net
+- name: 🇩🇪 德国 64
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: '320'
+  type: vless
+  server: 104.18.166.129
+  port: 443
+  uuid: ae0dd58e-e222-40bf-84ae-365a97532737
+  tls: true
+  servername: pagescm.freen18.cc.cd
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /blog/news
+    headers:
+      Host: pagescm.freen18.cc.cd
 - name: 'Channel : @FreeConfigForYou🏴🏳'
   type: vmess
   server: 165.140.216.141
@@ -55,28 +53,57 @@ proxies:
   uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
   alterId: 0
   cipher: auto
-- name: '391'
+- name: 🇩🇪 德国 44
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: '321'
   type: vless
-  server: 104.18.173.103
+  server: www.visa.com.tw
   port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: ae0dd58e-e222-40bf-84ae-365a97532737
   tls: true
-  servername: sni.latonyamadeline.ndjp.net
+  servername: pagescm.freen32.cc.cd
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?https://t.me/wangcai2🇨🇳=
+    path: /play/settings
     headers:
-      Host: sni.latonyamadeline.ndjp.net
+      Host: pagescm.freen32.cc.cd
+- name: 🇩🇪 德国 132
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+- name: '351'
+  type: vless
+  server: yg1.ygkkk.dpdns.org
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  servername: xy430.albertabobbi.ndjp.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xy430.albertabobbi.ndjp.net
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 31
-  - 🇩🇪 德国 103
-  - 🇩🇪 德国 132
-  - '310'
+  - '360'
+  - 🇩🇪 德国 64
+  - '320'
   - 'Channel : @FreeConfigForYou🏴🏳'
-  - '391'
+  - 🇩🇪 德国 44
+  - '321'
+  - 🇩🇪 德国 132
+  - '351'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
