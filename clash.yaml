@@ -14,77 +14,32 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: '248'
-  type: vless
-  server: 8.6.112.6
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.dynv6.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.dynv6.net
-- name: 🇩🇪 德国 184
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 235
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 215
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 111
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 170
+- name: 🇩🇪 德国 178
   type: vmess
   server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸 美国 6
-  type: vless
-  server: www.panel.com
-  port: 2053
-  uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
-  tls: true
-  servername: qyi.fqjd663.ggff.net
+- name: '75'
+  type: trojan
+  server: bestcf.030101.xyz
+  port: 443
+  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  sni: sni.111000.dynv6.net
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /?proxyip=ip.111000.de5.net:443
     headers:
-      Host: qyi.fqjd663.ggff.net
-- name: '71'
-  type: vless
-  server: cf2.danfeng.eu.org
-  port: 8443
-  uuid: bafacd98-136a-4530-838d-4e5c51838dac
-  tls: true
-  servername: juzi8186.qea.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /discuss/f/juzibaipiao
-    headers:
-      Host: juzi8186.qea.ccwu.cc
+      Host: sni.111000.dynv6.net
+- name: 🇩🇪 德国 225
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 - name: 🇺🇸 美国 7
   type: vless
   server: www.hivenet.com
@@ -97,26 +52,121 @@ proxies:
     path: /
     headers:
       Host: qyi.fqjd663.ggff.net
+- name: '@chillguy_vpn'
+  type: vmess
+  server: 47.243.135.74
+  port: 55185
+  uuid: 1375985e-334a-4c25-8f64-52a182bc8037
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /Notif_Chat
+- name: '64'
+  type: vless
+  server: dnew.cc
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  tls: true
+  servername: 1-brc.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 1-brc.pages.dev
+- name: 🇺🇸 美国 9
+  type: vless
+  server: www.bigcommerce.com
+  port: 2053
+  uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
+  tls: true
+  servername: qyi.fqjd663.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: qyi.fqjd663.ggff.net
+- name: '5'
+  type: vless
+  server: www.visa.com.sg
+  port: 443
+  uuid: ae0dd58e-e222-40bf-84ae-365a97532737
+  tls: true
+  servername: pagescm.freen9.cc.cd
+  network: ws
+  ws-opts:
+    path: /htm/docs/archive
+    headers:
+      Host: pagescm.freen9.cc.cd
+- name: 🇺🇸 美国 262
+  type: vmess
+  server: 67.220.72.237
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 1
+  cipher: auto
+- name: 🇺🇸 美国 111
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 8
+  type: vless
+  server: www.ftc.net
+  port: 2053
+  uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
+  tls: true
+  servername: qyi.fqjd663.ggff.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: qyi.fqjd663.ggff.net
+- name: '251'
+  type: vless
+  server: 8.34.70.191
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.my111000.tech
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳@WangCai2/
+    headers:
+      Host: sni.my111000.tech
+- name: 🇩🇪 德国 234
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
 - name: 🇺🇸 美国 261
   type: vmess
   server: 67.220.95.3
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
-  cipher: auto
+  cipher: aes-128-gcm
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - '248'
-  - 🇩🇪 德国 184
-  - 🇩🇪 德国 235
-  - 🇩🇪 德国 215
-  - 🇺🇸 美国 111
-  - 🇩🇪 德国 170
-  - 🇺🇸 美国 6
-  - '71'
+  - 🇩🇪 德国 178
+  - '75'
+  - 🇩🇪 德国 225
   - 🇺🇸 美国 7
+  - '@chillguy_vpn'
+  - '64'
+  - 🇺🇸 美国 9
+  - '5'
+  - 🇺🇸 美国 262
+  - 🇺🇸 美国 111
+  - 🇺🇸 美国 8
+  - '251'
+  - 🇩🇪 德国 234
   - 🇺🇸 美国 261
   url: https://www.gstatic.com/generate_204
   interval: 300
