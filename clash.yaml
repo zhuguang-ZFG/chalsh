@@ -14,79 +14,79 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 241
+- name: 🇩🇪 德国 231
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 213
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 168
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 187
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: aes-128-gcm
-- name: 🇩🇪 德国 119
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 204
+- name: 🇩🇪 德国 205
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸 美国 405
-  type: vmess
-  server: 23.226.135.232
-  port: 55310
-  uuid: 22066968-ef90-455e-b981-4bf782d25386
-  alterId: 0
-  cipher: auto
-- name: '249'
+- name: '248'
   type: vless
-  server: 8.6.112.0
-  port: 443
+  server: 8.6.112.6
+  port: 8443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
-  servername: sni.111000.v6.navy
+  servername: sni.111000.dynv6.net
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: sni.111000.v6.navy
-- name: '64'
+      Host: sni.111000.dynv6.net
+- name: 🇩🇪 德国 177
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: '35'
   type: vless
-  server: dnew.cc
+  server: store.ubi.com
   port: 443
   uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
   tls: true
-  servername: 1-brc.pages.dev
+  servername: 3-abf.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 1-brc.pages.dev
+      Host: 3-abf.pages.dev
+- name: 🇩🇪 德国 185
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 261
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: aes-128-gcm
+- name: 🇺🇸 美国 361
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 262
+  type: vmess
+  server: 67.220.72.237
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 1
+  cipher: auto
 - name: '67'
   type: vless
   server: ct.090227.xyz
@@ -99,65 +99,33 @@ proxies:
     path: /
     headers:
       Host: xy430.albertabobbi.ndjp.net
-- name: 🇺🇸 美国 324
+- name: '252'
   type: vless
-  server: 45.76.60.96
-  port: 443
+  server: 8.34.146.191
+  port: 2096
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
-  servername: sni.111000.dynv6.net
+  servername: sni.my111000.tech
   network: ws
   ws-opts:
-    path: /?Telegram🇨🇳 @WangCai2=
+    path: /Telegram🇨🇳@WangCai2/
     headers:
-      Host: sni.111000.dynv6.net
-- name: 美国+CloudFlare节点
-  type: vless
-  server: 104.20.6.134
-  port: 80
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  network: ws
-  ws-opts:
-    path: /+@ProxyVPN11
-    headers:
-      Host: vip.yaml7.ggff.net
-- name: 🇺🇸 美国 364
-  type: vmess
-  server: 38.114.123.42
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: '66'
-  type: vless
-  server: da.mfa.gov.ua
-  port: 443
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-  tls: true
-  servername: 1-aym.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 1-aym.pages.dev
+      Host: sni.my111000.tech
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 241
-  - 🇩🇪 德国 213
-  - 🇩🇪 德国 168
-  - 🇩🇪 德国 187
-  - 🇩🇪 德国 119
-  - 🇩🇪 德国 204
-  - 🇺🇸 美国 405
-  - '249'
-  - '64'
+  - 🇩🇪 德国 231
+  - 🇩🇪 德国 205
+  - '248'
+  - 🇩🇪 德国 177
+  - '35'
+  - 🇩🇪 德国 185
+  - 🇺🇸 美国 261
+  - 🇺🇸 美国 361
+  - 🇺🇸 美国 262
   - '67'
-  - 🇺🇸 美国 324
-  - 美国+CloudFlare节点
-  - 🇺🇸 美国 364
-  - '66'
+  - '252'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
