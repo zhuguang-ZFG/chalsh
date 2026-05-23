@@ -14,58 +14,103 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 115
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 51
+- name: '351'
+  type: vless
+  server: yg1.ygkkk.dpdns.org
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  servername: xy430.albertabobbi.ndjp.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xy430.albertabobbi.ndjp.net
+- name: 🇩🇪 德国 12
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 64
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 美国5|@ripaojiedian
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 58
+- name: 🇩🇪 德国 66
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 23
+- name: 🇩🇪 德国 8
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 15
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
+- name: '363'
+  type: vless
+  server: www.visa.com.sg
+  port: 443
+  uuid: ae0dd58e-e222-40bf-84ae-365a97532737
+  tls: true
+  servername: pagescm.freen9.cc.cd
+  network: ws
+  ws-opts:
+    path: /htm/docs/archive
+    headers:
+      Host: pagescm.freen9.cc.cd
+- name: '317'
+  type: vless
+  server: liantong.19931101.xyz
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  servername: xy430.albertabobbi.ndjp.net
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: xy430.albertabobbi.ndjp.net
+- name: 🇩🇪 德国 92
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: '391'
+  type: vless
+  server: 104.18.173.103
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.latonyamadeline.ndjp.net
+  network: ws
+  ws-opts:
+    path: /?https://t.me/wangcai2🇨🇳=
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 115
-  - 🇩🇪 德国 51
-  - 🇩🇪 德国 64
-  - 美国5|@ripaojiedian
-  - 🇩🇪 德国 58
-  - 🇩🇪 德国 23
+  - '351'
+  - 🇩🇪 德国 12
+  - 🇩🇪 德国 66
+  - 🇩🇪 德国 8
+  - 🇩🇪 德国 15
+  - '363'
+  - '317'
+  - 🇩🇪 德国 92
+  - '391'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
