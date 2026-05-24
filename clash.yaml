@@ -14,16 +14,55 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 115
+- name: 🇩🇪 德国 107
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 47
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 153
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇨🇦 加拿大 337
+- name: 🇩🇪 德国 48
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦 加拿大 330
   type: vless
-  server: static.shopify.com
+  server: 23.173.104.194
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.v6.rocks
+  network: ws
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: sni.111000.v6.rocks
+- name: 美国+V2CROSS.COM
+  type: ss
+  server: 154.53.63.42
+  port: 443
+  password: SM7WYtAwvBORXKjI
+  cipher: aes-256-gcm
+- name: '315'
+  type: vless
+  server: www.sofi.com
   port: 443
   uuid: 26524cce-d514-4014-a426-365fb266a14d
   tls: true
@@ -33,35 +72,21 @@ proxies:
     path: /danfeng
     headers:
       Host: mz0tgmxz.user-api.chinav.eu.org
-- name: 🇩🇪 德国 121
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 116
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 336
+- name: '308'
   type: vless
-  server: 154.26.181.85
+  server: newsroom.paypal-corp.com
   port: 443
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
   tls: true
-  servername: sni.skylee4.cloudns.ch
+  servername: mz0tgmxz.user-api.chinav.eu.org
   network: ws
   ws-opts:
-    path: /proxyip=ProxyIP.CMLiussss.net
+    path: /danfeng
     headers:
-      Host: sni.skylee4.cloudns.ch
-- name: '326'
+      Host: mz0tgmxz.user-api.chinav.eu.org
+- name: '343'
   type: vless
-  server: www.visa.cn
+  server: china.embassy.gov.au
   port: 2053
   uuid: 26524cce-d514-4014-a426-365fb266a14d
   tls: true
@@ -75,12 +100,15 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 115
-  - 🇨🇦 加拿大 337
-  - 🇩🇪 德国 121
-  - 🇩🇪 德国 116
-  - 🇺🇸 美国 336
-  - '326'
+  - 🇩🇪 德国 107
+  - 🇩🇪 德国 47
+  - 🇩🇪 德国 153
+  - 🇩🇪 德国 48
+  - 🇨🇦 加拿大 330
+  - 美国+V2CROSS.COM
+  - '315'
+  - '308'
+  - '343'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
