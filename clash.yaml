@@ -14,38 +14,31 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 120
+- name: 🇩🇪 德国 69
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 92
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 111
+- name: 🇩🇪 德国 143
   type: vmess
   server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 21
+- name: 🇩🇪 德国 108
   type: vmess
-  server: 82.198.246.214
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: '329'
+- name: '308'
   type: vless
-  server: www.gco.gov.qa
-  port: 2053
+  server: newsroom.paypal-corp.com
+  port: 443
   uuid: 26524cce-d514-4014-a426-365fb266a14d
   tls: true
   servername: mz0tgmxz.user-api.chinav.eu.org
@@ -54,21 +47,33 @@ proxies:
     path: /danfeng
     headers:
       Host: mz0tgmxz.user-api.chinav.eu.org
-- name: '307'
-  type: vless
-  server: pages.cloudflare.com
-  port: 2053
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  tls: true
-  servername: nai3.api-gateway-01.chinat.indevs.in
+- name: '300'
+  type: vmess
+  server: skk.moe
+  port: 80
+  uuid: 65b17c0b-0a52-4b54-9bc9-60e31397b841
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /danfeng
+    path: /65b17c0b-0a52-4b54-9bc9-60e31397b841-vmess
     headers:
-      Host: nai3.api-gateway-01.chinat.indevs.in
-- name: '305'
+      Host: accklsj.bufu.us.ci
+- name: '313'
   type: vless
-  server: testingcf.jsdelivr.net
+  server: 104.16.58.115
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.latonyamadeline.ndjp.net
+  network: ws
+  ws-opts:
+    path: /?https://t.me/wangcai2🇨🇳=
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+- name: '328'
+  type: vless
+  server: unpkg.com
   port: 443
   uuid: 26524cce-d514-4014-a426-365fb266a14d
   tls: true
@@ -82,13 +87,13 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 120
-  - 🇩🇪 德国 92
-  - 🇩🇪 德国 111
-  - 🇩🇪 德国 21
-  - '329'
-  - '307'
-  - '305'
+  - 🇩🇪 德国 69
+  - 🇩🇪 德国 143
+  - 🇩🇪 德国 108
+  - '308'
+  - '300'
+  - '313'
+  - '328'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
