@@ -14,66 +14,49 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 50
+- name: 🇩🇪 德国 44
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 56
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 21
+- name: 🇩🇪 德国 46
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: '339'
-  type: vless
-  server: bestcf.030101.xyz
-  port: 2053
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  tls: true
-  servername: nai3.api-gateway-01.chinat.indevs.in
-  network: ws
-  ws-opts:
-    path: /danfeng
-    headers:
-      Host: nai3.api-gateway-01.chinat.indevs.in
-- name: 🇩🇪 德国 22
+- name: 🇩🇪 德国 91
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 92
+- name: 🇩🇪 德国 87
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: '342'
-  type: vless
-  server: www.investec.com
-  port: 443
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  tls: true
-  servername: mz0tgmxz.user-api.chinav.eu.org
-  network: ws
-  ws-opts:
-    path: /danfeng
-    headers:
-      Host: mz0tgmxz.user-api.chinav.eu.org
-- name: '313'
+- name: 🇩🇪 德国 99
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国5|@ripaojiedian
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: '339'
   type: vless
   server: 104.16.58.115
   port: 443
@@ -85,31 +68,41 @@ proxies:
     path: /?https://t.me/wangcai2🇨🇳=
     headers:
       Host: sni.latonyamadeline.ndjp.net
-- name: '343'
+- name: 🌐 WS-TLS | @Express_alaki | src @ConfigV2rayNG
   type: vless
-  server: china.embassy.gov.au
-  port: 2053
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  server: www.speedtest.net
+  port: 443
+  uuid: 8a36be1d-7c78-4885-8a1f-bedf5ba7db1c
   tls: true
-  servername: nai3.api-gateway-01.chinat.indevs.in
+  servername: luCky-LAB-AC6D.CAveyi8071.WoRkeRS.DEV
   network: ws
   ws-opts:
-    path: /danfeng
+    path: /rN50nmm9L1DeY73C
     headers:
-      Host: nai3.api-gateway-01.chinat.indevs.in
+      Host: lucky-lab-ac6d.caveyi8071.workers.dev
+- name: '@V2ray_confiig'
+  type: vless
+  server: 104.26.13.31
+  port: 80
+  uuid: fe665bb7-a558-42bc-9ba7-a59288ee4b93
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: floral-term-d21f.wafajax493.workers.dev
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 50
-  - 🇩🇪 德国 56
-  - 🇩🇪 德国 21
+  - 🇩🇪 德国 44
+  - 🇩🇪 德国 46
+  - 🇩🇪 德国 91
+  - 🇩🇪 德国 87
+  - 🇩🇪 德国 99
+  - 🇺🇸 美国5|@ripaojiedian
   - '339'
-  - 🇩🇪 德国 22
-  - 🇩🇪 德国 92
-  - '342'
-  - '313'
-  - '343'
+  - 🌐 WS-TLS | @Express_alaki | src @ConfigV2rayNG
+  - '@V2ray_confiig'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
