@@ -14,95 +14,47 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 44
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 46
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 91
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 87
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 99
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国5|@ripaojiedian
+- name: 🇩🇪 德国 103
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: '339'
+- name: 🇩🇪 德国 137
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 111
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: '337'
   type: vless
-  server: 104.16.58.115
+  server: time.is
   port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
   tls: true
-  servername: sni.latonyamadeline.ndjp.net
-  network: ws
-  ws-opts:
-    path: /?https://t.me/wangcai2🇨🇳=
-    headers:
-      Host: sni.latonyamadeline.ndjp.net
-- name: 🌐 WS-TLS | @Express_alaki | src @ConfigV2rayNG
-  type: vless
-  server: www.speedtest.net
-  port: 443
-  uuid: 8a36be1d-7c78-4885-8a1f-bedf5ba7db1c
-  tls: true
-  servername: luCky-LAB-AC6D.CAveyi8071.WoRkeRS.DEV
-  network: ws
-  ws-opts:
-    path: /rN50nmm9L1DeY73C
-    headers:
-      Host: lucky-lab-ac6d.caveyi8071.workers.dev
-- name: '@V2ray_confiig'
-  type: vless
-  server: 104.26.13.31
-  port: 80
-  uuid: fe665bb7-a558-42bc-9ba7-a59288ee4b93
+  servername: 2-ee1.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: floral-term-d21f.wafajax493.workers.dev
+      Host: 2-ee1.pages.dev
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 44
-  - 🇩🇪 德国 46
-  - 🇩🇪 德国 91
-  - 🇩🇪 德国 87
-  - 🇩🇪 德国 99
-  - 🇺🇸 美国5|@ripaojiedian
-  - '339'
-  - 🌐 WS-TLS | @Express_alaki | src @ConfigV2rayNG
-  - '@V2ray_confiig'
+  - 🇩🇪 德国 103
+  - 🇩🇪 德国 137
+  - 🇩🇪 德国 111
+  - '337'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
