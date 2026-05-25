@@ -14,55 +14,61 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 120
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 96
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 21
+- name: 🇩🇪 德国 111
   type: vmess
   server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 39
+- name: 🇩🇪 德国 83
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 162
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 172
+  type: vmess
+  server: 216.106.185.141
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 18
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸 美国 487
+- name: 美国+CloudFlare节点
   type: vless
-  server: vless-node-zvphrlyh.fly.dev
-  port: 443
-  uuid: 54ff9029-d159-5c6f-a606-7c3328dcb735
-  tls: true
-  servername: vless-node-zvphrlyh.fly.dev
+  server: 104.20.6.134
+  port: 80
+  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
   network: ws
   ws-opts:
-    path: /cEb10rMo_99q
+    path: / @ProxyVPN11
     headers:
-      Host: vless-node-zvphrlyh.fly.dev
+      Host: vip.yaml7.ggff.net
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 120
-  - 🇩🇪 德国 96
-  - 🇩🇪 德国 21
-  - 🇩🇪 德国 39
-  - 🇺🇸 美国 487
+  - 🇩🇪 德国 111
+  - 🇩🇪 德国 83
+  - 🇩🇪 德国 162
+  - 🇺🇸 美国 172
+  - 🇩🇪 德国 18
+  - 美国+CloudFlare节点
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
