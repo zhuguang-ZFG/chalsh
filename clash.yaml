@@ -14,34 +14,55 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 85
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 84
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 78
+- name: 🇩🇪 德国 120
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
+- name: 🇩🇪 德国 96
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 21
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 39
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 487
+  type: vless
+  server: vless-node-zvphrlyh.fly.dev
+  port: 443
+  uuid: 54ff9029-d159-5c6f-a606-7c3328dcb735
+  tls: true
+  servername: vless-node-zvphrlyh.fly.dev
+  network: ws
+  ws-opts:
+    path: /cEb10rMo_99q
+    headers:
+      Host: vless-node-zvphrlyh.fly.dev
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 85
-  - 🇩🇪 德国 84
-  - 🇩🇪 德国 78
+  - 🇩🇪 德国 120
+  - 🇩🇪 德国 96
+  - 🇩🇪 德国 21
+  - 🇩🇪 德国 39
+  - 🇺🇸 美国 487
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
