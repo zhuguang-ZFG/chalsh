@@ -14,61 +14,63 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 111
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 83
+- name: 🇩🇪 德国 44
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 162
+- name: 🇩🇪 德国 153
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 160
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+- name: 🇩🇪 德国 155
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸 美国 172
+- name: 🇩🇪 德国 164
   type: vmess
-  server: 216.106.185.141
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 18
-  type: vmess
-  server: 82.198.246.37
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 美国+CloudFlare节点
+- name: '339'
   type: vless
-  server: 104.20.6.134
-  port: 80
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
+  server: 104.16.58.115
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.latonyamadeline.ndjp.net
   network: ws
   ws-opts:
-    path: / @ProxyVPN11
+    path: /?https://t.me/wangcai2🇨🇳=
     headers:
-      Host: vip.yaml7.ggff.net
+      Host: sni.latonyamadeline.ndjp.net
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 111
-  - 🇩🇪 德国 83
-  - 🇩🇪 德国 162
-  - 🇺🇸 美国 172
-  - 🇩🇪 德国 18
-  - 美国+CloudFlare节点
+  - 🇩🇪 德国 44
+  - 🇩🇪 德国 153
+  - 🇩🇪 德国 160
+  - 🇩🇪 德国 155
+  - 🇩🇪 德国 164
+  - '339'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
