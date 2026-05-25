@@ -14,16 +14,37 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 44
+- name: 🇩🇪 德国 48
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇬🇧GB英国2
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 153
+- name: 🇩🇪 德国 60
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 84
   type: vmess
   server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 120
+  type: vmess
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -35,42 +56,16 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: aes-128-gcm
-- name: 🇩🇪 德国 155
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 164
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: '339'
-  type: vless
-  server: 104.16.58.115
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.latonyamadeline.ndjp.net
-  network: ws
-  ws-opts:
-    path: /?https://t.me/wangcai2🇨🇳=
-    headers:
-      Host: sni.latonyamadeline.ndjp.net
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 44
-  - 🇩🇪 德国 153
+  - 🇩🇪 德国 48
+  - 🇬🇧GB英国2
+  - 🇩🇪 德国 60
+  - 🇩🇪 德国 84
+  - 🇩🇪 德国 120
   - 🇩🇪 德国 160
-  - 🇩🇪 德国 155
-  - 🇩🇪 德国 164
-  - '339'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
