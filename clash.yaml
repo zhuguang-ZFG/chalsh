@@ -14,58 +14,95 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 48
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇬🇧GB英国2
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 60
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 84
+- name: 🇩🇪 德国 153
   type: vmess
   server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 120
+- name: '337'
+  type: vless
+  server: time.is
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  tls: true
+  servername: 2-ee1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 2-ee1.pages.dev
+- name: 🇩🇪 德国 22
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 181
+  type: vmess
+  server: 45.144.54.183
+  port: 10097
+  uuid: d5b36432-e168-4bc9-85cb-f68c9c22054a
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 41
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 160
+- name: 🇺🇸 美国 172
+  type: vmess
+  server: 216.106.185.141
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 87
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
-  cipher: aes-128-gcm
+  cipher: auto
+- name: '339'
+  type: vless
+  server: 104.16.58.115
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.latonyamadeline.ndjp.net
+  network: ws
+  ws-opts:
+    path: /?https://t.me/wangcai2🇨🇳=
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+- name: '@V2ray_confiig'
+  type: vless
+  server: 104.26.13.31
+  port: 80
+  uuid: fe665bb7-a558-42bc-9ba7-a59288ee4b93
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: floral-term-d21f.wafajax493.workers.dev
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 48
-  - 🇬🇧GB英国2
-  - 🇩🇪 德国 60
-  - 🇩🇪 德国 84
-  - 🇩🇪 德国 120
-  - 🇩🇪 德国 160
+  - 🇩🇪 德国 153
+  - '337'
+  - 🇩🇪 德国 22
+  - 🇩🇪 德国 181
+  - 🇩🇪 德国 41
+  - 🇺🇸 美国 172
+  - 🇩🇪 德国 87
+  - '339'
+  - '@V2ray_confiig'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
