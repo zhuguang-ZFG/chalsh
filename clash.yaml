@@ -14,34 +14,51 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 80
+- name: 🇩🇪 德国 74
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸 美国5|@ripaojiedian
+- name: 🇩🇪 德国 93
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 23
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+- name: '330'
+  type: vless
+  server: time.is
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  tls: true
+  servername: 2-ee1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 2-ee1.pages.dev
+- name: '332'
+  type: trojan
+  server: cf.008500.xyz
+  port: 443
+  password: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  sni: cloudflare-proxy-1jk.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cloudflare-proxy-1jk.pages.dev
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 80
-  - 🇺🇸 美国5|@ripaojiedian
-  - 🇩🇪 德国 23
+  - 🇩🇪 德国 74
+  - 🇩🇪 德国 93
+  - '330'
+  - '332'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
