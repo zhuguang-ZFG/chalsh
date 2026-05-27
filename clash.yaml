@@ -14,42 +14,42 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 72
+- name: 'B - 🇺🇸 US 29 TG: @nodpai'
   type: vmess
-  server: 82.198.246.214
+  server: 82.198.246.46
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 108
+- name: 🇩🇪 德国 107
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 98
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国5|@ripaojiedian
+- name: 美国5|@ripaojiedian
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
+- name: 'Channel : @FreeConfigForYou🏴🏳'
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 72
-  - 🇩🇪 德国 108
-  - 🇩🇪 德国 98
-  - 🇺🇸 美国5|@ripaojiedian
+  - 'B - 🇺🇸 US 29 TG: @nodpai'
+  - 🇩🇪 德国 107
+  - 美国5|@ripaojiedian
+  - 'Channel : @FreeConfigForYou🏴🏳'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
