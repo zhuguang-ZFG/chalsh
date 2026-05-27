@@ -14,7 +14,7 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 63
+- name: 🇩🇪 德国 72
   type: vmess
   server: 82.198.246.214
   port: 180
@@ -28,23 +28,28 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 每天更新，请加电报群防止失联
-  type: vless
-  server: 102.177.189.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime29.workers.dev
+- name: 🇩🇪 德国 98
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国5|@ripaojiedian
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 63
+  - 🇩🇪 德国 72
   - 🇩🇪 德国 108
-  - 每天更新，请加电报群防止失联
+  - 🇩🇪 德国 98
+  - 🇺🇸 美国5|@ripaojiedian
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
