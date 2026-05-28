@@ -14,31 +14,83 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: '311'
+- name: 🇺🇸 美国 343
   type: vless
-  server: up2-df6.pages.dev
+  server: 154.21.95.34
   port: 443
-  uuid: ce69190e-935a-4394-9e5e-2ab2872ba242
+  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
   tls: true
-  servername: up2-df6.pages.dev
+  servername: sn1.skylee5.cloudns.ch
   network: ws
   ws-opts:
-    path: /uTZSXPBI2IfoxF86
+    path: /proxyip=proxyip.cmliussss.net
     headers:
-      Host: up2-df6.pages.dev
-- name: 🇺🇸 美国5|@ripaojiedian
+      Host: sn1.skylee5.cloudns.ch
+- name: '300'
+  type: vless
+  server: a1-tss.pages.dev
+  port: 443
+  uuid: f86f5a03-3872-46b5-bf03-a50388a0261d
+  tls: true
+  servername: a1-tss.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: a1-tss.pages.dev
+- name: 🇺🇸 美国 82
   type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 38.207.163.135
+  port: 443
+  uuid: cbc05e45-ca53-4cd5-e880-af3a1a850e0e
   alterId: 0
   cipher: auto
+- name: 🇨🇦 加拿大 226
+  type: vless
+  server: 15.223.121.250
+  port: 41087
+  uuid: 57d94cf7-ca36-4c2a-bec5-90cf38588cda
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.tesla.com
+  reality-opts:
+    public-key: aoGL5vNnsEuKoBXQFXyHTxjvcdAn3SxT4qUgV6aJxnw
+    short-id: 190d259bbd40d4c3
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 244
+  type: vless
+  server: 15.204.97.206
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
+- name: '295'
+  type: vless
+  server: time.is
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  tls: true
+  servername: 2-ee1.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 2-ee1.pages.dev
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - '311'
-  - 🇺🇸 美国5|@ripaojiedian
+  - 🇺🇸 美国 343
+  - '300'
+  - 🇺🇸 美国 82
+  - 🇨🇦 加拿大 226
+  - 🇺🇸 美国 244
+  - '295'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
