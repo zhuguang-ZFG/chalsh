@@ -14,61 +14,46 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸 美国 343
-  type: vless
-  server: 154.21.95.34
-  port: 443
-  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
-  tls: true
-  servername: sn1.skylee5.cloudns.ch
-  network: ws
-  ws-opts:
-    path: /proxyip=proxyip.cmliussss.net
-    headers:
-      Host: sn1.skylee5.cloudns.ch
-- name: '300'
-  type: vless
-  server: a1-tss.pages.dev
-  port: 443
-  uuid: f86f5a03-3872-46b5-bf03-a50388a0261d
-  tls: true
-  servername: a1-tss.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: a1-tss.pages.dev
-- name: 🇺🇸 美国 82
+- name: 🇩🇪 德国 25
   type: vmess
-  server: 38.207.163.135
-  port: 443
-  uuid: cbc05e45-ca53-4cd5-e880-af3a1a850e0e
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+- name: 🇺🇸 美国4|@ripaojiedian
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇨🇦 加拿大 226
+- name: 🇩🇪 德国 50
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 92
   type: vless
-  server: 15.223.121.250
-  port: 41087
-  uuid: 57d94cf7-ca36-4c2a-bec5-90cf38588cda
+  server: 96.47.238.103
+  port: 443
+  uuid: 6b2bd003-b3fd-4208-83f3-197f9a4d2297
   flow: xtls-rprx-vision
   tls: true
-  servername: www.tesla.com
+  servername: www.cloudflare.com
   reality-opts:
-    public-key: aoGL5vNnsEuKoBXQFXyHTxjvcdAn3SxT4qUgV6aJxnw
-    short-id: 190d259bbd40d4c3
+    public-key: EaaPtT7jhK6wTiZKklE7uHMjlege0ZN6TBqgojca2yg
+    short-id: 5a626ceb
   client-fingerprint: chrome
-- name: 🇺🇸 美国 244
-  type: vless
-  server: 15.204.97.206
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
+- name: 🇺🇸 美国 83
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
 - name: '295'
   type: vless
   server: time.is
@@ -85,11 +70,11 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸 美国 343
-  - '300'
-  - 🇺🇸 美国 82
-  - 🇨🇦 加拿大 226
-  - 🇺🇸 美国 244
+  - 🇩🇪 德国 25
+  - 🇺🇸 美国4|@ripaojiedian
+  - 🇩🇪 德国 50
+  - 🇺🇸 美国 92
+  - 🇺🇸 美国 83
   - '295'
   url: https://www.gstatic.com/generate_204
   interval: 300
