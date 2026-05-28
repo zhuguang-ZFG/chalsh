@@ -14,39 +14,39 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 25
+- name: 'B - 🇺🇸 US 07 TG: @nodpai'
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
-  cipher: aes-128-gcm
-- name: 🇺🇸 美国4|@ripaojiedian
+  cipher: auto
+- name: '310'
+  type: vless
+  server: www.visa.com.sg
+  port: 443
+  uuid: ae0dd58e-e222-40bf-84ae-365a97532737
+  tls: true
+  servername: pagescm.freen9.cc.cd
+  network: ws
+  ws-opts:
+    path: /htm/docs/archive
+    headers:
+      Host: pagescm.freen9.cc.cd
+- name: 英国 V2CROSS.COM
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 50
+- name: 🇺🇸 美国5|@ripaojiedian
   type: vmess
-  server: 82.198.246.37
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸 美国 92
-  type: vless
-  server: 96.47.238.103
-  port: 443
-  uuid: 6b2bd003-b3fd-4208-83f3-197f9a4d2297
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: EaaPtT7jhK6wTiZKklE7uHMjlege0ZN6TBqgojca2yg
-    short-id: 5a626ceb
-  client-fingerprint: chrome
 - name: 🇺🇸 美国 83
   type: vmess
   server: 165.140.216.141
@@ -54,28 +54,15 @@ proxies:
   uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
   alterId: 0
   cipher: auto
-- name: '295'
-  type: vless
-  server: time.is
-  port: 443
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-  tls: true
-  servername: 2-ee1.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 2-ee1.pages.dev
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 25
-  - 🇺🇸 美国4|@ripaojiedian
-  - 🇩🇪 德国 50
-  - 🇺🇸 美国 92
+  - 'B - 🇺🇸 US 07 TG: @nodpai'
+  - '310'
+  - 英国 V2CROSS.COM
+  - 🇺🇸 美国5|@ripaojiedian
   - 🇺🇸 美国 83
-  - '295'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
