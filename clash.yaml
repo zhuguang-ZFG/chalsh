@@ -14,42 +14,77 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 102
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 76
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 107
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 66
+- name: 🇩🇪 德国 62
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
+- name: 🇩🇪 德国 104
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸US美国5
+  type: trojan
+  server: cloudflare-ip.mofashi.ltd
+  port: 443
+  password: 2399fe0a-b359-40a9-a3f0-b70c3c177a01
+  sni: aa.beijng.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: aa.beijng.dpdns.org
+- name: 🇳🇱 荷兰 50
+  type: vless
+  server: 45.131.4.192
+  port: 80
+  uuid: 5f4845b4-11dc-41d6-9508-4ff6a02e36c1
+  network: ws
+  ws-opts:
+    path: /Cczu8jOo6HDo
+    headers:
+      Host: silent-paper-fa57.fipiyag989.workers.dev
+- name: 🇩🇪 德国 108
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 俄罗斯+V2CROSS.COM
+  type: vless
+  server: 77.73.238.191
+  port: 16622
+  uuid: f2e9df1b-e0ba-4b37-a301-6aab8662c926
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: E5N_ckakvqgTOjiQ6Rmuwz1fchiT1-J3tH4cbzcH_GQ
+    short-id: 1c01d60ea915
+  client-fingerprint: chrome
+- name: a02w8j2q_vmess
+  type: vmess
+  server: 216.238.86.158
+  port: 34460
+  uuid: 90be214d-048c-4ea2-a602-b8e4d4e51e36
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 102
-  - 🇩🇪 德国 76
-  - 🇩🇪 德国 107
-  - 🇩🇪 德国 66
+  - 🇩🇪 德国 62
+  - 🇩🇪 德国 104
+  - 🇺🇸US美国5
+  - 🇳🇱 荷兰 50
+  - 🇩🇪 德国 108
+  - 俄罗斯+V2CROSS.COM
+  - a02w8j2q_vmess
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
