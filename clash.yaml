@@ -14,65 +14,50 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 306
+- name: 🇨🇦 加拿大 50
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 305
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸 美国5|@ripaojiedian
+- name: 🇺🇸 美国 107
+  type: vmess
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 美国5|@ripaojiedian
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 每天更新，请加电报群防止失联
-  type: vless
-  server: 002.inc-electrocell-001-002.workers.dev
-  port: 443
-  uuid: 36a857e4-f3d4-43aa-8b90-d7da849da989
-  tls: true
-  servername: 002.Inc-ElectROcElL-001-002.WoRKERS.DEV
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoib0RnakxTZUZvOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: 002.inc-electrocell-001-002.workers.dev
-- name: '356'
-  type: vless
-  server: a1-tss.pages.dev
-  port: 443
-  uuid: f86f5a03-3872-46b5-bf03-a50388a0261d
-  tls: true
-  servername: a1-tss.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: a1-tss.pages.dev
-- name: 🇺🇸115Mb+|+HostHatch
-  type: vless
-  server: 170.205.37.59
-  port: 443
-  uuid: d98e6ac5-e873-402a-bcce-78e2887c936b
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.yahoo.com
-  reality-opts:
-    public-key: zvRguC1cm7gKkQpNarOCaAUAvcSXUWH10-pUEfneYSI
-    short-id: 014c3d76dee82247
-  client-fingerprint: chrome
+- name: 🇺🇸 美国 187
+  type: vmess
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 306
-  - 🇺🇸 美国5|@ripaojiedian
-  - 每天更新，请加电报群防止失联
-  - '356'
-  - 🇺🇸115Mb+|+HostHatch
+  - 🇨🇦 加拿大 50
+  - 🇩🇪 德国 305
+  - 🇺🇸 美国 107
+  - 美国5|@ripaojiedian
+  - 🇺🇸 美国 187
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
