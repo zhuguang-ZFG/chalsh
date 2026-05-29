@@ -14,28 +14,9 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 'B - 🇺🇸 US 07 TG: @nodpai'
+- name: 🇩🇪 德国 306
   type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: '310'
-  type: vless
-  server: www.visa.com.sg
-  port: 443
-  uuid: ae0dd58e-e222-40bf-84ae-365a97532737
-  tls: true
-  servername: pagescm.freen9.cc.cd
-  network: ws
-  ws-opts:
-    path: /htm/docs/archive
-    headers:
-      Host: pagescm.freen9.cc.cd
-- name: 英国 V2CROSS.COM
-  type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -47,22 +28,51 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸 美国 83
-  type: vmess
-  server: 165.140.216.141
+- name: 每天更新，请加电报群防止失联
+  type: vless
+  server: 002.inc-electrocell-001-002.workers.dev
   port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
+  uuid: 36a857e4-f3d4-43aa-8b90-d7da849da989
+  tls: true
+  servername: 002.Inc-ElectROcElL-001-002.WoRKERS.DEV
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoib0RnakxTZUZvOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: 002.inc-electrocell-001-002.workers.dev
+- name: '356'
+  type: vless
+  server: a1-tss.pages.dev
+  port: 443
+  uuid: f86f5a03-3872-46b5-bf03-a50388a0261d
+  tls: true
+  servername: a1-tss.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: a1-tss.pages.dev
+- name: 🇺🇸115Mb+|+HostHatch
+  type: vless
+  server: 170.205.37.59
+  port: 443
+  uuid: d98e6ac5-e873-402a-bcce-78e2887c936b
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.yahoo.com
+  reality-opts:
+    public-key: zvRguC1cm7gKkQpNarOCaAUAvcSXUWH10-pUEfneYSI
+    short-id: 014c3d76dee82247
+  client-fingerprint: chrome
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 'B - 🇺🇸 US 07 TG: @nodpai'
-  - '310'
-  - 英国 V2CROSS.COM
+  - 🇩🇪 德国 306
   - 🇺🇸 美国5|@ripaojiedian
-  - 🇺🇸 美国 83
+  - 每天更新，请加电报群防止失联
+  - '356'
+  - 🇺🇸115Mb+|+HostHatch
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
