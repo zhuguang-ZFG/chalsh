@@ -14,39 +14,11 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸 美国 190
+- name: 🇨🇦 加拿大 182
   type: vmess
-  server: 38.207.163.135
-  port: 443
-  uuid: cbc05e45-ca53-4cd5-e880-af3a1a850e0e
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 290
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇳🇱 荷兰 101
-  type: vmess
-  server: 162.217.249.74
-  port: 45705
-  uuid: 5678b00f-9ed6-4982-9f8a-1a7306e25126
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 275
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 261
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
 - name: 🇺🇸 美国 311
@@ -56,31 +28,6 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇺🇸US美国6
-  type: trojan
-  server: 172.237.145.189
-  port: 443
-  password: A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM
-  sni: 172.237.145.189
-- name: 🇺🇸 美国 244
-  type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 103
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 191
-  type: vless
-  server: 38.55.146.153
-  port: 13000
-  uuid: b852270a-1283-4ea8-8a2f-5bae8e644a3e
 - name: 🇺🇸 美国 245
   type: vmess
   server: 67.220.95.3
@@ -88,21 +35,44 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: aes-128-gcm
+- name: 🇨🇦 加拿大 50
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 244
+  type: vmess
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 114
+  type: trojan
+  server: 172.237.145.189
+  port: 443
+  password: A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM
+  sni: 172.237.145.189
+- name: 🇳🇱 荷兰 101
+  type: vmess
+  server: 162.217.249.74
+  port: 45705
+  uuid: 5678b00f-9ed6-4982-9f8a-1a7306e25126
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸 美国 190
-  - 🇩🇪 德国 290
-  - 🇳🇱 荷兰 101
-  - 🇩🇪 德国 275
-  - 🇩🇪 德国 261
+  - 🇨🇦 加拿大 182
   - 🇺🇸 美国 311
-  - 🇺🇸US美国6
-  - 🇺🇸 美国 244
-  - 🇺🇸 美国 103
-  - 🇺🇸 美国 191
   - 🇺🇸 美国 245
+  - 🇨🇦 加拿大 50
+  - 🇺🇸 美国 244
+  - 🇺🇸 美国 114
+  - 🇳🇱 荷兰 101
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
