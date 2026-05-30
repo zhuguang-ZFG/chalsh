@@ -14,18 +14,58 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 294
+- name: 🇩🇪 德国 311
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 美国4|@ripaojiedian
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇨🇦 加拿大 52
+- name: 🇩🇪 德国 280
   type: vmess
-  server: 134.195.196.211
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 197
+  type: vmess
+  server: 38.114.123.42
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 200
+  type: vless
+  server: 38.55.146.153
+  port: 13000
+  uuid: b852270a-1283-4ea8-8a2f-5bae8e644a3e
+- name: 🇺🇸 美国 185
+  type: vmess
+  server: 216.106.185.141
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 285
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
 - name: '29'
@@ -40,113 +80,35 @@ proxies:
     path: /sg-melbi
     headers:
       Host: cyylr.eu.cc
-- name: 🇺🇸 美国 200
-  type: vless
-  server: 38.55.146.153
-  port: 13000
-  uuid: b852270a-1283-4ea8-8a2f-5bae8e644a3e
-- name: 🇺🇸 美国 190
-  type: trojan
-  server: 23.227.193.173
-  port: 443
-  password: AZWY=WAZk5TeVYmMUudr2xmeb00I3ymeMQ
-  sni: www.dataset-logger.click
 - name: 🇺🇸 美国 253
   type: vmess
   server: 67.220.95.3
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
-  cipher: aes-128-gcm
-- name: 🇺🇸 美国 46
-  type: vmess
-  server: 129.146.143.80
-  port: 48111
-  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
-  alterId: 0
   cipher: auto
-- name: 🇺🇸 美国 103
+- name: 🇺🇸 美国 323
   type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-- name: 🇬🇧 英国 250
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 284
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: '428'
-  type: vless
-  server: support.zoom.us.cyylr.eu.cc
-  port: 443
-  uuid: cc752a3e-1537-4e86-bb50-1b897bf7b33c
-  tls: true
-  servername: support.zoom.us.cyylr.eu.cc
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: support.zoom.us.cyylr.eu.cc
-- name: 🇺🇸 美国 107
-  type: vmess
-  server: 169.197.142.22
+  server: 84.17.41.2
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
-  type: vmess
-  server: 67.220.72.237
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 406
-  type: trojan
-  server: link.honghongai.top
-  port: 8443
-  password: 8f3a2b1c9d4e5f6a7b8c9d0e1f2a3b4c
-  sni: link.honghongai.top
-- name: 🇺🇸 美国 47
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 294
-  - 🇨🇦 加拿大 52
-  - '29'
+  - 🇩🇪 德国 311
+  - 美国4|@ripaojiedian
+  - 🇩🇪 德国 280
+  - 🇺🇸 美国 197
   - 🇺🇸 美国 200
-  - 🇺🇸 美国 190
-  - 🇺🇸 美国 253
-  - 🇺🇸 美国 46
-  - 🇺🇸 美国 103
-  - 🇬🇧 英国 250
-  - 🇩🇪 德国 284
-  - '428'
-  - 🇺🇸 美国 107
+  - 🇺🇸 美国 185
   - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
-  - 🇺🇸 美国 406
-  - 🇺🇸 美国 47
+  - 🇩🇪 德国 285
+  - '29'
+  - 🇺🇸 美国 253
+  - 🇺🇸 美国 323
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
