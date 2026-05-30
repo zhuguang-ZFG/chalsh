@@ -14,141 +14,78 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸 美国 46
+- name: 🇺🇸 美国 103
   type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
   alterId: 0
   cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-- name: '18'
-  type: vless
-  server: 104.17.15.87
-  port: 80
-  uuid: f929cc78-e2a1-4ce3-8051-3e9538405144
-  network: ws
-  ws-opts:
-    path: /@WireXnet
-    headers:
-      Host: britain.xydcqd.workers.dev
-- name: 🇺🇸 美国 189
+- name: 🇩🇪 德国 266
   type: vmess
-  server: 38.114.123.42
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 311
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 107
-  type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 280
-  type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 275
+- name: 🇩🇪 德国 285
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: '458'
+- name: 🇺🇸 美国 109
   type: vless
-  server: up2-df6.pages.dev
+  server: 170.205.37.59
   port: 443
-  uuid: ce69190e-935a-4394-9e5e-2ab2872ba242
+  uuid: d98e6ac5-e873-402a-bcce-78e2887c936b
+  flow: xtls-rprx-vision
   tls: true
-  servername: up2-df6.pages.dev
-  network: ws
-  ws-opts:
-    path: /uTZSXPBI2IfoxF86
-    headers:
-      Host: up2-df6.pages.dev
-- name: 🇺🇸 美国 245
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: aes-128-gcm
-- name: 🇺🇸 美国 187
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: '35'
-  type: vless
-  server: 104.21.44.32
-  port: 80
-  uuid: 5eb1cee0-dca8-4018-a667-2d2184975799
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: v2configlab.v2configlab14.workers.dev
-- name: 🇺🇸 美国 176
+  servername: www.yahoo.com
+  reality-opts:
+    public-key: zvRguC1cm7gKkQpNarOCaAUAvcSXUWH10-pUEfneYSI
+    short-id: 014c3d76dee82247
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 249
+  type: trojan
+  server: 64.94.95.118
+  port: 57142
+  password: kkzh2prsyr2ik47as615
+  sni: 64.94.95.118
+  skip-cert-verify: true
+- name: 🇺🇸 美国 185
   type: vmess
   server: 216.106.185.141
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: 🇷🇺 俄罗斯 419
-  type: vless
-  server: mci.buzzmuzzpanel.online
-  port: 443
-  uuid: 20e295db-a6af-4006-bfd6-91453f169968
-  tls: true
-  servername: 057.ElecTRocElLco-Cf-057.wOrKeRs.dEv
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiSFM1N0lLQmx2UU1qRzlnTiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: 057.electrocellco-cf-057.workers.dev
 - name: 🇺🇸 美国 190
-  type: vmess
-  server: 38.207.163.135
+  type: trojan
+  server: 23.227.193.173
   port: 443
-  uuid: cbc05e45-ca53-4cd5-e880-af3a1a850e0e
+  password: AZWY=WAZk5TeVYmMUudr2xmeb00I3ymeMQ
+  sni: www.dataset-logger.click
+- name: 🇺🇸 美国 323
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸 美国 46
-  - '18'
-  - 🇺🇸 美国 189
-  - 🇺🇸 美国 311
-  - 🇺🇸 美国 107
-  - 🇩🇪 德国 280
-  - 🇩🇪 德国 275
-  - '458'
-  - 🇺🇸 美国 245
-  - 🇺🇸 美国 187
-  - '35'
-  - 🇺🇸 美国 176
-  - 🇷🇺 俄罗斯 419
+  - 🇺🇸 美国 103
+  - 🇩🇪 德国 266
+  - 🇩🇪 德国 285
+  - 🇺🇸 美国 109
+  - 🇺🇸 美国 249
+  - 🇺🇸 美国 185
   - 🇺🇸 美国 190
+  - 🇺🇸 美国 323
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
