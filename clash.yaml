@@ -14,11 +14,11 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸 美国 111
+- name: 🇬🇧 英国 219
   type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
 - name: 🇺🇸 美国 354
@@ -31,45 +31,11 @@ proxies:
   network: ws
   ws-opts:
     path: /cctv13.m3u8
-- name: 🇺🇸 美国 94
+- name: 🇩🇪 德国 45
   type: vmess
-  server: 129.146.143.80
-  port: 48111
-  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 98
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇬🇧 英国 219
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 85
-  type: trojan
-  server: link.honghongai.top
-  port: 8443
-  password: 8f3a2b1c9d4e5f6a7b8c9d0e1f2a3b4c
-  sni: link.honghongai.top
-- name: 🇺🇸 美国 84
-  type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 286
-  type: vmess
-  server: 38.114.123.42
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
 - name: 🇺🇸 美国 248
@@ -79,49 +45,78 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇺🇸 美国 75
-  type: vless
-  server: 38.55.146.153
-  port: 13000
-  uuid: b852270a-1283-4ea8-8a2f-5bae8e644a3e
-- name: 🇺🇸 美国 83
+- name: 🇺🇸 @ProxyVPN11
   type: vmess
-  server: 67.220.72.237
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 100
-  type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+- name: 🇺🇸 美国 76
   type: vmess
-  server: 165.140.216.141
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 372
+  type: vmess
+  server: 66.154.106.185
+  port: 48060
+  uuid: f60ecc88-d704-489c-e3b9-082805317e7b
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: '328'
+  type: vless
+  server: a1-tss.pages.dev
   port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  uuid: f86f5a03-3872-46b5-bf03-a50388a0261d
+  tls: true
+  servername: a1-tss.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: a1-tss.pages.dev
+- name: 🇺🇸 美国 101
+  type: vmess
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 84
+  type: vmess
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 94
+  type: vmess
+  server: 129.146.143.80
+  port: 48111
+  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸 美国 111
-  - 🇺🇸 美国 354
-  - 🇺🇸 美国 94
-  - 🇺🇸 美国 98
   - 🇬🇧 英国 219
-  - 🇺🇸 美国 85
-  - 🇺🇸 美国 84
-  - 🇺🇸 美国 286
+  - 🇺🇸 美国 354
+  - 🇩🇪 德国 45
   - 🇺🇸 美国 248
-  - 🇺🇸 美国 75
-  - 🇺🇸 美国 83
-  - 🇩🇪 德国 100
-  - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  - 🇺🇸 @ProxyVPN11
+  - 🇺🇸 美国 76
+  - 🇺🇸 美国 372
+  - '328'
+  - 🇺🇸 美国 101
+  - 🇺🇸 美国 84
+  - 🇺🇸 美国 94
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
