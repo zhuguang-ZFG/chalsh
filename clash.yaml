@@ -14,6 +14,20 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
+- name: 🇩🇪 德国 10
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 20
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
 - name: 🇺🇸 美国 372
   type: vmess
   server: 66.154.106.185
@@ -22,49 +36,53 @@ proxies:
   alterId: 0
   cipher: auto
   network: ws
-- name: 🇺🇸 美国 96
-  type: vless
-  server: 15.204.97.198
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 15
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 95
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 英国 V2CROSS.COM
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: '363'
+- name: 🇬🇧 英国 219
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: '374'
   type: vless
-  server: a1-tss.pages.dev
+  server: 104.19.229.21
   port: 443
-  uuid: f86f5a03-3872-46b5-bf03-a50388a0261d
+  uuid: cc752a3e-1537-4e86-bb50-1b897bf7b33c
   tls: true
-  servername: a1-tss.pages.dev
+  servername: cyylr.eu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /sg-melbi
     headers:
-      Host: a1-tss.pages.dev
-- name: 🇺🇸 美国 248
+      Host: cyylr.eu.cc
+- name: 🇺🇸 @routel1 🦋
   type: vmess
-  server: 67.220.95.3
+  server: 38.91.107.49
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 35
+- name: 🇺🇸 美国 78
   type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 38.114.123.42
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
 - name: 🇺🇸 美国 101
@@ -74,73 +92,6 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 41
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 97
-  type: vless
-  server: 170.205.37.59
-  port: 443
-  uuid: d98e6ac5-e873-402a-bcce-78e2887c936b
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.yahoo.com
-  reality-opts:
-    public-key: zvRguC1cm7gKkQpNarOCaAUAvcSXUWH10-pUEfneYSI
-    short-id: 014c3d76dee82247
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 106
-  type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 87
-  type: vmess
-  server: 216.106.185.141
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 75
-  type: vless
-  server: 38.55.146.153
-  port: 13000
-  uuid: b852270a-1283-4ea8-8a2f-5bae8e644a3e
-- name: 🇺🇸 美国 379
-  type: vmess
-  server: usaapp1.jisuyun.top
-  port: 2053
-  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: usaapp1.jisuyun.top
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /usavm
-    headers:
-      Host: usaapp1.jisuyun.top
-- name: 🇩🇪 德国 95
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 83
-  type: vmess
-  server: 67.220.72.237
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
 - name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
   type: vmess
   server: 165.140.216.141
@@ -148,47 +99,34 @@ proxies:
   uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
   alterId: 0
   cipher: auto
-- name: 🇺🇸 美国 91
-  type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 美国+CloudFlare节点
-  type: vless
-  server: cf.9999669.xyz
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
-  servername: fgnix832fx.fx6hsv0.ccwu.cc
+- name: '@v2ray_configs_pools'
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: mitivpn
+  sni: cdn.linkman1.ir
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
     headers:
-      Host: fgnix832fx.fx6hsv0.ccwu.cc
+      Host: cdn.linkman1.ir
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
+  - 🇩🇪 德国 10
+  - 🇩🇪 德国 20
   - 🇺🇸 美国 372
-  - 🇺🇸 美国 96
-  - 🇩🇪 德国 15
-  - '363'
-  - 🇺🇸 美国 248
-  - 🇩🇪 德国 35
-  - 🇺🇸 美国 101
-  - 🇩🇪 德国 41
-  - 🇺🇸 美国 97
-  - 🇺🇸 美国 106
-  - 🇺🇸 美国 87
-  - 🇺🇸 美国 75
-  - 🇺🇸 美国 379
   - 🇩🇪 德国 95
-  - 🇺🇸 美国 83
+  - 英国 V2CROSS.COM
+  - 🇬🇧 英国 219
+  - '374'
+  - 🇺🇸 @routel1 🦋
+  - 🇺🇸 美国 78
+  - 🇺🇸 美国 101
   - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
-  - 🇺🇸 美国 91
-  - 美国+CloudFlare节点
+  - '@v2ray_configs_pools'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
