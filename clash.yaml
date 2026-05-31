@@ -14,11 +14,31 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇨🇦 加拿大 107
+- name: 🇺🇸 美国 372
   type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 66.154.106.185
+  port: 48060
+  uuid: f60ecc88-d704-489c-e3b9-082805317e7b
+  alterId: 0
+  cipher: auto
+  network: ws
+- name: 🇺🇸 美国 96
+  type: vless
+  server: 15.204.97.198
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 15
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
 - name: '363'
@@ -33,73 +53,35 @@ proxies:
     path: /
     headers:
       Host: a1-tss.pages.dev
-- name: 🇺🇸 美国 372
+- name: 🇺🇸 美国 248
   type: vmess
-  server: 66.154.106.185
-  port: 48060
-  uuid: f60ecc88-d704-489c-e3b9-082805317e7b
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-  network: ws
-- name: 🇺🇸 @ProxyVPN11
+- name: 🇩🇪 德国 35
   type: vmess
-  server: 82.198.246.9
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸 美国 86
-  type: trojan
-  server: 64.94.95.118
-  port: 57142
-  password: kkzh2prsyr2ik47as615
-  sni: 64.94.95.118
-  skip-cert-verify: true
-- name: 美国5|@ripaojiedian
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国 93
-  type: trojan
-  server: 23.227.193.173
-  port: 443
-  password: AZWY=WAZk5TeVYmMUudr2xmeb00I3ymeMQ
-  sni: www.dataset-logger.click
-- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+- name: 🇺🇸 美国 101
   type: vmess
   server: 38.110.1.246
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇺🇸 美国 78
+- name: 🇩🇪 德国 41
   type: vmess
-  server: 38.114.123.42
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸 美国 354
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-- name: 🇺🇸 @routel1 🦋
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸115Mb+|+HostHatch
+- name: 🇺🇸 美国 97
   type: vless
   server: 170.205.37.59
   port: 443
@@ -111,14 +93,69 @@ proxies:
     public-key: zvRguC1cm7gKkQpNarOCaAUAvcSXUWH10-pUEfneYSI
     short-id: 014c3d76dee82247
   client-fingerprint: chrome
-- name: 🇺🇸 美国 84
+- name: 🇺🇸 美国 106
+  type: vmess
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 87
+  type: vmess
+  server: 216.106.185.141
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 75
+  type: vless
+  server: 38.55.146.153
+  port: 13000
+  uuid: b852270a-1283-4ea8-8a2f-5bae8e644a3e
+- name: 🇺🇸 美国 379
+  type: vmess
+  server: usaapp1.jisuyun.top
+  port: 2053
+  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: usaapp1.jisuyun.top
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /usavm
+    headers:
+      Host: usaapp1.jisuyun.top
+- name: 🇩🇪 德国 95
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 83
+  type: vmess
+  server: 67.220.72.237
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 91
   type: vmess
   server: 169.197.142.22
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: '349'
+- name: 美国+CloudFlare节点
   type: vless
   server: cf.9999669.xyz
   port: 2087
@@ -130,40 +167,28 @@ proxies:
     path: /
     headers:
       Host: fgnix832fx.fx6hsv0.ccwu.cc
-- name: 🇩🇪 德国 8
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇨🇦 加拿大 110
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇨🇦 加拿大 107
-  - '363'
   - 🇺🇸 美国 372
-  - 🇺🇸 @ProxyVPN11
-  - 🇺🇸 美国 86
-  - 美国5|@ripaojiedian
-  - 🇺🇸 美国 93
+  - 🇺🇸 美国 96
+  - 🇩🇪 德国 15
+  - '363'
+  - 🇺🇸 美国 248
+  - 🇩🇪 德国 35
+  - 🇺🇸 美国 101
+  - 🇩🇪 德国 41
+  - 🇺🇸 美国 97
+  - 🇺🇸 美国 106
+  - 🇺🇸 美国 87
+  - 🇺🇸 美国 75
+  - 🇺🇸 美国 379
+  - 🇩🇪 德国 95
+  - 🇺🇸 美国 83
   - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
-  - 🇺🇸 美国 78
-  - 🇺🇸 美国 354
-  - 🇺🇸 @routel1 🦋
-  - 🇺🇸115Mb+|+HostHatch
-  - 🇺🇸 美国 84
-  - '349'
-  - 🇩🇪 德国 8
-  - 🇨🇦 加拿大 110
+  - 🇺🇸 美国 91
+  - 美国+CloudFlare节点
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
