@@ -14,73 +14,58 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 164
+- name: 🇩🇪 德国 204
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
-  cipher: auto
-- name: '76'
-  type: vless
-  server: a1-tss.pages.dev
-  port: 443
-  uuid: f86f5a03-3872-46b5-bf03-a50388a0261d
-  tls: true
-  servername: a1-tss.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: a1-tss.pages.dev
-- name: 🔵@chillguy_vpn
+  cipher: aes-128-gcm
+- name: 🇺🇸 美国5|@ripaojiedian
   type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: '70'
-  type: vless
-  server: 104.19.229.21
-  port: 443
-  uuid: cc752a3e-1537-4e86-bb50-1b897bf7b33c
+- name: 🇩🇪 德国 170
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 未知5
+  type: vmess
+  server: 172.236.244.171
+  port: 2053
+  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: cyylr.eu.cc
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: cyylr.eu.cc
-- name: 'سرورهای رایگان و پرسرعت : SHOP_GAMING1011@'
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: mitivpn
-  sni: www.linkman1.ir
+  servername: usaapp1.jisuyun.top
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
+    path: /usavm
     headers:
-      Host: www.linkman1.ir
-- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+      Host: usaapp1.jisuyun.top
+- name: 🇩🇪 德国 137
   type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 164
-  - '76'
-  - 🔵@chillguy_vpn
-  - '70'
-  - 'سرورهای رایگان و پرسرعت : SHOP_GAMING1011@'
-  - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  - 🇩🇪 德国 204
+  - 🇺🇸 美国5|@ripaojiedian
+  - 🇩🇪 德国 170
+  - 未知5
+  - 🇩🇪 德国 137
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
