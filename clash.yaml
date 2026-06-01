@@ -14,32 +14,14 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: Wiizard_Net
-  type: trojan
-  server: 188.114.97.6
-  port: 443
-  password: mitivpn
-  sni: cdn.linkman1.ir
-  network: ws
-  ws-opts:
-    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
-    headers:
-      Host: cdn.linkman1.ir
-- name: 🇩🇪 德国 134
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 154
+- name: 🇩🇪 德国 164
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: '84'
+- name: '76'
   type: vless
   server: a1-tss.pages.dev
   port: 443
@@ -51,6 +33,37 @@ proxies:
     path: /
     headers:
       Host: a1-tss.pages.dev
+- name: 🔵@chillguy_vpn
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
+- name: '70'
+  type: vless
+  server: 104.19.229.21
+  port: 443
+  uuid: cc752a3e-1537-4e86-bb50-1b897bf7b33c
+  tls: true
+  servername: cyylr.eu.cc
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: cyylr.eu.cc
+- name: 'سرورهای رایگان و پرسرعت : SHOP_GAMING1011@'
+  type: trojan
+  server: 188.114.97.6
+  port: 443
+  password: mitivpn
+  sni: www.linkman1.ir
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings
+    headers:
+      Host: www.linkman1.ir
 - name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
   type: vmess
   server: 38.110.1.246
@@ -58,51 +71,16 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇺🇸 @routel1 🦋
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 美国5|@ripaojiedian
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: '40'
-  type: vless
-  server: cf.008500.xyz
-  port: 443
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-  tls: true
-  servername: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: powered-by-surena.configfarsi695fcfe8a2e58.workers.dev
-- name: 🇺🇸 美国 193
-  type: trojan
-  server: 149.104.87.182
-  port: 443
-  password: PtRV8to08i8FMsY.Uw7=yMuIaR3eVTGmvA
-  sni: www.jewelapp.click
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - Wiizard_Net
-  - 🇩🇪 德国 134
-  - 🇩🇪 德国 154
-  - '84'
+  - 🇩🇪 德国 164
+  - '76'
+  - 🔵@chillguy_vpn
+  - '70'
+  - 'سرورهای رایگان و پرسرعت : SHOP_GAMING1011@'
   - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
-  - 🇺🇸 @routel1 🦋
-  - 🇺🇸 美国5|@ripaojiedian
-  - '40'
-  - 🇺🇸 美国 193
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
