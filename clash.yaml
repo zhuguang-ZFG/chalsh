@@ -14,45 +14,35 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 204
+- name: 🇩🇪 德国 166
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
-  cipher: aes-128-gcm
-- name: 🇺🇸 美国5|@ripaojiedian
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 170
+- name: 🇩🇪 德国 151
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 未知5
-  type: vmess
-  server: 172.236.244.171
-  port: 2053
-  uuid: 4b80aa86-4354-40bb-d2a3-47126cff0bea
-  alterId: 0
-  cipher: auto
+- name: '@appsooner کانال تلگرام 🕊️'
+  type: vless
+  server: 104.19.229.21
+  port: 443
+  uuid: cc752a3e-1537-4e86-bb50-1b897bf7b33c
   tls: true
-  servername: usaapp1.jisuyun.top
-  skip-cert-verify: true
+  servername: cyylr.eu.cc
   network: ws
   ws-opts:
-    path: /usavm
+    path: /sg-melbi
     headers:
-      Host: usaapp1.jisuyun.top
-- name: 🇩🇪 德国 137
+      Host: cyylr.eu.cc
+- name: 美国5|@ripaojiedian
   type: vmess
-  server: 82.198.246.37
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -61,11 +51,10 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 204
-  - 🇺🇸 美国5|@ripaojiedian
-  - 🇩🇪 德国 170
-  - 未知5
-  - 🇩🇪 德国 137
+  - 🇩🇪 德国 166
+  - 🇩🇪 德国 151
+  - '@appsooner کانال تلگرام 🕊️'
+  - 美国5|@ripaojiedian
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
