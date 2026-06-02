@@ -14,31 +14,57 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 37
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: '@appsooner کانال تلگرام 🕊️'
+- name: mhdi
   type: vless
-  server: 104.19.229.21
+  server: 188.114.97.6
   port: 443
-  uuid: cc752a3e-1537-4e86-bb50-1b897bf7b33c
+  uuid: d3310d18-c198-4974-a3f1-f9fe7896d4dc
   tls: true
-  servername: cyylr.eu.cc
+  servername: zaintest.vuclip.com.cyylr.eu.cc
   network: ws
   ws-opts:
-    path: /sg-melbi
+    path: /ae-bo
     headers:
-      Host: cyylr.eu.cc
+      Host: zaintest.vuclip.com.cyylr.eu.cc
+- name: '202'
+  type: vmess
+  server: yg7.ygkkk.dpdns.org
+  port: 8443
+  uuid: c1a8dee0-bdad-4b6d-9926-5e15c3c8ed7d
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: marco-visibility-tops-estimate.trycloudflare.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /c1a8dee0-bdad-4b6d-9926-5e15c3c8ed7d-vm
+    headers:
+      Host: marco-visibility-tops-estimate.trycloudflare.com
+- name: 美国+Akamai科技公司CDN网络节点
+  type: trojan
+  server: 172.235.63.252
+  port: 443
+  password: bX_lNHWoW6ywq82mI=KUr+8i__VSp0Hs_E
+- name: Config0plus🇪🇦🥷🏻
+  type: trojan
+  server: 104.19.229.21
+  port: 443
+  password: bb45f73f-795b-4a05-a8e0-ba717bce87e3
+  sni: api24-normal.tiktokv.com.cyylr.eu.cc
+  network: ws
+  ws-opts:
+    path: /id-tksi
+    headers:
+      Host: api24-normal.tiktokv.com.cyylr.eu.cc
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 37
-  - '@appsooner کانال تلگرام 🕊️'
+  - mhdi
+  - '202'
+  - 美国+Akamai科技公司CDN网络节点
+  - Config0plus🇪🇦🥷🏻
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
