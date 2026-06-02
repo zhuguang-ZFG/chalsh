@@ -14,40 +14,38 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 61
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 76
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 37
+- name: 🇩🇪 德国 42
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: '159'
-  type: vless
-  server: 188.114.97.6
+- name: 🇩🇪 德国 34
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 48
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: Config0plus🇪🇦🥷🏻
+  type: trojan
+  server: 104.19.229.21
   port: 443
-  uuid: d0dc32f6-e531-41af-9df6-1547adfb2f35
-  tls: true
-  servername: www.genflix.co.id.cyylr.eu.cc
-  skip-cert-verify: true
+  password: bb45f73f-795b-4a05-a8e0-ba717bce87e3
+  sni: api24-normal.tiktokv.com.cyylr.eu.cc
   network: ws
   ws-opts:
-    path: /ae-bo
+    path: /id-tksi
     headers:
-      Host: www.genflix.co.id.cyylr.eu.cc
+      Host: api24-normal.tiktokv.com.cyylr.eu.cc
 - name: Config0plus🔥🇨🇦
   type: trojan
   server: 141.193.213.30
@@ -59,27 +57,39 @@ proxies:
     path: /id-tksi
     headers:
       Host: api24-normal.tiktokv.com.cyylr.eu.cc
-- name: 未知5
-  type: trojan
-  server: 104.19.229.21
+- name: 🔵@chillguy_vpn
+  type: vmess
+  server: 91.250.249.219
+  port: 11196
+  uuid: rootface
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /rootface
+- name: 𝗝𝗼𝗶𝗻 ➠@kapsolvpn🎀
+  type: vless
+  server: 188.114.97.6
   port: 443
-  password: bb45f73f-795b-4a05-a8e0-ba717bce87e3
-  sni: api24-normal.tiktokv.com.cyylr.eu.cc
+  uuid: 1ce9392f-caf4-48f7-bbb9-475b101fbde0
+  tls: true
+  servername: graph.instagram.com.cyylr.eu.cc
   network: ws
   ws-opts:
     path: /id-tksi
     headers:
-      Host: api24-normal.tiktokv.com.cyylr.eu.cc
+      Host: graph.instagram.com.cyylr.eu.cc
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 61
-  - 🇩🇪 德国 76
-  - 🇩🇪 德国 37
-  - '159'
+  - 🇩🇪 德国 42
+  - 🇩🇪 德国 34
+  - 🇩🇪 德国 48
+  - Config0plus🇪🇦🥷🏻
   - Config0plus🔥🇨🇦
-  - 未知5
+  - 🔵@chillguy_vpn
+  - 𝗝𝗼𝗶𝗻 ➠@kapsolvpn🎀
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
