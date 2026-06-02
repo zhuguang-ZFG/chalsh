@@ -14,39 +14,52 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: mhdi
+- name: 🇩🇪 德国 61
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 76
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 37
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: '159'
   type: vless
   server: 188.114.97.6
   port: 443
-  uuid: d3310d18-c198-4974-a3f1-f9fe7896d4dc
+  uuid: d0dc32f6-e531-41af-9df6-1547adfb2f35
   tls: true
-  servername: zaintest.vuclip.com.cyylr.eu.cc
+  servername: www.genflix.co.id.cyylr.eu.cc
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /ae-bo
     headers:
-      Host: zaintest.vuclip.com.cyylr.eu.cc
-- name: '202'
-  type: vmess
-  server: yg7.ygkkk.dpdns.org
-  port: 8443
-  uuid: c1a8dee0-bdad-4b6d-9926-5e15c3c8ed7d
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: marco-visibility-tops-estimate.trycloudflare.com
-  skip-cert-verify: true
+      Host: www.genflix.co.id.cyylr.eu.cc
+- name: Config0plus🔥🇨🇦
+  type: trojan
+  server: 141.193.213.30
+  port: 443
+  password: bb45f73f-795b-4a05-a8e0-ba717bce87e3
+  sni: api24-normal.tiktokv.com.cyylr.eu.cc
   network: ws
   ws-opts:
-    path: /c1a8dee0-bdad-4b6d-9926-5e15c3c8ed7d-vm
+    path: /id-tksi
     headers:
-      Host: marco-visibility-tops-estimate.trycloudflare.com
-- name: 美国+Akamai科技公司CDN网络节点
-  type: trojan
-  server: 172.235.63.252
-  port: 443
-  password: bX_lNHWoW6ywq82mI=KUr+8i__VSp0Hs_E
-- name: Config0plus🇪🇦🥷🏻
+      Host: api24-normal.tiktokv.com.cyylr.eu.cc
+- name: 未知5
   type: trojan
   server: 104.19.229.21
   port: 443
@@ -61,10 +74,12 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - mhdi
-  - '202'
-  - 美国+Akamai科技公司CDN网络节点
-  - Config0plus🇪🇦🥷🏻
+  - 🇩🇪 德国 61
+  - 🇩🇪 德国 76
+  - 🇩🇪 德国 37
+  - '159'
+  - Config0plus🔥🇨🇦
+  - 未知5
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
