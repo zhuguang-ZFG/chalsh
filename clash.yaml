@@ -14,39 +14,39 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 42
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 34
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 48
+- name: 🇩🇪 德国 94
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: Config0plus🇪🇦🥷🏻
+- name: 美国+Akamai科技公司CDN网络节点
   type: trojan
-  server: 104.19.229.21
+  server: 172.235.63.252
   port: 443
-  password: bb45f73f-795b-4a05-a8e0-ba717bce87e3
-  sni: api24-normal.tiktokv.com.cyylr.eu.cc
+  password: bX_lNHWoW6ywq82mI=KUr+8i__VSp0Hs_E
+  sni: 172.235.63.252
+- name: 🇩🇪 德国 59
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: '143'
+  type: vless
+  server: nuclear.us.kg
+  port: 443
+  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  tls: true
+  servername: nuclear.us.kg
   network: ws
   ws-opts:
-    path: /id-tksi
+    path: /free/1.226.227.169:50001
     headers:
-      Host: api24-normal.tiktokv.com.cyylr.eu.cc
-- name: Config0plus🔥🇨🇦
+      Host: nuclear.us.kg
+- name: 未知6
   type: trojan
   server: 141.193.213.30
   port: 443
@@ -57,16 +57,6 @@ proxies:
     path: /id-tksi
     headers:
       Host: api24-normal.tiktokv.com.cyylr.eu.cc
-- name: 🔵@chillguy_vpn
-  type: vmess
-  server: 91.250.249.219
-  port: 11196
-  uuid: rootface
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /rootface
 - name: 𝗝𝗼𝗶𝗻 ➠@kapsolvpn🎀
   type: vless
   server: 188.114.97.6
@@ -79,17 +69,28 @@ proxies:
     path: /id-tksi
     headers:
       Host: graph.instagram.com.cyylr.eu.cc
+- name: Config0plus🇪🇦🥷🏻
+  type: trojan
+  server: 104.19.229.21
+  port: 443
+  password: bb45f73f-795b-4a05-a8e0-ba717bce87e3
+  sni: api24-normal.tiktokv.com.cyylr.eu.cc
+  network: ws
+  ws-opts:
+    path: /id-tksi
+    headers:
+      Host: api24-normal.tiktokv.com.cyylr.eu.cc
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 42
-  - 🇩🇪 德国 34
-  - 🇩🇪 德国 48
-  - Config0plus🇪🇦🥷🏻
-  - Config0plus🔥🇨🇦
-  - 🔵@chillguy_vpn
+  - 🇩🇪 德国 94
+  - 美国+Akamai科技公司CDN网络节点
+  - 🇩🇪 德国 59
+  - '143'
+  - 未知6
   - 𝗝𝗼𝗶𝗻 ➠@kapsolvpn🎀
+  - Config0plus🇪🇦🥷🏻
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
