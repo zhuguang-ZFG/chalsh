@@ -14,7 +14,32 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 未知11
+- name: 🇩🇪 德国 57
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🚀@V2Ray_Hub1200
+  type: trojan
+  server: 188.114.97.57
+  port: 443
+  password: humanity
+  sni: www.calmloud.com
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmloud.com
+- name: 🇩🇪 德国 96
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: Config0plus🇪🇦🥷🏻
   type: trojan
   server: 104.19.229.21
   port: 443
@@ -36,25 +61,22 @@ proxies:
     path: /id-tksi
     headers:
       Host: api24-normal.tiktokv.com.cyylr.eu.cc
-- name: mhdi
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: d3310d18-c198-4974-a3f1-f9fe7896d4dc
-  tls: true
-  servername: zaintest.vuclip.com.cyylr.eu.cc
-  network: ws
-  ws-opts:
-    path: /ae-bo
-    headers:
-      Host: zaintest.vuclip.com.cyylr.eu.cc
+- name: 🇺🇸US美国14
+  type: ss
+  server: 149.28.255.6
+  port: 816
+  password: GyZ5Xo0ht41vYmW3H4
+  cipher: chacha20-ietf-poly1305
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 未知11
+  - 🇩🇪 德国 57
+  - 🚀@V2Ray_Hub1200
+  - 🇩🇪 德国 96
+  - Config0plus🇪🇦🥷🏻
   - Config0plus🔥🇨🇦
-  - mhdi
+  - 🇺🇸US美国14
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
