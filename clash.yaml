@@ -14,61 +14,24 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 94
+- name: 🇩🇪 德国 102
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 美国+Akamai科技公司CDN网络节点
+- name: 🚀@V2Ray_Hub1200
   type: trojan
-  server: 172.235.63.252
+  server: 188.114.97.57
   port: 443
-  password: bX_lNHWoW6ywq82mI=KUr+8i__VSp0Hs_E
-  sni: 172.235.63.252
-- name: 🇩🇪 德国 59
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: '143'
-  type: vless
-  server: nuclear.us.kg
-  port: 443
-  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
-  tls: true
-  servername: nuclear.us.kg
+  password: humanity
+  sni: www.calmloud.com
   network: ws
   ws-opts:
-    path: /free/1.226.227.169:50001
+    path: /assignment
     headers:
-      Host: nuclear.us.kg
-- name: 未知6
-  type: trojan
-  server: 141.193.213.30
-  port: 443
-  password: bb45f73f-795b-4a05-a8e0-ba717bce87e3
-  sni: api24-normal.tiktokv.com.cyylr.eu.cc
-  network: ws
-  ws-opts:
-    path: /id-tksi
-    headers:
-      Host: api24-normal.tiktokv.com.cyylr.eu.cc
-- name: 𝗝𝗼𝗶𝗻 ➠@kapsolvpn🎀
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 1ce9392f-caf4-48f7-bbb9-475b101fbde0
-  tls: true
-  servername: graph.instagram.com.cyylr.eu.cc
-  network: ws
-  ws-opts:
-    path: /id-tksi
-    headers:
-      Host: graph.instagram.com.cyylr.eu.cc
+      Host: www.calmloud.com
 - name: Config0plus🇪🇦🥷🏻
   type: trojan
   server: 104.19.229.21
@@ -80,17 +43,21 @@ proxies:
     path: /id-tksi
     headers:
       Host: api24-normal.tiktokv.com.cyylr.eu.cc
+- name: 🇩🇪 德国 64
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 94
-  - 美国+Akamai科技公司CDN网络节点
-  - 🇩🇪 德国 59
-  - '143'
-  - 未知6
-  - 𝗝𝗼𝗶𝗻 ➠@kapsolvpn🎀
+  - 🇩🇪 德国 102
+  - 🚀@V2Ray_Hub1200
   - Config0plus🇪🇦🥷🏻
+  - 🇩🇪 德国 64
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
