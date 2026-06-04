@@ -14,35 +14,38 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸US美国14
-  type: ss
-  server: 149.28.255.6
-  port: 816
-  password: GyZ5Xo0ht41vYmW3H4
-  cipher: chacha20-ietf-poly1305
-- name: Config0plus🔥🇨🇦
-  type: trojan
-  server: 141.193.213.30
-  port: 443
-  password: bb45f73f-795b-4a05-a8e0-ba717bce87e3
-  sni: api24-normal.tiktokv.com.cyylr.eu.cc
+- name: 🇩🇪 德国 96
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 美国 44
+  type: vless
+  server: 43.162.85.247
+  port: 666
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  tls: true
+  servername: 43.162.85.247
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /id-tksi
+    path: /proxy
     headers:
-      Host: api24-normal.tiktokv.com.cyylr.eu.cc
-- name: 𝗝𝗼𝗶𝗻 ➠@kapsolvpn🎀
+      Host: 43.162.85.247
+- name: .2. Irancell 🌻 @Proxy_sh
   type: vless
   server: 188.114.97.6
   port: 443
-  uuid: 1ce9392f-caf4-48f7-bbb9-475b101fbde0
+  uuid: 9232a847-8f7d-4548-a23a-a8b3550e0f15
   tls: true
-  servername: graph.instagram.com.cyylr.eu.cc
+  servername: grabacademyportal.grab.com.cyylr.eu.cc
   network: ws
   ws-opts:
     path: /id-tksi
     headers:
-      Host: graph.instagram.com.cyylr.eu.cc
+      Host: grabacademyportal.grab.com.cyylr.eu.cc
 - name: Config0plus🇪🇦🥷🏻
   type: trojan
   server: 104.19.229.21
@@ -54,26 +57,26 @@ proxies:
     path: /id-tksi
     headers:
       Host: api24-normal.tiktokv.com.cyylr.eu.cc
-- name: 美国+CloudFlare节点
+- name: 未知11
   type: trojan
-  server: 104.20.6.134
+  server: 141.193.213.30
   port: 443
-  password: humanity
-  sni: www.calmloud.com
+  password: bb45f73f-795b-4a05-a8e0-ba717bce87e3
+  sni: api24-normal.tiktokv.com.cyylr.eu.cc
   network: ws
   ws-opts:
-    path: /assignment
+    path: /id-tksi
     headers:
-      Host: www.calmloud.com
+      Host: api24-normal.tiktokv.com.cyylr.eu.cc
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸US美国14
-  - Config0plus🔥🇨🇦
-  - 𝗝𝗼𝗶𝗻 ➠@kapsolvpn🎀
+  - 🇩🇪 德国 96
+  - 🇺🇸 美国 44
+  - .2. Irancell 🌻 @Proxy_sh
   - Config0plus🇪🇦🥷🏻
-  - 美国+CloudFlare节点
+  - 未知11
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
