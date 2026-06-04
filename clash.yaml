@@ -14,26 +14,20 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 96
+- name: 🇩🇪 德国 88
   type: vmess
-  server: 82.198.246.37
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸 美国 44
-  type: vless
-  server: 43.162.85.247
-  port: 666
-  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
-  tls: true
-  servername: 43.162.85.247
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /proxy
-    headers:
-      Host: 43.162.85.247
+- name: 🇩🇪 德国 68
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
 - name: .2. Irancell 🌻 @Proxy_sh
   type: vless
   server: 188.114.97.6
@@ -46,18 +40,7 @@ proxies:
     path: /id-tksi
     headers:
       Host: grabacademyportal.grab.com.cyylr.eu.cc
-- name: Config0plus🇪🇦🥷🏻
-  type: trojan
-  server: 104.19.229.21
-  port: 443
-  password: bb45f73f-795b-4a05-a8e0-ba717bce87e3
-  sni: api24-normal.tiktokv.com.cyylr.eu.cc
-  network: ws
-  ws-opts:
-    path: /id-tksi
-    headers:
-      Host: api24-normal.tiktokv.com.cyylr.eu.cc
-- name: 未知11
+- name: Config0plus🔥🇨🇦
   type: trojan
   server: 141.193.213.30
   port: 443
@@ -72,11 +55,10 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 96
-  - 🇺🇸 美国 44
+  - 🇩🇪 德国 88
+  - 🇩🇪 德国 68
   - .2. Irancell 🌻 @Proxy_sh
-  - Config0plus🇪🇦🥷🏻
-  - 未知11
+  - Config0plus🔥🇨🇦
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
