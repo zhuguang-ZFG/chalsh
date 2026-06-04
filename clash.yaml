@@ -14,27 +14,35 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 94
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 81
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 71
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+- name: 🇺🇸US美国14
+  type: ss
+  server: 149.28.255.6
+  port: 816
+  password: GyZ5Xo0ht41vYmW3H4
+  cipher: chacha20-ietf-poly1305
+- name: Config0plus🔥🇨🇦
+  type: trojan
+  server: 141.193.213.30
+  port: 443
+  password: bb45f73f-795b-4a05-a8e0-ba717bce87e3
+  sni: api24-normal.tiktokv.com.cyylr.eu.cc
+  network: ws
+  ws-opts:
+    path: /id-tksi
+    headers:
+      Host: api24-normal.tiktokv.com.cyylr.eu.cc
+- name: 𝗝𝗼𝗶𝗻 ➠@kapsolvpn🎀
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 1ce9392f-caf4-48f7-bbb9-475b101fbde0
+  tls: true
+  servername: graph.instagram.com.cyylr.eu.cc
+  network: ws
+  ws-opts:
+    path: /id-tksi
+    headers:
+      Host: graph.instagram.com.cyylr.eu.cc
 - name: Config0plus🇪🇦🥷🏻
   type: trojan
   server: 104.19.229.21
@@ -46,46 +54,26 @@ proxies:
     path: /id-tksi
     headers:
       Host: api24-normal.tiktokv.com.cyylr.eu.cc
-- name: 美国+V2CROSS.COM
-  type: ss
-  server: 149.28.255.6
-  port: 816
-  password: GyZ5Xo0ht41vYmW3H4
-  cipher: chacha20-ietf-poly1305
-- name: zMVzuQj3_vless
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 334e484f-7f7c-4895-a6e4-8951de2626f8
-  tls: true
-  servername: unnes.ac.id.cyylr.eu.cc
-  network: ws
-  ws-opts:
-    path: /ae-bo
-    headers:
-      Host: unnes.ac.id.cyylr.eu.cc
-- name: 未知23
+- name: 美国+CloudFlare节点
   type: trojan
-  server: 141.193.213.30
+  server: 104.20.6.134
   port: 443
-  password: bb45f73f-795b-4a05-a8e0-ba717bce87e3
-  sni: api24-normal.tiktokv.com.cyylr.eu.cc
+  password: humanity
+  sni: www.calmloud.com
   network: ws
   ws-opts:
-    path: /id-tksi
+    path: /assignment
     headers:
-      Host: api24-normal.tiktokv.com.cyylr.eu.cc
+      Host: www.calmloud.com
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 94
-  - 🇩🇪 德国 81
-  - 🇩🇪 德国 71
+  - 🇺🇸US美国14
+  - Config0plus🔥🇨🇦
+  - 𝗝𝗼𝗶𝗻 ➠@kapsolvpn🎀
   - Config0plus🇪🇦🥷🏻
-  - 美国+V2CROSS.COM
-  - zMVzuQj3_vless
-  - 未知23
+  - 美国+CloudFlare节点
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
