@@ -14,19 +14,50 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 94
+- name: 🇩🇪 德国 92
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 101
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 美国+德克萨斯州达拉斯Linode数据中心
-  type: trojan
-  server: 45.79.8.17
+- name: .2. Irancell 🌻 @Proxy_sh
+  type: vless
+  server: 188.114.97.6
   port: 443
-  password: rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf
-  sni: 45.79.8.17
+  uuid: 9232a847-8f7d-4548-a23a-a8b3550e0f15
+  tls: true
+  servername: grabacademyportal.grab.com.cyylr.eu.cc
+  network: ws
+  ws-opts:
+    path: /id-tksi
+    headers:
+      Host: grabacademyportal.grab.com.cyylr.eu.cc
+- name: 🇩🇪 德国 58
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 未知18
+  type: trojan
+  server: 141.193.213.30
+  port: 443
+  password: bb45f73f-795b-4a05-a8e0-ba717bce87e3
+  sni: api24-normal.tiktokv.com.cyylr.eu.cc
+  network: ws
+  ws-opts:
+    path: /id-tksi
+    headers:
+      Host: api24-normal.tiktokv.com.cyylr.eu.cc
 - name: Config0plus🇪🇦🥷🏻
   type: trojan
   server: 104.19.229.21
@@ -38,41 +69,16 @@ proxies:
     path: /id-tksi
     headers:
       Host: api24-normal.tiktokv.com.cyylr.eu.cc
-- name: 🇺🇸 美国 44
-  type: vless
-  server: 43.162.85.247
-  port: 666
-  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
-  tls: true
-  servername: 43.162.85.247
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /proxy
-    headers:
-      Host: 43.162.85.247
-- name: 🇺🇸 美国 43
-  type: vless
-  server: 43.162.115.192
-  port: 666
-  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
-  tls: true
-  servername: 43.162.115.192
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /proxy
-    headers:
-      Host: 43.162.115.192
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 94
-  - 美国+德克萨斯州达拉斯Linode数据中心
+  - 🇩🇪 德国 92
+  - 🇩🇪 德国 101
+  - .2. Irancell 🌻 @Proxy_sh
+  - 🇩🇪 德国 58
+  - 未知18
   - Config0plus🇪🇦🥷🏻
-  - 🇺🇸 美国 44
-  - 🇺🇸 美国 43
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
