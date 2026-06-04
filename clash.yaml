@@ -14,47 +14,22 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 93
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 100
+- name: 🇩🇪 德国 94
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: FYFbLm5t_vless
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 334e484f-7f7c-4895-a6e4-8951de2626f8
-  tls: true
-  servername: unnes.ac.id.cyylr.eu.cc
-  network: ws
-  ws-opts:
-    path: /ae-bo
-    headers:
-      Host: unnes.ac.id.cyylr.eu.cc
-- name: 🇺🇸 美国 11
-  type: vless
-  server: 134.33.73.249
-  port: 54254
-  uuid: acba684c-4098-4eca-f519-828b09f96464
-  flow: xtls-rprx-vision
-  tls: true
-  servername: apple.com
-  reality-opts:
-    public-key: HFEz9fAOugljXea_ZVOUHMju08su8h0P9RANNcHP2y4
-    short-id: db35ffdc
-  client-fingerprint: chrome
-- name: Config0plus🔥🇨🇦
+- name: 美国+德克萨斯州达拉斯Linode数据中心
   type: trojan
-  server: 141.193.213.30
+  server: 45.79.8.17
+  port: 443
+  password: rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf
+  sni: 45.79.8.17
+- name: Config0plus🇪🇦🥷🏻
+  type: trojan
+  server: 104.19.229.21
   port: 443
   password: bb45f73f-795b-4a05-a8e0-ba717bce87e3
   sni: api24-normal.tiktokv.com.cyylr.eu.cc
@@ -63,15 +38,41 @@ proxies:
     path: /id-tksi
     headers:
       Host: api24-normal.tiktokv.com.cyylr.eu.cc
+- name: 🇺🇸 美国 44
+  type: vless
+  server: 43.162.85.247
+  port: 666
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  tls: true
+  servername: 43.162.85.247
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /proxy
+    headers:
+      Host: 43.162.85.247
+- name: 🇺🇸 美国 43
+  type: vless
+  server: 43.162.115.192
+  port: 666
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  tls: true
+  servername: 43.162.115.192
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /proxy
+    headers:
+      Host: 43.162.115.192
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 93
-  - 🇩🇪 德国 100
-  - FYFbLm5t_vless
-  - 🇺🇸 美国 11
-  - Config0plus🔥🇨🇦
+  - 🇩🇪 德国 94
+  - 美国+德克萨斯州达拉斯Linode数据中心
+  - Config0plus🇪🇦🥷🏻
+  - 🇺🇸 美国 44
+  - 🇺🇸 美国 43
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
