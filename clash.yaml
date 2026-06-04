@@ -14,32 +14,44 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 88
+- name: 🇩🇪 德国 93
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 68
+- name: 🇩🇪 德国 100
   type: vmess
-  server: 82.198.246.214
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
-  cipher: aes-128-gcm
-- name: .2. Irancell 🌻 @Proxy_sh
+  cipher: auto
+- name: FYFbLm5t_vless
   type: vless
   server: 188.114.97.6
   port: 443
-  uuid: 9232a847-8f7d-4548-a23a-a8b3550e0f15
+  uuid: 334e484f-7f7c-4895-a6e4-8951de2626f8
   tls: true
-  servername: grabacademyportal.grab.com.cyylr.eu.cc
+  servername: unnes.ac.id.cyylr.eu.cc
   network: ws
   ws-opts:
-    path: /id-tksi
+    path: /ae-bo
     headers:
-      Host: grabacademyportal.grab.com.cyylr.eu.cc
+      Host: unnes.ac.id.cyylr.eu.cc
+- name: 🇺🇸 美国 11
+  type: vless
+  server: 134.33.73.249
+  port: 54254
+  uuid: acba684c-4098-4eca-f519-828b09f96464
+  flow: xtls-rprx-vision
+  tls: true
+  servername: apple.com
+  reality-opts:
+    public-key: HFEz9fAOugljXea_ZVOUHMju08su8h0P9RANNcHP2y4
+    short-id: db35ffdc
+  client-fingerprint: chrome
 - name: Config0plus🔥🇨🇦
   type: trojan
   server: 141.193.213.30
@@ -55,9 +67,10 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 88
-  - 🇩🇪 德国 68
-  - .2. Irancell 🌻 @Proxy_sh
+  - 🇩🇪 德国 93
+  - 🇩🇪 德国 100
+  - FYFbLm5t_vless
+  - 🇺🇸 美国 11
   - Config0plus🔥🇨🇦
   url: https://www.gstatic.com/generate_204
   interval: 300
