@@ -14,35 +14,16 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪 德国 92
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪 德国 101
+- name: 🇩🇪 德国 100
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: .2. Irancell 🌻 @Proxy_sh
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 9232a847-8f7d-4548-a23a-a8b3550e0f15
-  tls: true
-  servername: grabacademyportal.grab.com.cyylr.eu.cc
-  network: ws
-  ws-opts:
-    path: /id-tksi
-    headers:
-      Host: grabacademyportal.grab.com.cyylr.eu.cc
-- name: 🇩🇪 德国 58
+- name: 🇩🇪 德国 77
   type: vmess
-  server: 82.198.246.214
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -58,27 +39,52 @@ proxies:
     path: /id-tksi
     headers:
       Host: api24-normal.tiktokv.com.cyylr.eu.cc
-- name: Config0plus🇪🇦🥷🏻
-  type: trojan
-  server: 104.19.229.21
+- name: '143'
+  type: vless
+  server: nuclear.us.kg
   port: 443
-  password: bb45f73f-795b-4a05-a8e0-ba717bce87e3
-  sni: api24-normal.tiktokv.com.cyylr.eu.cc
+  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  tls: true
+  servername: nuclear.us.kg
   network: ws
   ws-opts:
-    path: /id-tksi
+    path: /free/1.226.227.169:50001
     headers:
-      Host: api24-normal.tiktokv.com.cyylr.eu.cc
+      Host: nuclear.us.kg
+- name: 🚀@V2Ray_Hub1200
+  type: vless
+  server: 188.114.97.6
+  port: 443
+  uuid: 58341346-98dd-4094-a26c-c378e86261e1
+  tls: true
+  servername: support.zoom.us.cyylr.eu.cc
+  network: ws
+  ws-opts:
+    path: /in-pdr
+    headers:
+      Host: support.zoom.us.cyylr.eu.cc
+- name: 美国+CloudFlare节点
+  type: vless
+  server: cf.9999669.xyz
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  servername: fgnix832fx.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fgnix832fx.fx6hsv0.ccwu.cc
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪 德国 92
-  - 🇩🇪 德国 101
-  - .2. Irancell 🌻 @Proxy_sh
-  - 🇩🇪 德国 58
+  - 🇩🇪 德国 100
+  - 🇩🇪 德国 77
   - 未知18
-  - Config0plus🇪🇦🥷🏻
+  - '143'
+  - 🚀@V2Ray_Hub1200
+  - 美国+CloudFlare节点
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
