@@ -14,39 +14,18 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 美国_40
+- name: 美国_42
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 美国_26
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 美国+CloudFlare节点
-  type: vless
-  server: cosmin.ns.cloudflare.com
-  port: 443
-  uuid: 7270612b-49f6-4b04-999c-34d8263da767
-  tls: true
-  servername: picassooo.info
-  network: ws
-  ws-opts:
-    path: /aymdlws
-    headers:
-      Host: picassooo.info
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 美国_40
-  - 美国_26
-  - 美国+CloudFlare节点
+  - 美国_42
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
