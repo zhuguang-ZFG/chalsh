@@ -14,55 +14,39 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 美国_33
+- name: 美国_40
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: .2. Irancell 🌻 @Proxy_sh
+- name: 美国_26
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 美国+CloudFlare节点
   type: vless
-  server: 188.114.97.6
+  server: cosmin.ns.cloudflare.com
   port: 443
-  uuid: 9232a847-8f7d-4548-a23a-a8b3550e0f15
+  uuid: 7270612b-49f6-4b04-999c-34d8263da767
   tls: true
-  servername: grabacademyportal.grab.com.cyylr.eu.cc
+  servername: picassooo.info
   network: ws
   ws-opts:
-    path: /id-tksi
+    path: /aymdlws
     headers:
-      Host: grabacademyportal.grab.com.cyylr.eu.cc
-- name: Config0plus🔥🇨🇦
-  type: trojan
-  server: 141.193.213.30
-  port: 443
-  password: bb45f73f-795b-4a05-a8e0-ba717bce87e3
-  sni: api24-normal.tiktokv.com.cyylr.eu.cc
-  network: ws
-  ws-opts:
-    path: /id-tksi
-    headers:
-      Host: api24-normal.tiktokv.com.cyylr.eu.cc
-- name: 未知33
-  type: trojan
-  server: 104.19.229.21
-  port: 443
-  password: bb45f73f-795b-4a05-a8e0-ba717bce87e3
-  sni: api24-normal.tiktokv.com.cyylr.eu.cc
-  network: ws
-  ws-opts:
-    path: /id-tksi
-    headers:
-      Host: api24-normal.tiktokv.com.cyylr.eu.cc
+      Host: picassooo.info
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 美国_33
-  - .2. Irancell 🌻 @Proxy_sh
-  - Config0plus🔥🇨🇦
-  - 未知33
+  - 美国_40
+  - 美国_26
+  - 美国+CloudFlare节点
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
