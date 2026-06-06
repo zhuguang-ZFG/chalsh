@@ -14,31 +14,31 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 德国_3
+- name: US美国
   type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 'more : @Qara_atayi | Warp 1'
+- name: 'more : @Qara_atayi | Warp 7'
   type: vless
   server: 188.114.97.6
   port: 443
-  uuid: 1043634e-8d9d-4736-83fa-f14ddc9d464c
+  uuid: a253ff3f-fb8d-4160-85e8-61b080f0f561
   tls: true
   servername: dfsuporte.garena.com.ex33r.eu.cc
   network: ws
   ws-opts:
-    path: /id-amz
+    path: /my-mbv
     headers:
       Host: dfsuporte.garena.com.ex33r.eu.cc
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 德国_3
-  - 'more : @Qara_atayi | Warp 1'
+  - US美国
+  - 'more : @Qara_atayi | Warp 7'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
