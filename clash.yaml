@@ -14,55 +14,52 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 美国_34
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: aes-128-gcm
-- name: 美国4|@ripaojiedian
+- name: 美国
+  type: vless
+  server: adf.ly
+  port: 443
+  uuid: 1679af35-6dd6-4c09-ae3b-18f239217f3e
+  tls: true
+  servername: rAyAn-007.pArViN.DpDnS.OrG
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.parvin.dpdns.org
+- name: 德国_1
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 'more : @Qara_atayi | Warp 7'
+- name: 美国+V2CROSS.COM
+  type: trojan
+  server: 149.104.87.182
+  port: 443
+  password: PtRV8to08i8FMsY.Uw7=yMuIaR3eVTGmvA
+  sni: www.jewelapp.click
+  skip-cert-verify: true
+- name: 'more : @Qara_atayi | Warp 1'
   type: vless
   server: 188.114.97.6
   port: 443
-  uuid: a253ff3f-fb8d-4160-85e8-61b080f0f561
+  uuid: 1043634e-8d9d-4736-83fa-f14ddc9d464c
   tls: true
   servername: dfsuporte.garena.com.ex33r.eu.cc
   network: ws
   ws-opts:
-    path: /my-mbv
+    path: /id-amz
     headers:
       Host: dfsuporte.garena.com.ex33r.eu.cc
-- name: 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️San Francisco (Financial District)🅿️ping:156ms
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-- name: 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles🅿️ping:196ms
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 美国_34
-  - 美国4|@ripaojiedian
-  - 'more : @Qara_atayi | Warp 7'
-  - 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️San Francisco (Financial District)🅿️ping:156ms
-  - 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles🅿️ping:196ms
+  - 美国
+  - 德国_1
+  - 美国+V2CROSS.COM
+  - 'more : @Qara_atayi | Warp 1'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
