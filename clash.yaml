@@ -14,36 +14,57 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 未知节点179
+- name: 英国_1
   type: vmess
-  server: 172.67.187.219
-  port: 80
-  uuid: 65b17c0b-0a52-4b54-9bc9-60e31397b841
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-  network: ws
-  ws-opts:
-    path: /65b17c0b-0a52-4b54-9bc9-60e31397b841-vmess
-    headers:
-      Host: accklsj.bufu.us.ci
-- name: 'more : @Qara_atayi | Warp 1'
+- name: 美国_2
+  type: vless
+  server: panels2.airboxvip.top
+  port: 4028
+  uuid: d89a329c-c256-4956-ab21-517606ac3370
+- name: 美国+德克萨斯州达拉斯Linode数据中心
+  type: trojan
+  server: 45.79.8.17
+  port: 443
+  password: rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf
+  sni: 45.79.8.17
+- name: 'more : @Qara_atayi | Warp 7'
   type: vless
   server: 188.114.97.6
   port: 443
-  uuid: 1043634e-8d9d-4736-83fa-f14ddc9d464c
+  uuid: a253ff3f-fb8d-4160-85e8-61b080f0f561
   tls: true
   servername: dfsuporte.garena.com.ex33r.eu.cc
   network: ws
   ws-opts:
-    path: /id-amz
+    path: /my-mbv
     headers:
       Host: dfsuporte.garena.com.ex33r.eu.cc
+- name: 未知节点83
+  type: vless
+  server: freeyx.cloudflare88.eu.org
+  port: 443
+  uuid: efdbf609-cee9-4031-bca8-9327de267a2d
+  tls: true
+  servername: do-sfo3.862400.xyz
+  network: ws
+  ws-opts:
+    path: /announcement
+    headers:
+      Host: do-sfo3.862400.xyz
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 未知节点179
-  - 'more : @Qara_atayi | Warp 1'
+  - 英国_1
+  - 美国_2
+  - 美国+德克萨斯州达拉斯Linode数据中心
+  - 'more : @Qara_atayi | Warp 7'
+  - 未知节点83
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
