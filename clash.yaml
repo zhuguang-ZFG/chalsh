@@ -14,24 +14,20 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 英国_1
+- name: 美国
+  type: vmess
+  server: v4.hdacd.com
+  port: 30804
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+- name: 英国_12
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 美国_2
-  type: vless
-  server: panels2.airboxvip.top
-  port: 4028
-  uuid: d89a329c-c256-4956-ab21-517606ac3370
-- name: 美国+德克萨斯州达拉斯Linode数据中心
-  type: trojan
-  server: 45.79.8.17
-  port: 443
-  password: rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf
-  sni: 45.79.8.17
 - name: 'more : @Qara_atayi | Warp 7'
   type: vless
   server: 188.114.97.6
@@ -44,27 +40,19 @@ proxies:
     path: /my-mbv
     headers:
       Host: dfsuporte.garena.com.ex33r.eu.cc
-- name: 未知节点83
+- name: 美国_2
   type: vless
-  server: freeyx.cloudflare88.eu.org
-  port: 443
-  uuid: efdbf609-cee9-4031-bca8-9327de267a2d
-  tls: true
-  servername: do-sfo3.862400.xyz
-  network: ws
-  ws-opts:
-    path: /announcement
-    headers:
-      Host: do-sfo3.862400.xyz
+  server: panels2.airboxvip.top
+  port: 4028
+  uuid: d89a329c-c256-4956-ab21-517606ac3370
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 英国_1
-  - 美国_2
-  - 美国+德克萨斯州达拉斯Linode数据中心
+  - 美国
+  - 英国_12
   - 'more : @Qara_atayi | Warp 7'
-  - 未知节点83
+  - 美国_2
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
