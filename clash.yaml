@@ -14,13 +14,28 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 美国4|@ripaojiedian
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+- name: 美国
+  type: vless
+  server: 213.179.69.150
+  port: 35130
+  uuid: 00000000-0000-4000-8000-000000000000
+  tls: true
+  servername: nn9jdg-k7yewrrk.acg.xx.kg
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: nn9jdg-k7yewrrk.acg.xx.kg
+- name: Sasanipor🇦🇺
+  type: vless
+  server: 188.114.97.6
+  port: 80
+  uuid: e51453d3-7972-44d7-a657-ed89520f48b6
+  network: ws
+  ws-opts:
+    path: /au-do
+    headers:
+      Host: web.whatsapp.com.r3xxe.eu.cc
 - name: PERSIANVIBEJun7-1
   type: vless
   server: 188.114.97.6
@@ -33,12 +48,21 @@ proxies:
     path: /id-amz
     headers:
       Host: dfsuporte.garena.com.ex33r.eu.cc
+- name: 德国+黑森州法兰克福Amazon数据中心
+  type: hysteria2
+  server: vpn-de-002.fastervpn.world
+  port: 443
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-de-002.fastervpn.world
+  skip-cert-verify: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 美国4|@ripaojiedian
+  - 美国
+  - Sasanipor🇦🇺
   - PERSIANVIBEJun7-1
+  - 德国+黑森州法兰克福Amazon数据中心
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
