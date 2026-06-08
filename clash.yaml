@@ -14,31 +14,26 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 英国_13
+- name: 英国
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 美国_24
   type: vmess
   server: 82.198.246.214
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: PERSIANVIBEJun7-2
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: a253ff3f-fb8d-4160-85e8-61b080f0f561
-  tls: true
-  servername: dfsuporte.garena.com.ex33r.eu.cc
-  network: ws
-  ws-opts:
-    path: /my-mbv
-    headers:
-      Host: dfsuporte.garena.com.ex33r.eu.cc
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 英国_13
-  - PERSIANVIBEJun7-2
+  - 英国
+  - 美国_24
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
