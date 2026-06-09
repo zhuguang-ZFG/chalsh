@@ -14,7 +14,21 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: A1sR3Px0_vmess
+- name: 英国_15
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 美国_11
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: W1s7XQkM_vmess
   type: vmess
   server: 129.146.143.80
   port: 48111
@@ -25,7 +39,9 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - A1sR3Px0_vmess
+  - 英国_15
+  - 美国_11
+  - W1s7XQkM_vmess
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
