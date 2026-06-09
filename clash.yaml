@@ -14,7 +14,7 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: ssRENcXc_vmess
+- name: A1sR3Px0_vmess
   type: vmess
   server: 129.146.143.80
   port: 48111
@@ -25,7 +25,7 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - ssRENcXc_vmess
+  - A1sR3Px0_vmess
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
