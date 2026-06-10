@@ -14,25 +14,18 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: NNrgLJ7a_vmess
+- name: 美国_1
   type: vmess
-  server: 129.146.143.80
-  port: 48111
-  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 美国+德克萨斯州达拉斯Linode数据中心
-  type: trojan
-  server: 45.79.8.17
-  port: 443
-  password: rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf
-  sni: 45.79.8.17
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - NNrgLJ7a_vmess
-  - 美国+德克萨斯州达拉斯Linode数据中心
+  - 美国_1
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
