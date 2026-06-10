@@ -14,29 +14,18 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 未知6
+- name: 英國_4
   type: vmess
-  server: 103.179.142.212
-  port: 22047
-  uuid: 948763b5-a064-453c-a015-185cb183bbfe
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 2StZEGFa_vmess
-  type: vmess
-  server: 129.146.143.80
-  port: 48111
-  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 未知6
-  - 2StZEGFa_vmess
+  - 英國_4
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
