@@ -14,7 +14,7 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 美国4|@ripaojiedian
+- name: 🇺🇸 美国4|@ripaojiedian
   type: vmess
   server: 82.198.246.250
   port: 180
@@ -25,7 +25,7 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 美国4|@ripaojiedian
+  - 🇺🇸 美国4|@ripaojiedian
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
