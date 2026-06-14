@@ -16,7 +16,7 @@ dns:
 proxies:
 - name: 刚果(金)
   type: vless
-  server: cf.877774.xyz
+  server: www.shopify.com
   port: 443
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   tls: true
@@ -27,33 +27,11 @@ proxies:
     path: /
     headers:
       Host: t1s1.rittbo.kdns.fr
-- name: 多哥
-  type: vless
-  server: da.mfa.gov.ua
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  servername: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-- name: 美国4|@ripaojiedian
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
   - 刚果(金)
-  - 多哥
-  - 美国4|@ripaojiedian
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
