@@ -14,6 +14,18 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
+- name: 法国
+  type: vless
+  server: store.ubi.com
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  servername: t1s1.rittbo.kdns.fr
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
 - name: 美国4|@ripaojiedian
   type: vmess
   server: 82.198.246.250
@@ -21,35 +33,12 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 美国
-  type: vmess
-  server: plb.mmm.uw.to
-  port: 443
-  uuid: 06cfc99d-fd7c-4f36-8aba-14efb7b231af
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: plb.mmm.uw.to
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /06cfc99d-fd7c-4f36-8aba-14efb7b231af-vm
-    headers:
-      Host: plb.mmm.uw.to
-- name: 法国
-  type: hysteria2
-  server: 62.210.10.108
-  port: 22000
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 美国4|@ripaojiedian
-  - 美国
   - 法国
+  - 美国4|@ripaojiedian
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
