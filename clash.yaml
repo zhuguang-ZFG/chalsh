@@ -14,30 +14,37 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: Global 🌐 | @Raydikalx | 2332
+- name: US 🇺🇸 | @Raydikalx | 345
   type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 23.141.204.132
+  port: 29633
+  uuid: 0685a0bf-2413-45d2-dc00-c0281387c247
   alterId: 0
   cipher: auto
-- name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 28ms
-  type: vless
-  server: 137.184.218.169
-  port: 36925
-  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
-  client-fingerprint: chrome
+- name: Global 🌐 | @Raydikalx | 2230
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+- name: Global 🌐 | @Raydikalx | 2231
+  type: vmess
+  server: 129.146.143.80
+  port: 48111
+  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - Global 🌐 | @Raydikalx | 2332
-  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 28ms
+  - US 🇺🇸 | @Raydikalx | 345
+  - Global 🌐 | @Raydikalx | 2230
+  - Global 🌐 | @Raydikalx | 2231
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
