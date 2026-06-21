@@ -14,51 +14,18 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 427
+- name: US 🇺🇸 | @Raydikalx | 429
   type: vmess
   server: 186.244.208.78
   port: 30022
   uuid: b7d93549-0f3f-4af2-9f4d-4340867a23b4
   alterId: 0
   cipher: auto
-- name: 🇺🇸 Reality
-  type: vless
-  server: 185.173.144.209
-  port: 57820
-  uuid: 0f06e572-eb9a-4831-be66-0646a03b849b
-  tls: true
-  servername: www.yahoo.com
-  reality-opts:
-    public-key: YgVq_pYLd-NOCGUo0nftxYMwip15wAg8Z_23MrbVNiI
-    short-id: ecc903f84bce67fc
-  client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | 2939
-  type: vmess
-  server: 38.114.123.42
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 美国+CloudFlare节点
-  type: vless
-  server: dx.mmhh.eu.cc
-  port: 443
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  tls: true
-  servername: hhlfy.twiladaphne.ndjp.net
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 427
-  - 🇺🇸 Reality
-  - US 🇺🇸 | @Raydikalx | 2939
-  - 美国+CloudFlare节点
+  - US 🇺🇸 | @Raydikalx | 429
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
