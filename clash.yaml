@@ -14,45 +14,18 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 99ms
-  type: vless
-  server: nl-1.coinbridge.nl
-  port: 443
-  uuid: b0f08ae1-7cf9-4612-ad61-72681e0b92da
-  tls: true
-  servername: google.com
-  reality-opts:
-    public-key: kPBXTe2KCp55GrHS_qU_sF7ohUcT8Vu-e8i6Yd9MERI
-    short-id: d5c7f84e37e0c12d
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: data-sync
-- name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 8ms
-  type: vless
-  server: 137.184.218.169
-  port: 36925
-  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
-  client-fingerprint: chrome
-- name: Global 🌐 | @Raydikalx | 2449
+- name: V2 - 17
   type: vmess
-  server: 2.26.231.87
-  port: 110
-  uuid: 6d6595b5-ff7f-4995-abde-b1187299a63d
+  server: 57.151.100.27
+  port: 10086
+  uuid: 550e8400-e29b-41d4-a716-446655440000
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 99ms
-  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 8ms
-  - Global 🌐 | @Raydikalx | 2449
+  - V2 - 17
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
