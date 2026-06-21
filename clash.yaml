@@ -14,28 +14,23 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 'Channel : @Daily_Configs'
+- name: 🆔soskeynet 🔒 VL-TCP- 🇺🇸 US 82ms
   type: vless
-  server: 18.153.81.34
-  port: 443
-  uuid: ad73ff14-a0e3-46d1-adc0-02ca29a32485
-- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 3ms
-  type: vless
-  server: 47.253.226.114
-  port: 443
-  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
+  server: 34.213.172.16
+  port: 22189
+  uuid: 4889ee33-74e5-4819-86d8-b2a1a5bc8f46
   flow: xtls-rprx-vision
   tls: true
-  servername: www.cloudflare.com
+  servername: www.tesla.com
   reality-opts:
-    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
-  client-fingerprint: chrome
+    public-key: 5tUZskKOCKpjz3j7hmuYaQHNfE1QRtZI9P62qvSs1GY
+    short-id: 47b6d14ff477fe59
+  client-fingerprint: firefox
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 'Channel : @Daily_Configs'
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 3ms
+  - 🆔soskeynet 🔒 VL-TCP- 🇺🇸 US 82ms
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
