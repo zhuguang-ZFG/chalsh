@@ -14,23 +14,28 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 123ms
+- name: 'Channel : @Daily_Configs'
   type: vless
-  server: usa.ldtp.com
+  server: 18.153.81.34
   port: 443
-  uuid: 0e49e208-e09e-49bc-afee-2907e5419107
+  uuid: ad73ff14-a0e3-46d1-adc0-02ca29a32485
+- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 3ms
+  type: vless
+  server: 47.253.226.114
+  port: 443
+  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
   flow: xtls-rprx-vision
   tls: true
-  servername: usa.ldtp.com
+  servername: www.cloudflare.com
   reality-opts:
-    public-key: N--0r-eUKZ-23lmSHvsC4ywFbsAWRahFtxv_N02AgFY
-    short-id: df2becfa7b040c78
-  client-fingerprint: firefox
+    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+  client-fingerprint: chrome
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 123ms
+  - 'Channel : @Daily_Configs'
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 3ms
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
