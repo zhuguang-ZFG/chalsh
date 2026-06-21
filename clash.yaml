@@ -14,7 +14,7 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 429
+- name: US 🇺🇸 | @Raydikalx | 369
   type: vmess
   server: 186.244.208.78
   port: 30022
@@ -25,7 +25,7 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 429
+  - US 🇺🇸 | @Raydikalx | 369
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
