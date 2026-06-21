@@ -14,28 +14,23 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 美国_4
-  type: ss
-  server: tinkered-pennies-puppies.freesocks.work
-  port: 443
-  password: hbGrpfvNrJsUmKmPbR3iY2
-  cipher: chacha20-ietf-poly1305
-- name: 🇺🇸 WS 2
+- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 123ms
   type: vless
-  server: 185.173.144.212
-  port: 19430
-  uuid: 0f06e572-eb9a-4831-be66-0646a03b849b
-  network: ws
-  ws-opts:
-    path: /meet
-    headers:
-      Host: play.google.com
+  server: usa.ldtp.com
+  port: 443
+  uuid: 0e49e208-e09e-49bc-afee-2907e5419107
+  flow: xtls-rprx-vision
+  tls: true
+  servername: usa.ldtp.com
+  reality-opts:
+    public-key: N--0r-eUKZ-23lmSHvsC4ywFbsAWRahFtxv_N02AgFY
+    short-id: df2becfa7b040c78
+  client-fingerprint: firefox
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 美国_4
-  - 🇺🇸 WS 2
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 123ms
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
