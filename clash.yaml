@@ -14,23 +14,38 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🆔soskeynet 🔒 VL-TCP- 🇺🇸 US 82ms
+- name: 未知62
+  type: vmess
+  server: 57.151.100.27
+  port: 10086
+  uuid: 550e8400-e29b-41d4-a716-446655440000
+  alterId: 0
+  cipher: auto
+- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 3ms
   type: vless
-  server: 34.213.172.16
-  port: 22189
-  uuid: 4889ee33-74e5-4819-86d8-b2a1a5bc8f46
+  server: 47.253.226.114
+  port: 443
+  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
   flow: xtls-rprx-vision
   tls: true
-  servername: www.tesla.com
+  servername: www.cloudflare.com
   reality-opts:
-    public-key: 5tUZskKOCKpjz3j7hmuYaQHNfE1QRtZI9P62qvSs1GY
-    short-id: 47b6d14ff477fe59
-  client-fingerprint: firefox
+    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+  client-fingerprint: chrome
+- name: US 🇺🇸 | @Raydikalx | 2444
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🆔soskeynet 🔒 VL-TCP- 🇺🇸 US 82ms
+  - 未知62
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 3ms
+  - US 🇺🇸 | @Raydikalx | 2444
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
