@@ -14,38 +14,44 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 190ms
+- name: US 🇺🇸 | @Raydikalx | 2638
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
+- name: 💮 ＳＥＧＡＲＯ
   type: vless
-  server: sw-2.coinbridge.nl
-  port: 443
-  uuid: b0f08ae1-7cf9-4612-ad61-72681e0b92da
+  server: 15.204.97.219
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
   tls: true
-  servername: google.com
+  servername: fuck.rkn
   reality-opts:
-    public-key: kPBXTe2KCp55GrHS_qU_sF7ohUcT8Vu-e8i6Yd9MERI
-    short-id: d5c7f84e37e0c12d
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: data-sync
-- name: ' 美国'
-  type: trojan
-  server: 140.82.19.127
-  port: 443
-  password: '114514'
-  sni: tjaaa.hhllfly.kdns.fr
-  skip-cert-verify: true
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
+- name: Global 🌐 | @Raydikalx | 2633
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /
+    path: /cctv13.m3u8
     headers:
-      Host: tjaaa.hhllfly.kdns.fr
+      Host: 129.146.77.248
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 190ms
-  - ' 美国'
+  - US 🇺🇸 | @Raydikalx | 2638
+  - 💮 ＳＥＧＡＲＯ
+  - Global 🌐 | @Raydikalx | 2633
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
