@@ -14,22 +14,38 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 28.🇩🇪Германия | @LimeVPNFREE
+- name: 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 190ms
   type: vless
-  server: 18.153.81.34
+  server: sw-2.coinbridge.nl
   port: 443
-  uuid: ad73ff14-a0e3-46d1-adc0-02ca29a32485
-- name: 🇫🇷 Join Telegram @ir2ray_free🇫🇷
-  type: vless
-  server: 45.13.119.219
-  port: 8888
-  uuid: eb77be10-9d9e-527b-a78d-8caaf58992d6
+  uuid: b0f08ae1-7cf9-4612-ad61-72681e0b92da
+  tls: true
+  servername: google.com
+  reality-opts:
+    public-key: kPBXTe2KCp55GrHS_qU_sF7ohUcT8Vu-e8i6Yd9MERI
+    short-id: d5c7f84e37e0c12d
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: data-sync
+- name: ' 美国'
+  type: trojan
+  server: 140.82.19.127
+  port: 443
+  password: '114514'
+  sni: tjaaa.hhllfly.kdns.fr
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tjaaa.hhllfly.kdns.fr
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 28.🇩🇪Германия | @LimeVPNFREE
-  - 🇫🇷 Join Telegram @ir2ray_free🇫🇷
+  - 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 190ms
+  - ' 美国'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
