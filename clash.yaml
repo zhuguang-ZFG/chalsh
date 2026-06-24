@@ -14,37 +14,18 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪_德国_54
+- name: 🇩🇪_德国_24
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 23.🇩🇪Германия | @LimeVPNFREE
-  type: vless
-  server: 18.153.81.34
-  port: 443
-  uuid: ad73ff14-a0e3-46d1-adc0-02ca29a32485
-- name: 美国+V2CROSS.COM
-  type: trojan
-  server: 45.61.52.243
-  port: 443
-  password: O4O8.Ew+ujFX6GJBQ=xQr.heGwux0GYHqk
-  sni: 45.61.52.243
-- name: 🇺🇸_美国_6
-  type: vless
-  server: 206.82.3.131
-  port: 443
-  uuid: d26598cf-2cdf-4219-80d0-94646dff160d
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪_德国_54
-  - 23.🇩🇪Германия | @LimeVPNFREE
-  - 美国+V2CROSS.COM
-  - 🇺🇸_美国_6
+  - 🇩🇪_德国_24
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
