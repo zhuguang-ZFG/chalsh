@@ -14,50 +14,31 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪_德国_50
+- name: 🇩🇪_德国_41
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇯🇵JP日本4
-  type: trojan
-  server: 151.101.110.219
-  port: 443
-  password: MiTiVPN
-  sni: global.fastly.com
-  network: ws
-  ws-opts:
-    path: /nl=mitivpn
-    headers:
-      Host: cdn2-mitivpn.global.ssl.fastly.net
-- name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 66ms
+- name: 🇺🇸_美国_81
   type: vless
-  server: 137.184.218.169
-  port: 36925
-  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
+  server: 192.3.120.11
+  port: 50150
+  uuid: 9e367d4d-60d9-4c42-a1f7-f1c112a469dc
   flow: xtls-rprx-vision
   tls: true
-  servername: www.cloudflare.com
+  servername: apple.com
   reality-opts:
-    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
+    public-key: XqWJAWVtbVhdJyk30GxPypOmILc1ddYv8Ez_mpw0VTk
+    short-id: 6d0420e3
   client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | 527
-  type: vmess
-  server: 186.244.208.78
-  port: 30022
-  uuid: b7d93549-0f3f-4af2-9f4d-4340867a23b4
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪_德国_50
-  - 🇯🇵JP日本4
-  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 66ms
-  - US 🇺🇸 | @Raydikalx | 527
+  - 🇩🇪_德国_41
+  - 🇺🇸_美国_81
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
