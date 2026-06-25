@@ -14,36 +14,18 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 28.🇩🇪Германия | @LimeVPNFREE
-  type: vless
-  server: 18.153.81.34
-  port: 443
-  uuid: ad73ff14-a0e3-46d1-adc0-02ca29a32485
-- name: 🇩🇪_德国_42
+- name: 🇩🇪_德国_53
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸US美国8
-  type: trojan
-  server: 151.101.56.6
-  port: 443
-  password: MiTiVPN
-  sni: global.fastly.com
-  network: ws
-  ws-opts:
-    path: /de=mitivpn
-    headers:
-      Host: cdn-mitivpn.global.ssl.fastly.net
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 28.🇩🇪Германия | @LimeVPNFREE
-  - 🇩🇪_德国_42
-  - 🇺🇸US美国8
+  - 🇩🇪_德国_53
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
