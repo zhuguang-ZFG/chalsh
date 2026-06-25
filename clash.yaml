@@ -14,7 +14,7 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪_德国_53
+- name: 🇩🇪_德国_51
   type: vmess
   server: 82.198.246.250
   port: 180
@@ -25,7 +25,7 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪_德国_53
+  - 🇩🇪_德国_51
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
