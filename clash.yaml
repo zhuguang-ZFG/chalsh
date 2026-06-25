@@ -14,29 +14,50 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 2633
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-- name: 🇩🇪_德国_24
+- name: 🇩🇪_德国_50
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
+- name: 🇯🇵JP日本4
+  type: trojan
+  server: 151.101.110.219
+  port: 443
+  password: MiTiVPN
+  sni: global.fastly.com
+  network: ws
+  ws-opts:
+    path: /nl=mitivpn
+    headers:
+      Host: cdn2-mitivpn.global.ssl.fastly.net
+- name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 66ms
+  type: vless
+  server: 137.184.218.169
+  port: 36925
+  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
+  client-fingerprint: chrome
+- name: US 🇺🇸 | @Raydikalx | 527
+  type: vmess
+  server: 186.244.208.78
+  port: 30022
+  uuid: b7d93549-0f3f-4af2-9f4d-4340867a23b4
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 2633
-  - 🇩🇪_德国_24
+  - 🇩🇪_德国_50
+  - 🇯🇵JP日本4
+  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 66ms
+  - US 🇺🇸 | @Raydikalx | 527
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
