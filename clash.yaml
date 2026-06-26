@@ -14,22 +14,23 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇸🇬_新加坡_98
-  type: trojan
-  server: 43.169.19.179
+- name: 🇺🇸_美国_5
+  type: vless
+  server: 38.244.21.243
   port: 443
-  password: '114514'
-  sni: tjaaa.hhllfly.kdns.fr
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: tjaaa.hhllfly.kdns.fr
+  uuid: e490adc9-f324-46fb-b311-9f3f95b0a0dd
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.apple.com
+  reality-opts:
+    public-key: JIUTuPxR-dU56Q0YnCGOmcLb8He7e6va7dYrhjIVhj4
+    short-id: 94611db621421d61
+  client-fingerprint: safari
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇸🇬_新加坡_98
+  - 🇺🇸_美国_5
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
