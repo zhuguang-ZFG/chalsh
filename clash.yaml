@@ -14,23 +14,37 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸_美国_5
+- name: Global 🌐 | @Raydikalx | 2586
+  type: vmess
+  server: 47.251.91.241
+  port: 42899
+  uuid: 0925b355-2bcd-4eae-9720-d2709e4f7e36
+  alterId: 0
+  cipher: auto
+- name: 🏳️_未知_111
   type: vless
-  server: 38.244.21.243
+  server: orange.seeck.cn
   port: 443
-  uuid: e490adc9-f324-46fb-b311-9f3f95b0a0dd
-  flow: xtls-rprx-vision
+  uuid: 4c1b83e4-5ade-46a8-966d-1eeb7a8dcc65
   tls: true
-  servername: www.apple.com
-  reality-opts:
-    public-key: JIUTuPxR-dU56Q0YnCGOmcLb8He7e6va7dYrhjIVhj4
-    short-id: 94611db621421d61
-  client-fingerprint: safari
+  servername: wz1.fum.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+    headers:
+      Host: wz1.fum.ccwu.cc
+- name: 28.🇩🇪Германия | @LimeVPNFREE
+  type: vless
+  server: 18.153.81.34
+  port: 443
+  uuid: ad73ff14-a0e3-46d1-adc0-02ca29a32485
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸_美国_5
+  - Global 🌐 | @Raydikalx | 2586
+  - 🏳️_未知_111
+  - 28.🇩🇪Германия | @LimeVPNFREE
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
