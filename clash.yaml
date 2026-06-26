@@ -14,9 +14,36 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🏳️_未知_111
+- name: 🏳️_未知_92
   type: vless
-  server: orange.seeck.cn
+  server: singapore.com
+  port: 8443
+  uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
+  tls: true
+  servername: c7dabe95.proxy-978.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c7dabe95.proxy-978.pages.dev
+- name: 🇨🇦@FreakConfig
+  type: vmess
+  server: 158.51.121.63
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: seribus.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: seribus.org
+- name: 🏳️_未知_141
+  type: vless
+  server: ip.sb
   port: 443
   uuid: 4c1b83e4-5ade-46a8-966d-1eeb7a8dcc65
   tls: true
@@ -26,37 +53,13 @@ proxies:
     path: /proxyip=sjc.o00o.ooo
     headers:
       Host: wz1.fum.ccwu.cc
-- name: 🏳️_未知_115
-  type: vless
-  server: 104.17.28.89
-  port: 443
-  uuid: 4c1b83e4-5ade-46a8-966d-1eeb7a8dcc65
-  tls: true
-  servername: wz1.fum.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip=sjc.o00o.ooo
-    headers:
-      Host: wz1.fum.ccwu.cc
-- name: 💮 ＳＥＧＡＲＯ
-  type: vless
-  server: 15.204.97.219
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🏳️_未知_111
-  - 🏳️_未知_115
-  - 💮 ＳＥＧＡＲＯ
+  - 🏳️_未知_92
+  - 🇨🇦@FreakConfig
+  - 🏳️_未知_141
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
