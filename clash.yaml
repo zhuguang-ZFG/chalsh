@@ -14,37 +14,23 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 美国+V2CROSS.COM
+- name: 🏳️_未知_135
   type: vless
-  server: 162.120.94.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: cf.008500.xyz
+  port: 443
+  uuid: 4c1b83e4-5ade-46a8-966d-1eeb7a8dcc65
+  tls: true
+  servername: wz1.fum.ccwu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /proxyip=sjc.o00o.ooo
     headers:
-      Host: vms.lifetime07.workers.dev
-- name: US 🇺🇸 | @Raydikalx | 452
-  type: vmess
-  server: 57.151.100.27
-  port: 10086
-  uuid: 550e8400-e29b-41d4-a716-446655440000
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪_德国_41
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+      Host: wz1.fum.ccwu.cc
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 美国+V2CROSS.COM
-  - US 🇺🇸 | @Raydikalx | 452
-  - 🇩🇪_德国_41
+  - 🏳️_未知_135
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
