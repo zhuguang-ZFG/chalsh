@@ -14,9 +14,9 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🏳️_未知_135
+- name: 🏳️_未知_111
   type: vless
-  server: cf.008500.xyz
+  server: orange.seeck.cn
   port: 443
   uuid: 4c1b83e4-5ade-46a8-966d-1eeb7a8dcc65
   tls: true
@@ -26,11 +26,37 @@ proxies:
     path: /proxyip=sjc.o00o.ooo
     headers:
       Host: wz1.fum.ccwu.cc
+- name: 🏳️_未知_115
+  type: vless
+  server: 104.17.28.89
+  port: 443
+  uuid: 4c1b83e4-5ade-46a8-966d-1eeb7a8dcc65
+  tls: true
+  servername: wz1.fum.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+    headers:
+      Host: wz1.fum.ccwu.cc
+- name: 💮 ＳＥＧＡＲＯ
+  type: vless
+  server: 15.204.97.219
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🏳️_未知_135
+  - 🏳️_未知_111
+  - 🏳️_未知_115
+  - 💮 ＳＥＧＡＲＯ
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
