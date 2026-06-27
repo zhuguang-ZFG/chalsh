@@ -14,28 +14,36 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇯🇵JP日本5
-  type: trojan
-  server: 151.101.110.219
-  port: 443
-  password: Mitivpn
-  sni: ssl.fastly.com
+- name: US 🇺🇸 | @Raydikalx | 3172
+  type: vmess
+  server: 216.106.183.35
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 526
+  type: vmess
+  server: 107.173.27.219
+  port: 6666
+  uuid: f0a2fbe5-29bf-468c-ddc1-b524552d1a23
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /de=mitivpn
-    headers:
-      Host: 3-mitivpn.global.ssl.fastly.net
-- name: 23.🇩🇪Германия | @LimeVPNFREE
-  type: vless
-  server: 18.153.81.34
-  port: 443
-  uuid: ad73ff14-a0e3-46d1-adc0-02ca29a32485
+    path: /youtube
+- name: 伊拉克+V2CROSS.COM
+  type: ss
+  server: 91.108.254.104
+  port: 13683
+  password: gWBgmKb8AL1uRK0jZ44AoOPaC5lVTOHZmi
+  cipher: chacha20-ietf-poly1305
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇯🇵JP日本5
-  - 23.🇩🇪Германия | @LimeVPNFREE
+  - US 🇺🇸 | @Raydikalx | 3172
+  - US 🇺🇸 | @Raydikalx | 526
+  - 伊拉克+V2CROSS.COM
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
