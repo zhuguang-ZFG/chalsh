@@ -14,17 +14,41 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 美国+乔治亚洲亚特兰大Fastly节点
-  type: trojan
-  server: 151.101.56.6
+- name: CA 🇨🇦 | @Raydikalx | 451
+  type: vmess
+  server: 158.51.121.63
   port: 443
-  password: Mitivpn
-  sni: ssl.fastly.com
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: seribus.org
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: linkvws
     headers:
-      Host: 4-4-3-mitivpn.global.ssl.fastly.net
+      Host: seribus.org
+- name: '@W570W'
+  type: vmess
+  server: atiins.com.tr
+  port: 443
+  uuid: 97775936-05ea-4fea-8562-e9eb98559790
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: atiins.com.tr
+  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | 515
+  type: vmess
+  server: 107.173.27.219
+  port: 6666
+  uuid: f0a2fbe5-29bf-468c-ddc1-b524552d1a23
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /youtube
 - name: 🇺🇸_美国_107
   type: vless
   server: 38.244.21.164
@@ -37,31 +61,14 @@ proxies:
     public-key: gsdDGmpihQDb0XRhFUyKjkukYQerNvMfOx7GVn9N8mQ
     short-id: 09dea95dac08169e
   client-fingerprint: safari
-- name: 🇺🇸_美国_69
-  type: vless
-  server: 38.244.20.69
-  port: 443
-  uuid: 057f3c26-0fe7-4315-aabc-90c79d413d70
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.apple.com
-  reality-opts:
-    public-key: JlcNtRODuC4k8GhBFuXwjps9cRe3asq453_RLd3o9E8
-    short-id: e9e3098b62530266
-  client-fingerprint: safari
-- name: 🤹‍♀️
-  type: vless
-  server: 18.153.81.34
-  port: 443
-  uuid: ad73ff14-a0e3-46d1-adc0-02ca29a32485
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 美国+乔治亚洲亚特兰大Fastly节点
+  - CA 🇨🇦 | @Raydikalx | 451
+  - '@W570W'
+  - US 🇺🇸 | @Raydikalx | 515
   - 🇺🇸_美国_107
-  - 🇺🇸_美国_69
-  - 🤹‍♀️
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
