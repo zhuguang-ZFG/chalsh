@@ -14,56 +14,29 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 日本+东京Fastly节点
-  type: trojan
-  server: 151.101.110.219
-  port: 443
-  password: Mitivpn
-  sni: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /de=mitivpn
-    headers:
-      Host: 3-mitivpn.global.ssl.fastly.net
-- name: 🆔soskeynet 🔒 VL-- 🇺🇸 US 62ms
-  type: vless
-  server: 38.244.20.69
-  port: 443
-  uuid: 057f3c26-0fe7-4315-aabc-90c79d413d70
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.apple.com
-  reality-opts:
-    public-key: JlcNtRODuC4k8GhBFuXwjps9cRe3asq453_RLd3o9E8
-    short-id: e9e3098b62530266
-  client-fingerprint: safari
-- name: Global 🌐 | @Raydikalx | 2633
+- name: US 🇺🇸 | @Raydikalx | 2589
   type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 104.233.214.176
+  port: 13581
+  uuid: d4d715a6-0a2e-4304-df2f-d5efd85a5a5d
   alterId: 0
-  cipher: aes-128-gcm
-- name: 美国+CloudFlare节点
-  type: vless
-  server: cf1.466688.xyz
-  port: 2087
-  uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-  tls: true
-  servername: febeyop587.pages.dev
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 2591
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /pics/share/teacher
-    headers:
-      Host: febeyop587.pages.dev
+    path: /cctv13.m3u8
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 日本+东京Fastly节点
-  - 🆔soskeynet 🔒 VL-- 🇺🇸 US 62ms
-  - Global 🌐 | @Raydikalx | 2633
-  - 美国+CloudFlare节点
+  - US 🇺🇸 | @Raydikalx | 2589
+  - US 🇺🇸 | @Raydikalx | 2591
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
