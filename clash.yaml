@@ -14,29 +14,28 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 2589
-  type: vmess
-  server: 104.233.214.176
-  port: 13581
-  uuid: d4d715a6-0a2e-4304-df2f-d5efd85a5a5d
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 2591
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
+- name: 🇯🇵JP日本5
+  type: trojan
+  server: 151.101.110.219
+  port: 443
+  password: Mitivpn
+  sni: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /cctv13.m3u8
+    path: /de=mitivpn
+    headers:
+      Host: 3-mitivpn.global.ssl.fastly.net
+- name: 23.🇩🇪Германия | @LimeVPNFREE
+  type: vless
+  server: 18.153.81.34
+  port: 443
+  uuid: ad73ff14-a0e3-46d1-adc0-02ca29a32485
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 2589
-  - US 🇺🇸 | @Raydikalx | 2591
+  - 🇯🇵JP日本5
+  - 23.🇩🇪Германия | @LimeVPNFREE
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
