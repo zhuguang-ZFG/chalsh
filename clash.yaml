@@ -14,23 +14,36 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 美国+CloudFlare节点
+- name: 🇺🇸_美国_312
   type: vless
-  server: cf4.466688.xyz
+  server: support.zoom.us
   port: 443
-  uuid: b08562b0-dbc0-47d1-860d-9435133b25c9
+  uuid: 192bc523-26fe-4233-b10d-725deb710ea5
   tls: true
-  servername: cfoo-146.pages.dev
+  servername: support.zoom.us.yxls.eu.cc
   network: ws
   ws-opts:
-    path: /QiangLieTuiJian
+    path: /us-gllc
     headers:
-      Host: cfoo-146.pages.dev
+      Host: support.zoom.us.yxls.eu.cc
+- name: 每天更新，请加电报群防止失联
+  type: vless
+  server: 38.244.20.153
+  port: 443
+  uuid: 8f59f1a9-9a0b-41c0-8532-ca56699bcaa1
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.apple.com
+  reality-opts:
+    public-key: VdJvwLhX6OFD5kHttSk-3E0q4Xpy0Emmx84OG1swYVw
+    short-id: 9390800327ae880a
+  client-fingerprint: safari
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 美国+CloudFlare节点
+  - 🇺🇸_美国_312
+  - 每天更新，请加电报群防止失联
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
