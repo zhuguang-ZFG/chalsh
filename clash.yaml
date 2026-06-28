@@ -14,36 +14,16 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 每天更新，请加电报群防止失联
+- name: Tel-@irconfiig🦁 1
   type: vless
-  server: 38.244.20.153
+  server: 18.153.81.34
   port: 443
-  uuid: 8f59f1a9-9a0b-41c0-8532-ca56699bcaa1
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.apple.com
-  reality-opts:
-    public-key: VdJvwLhX6OFD5kHttSk-3E0q4Xpy0Emmx84OG1swYVw
-    short-id: 9390800327ae880a
-  client-fingerprint: safari
-- name: 🆔soskeynet 🔒 VL-- 🇺🇸 US 62ms
-  type: vless
-  server: 38.244.20.69
-  port: 443
-  uuid: 057f3c26-0fe7-4315-aabc-90c79d413d70
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.apple.com
-  reality-opts:
-    public-key: JlcNtRODuC4k8GhBFuXwjps9cRe3asq453_RLd3o9E8
-    short-id: e9e3098b62530266
-  client-fingerprint: safari
+  uuid: ad73ff14-a0e3-46d1-adc0-02ca29a32485
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 每天更新，请加电报群防止失联
-  - 🆔soskeynet 🔒 VL-- 🇺🇸 US 62ms
+  - Tel-@irconfiig🦁 1
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
