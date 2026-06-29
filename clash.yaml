@@ -14,23 +14,43 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸_美国_312
+- name: 🇩🇪_德国_78
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🆔ar14n24b 🔒 VL-- ❔ XX 11ms
   type: vless
-  server: support.zoom.us
+  server: 38.244.20.164
   port: 443
-  uuid: 192bc523-26fe-4233-b10d-725deb710ea5
+  uuid: 74cc7d1e-65c8-4dec-8005-f682f0fa96ab
+  flow: xtls-rprx-vision
   tls: true
-  servername: support.zoom.us.yxls.eu.cc
+  servername: www.apple.com
+  reality-opts:
+    public-key: 867RbOeSOc7qDdW1Ax8jAQ_qqS6_kGAEZ4PZdpT4jyE
+    short-id: 3514e9df97b32520
+  client-fingerprint: safari
+- name: 🇺🇸_美国_277
+  type: trojan
+  server: iranpoems.ir
+  port: 443
+  password: Mitivpn
+  sni: cdn.gamingdll.ir
   network: ws
   ws-opts:
-    path: /us-gllc
+    path: /de=mitivpn
     headers:
-      Host: support.zoom.us.yxls.eu.cc
+      Host: cdn.gamingdll.ir
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸_美国_312
+  - 🇩🇪_德国_78
+  - 🆔ar14n24b 🔒 VL-- ❔ XX 11ms
+  - 🇺🇸_美国_277
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
