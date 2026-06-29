@@ -14,43 +14,31 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪_德国_78
+- name: 🇩🇪_德国_108
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🆔ar14n24b 🔒 VL-- ❔ XX 11ms
+- name: 🏳️_未知_314
   type: vless
-  server: 38.244.20.164
+  server: cf.090227.xyz
   port: 443
-  uuid: 74cc7d1e-65c8-4dec-8005-f682f0fa96ab
-  flow: xtls-rprx-vision
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   tls: true
-  servername: www.apple.com
-  reality-opts:
-    public-key: 867RbOeSOc7qDdW1Ax8jAQ_qqS6_kGAEZ4PZdpT4jyE
-    short-id: 3514e9df97b32520
-  client-fingerprint: safari
-- name: 🇺🇸_美国_277
-  type: trojan
-  server: iranpoems.ir
-  port: 443
-  password: Mitivpn
-  sni: cdn.gamingdll.ir
+  servername: t1s1.rittbo.kdns.fr
   network: ws
   ws-opts:
-    path: /de=mitivpn
+    path: /
     headers:
-      Host: cdn.gamingdll.ir
+      Host: t1s1.rittbo.kdns.fr
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪_德国_78
-  - 🆔ar14n24b 🔒 VL-- ❔ XX 11ms
-  - 🇺🇸_美国_277
+  - 🇩🇪_德国_108
+  - 🏳️_未知_314
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
