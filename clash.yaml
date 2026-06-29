@@ -14,16 +14,16 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪_德国_108
+- name: 🇩🇪_德国_94
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🏳️_未知_314
+- name: 🏳️_未知_269
   type: vless
-  server: cf.090227.xyz
+  server: cloudflare-ip.mofashi.ltd
   port: 443
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   tls: true
@@ -33,12 +33,24 @@ proxies:
     path: /
     headers:
       Host: t1s1.rittbo.kdns.fr
+- name: 🇺🇸_美国_297
+  type: trojan
+  server: 151.101.110.219
+  port: 443
+  password: Mitivpn
+  sni: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /de
+    headers:
+      Host: 3-mitivpn.global.ssl.fastly.net
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪_德国_108
-  - 🏳️_未知_314
+  - 🇩🇪_德国_94
+  - 🏳️_未知_269
+  - 🇺🇸_美国_297
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
