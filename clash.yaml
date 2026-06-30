@@ -14,48 +14,27 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪_德国_95
+- name: 🇩🇪_德国_92
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 💮 ＳＥＧＡＲＯ
+- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 11ms
   type: vless
-  server: 15.204.97.219
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
+  server: 107.173.237.146
+  port: 8443
+  uuid: 1d39f715-2740-4d99-bc3b-197cc48dcee7
   tls: true
-  servername: fuck.rkn
+  servername: updates.cdn-apple.com
   reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
+    public-key: D3ojIs3AUKP_tV0E4TEjh90HBVJp24Nq3qMfdxD30kc
+    short-id: df8611c07d
   client-fingerprint: chrome
-- name: 🏳️_未知_273
+- name: 🏳️_未知_314
   type: vless
-  server: log.bpminecraft.com
-  port: 8880
-  uuid: 15ce0fde-88e2-42b0-91e6-e4a1b4568f6e
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: old-truth-de8a.110-187.workers.dev
-- name: 🏳️_未知_256
-  type: vless
-  server: skk.moe
-  port: 8880
-  uuid: 4212034d-c18b-4060-b218-4f8372e5473a
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: summer-hill-7f65.275-521.workers.dev
-- name: 🏳️_未知_269
-  type: vless
-  server: cloudflare-ip.mofashi.ltd
+  server: cf.090227.xyz
   port: 443
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   tls: true
@@ -65,23 +44,13 @@ proxies:
     path: /
     headers:
       Host: t1s1.rittbo.kdns.fr
-- name: United States
-  type: vmess
-  server: 57.151.100.27
-  port: 10086
-  uuid: 550e8400-e29b-41d4-a716-446655440000
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪_德国_95
-  - 💮 ＳＥＧＡＲＯ
-  - 🏳️_未知_273
-  - 🏳️_未知_256
-  - 🏳️_未知_269
-  - United States
+  - 🇩🇪_德国_92
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 11ms
+  - 🏳️_未知_314
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
