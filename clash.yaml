@@ -14,57 +14,43 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪_德国_29
+- name: 🇩🇪_德国_33
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 2723
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸_美国_155
+- name: 🚀
+  type: trojan
+  server: 104.16.72.101
+  port: 443
+  password: 86957ec0-b213-433b-a43b-51f2175e0ec3
+  sni: space.byu.id.yxls.eu.cc
+  network: ws
+  ws-opts:
+    path: /au-do
+    headers:
+      Host: space.byu.id.yxls.eu.cc
+- name: 🇺🇸_美国_153
   type: vless
   server: support.zoom.us
   port: 443
-  uuid: 192bc523-26fe-4233-b10d-725deb710ea5
+  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
   tls: true
   servername: support.zoom.us.yxls.eu.cc
   network: ws
   ws-opts:
-    path: /us-gllc
+    path: /sg-amz
     headers:
       Host: support.zoom.us.yxls.eu.cc
-- name: V2 - 17
-  type: vmess
-  server: 57.151.100.27
-  port: 10086
-  uuid: 550e8400-e29b-41d4-a716-446655440000
-  alterId: 0
-  cipher: auto
-- name: 美国+V2CROSS.COM
-  type: vless
-  server: telegram-production-a02b.up.railway.app
-  port: 443
-  uuid: 3c333556-5e17-4e31-70c2-f5dcba6af032
-  tls: true
-  network: ws
-  ws-opts:
-    path: /ws/3c333556-5e17-4e31-70c2-f5dcba6af032
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪_德国_29
-  - US 🇺🇸 | @Raydikalx | 2723
-  - 🇺🇸_美国_155
-  - V2 - 17
-  - 美国+V2CROSS.COM
+  - 🇩🇪_德国_33
+  - 🚀
+  - 🇺🇸_美国_153
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
