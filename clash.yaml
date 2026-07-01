@@ -1,0 +1,67 @@
+mixed-port: 7890
+allow-lan: false
+bind-address: '*'
+mode: global
+log-level: info
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+  - https://dns.google/dns-query
+  - https://1.1.1.1/dns-query
+  fallback:
+  - https://dns.alidns.com/dns-query
+proxies:
+- name: 🇩🇪_德国_51
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 2536
+  type: vmess
+  server: 216.106.183.35
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 未知56
+  type: trojan
+  server: 104.16.72.101
+  port: 443
+  password: 86957ec0-b213-433b-a43b-51f2175e0ec3
+  sni: space.byu.id.yxls.eu.cc
+  network: ws
+  ws-opts:
+    path: /au-do
+    headers:
+      Host: space.byu.id.yxls.eu.cc
+- name: DE 🇩🇪 | @Raydikalx | 2569
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+proxy-groups:
+- name: AUTO
+  type: url-test
+  proxies:
+  - 🇩🇪_德国_51
+  - US 🇺🇸 | @Raydikalx | 2536
+  - 未知56
+  - DE 🇩🇪 | @Raydikalx | 2569
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+rules:
+- DOMAIN,storeedge.microsoft.com,DIRECT
+- DOMAIN,displaycatalog.mp.microsoft.com,DIRECT
+- DOMAIN,login.live.com,DIRECT
+- DOMAIN,store-images.microsoft.com,DIRECT
+- DOMAIN-SUFFIX,mp.microsoft.com,DIRECT
+- DOMAIN-SUFFIX,microsoftstore.com,DIRECT
+- DOMAIN-SUFFIX,store.microsoft.com,DIRECT
