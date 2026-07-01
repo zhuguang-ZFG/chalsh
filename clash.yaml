@@ -14,47 +14,52 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪_德国_45
+- name: US 🇺🇸 | @Raydikalx | 2621
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪_德国_43
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸_美国_152
+- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 72ms
+  type: vless
+  server: 15.204.97.198
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
+- name: 🇺🇸_美国_192
   type: vless
   server: support.zoom.us
   port: 443
-  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
   tls: true
   servername: support.zoom.us.yxls.eu.cc
   network: ws
   ws-opts:
-    path: /sg-amz
+    path: /sg-melbi
     headers:
       Host: support.zoom.us.yxls.eu.cc
-- name: 🇨🇦@FreakConfig
-  type: vmess
-  server: 158.51.121.63
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: seribus.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: seribus.org
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪_德国_45
-  - 🇺🇸_美国_152
-  - 🇨🇦@FreakConfig
+  - US 🇺🇸 | @Raydikalx | 2621
+  - 🇩🇪_德国_43
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 72ms
+  - 🇺🇸_美国_192
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
