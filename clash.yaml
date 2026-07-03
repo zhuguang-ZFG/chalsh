@@ -14,52 +14,52 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪_德国_71
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸_美国_265
+- name: 美国+CloudFlare节点
   type: vless
-  server: support.zoom.us
+  server: www.cnae.top
   port: 443
-  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   tls: true
-  servername: support.zoom.us.yxls.eu.cc
+  servername: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /sg-amz
+    path: /
     headers:
-      Host: support.zoom.us.yxls.eu.cc
-- name: 🏳️_未知_239
-  type: vless
-  server: 198.41.208.112
-  port: 443
-  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
-  tls: true
-  servername: support.zoom.us.yxls.eu.cc
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: support.zoom.us.yxls.eu.cc
-- name: DE 🇩🇪 | @Raydikalx | 2625
+      Host: t1s1.rittbo.kdns.fr
+- name: 🇨🇦@FreakConfig
   type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 158.51.121.63
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
+  tls: true
+  servername: seribus.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: seribus.org
+- name: 🇦🇺
+  type: trojan
+  server: 104.18.153.10
+  port: 443
+  password: 86957ec0-b213-433b-a43b-51f2175e0ec3
+  sni: space.byu.id.yxls.eu.cc
+  network: ws
+  ws-opts:
+    path: /au-do
+    headers:
+      Host: space.byu.id.yxls.eu.cc
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪_德国_71
-  - 🇺🇸_美国_265
-  - 🏳️_未知_239
-  - DE 🇩🇪 | @Raydikalx | 2625
+  - 美国+CloudFlare节点
+  - 🇨🇦@FreakConfig
+  - 🇦🇺
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
