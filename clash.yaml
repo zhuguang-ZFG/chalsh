@@ -14,30 +14,918 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: '@W570W'
-  type: trojan
-  server: celestara.biz
-  port: 443
-  password: MiTiVPN
-  sni: Nl.App-Cloud.ir
+- name: 🇺🇸_美国_392
+  type: vless
+  server: 151.101.56.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
   network: ws
   ws-opts:
-    path: /MiTiVPN=NL
+    path: /?https://t.me/WangCai2🇨🇳
     headers:
-      Host: Nl.App-Cloud.ir
-- name: CA 🇨🇦 | @Raydikalx | 2602
+      Host: max-gb1.global.ssl.fastly.net
+- name: 🇺🇸_美国_84
+  type: vless
+  server: 151.101.2.219
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🆔anty_filter 🔓 VL-GRPC-N/A ❔ XX 94ms
+  type: vless
+  server: 151.115.165.172
+  port: 8880
+  uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
+  network: grpc
+- name: 🇺🇸_美国_172
+  type: vless
+  server: 151.101.23.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: 🇺🇸_美国_136
+  type: vless
+  server: 151.101.24.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🆔anty_filter 🔒 VL-TCP- ❔ XX 92ms
+  type: vless
+  server: 104.238.31.71
+  port: 443
+  uuid: b783c6d6-3a0f-4c13-bbd1-86bf1ec4d94d
+  flow: xtls-rprx-vision
+  tls: true
+  servername: unitbook.net
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  client-fingerprint: chrome
+- name: 🆔ar14n24b 🔒 VL-WS-N/A ❔ XX 11ms
+  type: vless
+  server: mti.mjdkhblog.ir
+  port: 443
+  uuid: 4bac6bae-e2f7-43db-a73f-1168a302c811
+  tls: true
+  servername: generousbands.com
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: generousbands.com
+- name: 🇺🇸_美国_251
+  type: vless
+  server: 151.101.0.1
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: 🆔spotify_porteghali 🔒 VL-WS-N/A ❔ XX 394ms
+  type: vless
+  server: vxc.galardoxtn.ir
+  port: 443
+  uuid: 5f65c1ae-9e7a-48ea-8ecf-6822365cd177
+  tls: true
+  servername: speedtest.net
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: apiv2.global.ssl.fastly.net
+- name: 🇺🇸_美国_227
+  type: vless
+  server: 151.101.65.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: 🆔spotify_porteghali 🔒 VL-WS-N/A ❔ XX 2ms
+  type: vless
+  server: 199.232.78.159
+  port: 443
+  uuid: 2e4798a9-d8e9-4a43-ad43-285d3ad5633c
+  tls: true
+  servername: default.ssl.fastly.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pan1.global.ssl.fastly.net
+- name: TR 🇹🇷 | @Raydikalx | 2631
   type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 185.104.189.38
+  port: 80
+  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
   alterId: 0
   cipher: auto
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
+    headers:
+      Host: 185.104.189.38
+- name: 🇺🇸_美国_262
+  type: vless
+  server: 151.101.67.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: 🇺🇸_美国_61
+  type: vless
+  server: 151.101.170.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: 🇦🇪_阿拉伯联合酋长国_252
+  type: vless
+  server: 151.101.140.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: 🇺🇸_美国_394
+  type: vless
+  server: 151.101.34.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 121ms
+  type: vless
+  server: alaFI.marzban-locations.com
+  port: 6300
+  uuid: 8f6ccdb2-2b4e-4834-a90b-344bff490402
+  tls: true
+  servername: play.google.com
+  reality-opts:
+    public-key: lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo
+  client-fingerprint: qq
+- name: 🇪🇸_西班牙_415
+  type: vless
+  server: 151.101.134.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: 🇺🇸_美国_513
+  type: vless
+  server: 151.101.203.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: 🇨🇦_加拿大_310
+  type: vless
+  server: 151.101.136.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🇺🇸_美国_228
+  type: vless
+  server: 151.101.22.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🇺🇸US美国11 587.0KB/s
+  type: trojan
+  server: 149.104.104.58
+  port: 443
+  password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
+  sni: 149.104.104.58
+- name: 🇺🇸_美国_459
+  type: vless
+  server: 151.101.160.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: 未知31
+  type: vmess
+  server: digi39.ez0535.com
+  port: 443
+  uuid: c1f1060c-6168-4931-a63f-817a7ade25e2
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸_美国_462
+  type: vless
+  server: 151.101.114.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 95ms
+  type: vless
+  server: 178.215.238.148
+  port: 8443
+  uuid: 21c1132b-068c-46fb-880e-3268f6a30e7f
+  tls: true
+  servername: eh.vk.com
+  reality-opts:
+    public-key: Crjd0I6hcasRXZcfNf7cs-YtJLpQ8u-t1CbwHIDAciU
+    short-id: 478dc6
+  client-fingerprint: chrome
+- name: 🇭🇰_香港_203
+  type: vless
+  server: 151.101.78.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: 🆔v2ray1_ng 🔒 VL-GRPC- ❔ XX 107ms
+  type: vless
+  server: de-1.coinbridge.nl
+  port: 443
+  uuid: 8658fe29-466b-41d9-b1f9-05c268054f87
+  tls: true
+  servername: google.com
+  reality-opts:
+    public-key: kPBXTe2KCp55GrHS_qU_sF7ohUcT8Vu-e8i6Yd9MERI
+    short-id: d5c7f84e37e0c12d
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: data-sync
+- name: 🇺🇸_美国_185
+  type: vless
+  server: 151.101.117.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🆔ar14n24b 🔒 VL-XHTTP- ❔ XX 124ms
+  type: vless
+  server: 141.98.118.70
+  port: 443
+  uuid: de64aaa6-a0ea-48d0-853b-1c3cbc7fb42c
+  tls: true
+  servername: www.google.com
+  reality-opts:
+    public-key: LjEQR0FEtsOs5eQoVsZgJX5ZI0yeadUKTCLoGD641RQ
+    short-id: '44'
+  client-fingerprint: random
+- name: 🇳🇴_挪威_212
+  type: vless
+  server: 151.101.239.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: 🆔v2ray1_ng 🔓 VL-GRPC-N/A ❔ XX 96ms
+  type: vless
+  server: 151.115.167.190
+  port: 8880
+  uuid: 8dc7722c-2767-4eea-a28b-2f8daacc07e3
+  network: grpc
+- name: 🇺🇸_美国_226
+  type: vless
+  server: 151.101.130.219
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: 🆔ar14n24b 🔒 VL-XHTTP-N/A ❔ XX 327ms
+  type: vless
+  server: s2.zynavo.ir
+  port: 2087
+  uuid: 152481fe-770c-44fd-cab6-c03acfb5812c
+  tls: true
+  servername: cdn.zynavo.ir
+- name: 🇬🇧_英国_519
+  type: vless
+  server: 151.101.60.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🇨🇦_加拿大_345
+  type: vless
+  server: 151.101.215.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: 🇭🇰_香港_323
+  type: vless
+  server: 151.101.79.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: 🇺🇸_美国_407
+  type: vless
+  server: 199.232.197.131
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: 🇭🇰_香港_532
+  type: trojan
+  server: 23.156.153.57
+  port: 443
+  password: '114514'
+  sni: tjaaa.hhllfly.kdns.fr
+- name: 🆔ar14n24b 🔒 VL-XHTTP- ❔ XX 126ms
+  type: vless
+  server: 155.103.69.142
+  port: 443
+  uuid: 4be70383-c7f6-4367-a611-6ea2ba8004a5
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: bcJ0JDb5rnmW0GjPE2SK2Kc2hs-triKCAk6mkILxbSo
+    short-id: ccb291835b8244
+  client-fingerprint: chrome
+- name: 🇺🇸_美国_474
+  type: vless
+  server: 151.101.144.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🏳️_未知_542
+  type: trojan
+  server: 104.20.6.134
+  port: 443
+  password: humanity
+  sni: www.calmloud.com
+- name: 🆔ar14n24b 🔓 VL-XHTTP-N/A ❔ XX 96ms
+  type: vless
+  server: ns2.zabidat.ir
+  port: 2086
+  uuid: 46aeacfa-0b4a-4e35-9a0f-6db76e92d4c6
+- name: 🇺🇸_美国_511
+  type: vless
+  server: 151.101.74.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: TR 🇹🇷 | @Raydikalx | 2644
+  type: vmess
+  server: TM_AZARBAYJAB1.SERV.9.pagES.DEV
+  port: 80
+  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
+    headers:
+      Host: tr1-smart.adelping.com
+- name: 🆔vpnserverrr 🔓 VL-TCP-N/A ❔ XX 76ms
+  type: vless
+  server: 13.40.188.81
+  port: 443
+  uuid: 7e6a38f4-7150-4eff-ae68-579852357ddb
+- name: 🆔madshopx 🔓 VL-TCP-N/A ❔ XX 212ms
+  type: vless
+  server: myip.check.nonpath.ir
+  port: 42542
+  uuid: 94630b15-f7f5-4885-8713-e5a83ea091ee
+- name: 🆔vpnbaz 🔒 VL-WS-N/A ❔ XX 2ms
+  type: vless
+  server: 104.16.72.101
+  port: 443
+  uuid: 14b59caf-a196-4ec2-8c70-c7b388062f5b
+  tls: true
+  servername: vangoghhh.info
+  network: ws
+  ws-opts:
+    path: /rdfgtws
+    headers:
+      Host: vangoghhh.info
+- name: 🇺🇸_美国_402
+  type: vless
+  server: 151.101.194.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 209ms
+  type: vless
+  server: 45.195.137.66
+  port: 8443
+  uuid: 7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08
+  flow: xtls-rprx-vision
+  tls: true
+  servername: storage.yandex.net
+  reality-opts:
+    public-key: IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY
+    short-id: e3d38cee79d4f94c
+  client-fingerprint: chrome
+- name: 🆔anty_filter 🔒 VL-WS-N/A ❔ XX 2ms
+  type: vless
+  server: 141.193.213.21
+  port: 443
+  uuid: 4f013568-a58b-4b04-b5dd-4d52bf1c33a4
+  tls: true
+  servername: amoosamiii.net
+  network: ws
+  ws-opts:
+    path: /poiuyws
+    headers:
+      Host: amoosamiii.net
+- name: 🇺🇸_美国_398
+  type: vless
+  server: 151.101.44.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🇨🇦_加拿大_233
+  type: vless
+  server: 151.101.127.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🇩🇪_德国_214
+  type: vless
+  server: 151.101.6.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: 🇺🇸_美国_260
+  type: vless
+  server: 151.101.128.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🇺🇸_美国_458
+  type: vless
+  server: 151.101.96.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🇺🇸_美国_124
+  type: vless
+  server: 151.101.71.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🇨🇦_加拿大_305
+  type: vless
+  server: 151.101.137.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: 🇺🇸_美国_106
+  type: vless
+  server: 167.82.0.1
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: TR 🇹🇷 | @Raydikalx | 2637
+  type: vmess
+  server: tr1-smart.adelping.com
+  port: 80
+  uuid: 68c8f462-8468-4931-90a8-680c3d6cb3c1
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+    headers:
+      Host: tr1-smart.adelping.com
+- name: 🇺🇸_美国_389
+  type: vless
+  server: 151.101.69.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🆔spotify_porteghali 🔒 VL-WS-N/A ❔ XX 2ms-2
+  type: vless
+  server: 151.101.109.223
+  port: 443
+  uuid: 05dde938-bb2d-41c3-b176-2a9d370489b4
+  tls: true
+  servername: default.ssl.fastly.net
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pan1.global.ssl.fastly.net
+- name: 🆔ar14n24b 🔓 VL-WS-N/A ❔ XX 2ms
+  type: vless
+  server: 104.21.12.116
+  port: 8880
+  uuid: ad85a1ce-3519-4634-9ea1-66c60d3694ba
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: little-pond-8731.81-68e.workers.dev
+- name: 🇺🇸_美国_125
+  type: vless
+  server: 151.101.66.219
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🇺🇸_美国_386
+  type: vless
+  server: 151.101.70.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🇺🇸_美国_445
+  type: vless
+  server: 151.101.118.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🇷🇴_罗马尼亚_10
+  type: vless
+  server: 93.114.194.84
+  port: 448
+  uuid: bc5b801f-49a7-4db7-ac92-a2c57d42d132
+  tls: true
+- name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 200ms
+  type: vless
+  server: 45.195.137.251
+  port: 8443
+  uuid: 7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08
+  flow: xtls-rprx-vision
+  tls: true
+  servername: storage.yandex.net
+  reality-opts:
+    public-key: IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY
+    short-id: e3d38cee79d4f94c
+  client-fingerprint: chrome
+- name: 🇺🇸_美国_98
+  type: vless
+  server: 151.101.194.219
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🆔ar14n24b 🔒 VL-WS-N/A 🇺🇸 US 41ms
+  type: vless
+  server: www.speedtest.net
+  port: 443
+  uuid: afe143cb-76e2-4202-995d-da09f07b0cd9
+  tls: true
+  servername: ez-72Da5d.eZAccEsS1eBE0E6.wOrkers.DeV
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiN2pxZ1lxeHQyZ1dudjloIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==
+    headers:
+      Host: ez-72da5d.ezaccess1ebe0e6.workers.dev
+- name: 🆔vpnserverrr 🔒 VL-TCP-N/A ❔ XX 211ms
+  type: vless
+  server: 186.190.211.188
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  tls: true
+  servername: 186.190.211.188
+  skip-cert-verify: true
+- name: 🆔configx2ray 🔒 VL-TCP- 🇷🇺 RU 340ms
+  type: vless
+  server: ru.faygo.bot
+  port: 443
+  uuid: 8ca5cbd3-ec16-4728-bedc-2bc0d82f0922
+  flow: xtls-rprx-vision
+  tls: true
+  servername: enterprisekitten.com
+  skip-cert-verify: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: 6ba85179e30d4fc2
+  client-fingerprint: chrome
+- name: 🇺🇸_美国_186
+  type: vless
+  server: 151.101.46.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: 🇺🇸_美国_325
+  type: vless
+  server: 151.101.161.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🇺🇸_美国_265
+  type: vless
+  server: 151.101.131.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🇨🇦_加拿大_495
+  type: vless
+  server: 151.101.125.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🇺🇸_美国_467
+  type: vless
+  server: 151.101.153.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: '@W570W'
+  type: vless
+  server: 45.13.119.219
+  port: 8888
+  uuid: eb77be10-9d9e-527b-a78d-8caaf58992d6
+- name: 🇺🇸_美国_498
+  type: vless
+  server: 151.101.21.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🆔ar14n24b 🔒 VL-WS-N/A ❔ XX 8ms
+  type: vless
+  server: rvg-production-44ba.up.railway.app
+  port: 443
+  uuid: b4e0ab78-3891-9786-c86c-c6594ac5d8cf
+  tls: true
+  servername: rvg-production-44ba.up.railway.app
+  network: ws
+  ws-opts:
+    path: /ws/b4e0ab78-3891-9786-c86c-c6594ac5d8cf
+    headers:
+      Host: rvg-production-44ba.up.railway.app
+- name: 🇫🇮_芬兰_369
+  type: vless
+  server: 151.101.247.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: 🆔ar14n24b 🔓 VL-TCP-N/A ❔ XX 187ms
+  type: vless
+  server: sho1781056.dadashinet10.ir
+  port: 2044
+  uuid: 4e9d11d7-8cda-42ff-a583-c4dd9030f4c6
+- name: 🇫🇮_芬兰_132
+  type: vless
+  server: 151.101.244.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: 🇺🇸_美国_341
+  type: vless
+  server: 151.101.73.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🆔ar14n24b 🔓 VL-TCP-N/A ❔ XX 192ms
+  type: vless
+  server: Ppotbfff.dadashinet10.ir
+  port: 2044
+  uuid: 9b971077-3061-4560-81b3-bf215bff4d79
+- name: 🆔vpnserverrr 🔓 VL-WS-N/A ❔ XX 96ms
+  type: vless
+  server: 146.75.119.82
+  port: 80
+  uuid: 6f413d55-a63b-4630-b6e4-6a1466fef96c
+  network: ws
+  ws-opts:
+    path: ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
+    headers:
+      Host: rb24.ir
+- name: 🇺🇸_美国_268
+  type: vless
+  server: 151.101.130.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 192ms
+  type: vless
+  server: swa.linuxbase.ir
+  port: 1152
+  uuid: 27640f28-0108-47b5-8456-39658ebcf495
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: YzQz4D9KFIpJ5YB4W5UqPs8wgowbeujf9KEOyuATSE4
+    short-id: e5115b6a2127146d
+  client-fingerprint: chrome
+- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 118ms
+  type: vless
+  server: alaUK.marzban-locations.com
+  port: 6300
+  uuid: 8f6ccdb2-2b4e-4834-a90b-344bff490402
+  tls: true
+  servername: play.google.com
+  reality-opts:
+    public-key: lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo
+  client-fingerprint: qq
+- name: Global 🌐 | @Raydikalx | 2651
+  type: vmess
+  server: fr.connfull.org
+  port: 2053
+  uuid: 500e29aa-c40b-43e1-905c-e6e7ac4a5b83
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+- name: 🆔madshopx 🔓 VL-TCP-N/A ❔ XX 497ms
+  type: vless
+  server: i.nonpath.ir
+  port: 42542
+  uuid: 5c27d4f5-815c-4f32-a64a-0a6407b063a5
+- name: 🇺🇸_美国_159
+  type: vless
+  server: 151.101.58.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+- name: 🆔v2ray1_ng 🔒 VL-WS-N/A ❔ XX 176ms
+  type: vless
+  server: ip3.sav-savteam.ir
+  port: 2096
+  uuid: a4609f6a-5a02-44b1-9d35-303608665ee4
+  tls: true
+  servername: SiOpj.mobiletanaz.coM
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: SiOpj.mobiletanaz.coM
+- name: 🇺🇸_美国_317
+  type: vless
+  server: 151.101.145.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🇺🇸_美国_269
+  type: vless
+  server: 151.101.64.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🇮🇳_印度_204
+  type: vless
+  server: 151.101.158.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🇧🇪_比利时_190
+  type: vless
+  server: 151.101.10.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🇺🇸_美国_378
+  type: vless
+  server: 151.101.2.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🇫🇮_芬兰_188
+  type: vless
+  server: 151.101.245.151
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+- name: 🇺🇸 Ultra US III
+  type: vless
+  server: ovhwuxian.pai50288.uk
+  port: 8443
+  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
+  tls: true
+  servername: ovhwuxian.pai50288.uk
+  network: ws
+  ws-opts:
+    path: /57ba2ab1
+    headers:
+      Host: ovhwuxian.pai50288.uk
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
+  - 🇺🇸_美国_392
+  - 🇺🇸_美国_84
+  - 🆔anty_filter 🔓 VL-GRPC-N/A ❔ XX 94ms
+  - 🇺🇸_美国_172
+  - 🇺🇸_美国_136
+  - 🆔anty_filter 🔒 VL-TCP- ❔ XX 92ms
+  - 🆔ar14n24b 🔒 VL-WS-N/A ❔ XX 11ms
+  - 🇺🇸_美国_251
+  - 🆔spotify_porteghali 🔒 VL-WS-N/A ❔ XX 394ms
+  - 🇺🇸_美国_227
+  - 🆔spotify_porteghali 🔒 VL-WS-N/A ❔ XX 2ms
+  - TR 🇹🇷 | @Raydikalx | 2631
+  - 🇺🇸_美国_262
+  - 🇺🇸_美国_61
+  - 🇦🇪_阿拉伯联合酋长国_252
+  - 🇺🇸_美国_394
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 121ms
+  - 🇪🇸_西班牙_415
+  - 🇺🇸_美国_513
+  - 🇨🇦_加拿大_310
+  - 🇺🇸_美国_228
+  - 🇺🇸US美国11 587.0KB/s
+  - 🇺🇸_美国_459
+  - 未知31
+  - 🇺🇸_美国_462
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 95ms
+  - 🇭🇰_香港_203
+  - 🆔v2ray1_ng 🔒 VL-GRPC- ❔ XX 107ms
+  - 🇺🇸_美国_185
+  - 🆔ar14n24b 🔒 VL-XHTTP- ❔ XX 124ms
+  - 🇳🇴_挪威_212
+  - 🆔v2ray1_ng 🔓 VL-GRPC-N/A ❔ XX 96ms
+  - 🇺🇸_美国_226
+  - 🆔ar14n24b 🔒 VL-XHTTP-N/A ❔ XX 327ms
+  - 🇬🇧_英国_519
+  - 🇨🇦_加拿大_345
+  - 🇭🇰_香港_323
+  - 🇺🇸_美国_407
+  - 🇭🇰_香港_532
+  - 🆔ar14n24b 🔒 VL-XHTTP- ❔ XX 126ms
+  - 🇺🇸_美国_474
+  - 🏳️_未知_542
+  - 🆔ar14n24b 🔓 VL-XHTTP-N/A ❔ XX 96ms
+  - 🇺🇸_美国_511
+  - TR 🇹🇷 | @Raydikalx | 2644
+  - 🆔vpnserverrr 🔓 VL-TCP-N/A ❔ XX 76ms
+  - 🆔madshopx 🔓 VL-TCP-N/A ❔ XX 212ms
+  - 🆔vpnbaz 🔒 VL-WS-N/A ❔ XX 2ms
+  - 🇺🇸_美国_402
+  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 209ms
+  - 🆔anty_filter 🔒 VL-WS-N/A ❔ XX 2ms
+  - 🇺🇸_美国_398
+  - 🇨🇦_加拿大_233
+  - 🇩🇪_德国_214
+  - 🇺🇸_美国_260
+  - 🇺🇸_美国_458
+  - 🇺🇸_美国_124
+  - 🇨🇦_加拿大_305
+  - 🇺🇸_美国_106
+  - TR 🇹🇷 | @Raydikalx | 2637
+  - 🇺🇸_美国_389
+  - 🆔spotify_porteghali 🔒 VL-WS-N/A ❔ XX 2ms-2
+  - 🆔ar14n24b 🔓 VL-WS-N/A ❔ XX 2ms
+  - 🇺🇸_美国_125
+  - 🇺🇸_美国_386
+  - 🇺🇸_美国_445
+  - 🇷🇴_罗马尼亚_10
+  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 200ms
+  - 🇺🇸_美国_98
+  - 🆔ar14n24b 🔒 VL-WS-N/A 🇺🇸 US 41ms
+  - 🆔vpnserverrr 🔒 VL-TCP-N/A ❔ XX 211ms
+  - 🆔configx2ray 🔒 VL-TCP- 🇷🇺 RU 340ms
+  - 🇺🇸_美国_186
+  - 🇺🇸_美国_325
+  - 🇺🇸_美国_265
+  - 🇨🇦_加拿大_495
+  - 🇺🇸_美国_467
   - '@W570W'
-  - CA 🇨🇦 | @Raydikalx | 2602
+  - 🇺🇸_美国_498
+  - 🆔ar14n24b 🔒 VL-WS-N/A ❔ XX 8ms
+  - 🇫🇮_芬兰_369
+  - 🆔ar14n24b 🔓 VL-TCP-N/A ❔ XX 187ms
+  - 🇫🇮_芬兰_132
+  - 🇺🇸_美国_341
+  - 🆔ar14n24b 🔓 VL-TCP-N/A ❔ XX 192ms
+  - 🆔vpnserverrr 🔓 VL-WS-N/A ❔ XX 96ms
+  - 🇺🇸_美国_268
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 192ms
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 118ms
+  - Global 🌐 | @Raydikalx | 2651
+  - 🆔madshopx 🔓 VL-TCP-N/A ❔ XX 497ms
+  - 🇺🇸_美国_159
+  - 🆔v2ray1_ng 🔒 VL-WS-N/A ❔ XX 176ms
+  - 🇺🇸_美国_317
+  - 🇺🇸_美国_269
+  - 🇮🇳_印度_204
+  - 🇧🇪_比利时_190
+  - 🇺🇸_美国_378
+  - 🇫🇮_芬兰_188
+  - 🇺🇸 Ultra US III
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
