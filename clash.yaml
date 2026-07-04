@@ -14,51 +14,24 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: CA 🇨🇦 | @Raydikalx | 421
+- name: 🇩🇪_德国_31
   type: vmess
-  server: 158.51.121.63
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-  tls: true
-  servername: seribus.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: seribus.org
-- name: 🔵@chillguy_vpn
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🏳️_未知_410
-  type: vless
-  server: cf.877774.xyz
+- name: 🇺🇸_美国_72
+  type: trojan
+  server: blog.webex.com
   port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  servername: t1s1.rittbo.kdns.fr
+  password: afbcd89a-5a90-4a44-a42a-be08f444aa3f
+  sni: unnes.ac.id.yxls.eu.cc
   network: ws
   ws-opts:
-    path: /
+    path: /br-orcl
     headers:
-      Host: t1s1.rittbo.kdns.fr
-- name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 21ms
-  type: vless
-  server: 137.184.218.169
-  port: 36925
-  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
-  client-fingerprint: chrome
+      Host: unnes.ac.id.yxls.eu.cc
 - name: 🇦🇺
   type: trojan
   server: 104.18.153.10
@@ -70,27 +43,13 @@ proxies:
     path: /au-do
     headers:
       Host: space.byu.id.yxls.eu.cc
-- name: '@W570W'
-  type: trojan
-  server: celestara.biz
-  port: 443
-  password: MiTiVPN
-  sni: sw.App-Cloud.ir
-  network: ws
-  ws-opts:
-    path: /MiTiVPN=Se
-    headers:
-      Host: sw.App-Cloud.ir
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - CA 🇨🇦 | @Raydikalx | 421
-  - 🔵@chillguy_vpn
-  - 🏳️_未知_410
-  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 21ms
+  - 🇩🇪_德国_31
+  - 🇺🇸_美国_72
   - 🇦🇺
-  - '@W570W'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
