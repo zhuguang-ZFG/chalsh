@@ -14,42 +14,50 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪_德国_31
+- name: 🏳️_未知_86
+  type: trojan
+  server: 104.18.153.10
+  port: 443
+  password: f922fa0f-3311-4368-85ff-cf65e727c854
+  sni: space.byu.id.yxls.eu.cc
+  network: ws
+  ws-opts:
+    path: /br-orcl
+    headers:
+      Host: space.byu.id.yxls.eu.cc
+- name: 🇩🇪_德国_30
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸_美国_72
+- name: Global 🌐 | @Raydikalx | 3001
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸_美国_89
   type: trojan
-  server: blog.webex.com
+  server: 141.193.213.30
   port: 443
-  password: afbcd89a-5a90-4a44-a42a-be08f444aa3f
-  sni: unnes.ac.id.yxls.eu.cc
-  network: ws
-  ws-opts:
-    path: /br-orcl
-    headers:
-      Host: unnes.ac.id.yxls.eu.cc
-- name: 🇦🇺
-  type: trojan
-  server: 104.18.153.10
-  port: 443
-  password: 86957ec0-b213-433b-a43b-51f2175e0ec3
+  password: f922fa0f-3311-4368-85ff-cf65e727c854
   sni: space.byu.id.yxls.eu.cc
   network: ws
   ws-opts:
-    path: /au-do
+    path: /br-orcl
     headers:
       Host: space.byu.id.yxls.eu.cc
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪_德国_31
-  - 🇺🇸_美国_72
-  - 🇦🇺
+  - 🏳️_未知_86
+  - 🇩🇪_德国_30
+  - Global 🌐 | @Raydikalx | 3001
+  - 🇺🇸_美国_89
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
