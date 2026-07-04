@@ -14,27 +14,36 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: DE 🇩🇪 | @Raydikalx | 2785
+- name: 🔵@chillguy_vpn
   type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: bestcf.030101.xyz
+  port: 80
+  uuid: f8975871-a7a0-4906-8835-a23c1258ca1e
   alterId: 0
   cipher: auto
-- name: 未知48
-  type: trojan
-  server: 104.16.72.101
-  port: 443
-  password: 86957ec0-b213-433b-a43b-51f2175e0ec3
-  sni: space.byu.id.yxls.eu.cc
   network: ws
   ws-opts:
-    path: /au-do
+    path: /
     headers:
-      Host: space.byu.id.yxls.eu.cc
-- name: 🇩🇪_德国_30
+      Host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
+- name: 🇺🇸_美国_252
   type: vmess
-  server: 82.198.246.250
+  server: phoenix0202.zgjok.com
+  port: 443
+  uuid: d9c36b55-447a-4484-882b-d799f5301681
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: phoenix0202.zgjok.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /d9c36b55-447a-4484-882b-d799f5301681
+    headers:
+      Host: phoenix0202.zgjok.com
+- name: CZ 🇨🇿 | @Raydikalx | 2709
+  type: vmess
+  server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -43,9 +52,9 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - DE 🇩🇪 | @Raydikalx | 2785
-  - 未知48
-  - 🇩🇪_德国_30
+  - 🔵@chillguy_vpn
+  - 🇺🇸_美国_252
+  - CZ 🇨🇿 | @Raydikalx | 2709
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
