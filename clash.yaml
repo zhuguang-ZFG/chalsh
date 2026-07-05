@@ -14,37 +14,41 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸_美国_175
-  type: trojan
-  server: 141.193.213.30
-  port: 443
-  password: f922fa0f-3311-4368-85ff-cf65e727c854
-  sni: space.byu.id.yxls.eu.cc
+- name: 🎟️
+  type: vless
+  server: 162.159.40.49
+  port: 80
+  uuid: 57bd62cf-5550-4075-8fa3-d4519aae8df0
   network: ws
   ws-opts:
-    path: /br-orcl
+    path: /eyJqdW5rIjoiRURaNEp6YUhMbVlqdzQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
     headers:
-      Host: space.byu.id.yxls.eu.cc
-- name: US 🇺🇸 | @Raydikalx | 2867
+      Host: silent-feather-8539.sddadad2233122eew.workers.dev
+- name: US 🇺🇸 | @Raydikalx | 3154
   type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
   alterId: 0
   cipher: auto
-- name: 🏳️_未知_92
-  type: vless
-  server: www.baipiao.eu.org
-  port: 8880
-  uuid: 8c9be850-32a0-4cc1-809b-4a5161413a90
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
+    path: /cctv13.m3u8
+- name: 🏳️_未知_85
+  type: vless
+  server: yx.cloudflare.182682.xyz
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  servername: t1s1.rittbo.kdns.fr
+  network: ws
+  ws-opts:
+    path: /
     headers:
-      Host: sparkling-frog-59e1.256-d4e.workers.dev
-- name: 未知25
+      Host: t1s1.rittbo.kdns.fr
+- name: Tel-@irconfiig🍻 2
   type: trojan
-  server: 104.18.153.10
+  server: 104.16.72.101
   port: 443
   password: 86957ec0-b213-433b-a43b-51f2175e0ec3
   sni: space.byu.id.yxls.eu.cc
@@ -53,26 +57,38 @@ proxies:
     path: /au-do
     headers:
       Host: space.byu.id.yxls.eu.cc
-- name: 🇺🇸_美国_168
-  type: trojan
-  server: blog.webex.com
+- name: US 🇺🇸 | @Raydikalx | 2813
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 2797
+  type: vmess
+  server: 165.140.216.141
   port: 443
-  password: afbcd89a-5a90-4a44-a42a-be08f444aa3f
-  sni: unnes.ac.id.yxls.eu.cc
-  network: ws
-  ws-opts:
-    path: /br-orcl
-    headers:
-      Host: unnes.ac.id.yxls.eu.cc
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 3168
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸_美国_175
-  - US 🇺🇸 | @Raydikalx | 2867
-  - 🏳️_未知_92
-  - 未知25
-  - 🇺🇸_美国_168
+  - 🎟️
+  - US 🇺🇸 | @Raydikalx | 3154
+  - 🏳️_未知_85
+  - Tel-@irconfiig🍻 2
+  - US 🇺🇸 | @Raydikalx | 2813
+  - US 🇺🇸 | @Raydikalx | 2797
+  - US 🇺🇸 | @Raydikalx | 3168
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
