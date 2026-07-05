@@ -14,14 +14,35 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: V2 - 17
+- name: 🇺🇸_美国_175
+  type: trojan
+  server: 141.193.213.30
+  port: 443
+  password: f922fa0f-3311-4368-85ff-cf65e727c854
+  sni: space.byu.id.yxls.eu.cc
+  network: ws
+  ws-opts:
+    path: /br-orcl
+    headers:
+      Host: space.byu.id.yxls.eu.cc
+- name: US 🇺🇸 | @Raydikalx | 2867
   type: vmess
-  server: 57.151.100.27
-  port: 10086
-  uuid: 550e8400-e29b-41d4-a716-446655440000
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇦🇺
+- name: 🏳️_未知_92
+  type: vless
+  server: www.baipiao.eu.org
+  port: 8880
+  uuid: 8c9be850-32a0-4cc1-809b-4a5161413a90
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: sparkling-frog-59e1.256-d4e.workers.dev
+- name: 未知25
   type: trojan
   server: 104.18.153.10
   port: 443
@@ -32,37 +53,26 @@ proxies:
     path: /au-do
     headers:
       Host: space.byu.id.yxls.eu.cc
-- name: 🇩🇪_德国_30
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: '@W570W'
-  type: vless
-  server: 45.13.119.219
-  port: 8888
-  uuid: eb77be10-9d9e-527b-a78d-8caaf58992d6
-- name: 🏳️_未知_129
-  type: vless
-  server: 172.64.94.251
-  port: 8880
-  uuid: 723c410e-5789-4b21-abb9-d6ec05547ba9
+- name: 🇺🇸_美国_168
+  type: trojan
+  server: blog.webex.com
+  port: 443
+  password: afbcd89a-5a90-4a44-a42a-be08f444aa3f
+  sni: unnes.ac.id.yxls.eu.cc
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
+    path: /br-orcl
     headers:
-      Host: blue-sky-e65b.221-553.workers.dev
+      Host: unnes.ac.id.yxls.eu.cc
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - V2 - 17
-  - 🇦🇺
-  - 🇩🇪_德国_30
-  - '@W570W'
-  - 🏳️_未知_129
+  - 🇺🇸_美国_175
+  - US 🇺🇸 | @Raydikalx | 2867
+  - 🏳️_未知_92
+  - 未知25
+  - 🇺🇸_美国_168
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
