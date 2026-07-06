@@ -14,31 +14,24 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🎟️
+- name: 🏳️_未知_227
   type: vless
-  server: 162.159.40.49
-  port: 80
-  uuid: 57bd62cf-5550-4075-8fa3-d4519aae8df0
+  server: 104.16.107.139
+  port: 8880
+  uuid: 37fce9ce-9fec-4f30-89a0-fbb1f6f33b3c
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiRURaNEp6YUhMbVlqdzQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: silent-feather-8539.sddadad2233122eew.workers.dev
-- name: 🔵@chillguy_vpn
+      Host: white-night-afee.419-acc.workers.dev
+- name: 🇩🇪_德国_52
   type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: NL 🇳🇱 | @Raydikalx | 529
-  type: vmess
-  server: c87s5.portablesubmarines.com
-  port: 18339
-  uuid: 3cd9077d-76f7-4104-bd82-eb6916b89d43
-  alterId: 0
-  cipher: auto
-- name: 🇦🇺
+- name: 未知117
   type: trojan
   server: 104.18.153.10
   port: 443
@@ -49,61 +42,24 @@ proxies:
     path: /au-do
     headers:
       Host: space.byu.id.yxls.eu.cc
-- name: Tel-@irconfiig🍻 3
+- name: 🎟️
   type: vless
-  server: 104.16.72.101
-  port: 2096
-  uuid: 06b65903-406d-4a41-8400-6fd5c0ee7798
-  tls: true
-  servername: sp.linuxdododo.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /proxyip
-    headers:
-      Host: sp.linuxdododo.ccwu.cc
-- name: 🏳️_未知_100
-  type: vless
-  server: www.gov.ua
-  port: 8880
-  uuid: 1742863c-ce4b-4bb7-b807-80da29cbec86
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: icy-fog-9a41.70-a39.workers.dev
-- name: 🇺🇸_美国_91
-  type: vless
-  server: 50.62.195.4
+  server: 162.159.40.49
   port: 80
-  uuid: e382b6dd-2dac-49c5-b16f-1cd0a6b73bf2
+  uuid: 57bd62cf-5550-4075-8fa3-d4519aae8df0
   network: ws
   ws-opts:
-    path: /pyip=Telegram🇨🇳+@WangCai2
+    path: /eyJqdW5rIjoiRURaNEp6YUhMbVlqdzQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
     headers:
-      Host: raspy-feather-12ec.137-257.workers.dev
-- name: 🏳️_未知_179
-  type: trojan
-  server: 104.16.72.101
-  port: 443
-  password: 86957ec0-b213-433b-a43b-51f2175e0ec3
-  sni: space.byu.id.yxls.eu.cc
-  network: ws
-  ws-opts:
-    path: /au-do
-    headers:
-      Host: space.byu.id.yxls.eu.cc
+      Host: silent-feather-8539.sddadad2233122eew.workers.dev
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
+  - 🏳️_未知_227
+  - 🇩🇪_德国_52
+  - 未知117
   - 🎟️
-  - 🔵@chillguy_vpn
-  - NL 🇳🇱 | @Raydikalx | 529
-  - 🇦🇺
-  - Tel-@irconfiig🍻 3
-  - 🏳️_未知_100
-  - 🇺🇸_美国_91
-  - 🏳️_未知_179
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
