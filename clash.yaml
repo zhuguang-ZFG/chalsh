@@ -14,40 +14,42 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪_德国_56
+- name: 🇩🇪_德国_49
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: '@MoOon_proxy 111⚡'
+- name: Global 🌐 | @Raydikalx | 2760
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: Global 🌐 | @Raydikalx | 3086
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 美国+乔治亚洲亚特兰大Fastly节点
   type: trojan
-  server: 199.232.237.250
+  server: 151.101.56.7
   port: 443
-  password: MiTiVPN
+  password: MITIVPN
   sni: ssl.fastly.com
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=NL
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=GE
     headers:
-      Host: mitivpn----a.global.ssl.fastly.net
-- name: 🇺🇸_美国_236
-  type: vless
-  server: earthpro.wasmer.app
-  port: 443
-  uuid: 9b0b4404-f1eb-4551-9b88-e0aac7843c86
-  tls: true
-  servername: earthpro.wasmer.app
-  network: ws
-  ws-opts:
-    path: /9b0b4404
-    headers:
-      Host: earthpro.wasmer.app
-- name: 🏳️_未知_182
+      Host: miticonfig.global.ssl.fastly.net
+- name: 未知18
   type: trojan
-  server: 104.18.153.10
+  server: 104.16.72.101
   port: 443
   password: 86957ec0-b213-433b-a43b-51f2175e0ec3
   sni: space.byu.id.yxls.eu.cc
@@ -56,14 +58,42 @@ proxies:
     path: /au-do
     headers:
       Host: space.byu.id.yxls.eu.cc
+- name: US 🇺🇸 | @Raydikalx | 2791
+  type: vmess
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 2768
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
+- name: 🏳️_未知_197
+  type: vless
+  server: 162.159.140.78
+  port: 8880
+  uuid: 363202dd-0521-46b4-b4e2-443dfbaa2ce1
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: flat-heart-b60a.401-306.workers.dev
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪_德国_56
-  - '@MoOon_proxy 111⚡'
-  - 🇺🇸_美国_236
-  - 🏳️_未知_182
+  - 🇩🇪_德国_49
+  - Global 🌐 | @Raydikalx | 2760
+  - Global 🌐 | @Raydikalx | 3086
+  - 美国+乔治亚洲亚特兰大Fastly节点
+  - 未知18
+  - US 🇺🇸 | @Raydikalx | 2791
+  - US 🇺🇸 | @Raydikalx | 2768
+  - 🏳️_未知_197
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
