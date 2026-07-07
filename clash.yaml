@@ -14,43 +14,56 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 2828
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸_美国_91
+- name: Join ➠ @MoOon_forsin 10
   type: vless
-  server: 149.248.9.25
-  port: 13244
-  uuid: e4c8692b-c100-453c-bc30-15fa12abc8e6
-- name: US 🇺🇸 | @Raydikalx | 2815
+  server: 45.13.119.219
+  port: 8888
+  uuid: eb77be10-9d9e-527b-a78d-8caaf58992d6
+- name: 🇩🇪_德国_129
   type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸_美国_296
+- name: US 🇺🇸 | @Raydikalx | 2775
   type: vmess
-  server: 45.78.72.19
-  port: 19679
-  uuid: 4fb543fa-8034-45a4-ae29-a023d843e838
+  server: 216.106.183.35
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
+- name: 🎟️
+  type: vless
+  server: 162.159.40.49
+  port: 80
+  uuid: 57bd62cf-5550-4075-8fa3-d4519aae8df0
   network: ws
   ws-opts:
-    path: /arki
+    path: /eyJqdW5rIjoiRURaNEp6YUhMbVlqdzQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
+    headers:
+      Host: silent-feather-8539.sddadad2233122eew.workers.dev
+- name: 🚀
+  type: vless
+  server: o.server3peekconfig.workers.dev
+  port: 443
+  uuid: 78abbe41-95dd-4f6f-a500-1450913fb933
+  tls: true
+  servername: o.SERVeR3PeEkConFIG.WOrKerS.dEv
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiZ3VVMHdacGtDIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19
+    headers:
+      Host: o.server3peekconfig.workers.dev
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 2828
-  - 🇺🇸_美国_91
-  - US 🇺🇸 | @Raydikalx | 2815
-  - 🇺🇸_美国_296
+  - Join ➠ @MoOon_forsin 10
+  - 🇩🇪_德国_129
+  - US 🇺🇸 | @Raydikalx | 2775
+  - 🎟️
+  - 🚀
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
