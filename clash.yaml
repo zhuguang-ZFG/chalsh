@@ -14,25 +14,16 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: Join ➠ @MoOon_forsin 10
+- name: 🏳️_未知_339
   type: vless
-  server: 45.13.119.219
-  port: 8888
-  uuid: eb77be10-9d9e-527b-a78d-8caaf58992d6
-- name: 🇩🇪_德国_129
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 2775
-  type: vmess
-  server: 216.106.183.35
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  server: 104.24.152.211
+  port: 8880
+  uuid: 7b8ff2bf-29c0-4a4f-8925-9f9ef6e486f5
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net
+    headers:
+      Host: long-math-be5a.233-98b.workers.dev
 - name: 🎟️
   type: vless
   server: 162.159.40.49
@@ -43,27 +34,70 @@ proxies:
     path: /eyJqdW5rIjoiRURaNEp6YUhMbVlqdzQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
     headers:
       Host: silent-feather-8539.sddadad2233122eew.workers.dev
-- name: 🚀
-  type: vless
-  server: o.server3peekconfig.workers.dev
+- name: 🇩🇪_德国_143
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: همراه اول🕊🕊
+  type: trojan
+  server: 104.16.72.50
   port: 443
-  uuid: 78abbe41-95dd-4f6f-a500-1450913fb933
-  tls: true
-  servername: o.SERVeR3PeEkConFIG.WOrKerS.dEv
+  password: MiTiVPN
+  sni: Fl-u-ueisi.App-Cloud.ir
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiZ3VVMHdacGtDIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=fl
     headers:
-      Host: o.server3peekconfig.workers.dev
+      Host: fl-ll-i.App-Cloud.ir
+- name: CZ 🇨🇿 | @Raydikalx | 2769
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 3128
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🪄
+  type: vless
+  server: support.zoom.us
+  port: 443
+  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+  tls: true
+  servername: support.zoom.us.yxls.eu.cc
+  network: ws
+  ws-opts:
+    path: /sg-amz
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+- name: US 🇺🇸 | @Raydikalx | 3122
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - Join ➠ @MoOon_forsin 10
-  - 🇩🇪_德国_129
-  - US 🇺🇸 | @Raydikalx | 2775
+  - 🏳️_未知_339
   - 🎟️
-  - 🚀
+  - 🇩🇪_德国_143
+  - همراه اول🕊🕊
+  - CZ 🇨🇿 | @Raydikalx | 2769
+  - US 🇺🇸 | @Raydikalx | 3128
+  - 🪄
+  - US 🇺🇸 | @Raydikalx | 3122
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
