@@ -14,90 +14,42 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 3087
+- name: 🔵@chillguy_vpn
   type: vmess
-  server: 38.91.107.49
+  server: 84.17.41.2
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇺🇸US美国8
-  type: trojan
-  server: 199.232.237.250
-  port: 443
-  password: MiTiVPN
-  sni: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=nl
-    headers:
-      Host: mitivpn--------mitivpn.global.ssl.fastly.net
-- name: 🇺🇸_美国_43
-  type: trojan
-  server: frank-piranha.rooster465.autos
-  port: 443
-  password: XG59623478
-- name: 🇩🇪_德国_217
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸_美国_150
-  type: vless
-  server: allu.lorqina.ir
-  port: 38040
-  uuid: d7287652-4283-43df-89e5-81079a71d4a8
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.icloud.com
-  reality-opts:
-    public-key: srmaPslDLc2zUb5YPfetqnF32cLmC5EaDwkorEdqWxY
-    short-id: c4eb423e73793e
-  client-fingerprint: chrome
-- name: 🏳️_未知_359
-  type: trojan
-  server: 104.18.153.10
-  port: 443
-  password: 86957ec0-b213-433b-a43b-51f2175e0ec3
-  sni: space.byu.id.yxls.eu.cc
-  network: ws
-  ws-opts:
-    path: /au-do
-    headers:
-      Host: space.byu.id.yxls.eu.cc
-- name: '@W570W'
-  type: trojan
-  server: www.speedtest.net
-  port: 443
-  password: MiTiVPN
-  sni: sww-w.MaQror.ir
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=sw
-    headers:
-      Host: sw-w-e.MaQror.ir
-- name: US 🇺🇸 | @Raydikalx | 3096
+- name: US 🇺🇸 | @Raydikalx | 3061
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
+- name: 🇩🇪_德国_211
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 2804
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 3087
-  - 🇺🇸US美国8
-  - 🇺🇸_美国_43
-  - 🇩🇪_德国_217
-  - 🇺🇸_美国_150
-  - 🏳️_未知_359
-  - '@W570W'
-  - US 🇺🇸 | @Raydikalx | 3096
+  - 🔵@chillguy_vpn
+  - US 🇺🇸 | @Raydikalx | 3061
+  - 🇩🇪_德国_211
+  - US 🇺🇸 | @Raydikalx | 2804
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
