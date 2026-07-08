@@ -14,31 +14,60 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🎟️
-  type: vless
-  server: 162.159.40.49
-  port: 80
-  uuid: 57bd62cf-5550-4075-8fa3-d4519aae8df0
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiRURaNEp6YUhMbVlqdzQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
-    headers:
-      Host: silent-feather-8539.sddadad2233122eew.workers.dev
-- name: 🇩🇪_德国_146
+- name: 🇩🇪_德国_202
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | 2829
+- name: CA 🇨🇦 | @Raydikalx | 2779
   type: vmess
   server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🏳️_未知_250
+- name: US 🇺🇸 | @Raydikalx | 2789
+  type: vmess
+  server: 216.106.183.35
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 巴西+V2CROSS.COM
+  type: vless
+  server: 185.159.247.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime59.workers.dev
+- name: 🇨🇦@FreakConfig
+  type: vmess
+  server: 158.51.121.63
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: seribus.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: seribus.org
+- name: 🏳️_未知_359
   type: trojan
   server: 104.18.153.10
   port: 443
@@ -53,10 +82,13 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🎟️
-  - 🇩🇪_德国_146
-  - CA 🇨🇦 | @Raydikalx | 2829
-  - 🏳️_未知_250
+  - 🇩🇪_德国_202
+  - CA 🇨🇦 | @Raydikalx | 2779
+  - US 🇺🇸 | @Raydikalx | 2789
+  - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  - 巴西+V2CROSS.COM
+  - 🇨🇦@FreakConfig
+  - 🏳️_未知_359
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
