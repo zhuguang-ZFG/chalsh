@@ -14,42 +14,61 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🔵@chillguy_vpn
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 3061
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪_德国_211
+- name: '@W570W'
+  type: trojan
+  server: www.speedtest.net
+  port: 443
+  password: MiTiVPN
+  sni: sww-w.MaQror.ir
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=sw
+    headers:
+      Host: sw-w-e.MaQror.ir
+- name: 🏳️_未知_359
+  type: trojan
+  server: 104.18.153.10
+  port: 443
+  password: 86957ec0-b213-433b-a43b-51f2175e0ec3
+  sni: space.byu.id.yxls.eu.cc
+  network: ws
+  ws-opts:
+    path: /au-do
+    headers:
+      Host: space.byu.id.yxls.eu.cc
+- name: 🇺🇸US美国3
+  type: trojan
+  server: 167.82.101.252
+  port: 443
+  password: MiTiVPN
+  sni: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=sw
+    headers:
+      Host: mitivpn-mitivpn-mitivpn.global.ssl.fastly.net
+- name: Germany 🇩🇪
+  type: vless
+  server: 193.23.219.140
+  port: 56453
+  uuid: c87950b3-f132-450a-bec6-e9e91fc9d8bc
+- name: 🇩🇪_德国_203
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 2804
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🔵@chillguy_vpn
-  - US 🇺🇸 | @Raydikalx | 3061
-  - 🇩🇪_德国_211
-  - US 🇺🇸 | @Raydikalx | 2804
+  - '@W570W'
+  - 🏳️_未知_359
+  - 🇺🇸US美国3
+  - Germany 🇩🇪
+  - 🇩🇪_德国_203
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
