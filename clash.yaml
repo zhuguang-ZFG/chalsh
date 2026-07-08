@@ -14,73 +14,48 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: '@W570W'
+- name: US 🇺🇸 | @Raydikalx | 3087
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸US美国8
   type: trojan
-  server: www.speedtest.net
+  server: 199.232.237.250
   port: 443
   password: MiTiVPN
-  sni: fffffl-lls.MaQror.ir
-  skip-cert-verify: true
+  sni: ssl.fastly.com
   network: ws
   ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=fl
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=nl
     headers:
-      Host: f-l-nl.MaQror.ir
-- name: 🏳️_未知_417
-  type: vless
-  server: cf.877774.xyz
+      Host: mitivpn--------mitivpn.global.ssl.fastly.net
+- name: 🇺🇸_美国_43
+  type: trojan
+  server: frank-piranha.rooster465.autos
   port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  servername: t1s1.rittbo.kdns.fr
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-- name: 🇺🇸_美国_69
-  type: vless
-  server: 76.13.29.145
-  port: 28168
-  uuid: cf24d549-98a9-42c3-91b3-b376bb228ace
-- name: 🏳️_未知_389
-  type: vless
-  server: yx.l110.us.ci
-  port: 443
-  uuid: 4a1441b0-7bc8-4906-85cf-6b59c256b480
-  tls: true
-  servername: edt2.yfqh08811.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edt2.yfqh08811.ccwu.cc
-- name: 🇩🇪_德国_206
+  password: XG59623478
+- name: 🇩🇪_德国_217
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: Global 🌐 | @Raydikalx | 3068
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 美国+CloudFlare节点
+- name: 🇺🇸_美国_150
   type: vless
-  server: yx.cloudflare.182682.xyz
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  server: allu.lorqina.ir
+  port: 38040
+  uuid: d7287652-4283-43df-89e5-81079a71d4a8
+  flow: xtls-rprx-vision
   tls: true
-  servername: t1s1.rittbo.kdns.fr
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
+  servername: www.icloud.com
+  reality-opts:
+    public-key: srmaPslDLc2zUb5YPfetqnF32cLmC5EaDwkorEdqWxY
+    short-id: c4eb423e73793e
+  client-fingerprint: chrome
 - name: 🏳️_未知_359
   type: trojan
   server: 104.18.153.10
@@ -92,18 +67,37 @@ proxies:
     path: /au-do
     headers:
       Host: space.byu.id.yxls.eu.cc
+- name: '@W570W'
+  type: trojan
+  server: www.speedtest.net
+  port: 443
+  password: MiTiVPN
+  sni: sww-w.MaQror.ir
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=sw
+    headers:
+      Host: sw-w-e.MaQror.ir
+- name: US 🇺🇸 | @Raydikalx | 3096
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - '@W570W'
-  - 🏳️_未知_417
-  - 🇺🇸_美国_69
-  - 🏳️_未知_389
-  - 🇩🇪_德国_206
-  - Global 🌐 | @Raydikalx | 3068
-  - 美国+CloudFlare节点
+  - US 🇺🇸 | @Raydikalx | 3087
+  - 🇺🇸US美国8
+  - 🇺🇸_美国_43
+  - 🇩🇪_德国_217
+  - 🇺🇸_美国_150
   - 🏳️_未知_359
+  - '@W570W'
+  - US 🇺🇸 | @Raydikalx | 3096
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
