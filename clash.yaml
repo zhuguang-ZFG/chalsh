@@ -14,34 +14,71 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇫🇷 Join Telegram @ir2ray_free🇫🇷
+- name: 🔵@chillguy_vpn
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 2734
+  type: vmess
+  server: 216.106.183.35
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦
   type: vless
-  server: 45.13.119.219
-  port: 8888
-  uuid: eb77be10-9d9e-527b-a78d-8caaf58992d6
-- name: Germany 🇩🇪
-  type: vless
-  server: 193.23.219.140
-  port: 56453
-  uuid: c87950b3-f132-450a-bec6-e9e91fc9d8bc
-- name: 🇺🇸_美国_69
-  type: vless
-  server: 64.186.224.186
+  server: support.zoom.us
   port: 443
-  uuid: 568ea08c-9646-432b-b764-360143fd882e
-  flow: xtls-rprx-vision
+  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
   tls: true
-  servername: www.apple.com
-  reality-opts:
-    public-key: YR_gITGMVRP_amFav8qy6Jz5ReefneLTJi3UXIKhHWI
-  client-fingerprint: chrome
+  servername: support.zoom.us.yxls.eu.cc
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+- name: RVG-@ansooyefilter
+  type: vless
+  server: ansooyefilter-production-caa9.up.railway.app
+  port: 443
+  uuid: d82c5680-1c31-6e57-4902-665c25279785
+  tls: true
+  servername: ansooyefilter-production-caa9.up.railway.app
+  network: ws
+  ws-opts:
+    path: /ws/d82c5680-1c31-6e57-4902-665c25279785
+    headers:
+      Host: ansooyefilter-production-caa9.up.railway.app
+- name: 🏳️_未知_166
+  type: vless
+  server: 104.16.106.213
+  port: 8880
+  uuid: cc9082e4-9c7c-4cef-a0f5-963363bed638
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: weathered-mode-8f39.83-33c.workers.dev
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇫🇷 Join Telegram @ir2ray_free🇫🇷
-  - Germany 🇩🇪
-  - 🇺🇸_美国_69
+  - 🔵@chillguy_vpn
+  - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  - US 🇺🇸 | @Raydikalx | 2734
+  - 🇨🇦
+  - RVG-@ansooyefilter
+  - 🏳️_未知_166
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
