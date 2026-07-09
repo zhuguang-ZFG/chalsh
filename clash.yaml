@@ -14,13 +14,24 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 2709
+- name: US 🇺🇸 | @Raydikalx | 2616
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
+- name: 🇺🇸_美国_69
+  type: vless
+  server: 64.186.224.186
+  port: 443
+  uuid: 568ea08c-9646-432b-b764-360143fd882e
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.apple.com
+  reality-opts:
+    public-key: YR_gITGMVRP_amFav8qy6Jz5ReefneLTJi3UXIKhHWI
+  client-fingerprint: chrome
 - name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
   type: vmess
   server: 82.198.246.37
@@ -28,47 +39,21 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🏳️_未知_159
-  type: vless
-  server: cloudflare.182682.xyz
-  port: 443
-  uuid: 4a1441b0-7bc8-4906-85cf-6b59c256b480
-  tls: true
-  servername: edt2.yfqh08811.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edt2.yfqh08811.ccwu.cc
-- name: 🆔configfa 🔒 VL-TCP- 🇺🇸 US 16ms
-  type: vless
-  server: 15.204.97.197
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | 2650
+- name: US 🇺🇸 | @Raydikalx | 2639
   type: vmess
-  server: 129.146.143.80
-  port: 48111
-  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+  server: 216.106.183.35
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 2709
+  - US 🇺🇸 | @Raydikalx | 2616
+  - 🇺🇸_美国_69
   - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
-  - 🏳️_未知_159
-  - 🆔configfa 🔒 VL-TCP- 🇺🇸 US 16ms
-  - US 🇺🇸 | @Raydikalx | 2650
+  - US 🇺🇸 | @Raydikalx | 2639
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
