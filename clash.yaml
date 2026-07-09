@@ -14,63 +14,61 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 2730
+- name: US 🇺🇸 | @Raydikalx | 2709
   type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 未知24
+- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
   type: vmess
-  server: 158.51.121.63
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-  tls: true
-  servername: seribus.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: seribus.org
-- name: 🇨🇦
+- name: 🏳️_未知_159
   type: vless
-  server: support.zoom.us
+  server: cloudflare.182682.xyz
   port: 443
-  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+  uuid: 4a1441b0-7bc8-4906-85cf-6b59c256b480
   tls: true
-  servername: support.zoom.us.yxls.eu.cc
+  servername: edt2.yfqh08811.ccwu.cc
   network: ws
   ws-opts:
-    path: /sg-melbi
+    path: /
     headers:
-      Host: support.zoom.us.yxls.eu.cc
-- name: CA 🇨🇦 | @Raydikalx | 3048
+      Host: edt2.yfqh08811.ccwu.cc
+- name: 🆔configfa 🔒 VL-TCP- 🇺🇸 US 16ms
+  type: vless
+  server: 15.204.97.197
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  servername: fuck.rkn
+  skip-cert-verify: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
+- name: US 🇺🇸 | @Raydikalx | 2650
   type: vmess
-  server: zt-ai.cloud
-  port: 443
-  uuid: fce3d6a4-0f12-49b5-a810-84bcf0fde202
+  server: 129.146.143.80
+  port: 48111
+  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
   alterId: 0
   cipher: auto
-  tls: true
-  servername: zt-ai.cloud
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /v2ray
-    headers:
-      Host: zt-ai.cloud
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 2730
-  - 未知24
-  - 🇨🇦
-  - CA 🇨🇦 | @Raydikalx | 3048
+  - US 🇺🇸 | @Raydikalx | 2709
+  - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  - 🏳️_未知_159
+  - 🆔configfa 🔒 VL-TCP- 🇺🇸 US 16ms
+  - US 🇺🇸 | @Raydikalx | 2650
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
