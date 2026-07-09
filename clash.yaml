@@ -14,27 +14,28 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🔵@chillguy_vpn
+- name: US 🇺🇸 | @Raydikalx | 2730
   type: vmess
   server: 84.17.41.2
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+- name: 未知24
   type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 158.51.121.63
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 2734
-  type: vmess
-  server: 216.106.183.35
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  tls: true
+  servername: seribus.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: seribus.org
 - name: 🇨🇦
   type: vless
   server: support.zoom.us
@@ -47,38 +48,29 @@ proxies:
     path: /sg-melbi
     headers:
       Host: support.zoom.us.yxls.eu.cc
-- name: RVG-@ansooyefilter
-  type: vless
-  server: ansooyefilter-production-caa9.up.railway.app
+- name: CA 🇨🇦 | @Raydikalx | 3048
+  type: vmess
+  server: zt-ai.cloud
   port: 443
-  uuid: d82c5680-1c31-6e57-4902-665c25279785
+  uuid: fce3d6a4-0f12-49b5-a810-84bcf0fde202
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: ansooyefilter-production-caa9.up.railway.app
+  servername: zt-ai.cloud
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /ws/d82c5680-1c31-6e57-4902-665c25279785
+    path: /v2ray
     headers:
-      Host: ansooyefilter-production-caa9.up.railway.app
-- name: 🏳️_未知_166
-  type: vless
-  server: 104.16.106.213
-  port: 8880
-  uuid: cc9082e4-9c7c-4cef-a0f5-963363bed638
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: weathered-mode-8f39.83-33c.workers.dev
+      Host: zt-ai.cloud
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🔵@chillguy_vpn
-  - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
-  - US 🇺🇸 | @Raydikalx | 2734
+  - US 🇺🇸 | @Raydikalx | 2730
+  - 未知24
   - 🇨🇦
-  - RVG-@ansooyefilter
-  - 🏳️_未知_166
+  - CA 🇨🇦 | @Raydikalx | 3048
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
