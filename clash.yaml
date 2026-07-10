@@ -14,18 +14,31 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇸🇬_新加坡_251
+- name: US 🇺🇸 | @Raydikalx | 2550
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 美国+CloudFlare节点
   type: vless
-  server: 43.169.19.179
+  server: da.mfa.gov.ua
   port: 443
-  uuid: 552a071a-7a69-49b5-9a82-f353229d82ad
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   tls: true
-  servername: gy.hhawks.kdns.fr
+  servername: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: gy.hhawks.kdns.fr
+      Host: t1s1.rittbo.kdns.fr
+- name: '@W570W'
+  type: vless
+  server: 45.13.119.219
+  port: 8888
+  uuid: eb77be10-9d9e-527b-a78d-8caaf58992d6
 - name: 🇩🇪_德国_51
   type: vmess
   server: 82.198.246.250
@@ -33,35 +46,39 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🏳️_未知_260
+- name: RVG-لینک پیش‌فرض
   type: vless
-  server: 172.64.94.251
-  port: 8880
-  uuid: 9f4b666c-ecf1-49e9-8ab8-9ae2c4f4c613
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: withered-morning-aa51.64-c79.workers.dev
-- name: 🏳️_未知_162
-  type: trojan
-  server: saas.sin.fan
+  server: ansooyefilter-production-4623.up.railway.app
   port: 443
-  password: '666'
-  sni: gdurt.ia6o.2s1.hh.penqiask.ccwu.cc
+  uuid: a75f5c82-d667-0ce8-d297-30286b054691
+  tls: true
+  servername: ansooyefilter-production-4623.up.railway.app
   network: ws
   ws-opts:
-    path: /glasspanel/guest000_0_5de14443985f/
+    path: /ws/a75f5c82-d667-0ce8-d297-30286b054691
     headers:
-      Host: gdurt.ia6o.2s1.hh.penqiask.ccwu.cc
+      Host: ansooyefilter-production-4623.up.railway.app
+- name: V2rayByUnknown™
+  type: vless
+  server: 47.251.25.74
+  port: 443
+  uuid: 18805ff3-b420-45de-af18-93be14024ae8
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.amazon.com
+  reality-opts:
+    public-key: H56cOJhw0xw76lDEpt7IuJJmVGemK6_CK34KtHwDMX8
+  client-fingerprint: chrome
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇸🇬_新加坡_251
+  - US 🇺🇸 | @Raydikalx | 2550
+  - 美国+CloudFlare节点
+  - '@W570W'
   - 🇩🇪_德国_51
-  - 🏳️_未知_260
-  - 🏳️_未知_162
+  - RVG-لینک پیش‌فرض
+  - V2rayByUnknown™
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
