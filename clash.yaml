@@ -14,45 +14,55 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪_德国_60
+- name: '@W570W'
+  type: trojan
+  server: www.speedtest.net
+  port: 443
+  password: MiTiVPN
+  sni: nland-o-nl.App-Cloud.ir
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=nLL
+    headers:
+      Host: n-la-nbad.App-Cloud.ir
+- name: 🇩🇪_德国_45
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: '@V2ray_confiig'
-  type: vless
-  server: x4g-production-06e2.up.railway.app
-  port: 443
-  uuid: 14dc1390-2efc-724d-9dfa-1bc02bc644bc
-  tls: true
-  servername: x4g-production-06e2.up.railway.app
-  network: ws
-  ws-opts:
-    path: /ws/14dc1390-2efc-724d-9dfa-1bc02bc644bc
-    headers:
-      Host: x4g-production-06e2.up.railway.app
-- name: '@BESTIIVPNBOT خرید سرور اختصاصی 💲'
-  type: vless
-  server: 45.13.119.219
-  port: 8888
-  uuid: eb77be10-9d9e-527b-a78d-8caaf58992d6
-- name: US 🇺🇸 | @Raydikalx | 465
+- name: US 🇺🇸 | @Raydikalx | 2947
   type: vmess
-  server: 165.140.216.142
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🔵@chillguy_vpn
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 2724
+  type: vmess
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪_德国_60
-  - '@V2ray_confiig'
-  - '@BESTIIVPNBOT خرید سرور اختصاصی 💲'
-  - US 🇺🇸 | @Raydikalx | 465
+  - '@W570W'
+  - 🇩🇪_德国_45
+  - US 🇺🇸 | @Raydikalx | 2947
+  - 🔵@chillguy_vpn
+  - US 🇺🇸 | @Raydikalx | 2724
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
