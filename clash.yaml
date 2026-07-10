@@ -14,51 +14,54 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🏳️_未知_203
+- name: 🇸🇬_新加坡_251
   type: vless
-  server: www.speedtest.net
-  port: 80
-  uuid: 7201b2cd-0675-4c1a-9c76-07ca14ffcf08
+  server: 43.169.19.179
+  port: 443
+  uuid: 552a071a-7a69-49b5-9a82-f353229d82ad
+  tls: true
+  servername: gy.hhawks.kdns.fr
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiTlZxbGYyajQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
+    path: /
     headers:
-      Host: 6crihfknlqjdu3yuzco9phspq86dbp6q.christanmoccasin.workers.dev
-- name: US 🇺🇸 | @Raydikalx | 2635
+      Host: gy.hhawks.kdns.fr
+- name: 🇩🇪_德国_51
   type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🆔configfa 🔒 VL-TCP- 🇺🇸 US 16ms
+- name: 🏳️_未知_260
   type: vless
-  server: 15.204.97.197
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  skip-cert-verify: true
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
+  server: 172.64.94.251
+  port: 8880
+  uuid: 9f4b666c-ecf1-49e9-8ab8-9ae2c4f4c613
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: withered-morning-aa51.64-c79.workers.dev
+- name: 🏳️_未知_162
+  type: trojan
+  server: saas.sin.fan
+  port: 443
+  password: '666'
+  sni: gdurt.ia6o.2s1.hh.penqiask.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /glasspanel/guest000_0_5de14443985f/
+    headers:
+      Host: gdurt.ia6o.2s1.hh.penqiask.ccwu.cc
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
-  - 🏳️_未知_203
-  - US 🇺🇸 | @Raydikalx | 2635
-  - 🆔configfa 🔒 VL-TCP- 🇺🇸 US 16ms
+  - 🇸🇬_新加坡_251
+  - 🇩🇪_德国_51
+  - 🏳️_未知_260
+  - 🏳️_未知_162
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
