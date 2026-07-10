@@ -14,81 +14,45 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: '@W570W'
-  type: trojan
-  server: www.speedtest.net
-  port: 443
-  password: MiTiVPN
-  sni: nland-o-nl.App-Cloud.ir
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=nLL
-    headers:
-      Host: n-la-nbad.App-Cloud.ir
-- name: 🏳️_未知_260
-  type: vless
-  server: 172.64.94.251
-  port: 8880
-  uuid: 9f4b666c-ecf1-49e9-8ab8-9ae2c4f4c613
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: withered-morning-aa51.64-c79.workers.dev
-- name: 🇨🇦
-  type: vless
-  server: support.zoom.us
-  port: 443
-  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
-  tls: true
-  servername: support.zoom.us.yxls.eu.cc
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: support.zoom.us.yxls.eu.cc
-- name: 🇩🇪_德国_58
+- name: 🇩🇪_德国_60
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🏳️_未知_294
+- name: '@V2ray_confiig'
   type: vless
-  server: yx.cloudflare.182682.xyz
+  server: x4g-production-06e2.up.railway.app
   port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  uuid: 14dc1390-2efc-724d-9dfa-1bc02bc644bc
   tls: true
-  servername: t1s1.rittbo.kdns.fr
+  servername: x4g-production-06e2.up.railway.app
   network: ws
   ws-opts:
-    path: /
+    path: /ws/14dc1390-2efc-724d-9dfa-1bc02bc644bc
     headers:
-      Host: t1s1.rittbo.kdns.fr
-- name: 🇮🇪_爱尔兰_14
-  type: trojan
-  server: singular-lark.rooster465.autos
-  port: 443
-  password: XG59623478
-  sni: singular-lark.rooster465.autos
-- name: 🇫🇷 Join Telegram @ir2ray_free🇫🇷
+      Host: x4g-production-06e2.up.railway.app
+- name: '@BESTIIVPNBOT خرید سرور اختصاصی 💲'
   type: vless
   server: 45.13.119.219
   port: 8888
   uuid: eb77be10-9d9e-527b-a78d-8caaf58992d6
+- name: US 🇺🇸 | @Raydikalx | 465
+  type: vmess
+  server: 165.140.216.142
+  port: 443
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - '@W570W'
-  - 🏳️_未知_260
-  - 🇨🇦
-  - 🇩🇪_德国_58
-  - 🏳️_未知_294
-  - 🇮🇪_爱尔兰_14
-  - 🇫🇷 Join Telegram @ir2ray_free🇫🇷
+  - 🇩🇪_德国_60
+  - '@V2ray_confiig'
+  - '@BESTIIVPNBOT خرید سرور اختصاصی 💲'
+  - US 🇺🇸 | @Raydikalx | 465
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
