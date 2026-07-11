@@ -14,34 +14,13 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪_德国_29
+- name: 🇩🇪_德国_19
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 美国+V2CROSS.COM
-  type: vless
-  server: ans-channel-production-b262.up.railway.app
-  port: 443
-  uuid: f753c98a-bb23-e85a-d174-ebbeabcd7626
-  tls: true
-  network: ws
-  ws-opts:
-    path: /ws/f753c98a-bb23-e85a-d174-ebbeabcd7626
-- name: 🏳️_未知_331
-  type: vless
-  server: cf.130519.xyz
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  servername: t1s1.rittbo.kdns.fr
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
 - name: 🏳️_未知_367
   type: vless
   server: cfd3.466688.xyz
@@ -54,9 +33,9 @@ proxies:
     path: /?ed=2048@https://t.me/QiangLieTuiJian
     headers:
       Host: edge-e47d0df3.pages.dev
-- name: 🏳️_未知_355
+- name: 🏳️_未知_333
   type: vless
-  server: 104.16.148.8
+  server: mfa.gov.ua
   port: 443
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   tls: true
@@ -66,28 +45,13 @@ proxies:
     path: /
     headers:
       Host: t1s1.rittbo.kdns.fr
-- name: '@V2ray_confiig'
-  type: vless
-  server: x4g-production-06e2.up.railway.app
-  port: 443
-  uuid: 14dc1390-2efc-724d-9dfa-1bc02bc644bc
-  tls: true
-  servername: x4g-production-06e2.up.railway.app
-  network: ws
-  ws-opts:
-    path: /ws/14dc1390-2efc-724d-9dfa-1bc02bc644bc
-    headers:
-      Host: x4g-production-06e2.up.railway.app
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪_德国_29
-  - 美国+V2CROSS.COM
-  - 🏳️_未知_331
+  - 🇩🇪_德国_19
   - 🏳️_未知_367
-  - 🏳️_未知_355
-  - '@V2ray_confiig'
+  - 🏳️_未知_333
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
