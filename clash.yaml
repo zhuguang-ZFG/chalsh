@@ -14,59 +14,88 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: '@W570W'
+- name: US 🇺🇸 | @Raydikalx | 462
+  type: vmess
+  server: zt-ai.cloud
+  port: 443
+  uuid: fce3d6a4-0f12-49b5-a810-84bcf0fde202
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: zt-ai.cloud
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /v2ray
+    headers:
+      Host: zt-ai.cloud
+- name: 🇺🇸_美国_159
   type: vless
-  server: 45.13.119.219
-  port: 8888
-  uuid: eb77be10-9d9e-527b-a78d-8caaf58992d6
-- name: 🇩🇪_德国_60
+  server: 38.244.20.203
+  port: 443
+  uuid: 5905d91f-c3bc-4e80-bd66-4b17beb166cb
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.apple.com
+  reality-opts:
+    public-key: 8BglmwULIVotYAbGXx3Vd1fXiGJbKSsWnZCGvm4Exl0
+    short-id: aebdb601b1371778
+  client-fingerprint: safari
+- name: 🇩🇪_德国_28
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: RVG-@ansooyefilter
+- name: V2rayByUnknown™
   type: vless
-  server: ansooyefilter-production-8add.up.railway.app
+  server: 47.251.25.74
   port: 443
-  uuid: 35845b61-1e20-aa85-32a5-c7364d258d66
+  uuid: 18805ff3-b420-45de-af18-93be14024ae8
+  flow: xtls-rprx-vision
   tls: true
-  servername: ansooyefilter-production-8add.up.railway.app
-  network: ws
-  ws-opts:
-    path: /ws/35845b61-1e20-aa85-32a5-c7364d258d66
-    headers:
-      Host: ansooyefilter-production-8add.up.railway.app
-- name: US 🇺🇸 | @Raydikalx | 2764
+  servername: www.amazon.com
+  reality-opts:
+    public-key: H56cOJhw0xw76lDEpt7IuJJmVGemK6_CK34KtHwDMX8
+  client-fingerprint: chrome
+- name: 🇨🇦@FreakConfig
   type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  server: 158.51.121.63
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
+  tls: true
+  servername: seribus.org
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /cctv13.m3u8
-- name: 🏳️_未知_255
-  type: vless
-  server: 104.21.15.212
-  port: 8880
-  uuid: 65aed3c1-1999-46a1-a3f3-2e5eb119ec64
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
+    path: linkvws
     headers:
-      Host: weathered-hat-76a5.380-d00.workers.dev
+      Host: seribus.org
+- name: '@W570W'
+  type: trojan
+  server: www.speedtest.net
+  port: 443
+  password: MiTiVPN
+  sni: wbjj-bbcs-.App-Cloud.ir
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=SS-w
+    headers:
+      Host: bw--ivs-b--vvs.App-Cloud.ir
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
+  - US 🇺🇸 | @Raydikalx | 462
+  - 🇺🇸_美国_159
+  - 🇩🇪_德国_28
+  - V2rayByUnknown™
+  - 🇨🇦@FreakConfig
   - '@W570W'
-  - 🇩🇪_德国_60
-  - RVG-@ansooyefilter
-  - US 🇺🇸 | @Raydikalx | 2764
-  - 🏳️_未知_255
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
