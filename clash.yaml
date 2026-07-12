@@ -14,47 +14,18 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸_美国_114
+- name: US 🇺🇸 | @Raydikalx | 2684
   type: vmess
-  server: guanwang.awsno.com
+  server: 165.140.216.141
   port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
   alterId: 0
   cipher: auto
-  tls: true
-  servername: gw.alicdn.com
-  skip-cert-verify: true
-- name: 🇺🇸@ansooyefilter
-  type: vless
-  server: ans-channel-production-b262.up.railway.app
-  port: 443
-  uuid: f753c98a-bb23-e85a-d174-ebbeabcd7626
-  tls: true
-  servername: ans-channel-production-b262.up.railway.app
-  network: ws
-  ws-opts:
-    path: /ws/f753c98a-bb23-e85a-d174-ebbeabcd7626
-    headers:
-      Host: ans-channel-production-b262.up.railway.app
-- name: 🇺🇸_美国_187
-  type: vless
-  server: ansooyefilter-channel-production-f50d.up.railway.app
-  port: 443
-  uuid: 2107d017-9bb3-d249-0938-c0ad831fb011
-  tls: true
-  servername: ansooyefilter-channel-production-f50d.up.railway.app
-  network: ws
-  ws-opts:
-    path: /ws/2107d017-9bb3-d249-0938-c0ad831fb011
-    headers:
-      Host: ansooyefilter-channel-production-f50d.up.railway.app
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸_美国_114
-  - 🇺🇸@ansooyefilter
-  - 🇺🇸_美国_187
+  - US 🇺🇸 | @Raydikalx | 2684
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
