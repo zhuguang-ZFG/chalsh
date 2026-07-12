@@ -14,77 +14,83 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: CA 🇨🇦 | @Raydikalx | 2664
+- name: 🇺🇸_美国_114
   type: vmess
-  server: 134.195.196.211
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: gw.alicdn.com
+  skip-cert-verify: true
+- name: '@V2ray_confiig'
+  type: vless
+  server: 38.244.20.203
+  port: 443
+  uuid: 5905d91f-c3bc-4e80-bd66-4b17beb166cb
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.apple.com
+  reality-opts:
+    public-key: 8BglmwULIVotYAbGXx3Vd1fXiGJbKSsWnZCGvm4Exl0
+    short-id: aebdb601b1371778
+  client-fingerprint: safari
+- name: V2rayByUnknown™
+  type: vless
+  server: us.hagrid-connected.com
+  port: 443
+  uuid: 7499f0a0-3670-4cf6-a31c-ad4cd943cf18
+  flow: xtls-rprx-vision
+  tls: true
+  servername: us.hagrid-connected.com
+  reality-opts:
+    public-key: nfkwd9xJCoNuWrvvieBB9VfpcDldsARAdFPL0dF5A1Q
+    short-id: 305570274c0c72cc
+  client-fingerprint: edge
+- name: CA 🇨🇦 | @Raydikalx | 534
+  type: vmess
+  server: 158.51.121.63
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: seribus.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: seribus.org
+- name: 🇸🇨 SC-01 🛜📶🛡️ ▷ ⭐🅽 ֎ ᯤ
+  type: vless
+  server: 140.235.168.9
+  port: 993
+  uuid: 526d2855-c7d1-ecf3-e4f8-5a75f77d5bb3
+  flow: xtls-rprx-vision
+  tls: true
+  servername: speed.cloudflare.com
+  reality-opts:
+    public-key: oE7ZEghzkaOUiw1q3PqBtpllP1NlPHLY8ydJRuICtko
+  client-fingerprint: firefox
+- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  type: vmess
+  server: 38.91.107.49
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 未知20
-  type: trojan
-  server: openai.com
-  port: 443
-  password: MiTiVPN
-  sni: fl-o--7-fllav.App-CloUd.IR
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=F--l
-    headers:
-      Host: f--ls-Fvl.App-CloUd.IR
-- name: 19 تیر MTMVPN 🦄
-  type: vless
-  server: ansooyefilter-production-4623.up.railway.app
-  port: 443
-  uuid: a75f5c82-d667-0ce8-d297-30286b054691
-  tls: true
-  servername: ansooyefilter-production-4623.up.railway.app
-  network: ws
-  ws-opts:
-    path: /ws/a75f5c82-d667-0ce8-d297-30286b054691
-    headers:
-      Host: ansooyefilter-production-4623.up.railway.app
-- name: 🏳️_未知_404
-  type: vless
-  server: store.ubi.com
-  port: 443
-  uuid: 8ce3af34-308f-456c-93a6-e6dff9f03d77
-  tls: true
-  servername: zdy.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zdy.vavava.kdns.fr
-- name: 🆔soskeynet 🔒 VL-GRPC- 🇩🇪 DE 157ms
-  type: vless
-  server: potyjnovpn.apruxdomain.store
-  port: 40016
-  uuid: 5bd6508c-fca8-4b21-9853-3df3a2b6f21b
-  tls: true
-  servername: ads.x5.ru
-  reality-opts:
-    public-key: e6MwbKeNnKbKtMiIUpcje2aetEWijrjyc3rFaRRaql0
-    short-id: 5fe2
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: Max.ru
-- name: Join ➠ @MoOon_forsin 10
-  type: vless
-  server: 45.13.119.219
-  port: 8888
-  uuid: eb77be10-9d9e-527b-a78d-8caaf58992d6
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - CA 🇨🇦 | @Raydikalx | 2664
-  - 未知20
-  - 19 تیر MTMVPN 🦄
-  - 🏳️_未知_404
-  - 🆔soskeynet 🔒 VL-GRPC- 🇩🇪 DE 157ms
-  - Join ➠ @MoOon_forsin 10
+  - 🇺🇸_美国_114
+  - '@V2ray_confiig'
+  - V2rayByUnknown™
+  - CA 🇨🇦 | @Raydikalx | 534
+  - 🇸🇨 SC-01 🛜📶🛡️ ▷ ⭐🅽 ֎ ᯤ
+  - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
