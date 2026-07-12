@@ -14,73 +14,47 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸_美国_389
-  type: vless
-  server: 154.64.236.234
-  port: 443
-  uuid: 68eee13f-1a7a-4761-b71e-83b997eeccf9
-  tls: true
-  servername: tq3fu.tsfa.aue.hh.hhyf.kdns.fr
-  network: ws
-  ws-opts:
-    path: /glasspanel/guest000_0_5de14443985f/
-    headers:
-      Host: tq3fu.tsfa.aue.hh.hhyf.kdns.fr
-- name: US 🇺🇸 | @Raydikalx | 592
+- name: 🇺🇸_美国_114
   type: vmess
-  server: 165.140.216.142
+  server: guanwang.awsno.com
   port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   alterId: 0
   cipher: auto
-- name: 🇺🇸_美国_390
-  type: vless
-  server: 45.63.89.102
-  port: 443
-  uuid: 8ce3af34-308f-456c-93a6-e6dff9f03d77
   tls: true
-  servername: zdy.vavava.kdns.fr
+  servername: gw.alicdn.com
+  skip-cert-verify: true
+- name: 🇺🇸@ansooyefilter
+  type: vless
+  server: ans-channel-production-b262.up.railway.app
+  port: 443
+  uuid: f753c98a-bb23-e85a-d174-ebbeabcd7626
+  tls: true
+  servername: ans-channel-production-b262.up.railway.app
   network: ws
   ws-opts:
-    path: /
+    path: /ws/f753c98a-bb23-e85a-d174-ebbeabcd7626
     headers:
-      Host: zdy.vavava.kdns.fr
-- name: CA 🇨🇦 | @Raydikalx | 2635
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: nova_vpn
+      Host: ans-channel-production-b262.up.railway.app
+- name: 🇺🇸_美国_187
   type: vless
-  server: ansooyefilter-production-4623.up.railway.app
+  server: ansooyefilter-channel-production-f50d.up.railway.app
   port: 443
-  uuid: a75f5c82-d667-0ce8-d297-30286b054691
+  uuid: 2107d017-9bb3-d249-0938-c0ad831fb011
   tls: true
-  servername: ansooyefilter-production-4623.up.railway.app
+  servername: ansooyefilter-channel-production-f50d.up.railway.app
   network: ws
   ws-opts:
-    path: /ws/a75f5c82-d667-0ce8-d297-30286b054691
+    path: /ws/2107d017-9bb3-d249-0938-c0ad831fb011
     headers:
-      Host: ansooyefilter-production-4623.up.railway.app
-- name: US 🇺🇸 | @Raydikalx | 2958
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+      Host: ansooyefilter-channel-production-f50d.up.railway.app
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸_美国_389
-  - US 🇺🇸 | @Raydikalx | 592
-  - 🇺🇸_美国_390
-  - CA 🇨🇦 | @Raydikalx | 2635
-  - nova_vpn
-  - US 🇺🇸 | @Raydikalx | 2958
+  - 🇺🇸_美国_114
+  - 🇺🇸@ansooyefilter
+  - 🇺🇸_美国_187
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
