@@ -14,17 +14,21 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸_美国_114
+- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
   type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-  tls: true
-  servername: gw.alicdn.com
-  skip-cert-verify: true
-- name: '@V2ray_confiig'
+- name: 🔵@chillguy_vpn
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: V2rayByUnknown™
   type: vless
   server: 38.244.20.203
   port: 443
@@ -36,61 +40,36 @@ proxies:
     public-key: 8BglmwULIVotYAbGXx3Vd1fXiGJbKSsWnZCGvm4Exl0
     short-id: aebdb601b1371778
   client-fingerprint: safari
-- name: V2rayByUnknown™
+- name: 🏳️_未知_398
   type: vless
-  server: us.hagrid-connected.com
+  server: cfd3.466688.xyz
   port: 443
-  uuid: 7499f0a0-3670-4cf6-a31c-ad4cd943cf18
-  flow: xtls-rprx-vision
+  uuid: 4feb7818-dc02-46cd-b985-abf3fdd0cdc5
   tls: true
-  servername: us.hagrid-connected.com
-  reality-opts:
-    public-key: nfkwd9xJCoNuWrvvieBB9VfpcDldsARAdFPL0dF5A1Q
-    short-id: 305570274c0c72cc
-  client-fingerprint: edge
-- name: CA 🇨🇦 | @Raydikalx | 534
-  type: vmess
-  server: 158.51.121.63
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: seribus.org
-  skip-cert-verify: true
+  servername: edge-4cb23bf6.pages.dev
   network: ws
   ws-opts:
-    path: linkvws
+    path: /
     headers:
-      Host: seribus.org
-- name: 🇸🇨 SC-01 🛜📶🛡️ ▷ ⭐🅽 ֎ ᯤ
-  type: vless
-  server: 140.235.168.9
-  port: 993
-  uuid: 526d2855-c7d1-ecf3-e4f8-5a75f77d5bb3
-  flow: xtls-rprx-vision
-  tls: true
-  servername: speed.cloudflare.com
-  reality-opts:
-    public-key: oE7ZEghzkaOUiw1q3PqBtpllP1NlPHLY8ydJRuICtko
-  client-fingerprint: firefox
-- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+      Host: edge-4cb23bf6.pages.dev
+- name: 🇺🇸_美国_114
   type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   alterId: 0
   cipher: auto
+  tls: true
+  skip-cert-verify: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸_美国_114
-  - '@V2ray_confiig'
-  - V2rayByUnknown™
-  - CA 🇨🇦 | @Raydikalx | 534
-  - 🇸🇨 SC-01 🛜📶🛡️ ▷ ⭐🅽 ֎ ᯤ
   - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  - 🔵@chillguy_vpn
+  - V2rayByUnknown™
+  - 🏳️_未知_398
+  - 🇺🇸_美国_114
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
