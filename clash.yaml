@@ -14,81 +14,73 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪_德国_37
+- name: 🇺🇸_美国_389
+  type: vless
+  server: 154.64.236.234
+  port: 443
+  uuid: 68eee13f-1a7a-4761-b71e-83b997eeccf9
+  tls: true
+  servername: tq3fu.tsfa.aue.hh.hhyf.kdns.fr
+  network: ws
+  ws-opts:
+    path: /glasspanel/guest000_0_5de14443985f/
+    headers:
+      Host: tq3fu.tsfa.aue.hh.hhyf.kdns.fr
+- name: US 🇺🇸 | @Raydikalx | 592
   type: vmess
-  server: 82.198.246.250
+  server: 165.140.216.142
+  port: 443
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸_美国_390
+  type: vless
+  server: 45.63.89.102
+  port: 443
+  uuid: 8ce3af34-308f-456c-93a6-e6dff9f03d77
+  tls: true
+  servername: zdy.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zdy.vavava.kdns.fr
+- name: CA 🇨🇦 | @Raydikalx | 2635
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: nova_vpn
+  type: vless
+  server: ansooyefilter-production-4623.up.railway.app
+  port: 443
+  uuid: a75f5c82-d667-0ce8-d297-30286b054691
+  tls: true
+  servername: ansooyefilter-production-4623.up.railway.app
+  network: ws
+  ws-opts:
+    path: /ws/a75f5c82-d667-0ce8-d297-30286b054691
+    headers:
+      Host: ansooyefilter-production-4623.up.railway.app
+- name: US 🇺🇸 | @Raydikalx | 2958
+  type: vmess
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇨🇦
-  type: vless
-  server: support.zoom.us
-  port: 443
-  uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
-  tls: true
-  servername: support.zoom.us.yxls.eu.cc
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: support.zoom.us.yxls.eu.cc
-- name: 🔵@chillguy_vpn
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🏳️_未知_366
-  type: vless
-  server: cfd8.466688.xyz
-  port: 443
-  uuid: 7ebbd929-720a-4782-8c6d-4d77a0a75ee4
-  tls: true
-  servername: edge-e47d0df3.pages.dev
-  network: ws
-  ws-opts:
-    path: /?ed=2048@https://t.me/QiangLieTuiJian
-    headers:
-      Host: edge-e47d0df3.pages.dev
-- name: '@W570W'
-  type: trojan
-  server: visa.com
-  port: 443
-  password: MiTiVPN
-  sni: wbjj-bbcs-.MaQRor.Ir
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=s---w
-    headers:
-      Host: bw--ivs-b--vvs.MaQRor.Ir
-- name: US 🇺🇸 | @Raydikalx | 2993
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 2754
-  type: vmess
-  server: 107.172.75.141
-  port: 10086
-  uuid: e02c67a8-d769-4d73-833a-ab6acdb86e6e
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪_德国_37
-  - 🇨🇦
-  - 🔵@chillguy_vpn
-  - 🏳️_未知_366
-  - '@W570W'
-  - US 🇺🇸 | @Raydikalx | 2993
-  - US 🇺🇸 | @Raydikalx | 2754
+  - 🇺🇸_美国_389
+  - US 🇺🇸 | @Raydikalx | 592
+  - 🇺🇸_美国_390
+  - CA 🇨🇦 | @Raydikalx | 2635
+  - nova_vpn
+  - US 🇺🇸 | @Raydikalx | 2958
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
