@@ -14,18 +14,56 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 2684
+- name: US 🇺🇸 | @Raydikalx | 2973
   type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 511
+  type: vmess
+  server: 165.140.216.142
+  port: 443
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 2732
+  type: vmess
+  server: 216.36.98.29
+  port: 443
+  uuid: 343176ae-0082-49dc-a9dd-7ac47fb31960
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /JASON.ET
+- name: Join ➠ @MoOon_forsin 10
+  type: vless
+  server: 45.13.119.219
+  port: 8888
+  uuid: eb77be10-9d9e-527b-a78d-8caaf58992d6
+- name: 🏳️_未知_404
+  type: vless
+  server: store.ubi.com
+  port: 443
+  uuid: 8ce3af34-308f-456c-93a6-e6dff9f03d77
+  tls: true
+  servername: zdy.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: zdy.vavava.kdns.fr
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 2684
+  - US 🇺🇸 | @Raydikalx | 2973
+  - US 🇺🇸 | @Raydikalx | 511
+  - US 🇺🇸 | @Raydikalx | 2732
+  - Join ➠ @MoOon_forsin 10
+  - 🏳️_未知_404
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
