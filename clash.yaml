@@ -14,27 +14,13 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 未知92
-  type: trojan
-  server: 104.17.122.62
-  port: 443
-  password: MiTiVPN
-  sni: fl-o--7-fllav.MaQror.IR
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=FL-44
-    headers:
-      Host: f--ls-Fvl.MaQror.IR
-- name: 🏳️_未知_190
-  type: vless
-  server: 172.66.200.130
-  port: 8880
-  uuid: 20d0a81f-da70-44dc-b9bf-5a5ddab644db
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: crimson-lab-6cab.402-311.workers.dev
+- name: US 🇺🇸 | @Raydikalx | 2971
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 - name: 🇨🇦
   type: vless
   server: support.zoom.us
@@ -47,67 +33,12 @@ proxies:
     path: /sg-melbi
     headers:
       Host: support.zoom.us.yxls.eu.cc
-- name: 🏳️_未知_189
-  type: vless
-  server: cf.008500.xyz
-  port: 443
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: wgjja.ebur.b51.hh.ov0.kdns.fr
-  network: ws
-  ws-opts:
-    path: /glasspanel/guest000_0_5de14443985f/
-    headers:
-      Host: wgjja.ebur.b51.hh.ov0.kdns.fr
-- name: US 🇺🇸 | @Raydikalx | 2759
-  type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: Join ➠ @MoOon_forsin 10
-  type: vless
-  server: 45.13.119.219
-  port: 8888
-  uuid: eb77be10-9d9e-527b-a78d-8caaf58992d6
-- name: 🔵@chillguy_vpn
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | 2755
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 2819
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 未知92
-  - 🏳️_未知_190
+  - US 🇺🇸 | @Raydikalx | 2971
   - 🇨🇦
-  - 🏳️_未知_189
-  - US 🇺🇸 | @Raydikalx | 2759
-  - Join ➠ @MoOon_forsin 10
-  - 🔵@chillguy_vpn
-  - CA 🇨🇦 | @Raydikalx | 2755
-  - US 🇺🇸 | @Raydikalx | 2819
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
