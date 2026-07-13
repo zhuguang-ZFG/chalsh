@@ -14,78 +14,56 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🏳️_未知_395
+- name: V2rayByUnknown™
   type: vless
-  server: cfd1.466688.xyz
+  server: us.hagrid-connected.com
   port: 443
-  uuid: 4feb7818-dc02-46cd-b985-abf3fdd0cdc5
+  uuid: 7499f0a0-3670-4cf6-a31c-ad4cd943cf18
+  flow: xtls-rprx-vision
   tls: true
-  servername: edge-4cb23bf6.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edge-4cb23bf6.pages.dev
-- name: vHGtY7ak_vless
-  type: vless
-  server: 104.16.72.50
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  servername: t1s1.rittbo.kdns.fr
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-- name: 🏳️_未知_411
-  type: vless
-  server: cfd3.466688.xyz
-  port: 443
-  uuid: 4feb7818-dc02-46cd-b985-abf3fdd0cdc5
-  tls: true
-  servername: edge-4cb23bf6.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: edge-4cb23bf6.pages.dev
-- name: 美国+CloudFlare节点
-  type: vless
-  server: cf.090227.xyz
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  servername: t1s1.rittbo.kdns.fr
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-- name: US 🇺🇸 | @Raydikalx | 2746
+  servername: us.hagrid-connected.com
+  reality-opts:
+    public-key: nfkwd9xJCoNuWrvvieBB9VfpcDldsARAdFPL0dF5A1Q
+    short-id: 305570274c0c72cc
+  client-fingerprint: edge
+- name: 🇺🇸_美国_114
   type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 2747
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  tls: true
+  servername: gw.alicdn.com
+  skip-cert-verify: true
+- name: United Kingdom 🇬🇧
+  type: vless
+  server: 45.86.159.134
+  port: 2085
+  uuid: 1ea1b30b-4114-4a5c-bd3a-9637bdae1948
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: RVG-@Troll_Hastam
+  type: vless
+  server: trollhastambotrvg-production-162c.up.railway.app
+  port: 443
+  uuid: 5b25a339-bf7e-2673-1960-919233576ee0
+  tls: true
+  servername: trollhastambotrvg-production-162c.up.railway.app
+  network: ws
+  ws-opts:
+    path: /ws/5b25a339-bf7e-2673-1960-919233576ee0
+    headers:
+      Host: trollhastambotrvg-production-162c.up.railway.app
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🏳️_未知_395
-  - vHGtY7ak_vless
-  - 🏳️_未知_411
-  - 美国+CloudFlare节点
-  - US 🇺🇸 | @Raydikalx | 2746
-  - US 🇺🇸 | @Raydikalx | 2747
+  - V2rayByUnknown™
+  - 🇺🇸_美国_114
+  - United Kingdom 🇬🇧
+  - RVG-@Troll_Hastam
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
