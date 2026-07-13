@@ -14,58 +14,71 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 未知24
-  type: trojan
-  server: 104.17.122.62
-  port: 443
-  password: MiTiVPN
-  sni: fl-o--7-fllav.MaQror.IR
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=FL-44
-    headers:
-      Host: f--ls-Fvl.MaQror.IR
-- name: 🔋
-  type: vless
-  server: 15.204.97.198
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: 🇺🇸_美国_74
+- name: '@meliproyy'
   type: vmess
-  server: guanwang.awsno.com
+  server: 165.140.216.141
   port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
   alterId: 0
   cipher: auto
+- name: 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles🅿️ping:179ms
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: ✈️
+  type: vless
+  server: 144.225.187.179
+  port: 51015
+  uuid: c7ba28f1-dd0a-4fd8-941e-e622f24c8a19
+  flow: xtls-rprx-vision
   tls: true
-  servername: gw.alicdn.com
-  skip-cert-verify: true
-- name: 未知19
-  type: trojan
-  server: basecamp.com
-  port: 443
-  password: MiTiVPN
-  sni: fl-o--7-fllav.MaQror.IR
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=FL-44
-    headers:
-      Host: f--ls-Fvl.MaQror.IR
+  servername: apple.com
+  reality-opts:
+    public-key: wr6ERYaZWWT_P38sI5n-ZBgiNNWUzzQefuXgX_LvZCk
+    short-id: f25f1104
+  client-fingerprint: chrome
+- name: US 🇺🇸 | @Raydikalx | 2957
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🔵@chillguy_vpn
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 2988
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 2932
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 未知24
-  - 🔋
-  - 🇺🇸_美国_74
-  - 未知19
+  - '@meliproyy'
+  - 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles🅿️ping:179ms
+  - ✈️
+  - US 🇺🇸 | @Raydikalx | 2957
+  - 🔵@chillguy_vpn
+  - US 🇺🇸 | @Raydikalx | 2988
+  - US 🇺🇸 | @Raydikalx | 2932
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
