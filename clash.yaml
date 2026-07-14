@@ -21,40 +21,19 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 英国 V2CROSS.COM
+- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 532
-  type: vmess
-  server: 165.140.216.142
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-  alterId: 0
-  cipher: auto
-- name: 每天更新，请加电报群防止失联
-  type: vless
-  server: 185.8.106.163
-  port: 443
-  uuid: 8f0560ec-ba22-4431-a6a7-318dc59d5233
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fluxorbit-on.ru
-  reality-opts:
-    public-key: sviFnw0hrzXi4Df6Bs4MFFTuBmH2hwvquvFPNzhDcW8
-    short-id: 5e3ab3ab228625
-  client-fingerprint: firefox
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
   - 🔵@chillguy_vpn
-  - 英国 V2CROSS.COM
-  - US 🇺🇸 | @Raydikalx | 532
-  - 每天更新，请加电报群防止失联
+  - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
