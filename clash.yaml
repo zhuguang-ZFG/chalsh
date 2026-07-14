@@ -14,26 +14,67 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🔵@chillguy_vpn
+- name: ✈️
+  type: vless
+  server: 144.225.187.179
+  port: 51015
+  uuid: c7ba28f1-dd0a-4fd8-941e-e622f24c8a19
+  flow: xtls-rprx-vision
+  tls: true
+  servername: apple.com
+  reality-opts:
+    public-key: wr6ERYaZWWT_P38sI5n-ZBgiNNWUzzQefuXgX_LvZCk
+    short-id: f25f1104
+  client-fingerprint: chrome
+- name: '@meliproyy'
   type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
-  type: vmess
-  server: 82.198.246.37
+  server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
+- name: United Kingdom 🇬🇧
+  type: vless
+  server: 45.86.159.134
+  port: 2085
+  uuid: 1ea1b30b-4114-4a5c-bd3a-9637bdae1948
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: CA 🇨🇦 | @Raydikalx | 456
+  type: vmess
+  server: 158.51.121.63
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: seribus.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: seribus.org
+- name: US 🇺🇸 | @Raydikalx | 3187
+  type: vmess
+  server: 45.205.31.175
+  port: 10086
+  uuid: 33f38758-81d2-43b0-a74a-2d7c70ea27c8
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vpn.cyedu.xyz
+  skip-cert-verify: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🔵@chillguy_vpn
-  - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  - ✈️
+  - '@meliproyy'
+  - United Kingdom 🇬🇧
+  - CA 🇨🇦 | @Raydikalx | 456
+  - US 🇺🇸 | @Raydikalx | 3187
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
