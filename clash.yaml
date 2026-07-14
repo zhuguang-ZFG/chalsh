@@ -14,6 +14,17 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
+- name: 🇸🇨 SC-01 🛜📶🛡️ ▷ ⭐🅽 ֎ ᯤ
+  type: vless
+  server: 140.235.168.9
+  port: 993
+  uuid: 526d2855-c7d1-ecf3-e4f8-5a75f77d5bb3
+  flow: xtls-rprx-vision
+  tls: true
+  servername: speed.cloudflare.com
+  reality-opts:
+    public-key: oE7ZEghzkaOUiw1q3PqBtpllP1NlPHLY8ydJRuICtko
+  client-fingerprint: firefox
 - name: ✈️
   type: vless
   server: 144.225.187.179
@@ -26,55 +37,74 @@ proxies:
     public-key: wr6ERYaZWWT_P38sI5n-ZBgiNNWUzzQefuXgX_LvZCk
     short-id: f25f1104
   client-fingerprint: chrome
-- name: '@meliproyy'
+- name: US 🇺🇸 | @Raydikalx | 3060
   type: vmess
   server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: United Kingdom 🇬🇧
-  type: vless
-  server: 45.86.159.134
-  port: 2085
-  uuid: 1ea1b30b-4114-4a5c-bd3a-9637bdae1948
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: CA 🇨🇦 | @Raydikalx | 456
+- name: US 🇺🇸 | @Raydikalx | 3195
   type: vmess
-  server: 158.51.121.63
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
   alterId: 0
   cipher: auto
-  tls: true
-  servername: seribus.org
-  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: linkvws
+    path: /cctv13.m3u8
     headers:
-      Host: seribus.org
-- name: US 🇺🇸 | @Raydikalx | 3187
+      Host: 129.146.77.248
+- name: US 🇺🇸 | @Raydikalx | 2759
   type: vmess
-  server: 45.205.31.175
-  port: 10086
-  uuid: 33f38758-81d2-43b0-a74a-2d7c70ea27c8
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
+- name: 🕯️ - 7
+  type: vless
+  server: us.hagrid-connected.com
+  port: 443
+  uuid: 7499f0a0-3670-4cf6-a31c-ad4cd943cf18
+  flow: xtls-rprx-vision
   tls: true
-  servername: vpn.cyedu.xyz
+  servername: us.hagrid-connected.com
   skip-cert-verify: true
+  reality-opts:
+    public-key: nfkwd9xJCoNuWrvvieBB9VfpcDldsARAdFPL0dF5A1Q
+    short-id: 305570274c0c72cc
+  client-fingerprint: edge
+- name: US 🇺🇸 | @Raydikalx | 558
+  type: vmess
+  server: 107.161.82.89
+  port: 27489
+  uuid: 1f111c76-69ce-4fa9-a55c-1ae21cd1ab2a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki
+- name: US 🇺🇸 | @Raydikalx | 2781
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
+  - 🇸🇨 SC-01 🛜📶🛡️ ▷ ⭐🅽 ֎ ᯤ
   - ✈️
-  - '@meliproyy'
-  - United Kingdom 🇬🇧
-  - CA 🇨🇦 | @Raydikalx | 456
-  - US 🇺🇸 | @Raydikalx | 3187
+  - US 🇺🇸 | @Raydikalx | 3060
+  - US 🇺🇸 | @Raydikalx | 3195
+  - US 🇺🇸 | @Raydikalx | 2759
+  - 🕯️ - 7
+  - US 🇺🇸 | @Raydikalx | 558
+  - US 🇺🇸 | @Raydikalx | 2781
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
