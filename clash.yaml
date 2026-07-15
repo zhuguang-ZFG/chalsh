@@ -14,26 +14,74 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 2835
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: '@meliproyy'
-  type: vmess
-  server: 165.140.216.141
+- name: 🇺🇸US美国2
+  type: ss
+  server: tinkered-pennies-puppies.freesocks.work
   port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  password: hbGrpfvNrJsUmKmPbR3iY2
+  cipher: chacha20-ietf-poly1305
+- name: US 🇺🇸 | @Raydikalx | 716
+  type: vmess
+  server: 107.161.82.89
+  port: 59284
+  uuid: bd16ed8f-a5bd-47ea-a69a-651fc70e92ac
   alterId: 0
   cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki
+- name: 🔵@chillguy_vpn
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 美国+CloudFlare节点
+  type: vless
+  server: cf.008500.xyz
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  servername: t1s1.rittbo.kdns.fr
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- name: 🏳️_未知_356
+  type: vless
+  server: cf.090227.xyz
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  servername: t1s1.rittbo.kdns.fr
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- name: US 🇺🇸 | @Raydikalx | 2995
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 2835
-  - '@meliproyy'
+  - 🇺🇸US美国2
+  - US 🇺🇸 | @Raydikalx | 716
+  - 🔵@chillguy_vpn
+  - 美国+CloudFlare节点
+  - 🏳️_未知_356
+  - US 🇺🇸 | @Raydikalx | 2995
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
