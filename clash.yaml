@@ -14,101 +14,26 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles🅿️ping:174ms
+- name: US 🇺🇸 | @Raydikalx | 2835
   type: vmess
-  server: 82.198.246.9
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 3128
+- name: '@meliproyy'
   type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 未知11
-  type: vmess
-  server: 158.51.121.63
+  server: 165.140.216.141
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
   alterId: 0
   cipher: auto
-  tls: true
-  servername: seribus.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: seribus.org
-- name: Global 🌐 | @Raydikalx | 559
-  type: vmess
-  server: 57.151.100.27
-  port: 10086
-  uuid: 550e8400-e29b-41d4-a716-446655440000
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸_美国_20
-  type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: gw.alicdn.com
-  skip-cert-verify: true
-- name: US 🇺🇸 | @Raydikalx | 576
-  type: vmess
-  server: 176.122.174.175
-  port: 8443
-  uuid: aa6bc79c-7535-4491-aede-655110ced2e3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess
-    headers:
-      Host: 176.122.174.175
-- name: US 🇺🇸 | @Raydikalx | 2883
-  type: vmess
-  server: 216.106.183.35
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 3094
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 3469
-  type: vmess
-  server: 45.205.31.175
-  port: 10086
-  uuid: 33f38758-81d2-43b0-a74a-2d7c70ea27c8
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: vpn.cyedu.xyz
-  skip-cert-verify: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles🅿️ping:174ms
-  - US 🇺🇸 | @Raydikalx | 3128
-  - 未知11
-  - Global 🌐 | @Raydikalx | 559
-  - 🇺🇸_美国_20
-  - US 🇺🇸 | @Raydikalx | 576
-  - US 🇺🇸 | @Raydikalx | 2883
-  - US 🇺🇸 | @Raydikalx | 3094
-  - US 🇺🇸 | @Raydikalx | 3469
+  - US 🇺🇸 | @Raydikalx | 2835
+  - '@meliproyy'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
