@@ -14,97 +14,101 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇸🇨 SC-01 🛜📶🛡️ ▷ ⭐🅽 ֎ ᯤ
-  type: vless
-  server: 140.235.168.9
-  port: 993
-  uuid: 526d2855-c7d1-ecf3-e4f8-5a75f77d5bb3
-  flow: xtls-rprx-vision
-  tls: true
-  servername: speed.cloudflare.com
-  reality-opts:
-    public-key: oE7ZEghzkaOUiw1q3PqBtpllP1NlPHLY8ydJRuICtko
-  client-fingerprint: firefox
-- name: ✈️
-  type: vless
-  server: 144.225.187.179
-  port: 51015
-  uuid: c7ba28f1-dd0a-4fd8-941e-e622f24c8a19
-  flow: xtls-rprx-vision
-  tls: true
-  servername: apple.com
-  reality-opts:
-    public-key: wr6ERYaZWWT_P38sI5n-ZBgiNNWUzzQefuXgX_LvZCk
-    short-id: f25f1104
-  client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | 3060
+- name: 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles🅿️ping:174ms
   type: vmess
   server: 82.198.246.9
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 3195
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 129.146.77.248
-- name: US 🇺🇸 | @Raydikalx | 2759
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🕯️ - 7
-  type: vless
-  server: us.hagrid-connected.com
-  port: 443
-  uuid: 7499f0a0-3670-4cf6-a31c-ad4cd943cf18
-  flow: xtls-rprx-vision
-  tls: true
-  servername: us.hagrid-connected.com
-  skip-cert-verify: true
-  reality-opts:
-    public-key: nfkwd9xJCoNuWrvvieBB9VfpcDldsARAdFPL0dF5A1Q
-    short-id: 305570274c0c72cc
-  client-fingerprint: edge
-- name: US 🇺🇸 | @Raydikalx | 558
-  type: vmess
-  server: 107.161.82.89
-  port: 27489
-  uuid: 1f111c76-69ce-4fa9-a55c-1ae21cd1ab2a
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /arki
-- name: US 🇺🇸 | @Raydikalx | 2781
+- name: US 🇺🇸 | @Raydikalx | 3128
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
+- name: 未知11
+  type: vmess
+  server: 158.51.121.63
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: seribus.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: seribus.org
+- name: Global 🌐 | @Raydikalx | 559
+  type: vmess
+  server: 57.151.100.27
+  port: 10086
+  uuid: 550e8400-e29b-41d4-a716-446655440000
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸_美国_20
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: gw.alicdn.com
+  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | 576
+  type: vmess
+  server: 176.122.174.175
+  port: 8443
+  uuid: aa6bc79c-7535-4491-aede-655110ced2e3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: 176.122.174.175
+- name: US 🇺🇸 | @Raydikalx | 2883
+  type: vmess
+  server: 216.106.183.35
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 3094
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 3469
+  type: vmess
+  server: 45.205.31.175
+  port: 10086
+  uuid: 33f38758-81d2-43b0-a74a-2d7c70ea27c8
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vpn.cyedu.xyz
+  skip-cert-verify: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇸🇨 SC-01 🛜📶🛡️ ▷ ⭐🅽 ֎ ᯤ
-  - ✈️
-  - US 🇺🇸 | @Raydikalx | 3060
-  - US 🇺🇸 | @Raydikalx | 3195
-  - US 🇺🇸 | @Raydikalx | 2759
-  - 🕯️ - 7
-  - US 🇺🇸 | @Raydikalx | 558
-  - US 🇺🇸 | @Raydikalx | 2781
+  - 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles🅿️ping:174ms
+  - US 🇺🇸 | @Raydikalx | 3128
+  - 未知11
+  - Global 🌐 | @Raydikalx | 559
+  - 🇺🇸_美国_20
+  - US 🇺🇸 | @Raydikalx | 576
+  - US 🇺🇸 | @Raydikalx | 2883
+  - US 🇺🇸 | @Raydikalx | 3094
+  - US 🇺🇸 | @Raydikalx | 3469
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
