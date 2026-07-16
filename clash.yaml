@@ -14,6 +14,25 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
+- name: 🇺🇸_美国_96
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | 3067
+  type: vmess
+  server: 107.161.82.89
+  port: 59284
+  uuid: bd16ed8f-a5bd-47ea-a69a-651fc70e92ac
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki
 - name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
   type: vmess
   server: 38.91.107.49
@@ -21,32 +40,31 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: '@V2ray_confiig'
-  type: vless
-  server: blog.webex.com
+- name: 🇺🇸_美国_36
+  type: trojan
+  server: polite-coyote.rooster465.autos
   port: 443
-  uuid: bc6e7cf0-9526-4fea-b2e3-5bcf992c565e
-  tls: true
-  servername: blog.webex.com.yxls.eu.cc
-  network: ws
-  ws-opts:
-    path: /my-kc
-    headers:
-      Host: blog.webex.com.yxls.eu.cc
-- name: 🇩🇪_德国_65
+  password: CF68213490
+  sni: polite-coyote.rooster465.autos
+- name: US 🇺🇸 | @Raydikalx | 3096
   type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
   alterId: 0
   cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
+  - 🇺🇸_美国_96
+  - US 🇺🇸 | @Raydikalx | 3067
   - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
-  - '@V2ray_confiig'
-  - 🇩🇪_德国_65
+  - 🇺🇸_美国_36
+  - US 🇺🇸 | @Raydikalx | 3096
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
