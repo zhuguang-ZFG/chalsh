@@ -14,25 +14,13 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: '@meliproyy'
+- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
   type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: vzHF1Lbe_vless
-  type: vless
-  server: 104.16.72.50
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  servername: t1s1.rittbo.kdns.fr
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: t1s1.rittbo.kdns.fr
 - name: '@V2ray_confiig'
   type: vless
   server: blog.webex.com
@@ -45,66 +33,20 @@ proxies:
     path: /my-kc
     headers:
       Host: blog.webex.com.yxls.eu.cc
-- name: US 🇺🇸 | @Raydikalx | 3071
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 3119
-  type: vmess
-  server: zt-ai.cloud
-  port: 443
-  uuid: fce3d6a4-0f12-49b5-a810-84bcf0fde202
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: zt-ai.cloud
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /v2ray
-    headers:
-      Host: zt-ai.cloud
-- name: 🦉@FreeConfigForYou
-  type: trojan
-  server: 188.114.97.6
-  port: 2087
-  password: MiTiVPN
-  sni: fl-bo--7---u.aPp-cLoud.IR
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=f--ll
-    headers:
-      Host: f--l---g--s-.aPp-cLoud.IR
-- name: 🇩🇪_德国_67
+- name: 🇩🇪_德国_65
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: Global 🌐 | @Raydikalx | 3338
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - '@meliproyy'
-  - vzHF1Lbe_vless
+  - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
   - '@V2ray_confiig'
-  - US 🇺🇸 | @Raydikalx | 3071
-  - US 🇺🇸 | @Raydikalx | 3119
-  - 🦉@FreeConfigForYou
-  - 🇩🇪_德国_67
-  - Global 🌐 | @Raydikalx | 3338
+  - 🇩🇪_德国_65
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
