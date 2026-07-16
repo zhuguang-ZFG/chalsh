@@ -14,58 +14,57 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: CA 🇨🇦 | @Raydikalx | 533
-  type: vmess
-  server: 158.51.121.63
+- name: 马来西亚+吉隆坡Cloudflare+Warp节点
+  type: vless
+  server: 8.39.125.59
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
   tls: true
-  servername: seribus.org
-  skip-cert-verify: true
+  servername: vp9.cc.cd
   network: ws
   ws-opts:
-    path: linkvws
+    path: /
     headers:
-      Host: seribus.org
-- name: 🇩🇪_德国_69
+      Host: vp9.cc.cd
+- name: 🇩🇪_德国_53
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🔵@chillguy_vpn
+- name: Global 🌐 | @Raydikalx | 3219
   type: vmess
-  server: 94.103.167.116
-  port: 80
-  uuid: d1b0c103-a7ff-4bd6-887d-a73d6ebf1f50
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 2800
-  type: vmess
-  server: 67.220.85.46
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
-  cipher: aes-128-gcm
-- name: US 🇺🇸 | @Raydikalx | 2783
+  cipher: auto
+- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
   type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
+- name: 🇺🇸_美国_96
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - CA 🇨🇦 | @Raydikalx | 533
-  - 🇩🇪_德国_69
-  - 🔵@chillguy_vpn
-  - US 🇺🇸 | @Raydikalx | 2800
-  - US 🇺🇸 | @Raydikalx | 2783
+  - 马来西亚+吉隆坡Cloudflare+Warp节点
+  - 🇩🇪_德国_53
+  - Global 🌐 | @Raydikalx | 3219
+  - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  - 🇺🇸_美国_96
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
