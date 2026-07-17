@@ -14,41 +14,32 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸_美国_147
-  type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-- name: 🆔soskeynet 🔒 VL-GRPC- 🇩🇪 DE 106ms
+- name: 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 142ms
   type: vless
-  server: 185.68.184.237
+  server: api.oneokgames.com
   port: 443
-  uuid: b0f08ae1-7cf9-4612-ad61-72681e0b92da
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
   tls: true
-  servername: google.com
+  servername: api.oneokgames.com
   reality-opts:
-    public-key: kPBXTe2KCp55GrHS_qU_sF7ohUcT8Vu-e8i6Yd9MERI
-    short-id: d5c7f84e37e0c12d
-  client-fingerprint: chrome
+    public-key: VTO26jBMVVnEnnHQON7k8lB3ED46_JHshPorJHHXSRU
+    short-id: a30b344b5214d62f
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
-    grpc-service-name: data-sync
-- name: 🏳️_未知_273
+    grpc-service-name: push.v2.FeedService
+- name: ✈️
   type: vless
-  server: 104.17.23.119
-  port: 2053
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  server: 144.225.187.179
+  port: 51015
+  uuid: c7ba28f1-dd0a-4fd8-941e-e622f24c8a19
+  flow: xtls-rprx-vision
   tls: true
-  servername: vp42.cc.cd
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vp42.cc.cd
+  servername: apple.com
+  reality-opts:
+    public-key: wr6ERYaZWWT_P38sI5n-ZBgiNNWUzzQefuXgX_LvZCk
+    short-id: f25f1104
+  client-fingerprint: chrome
 - name: 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 128ms
   type: vless
   server: media.oneokgames.com
@@ -63,91 +54,60 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: api.v2.ObjectService
-- name: 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 146ms
+- name: 🏳️_未知_250
   type: vless
-  server: link.oneokgames.com
+  server: 104.16.247.6
   port: 443
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
   tls: true
-  servername: link.oneokgames.com
-  reality-opts:
-    public-key: x9m8Vxk2YlwXy8CLrHeEMDzLJWuRQ3mh6CPWA34u2yY
-    short-id: ad613873130544ab
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: media.v1.SyncService
-- name: 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 125ms
+  servername: 40t1.wxgqlfx.vip
+  network: ws
+  ws-opts:
+    path: /TG@wxgqlfx
+    headers:
+      Host: 40t1.wxgqlfx.vip
+- name: 🏳️_未知_357
   type: vless
-  server: add.oneoker.com
-  port: 443
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
-  tls: true
-  servername: add.oneoker.com
-  reality-opts:
-    public-key: W329R9_hAiG_wGLcIhfbm0AA8Si7DVhz4es2aASZACY
-    short-id: 9c478d3655bfa85d
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: api.v1.StreamService
-- name: 🏳️_未知_314
-  type: vless
-  server: 8.39.125.45
-  port: 443
+  server: 104.19.146.26
+  port: 2053
   uuid: 7b102311-43fd-4e8f-877e-8090623c101d
   tls: true
-  servername: vp37.cc.cd
+  servername: vp19.cc.cd
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: vp37.cc.cd
-- name: '@meliproyy'
+      Host: vp19.cc.cd
+- name: Global 🌐 | @Raydikalx | 926
   type: vmess
-  server: 82.198.246.9
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: c722s801.portablesubmarines.com
+  port: 16025
+  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
   alterId: 0
   cipher: auto
-- name: 🏳️_未知_354
-  type: vless
-  server: 104.17.28.54
-  port: 2083
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  tls: true
-  servername: vp18.cc.cd
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vp18.cc.cd
-- name: 🏳️_未知_365
-  type: vless
-  server: 8.35.211.13
+- name: 🦉@FreeConfigForYou
+  type: trojan
+  server: 188.114.97.6
   port: 2087
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  tls: true
-  servername: vp34.cc.cd
+  password: MiTiVPN
+  sni: fl-bo--7---u.aPp-cLoud.IR
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=f--ll
     headers:
-      Host: vp34.cc.cd
+      Host: f--l---g--s-.aPp-cLoud.IR
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸_美国_147
-  - 🆔soskeynet 🔒 VL-GRPC- 🇩🇪 DE 106ms
-  - 🏳️_未知_273
+  - 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 142ms
+  - ✈️
   - 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 128ms
-  - 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 146ms
-  - 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 125ms
-  - 🏳️_未知_314
-  - '@meliproyy'
-  - 🏳️_未知_354
-  - 🏳️_未知_365
+  - 🏳️_未知_250
+  - 🏳️_未知_357
+  - Global 🌐 | @Raydikalx | 926
+  - 🦉@FreeConfigForYou
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
