@@ -14,18 +14,107 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇩🇪_德国_41
+- name: United Kingdom 🇬🇧
+  type: vless
+  server: 45.86.159.134
+  port: 2085
+  uuid: 1ea1b30b-4114-4a5c-bd3a-9637bdae1948
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🏳️_未知_347
+  type: vless
+  server: 104.17.162.42
+  port: 8443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  tls: true
+  servername: vp18.cc.cd
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp18.cc.cd
+- name: Global 🌐 | @Raydikalx | 3430
   type: vmess
-  server: 82.198.246.250
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🏳️_未知_296
+  type: vless
+  server: 104.17.208.223
+  port: 443
+  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
+  tls: true
+  servername: 40t1.wxgqlfx.vip
+  network: ws
+  ws-opts:
+    path: /TG@wxgqlfx
+    headers:
+      Host: 40t1.wxgqlfx.vip
+- name: '@V2ray_confiig'
+  type: vless
+  server: blog.webex.com
+  port: 443
+  uuid: bc6e7cf0-9526-4fea-b2e3-5bcf992c565e
+  tls: true
+  servername: blog.webex.com.yxls.eu.cc
+  network: ws
+  ws-opts:
+    path: /my-kc
+    headers:
+      Host: blog.webex.com.yxls.eu.cc
+- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  type: vmess
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸_美国_309
+  type: vless
+  server: support.zoom.us
+  port: 443
+  uuid: 5aafc2be-9348-4dec-b896-f4a91253bbca
+  tls: true
+  servername: support.zoom.us.yxls.eu.cc
+  network: ws
+  ws-opts:
+    path: /id-tksi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+- name: 未知13
+  type: trojan
+  server: 188.114.97.6
+  port: 2087
+  password: MiTiVPN
+  sni: fl-bo--7---u.aPp-cLoud.IR
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=f--ll
+    headers:
+      Host: f--l---g--s-.aPp-cLoud.IR
+- name: US 🇺🇸 | @Raydikalx | 3149
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇩🇪_德国_41
+  - United Kingdom 🇬🇧
+  - 🏳️_未知_347
+  - Global 🌐 | @Raydikalx | 3430
+  - 🏳️_未知_296
+  - '@V2ray_confiig'
+  - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  - 🇺🇸_美国_309
+  - 未知13
+  - US 🇺🇸 | @Raydikalx | 3149
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
