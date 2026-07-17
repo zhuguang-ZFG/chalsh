@@ -14,100 +14,23 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 142ms
+- name: 🏳️_未知_314
   type: vless
-  server: api.oneokgames.com
+  server: 8.39.125.45
   port: 443
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
-  tls: true
-  servername: api.oneokgames.com
-  reality-opts:
-    public-key: VTO26jBMVVnEnnHQON7k8lB3ED46_JHshPorJHHXSRU
-    short-id: a30b344b5214d62f
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: push.v2.FeedService
-- name: ✈️
-  type: vless
-  server: 144.225.187.179
-  port: 51015
-  uuid: c7ba28f1-dd0a-4fd8-941e-e622f24c8a19
-  flow: xtls-rprx-vision
-  tls: true
-  servername: apple.com
-  reality-opts:
-    public-key: wr6ERYaZWWT_P38sI5n-ZBgiNNWUzzQefuXgX_LvZCk
-    short-id: f25f1104
-  client-fingerprint: chrome
-- name: 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 128ms
-  type: vless
-  server: media.oneokgames.com
-  port: 443
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
-  tls: true
-  servername: media.oneokgames.com
-  reality-opts:
-    public-key: aDNsk312UNfOEh0RiyGZdK6opt__mMyKBSglqFKFP38
-    short-id: dbdbeaf4aa6e1a5c
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: api.v2.ObjectService
-- name: 🏳️_未知_250
-  type: vless
-  server: 104.16.247.6
-  port: 443
-  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
-  tls: true
-  servername: 40t1.wxgqlfx.vip
-  network: ws
-  ws-opts:
-    path: /TG@wxgqlfx
-    headers:
-      Host: 40t1.wxgqlfx.vip
-- name: 🏳️_未知_357
-  type: vless
-  server: 104.19.146.26
-  port: 2053
   uuid: 7b102311-43fd-4e8f-877e-8090623c101d
   tls: true
-  servername: vp19.cc.cd
+  servername: vp37.cc.cd
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: vp19.cc.cd
-- name: Global 🌐 | @Raydikalx | 926
-  type: vmess
-  server: c722s801.portablesubmarines.com
-  port: 16025
-  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
-  alterId: 0
-  cipher: auto
-- name: 🦉@FreeConfigForYou
-  type: trojan
-  server: 188.114.97.6
-  port: 2087
-  password: MiTiVPN
-  sni: fl-bo--7---u.aPp-cLoud.IR
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=f--ll
-    headers:
-      Host: f--l---g--s-.aPp-cLoud.IR
+      Host: vp37.cc.cd
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 142ms
-  - ✈️
-  - 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 128ms
-  - 🏳️_未知_250
-  - 🏳️_未知_357
-  - Global 🌐 | @Raydikalx | 926
-  - 🦉@FreeConfigForYou
+  - 🏳️_未知_314
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
