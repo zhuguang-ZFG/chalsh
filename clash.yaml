@@ -14,129 +14,118 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: ✈️
+- name: 🇺🇸_美国_309
   type: vless
-  server: 144.225.187.179
-  port: 51015
-  uuid: c7ba28f1-dd0a-4fd8-941e-e622f24c8a19
+  server: support.zoom.us
+  port: 443
+  uuid: 5aafc2be-9348-4dec-b896-f4a91253bbca
+  tls: true
+  servername: support.zoom.us.yxls.eu.cc
+  network: ws
+  ws-opts:
+    path: /id-tksi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+- name: 'Channel : @Daily_Configs'
+  type: vless
+  server: 193.28.186.215
+  port: 443
+  uuid: a34b5e88-cf0d-4c01-8199-2d1002d3c787
   flow: xtls-rprx-vision
   tls: true
-  servername: apple.com
+  servername: www.wikihow.com
   reality-opts:
-    public-key: wr6ERYaZWWT_P38sI5n-ZBgiNNWUzzQefuXgX_LvZCk
-    short-id: f25f1104
+    public-key: HKpd1sbrhBds8SJSL0d22MAq_QyTR6EP6y5b5DYol3U
   client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | 3167
+- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸_美国_127
+  type: vless
+  server: kzbkjum.cvewfjg.shop
+  port: 443
+  uuid: 59eefc04-b831-45cf-8d68-63ca23381171
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: 4-qE0E0B5ShfnAe0KFM0qRkXJ33rRF39AlHK7MpBzAE
+    short-id: 4c5a76834671
+  client-fingerprint: chrome
+- name: 🔵@chillguy_vpn
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: aes-128-gcm
+- name: '@meliproyy'
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 3158
   type: vmess
   server: 216.106.185.141
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 3543
+- name: 🇮🇪_爱尔兰_68
+  type: trojan
+  server: correct-starfish.rooster465.autos
+  port: 443
+  password: NQ26071394
+  sni: correct-starfish.rooster465.autos
+- name: Global 🌐 | @Raydikalx | 3424
   type: vmess
-  server: 67.220.85.46
+  server: 84.17.41.2
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
-  cipher: aes-128-gcm
-- name: 🇺🇸_美国_69
-  type: vless
-  server: jyvlryz.cvewfjg.shop
-  port: 443
-  uuid: 4e0f4e59-3613-4f0c-b824-7348413d20e6
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: UE8hUjH1WYwemxIriq5lvtFCnHTdLF817okXr-u7MGs
-    short-id: 250b5976473a
-  client-fingerprint: chrome
-- name: 🏳️_未知_343
-  type: vless
-  server: 8.35.211.81
-  port: 2096
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  tls: true
-  servername: vp37.cc.cd
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vp37.cc.cd
-- name: US 🇺🇸 | @Raydikalx | 3589
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 3856
   type: vmess
-  server: 107.172.75.141
-  port: 10086
-  uuid: e02c67a8-d769-4d73-833a-ab6acdb86e6e
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
   alterId: 0
   cipher: auto
-- name: 🇺🇸_美国_140
-  type: trojan
-  server: alert-monster.rooster465.autos
-  port: 443
-  password: CF68213490
-  sni: alert-monster.rooster465.autos
-- name: '@Daily_Configs : کانال تلگرام'
-  type: vless
-  server: grid.onetimeok.com
-  port: 443
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
-  tls: true
-  servername: grid.onetimeok.com
-  reality-opts:
-    public-key: 28oR3ji9c2CneMNkbvcDL8WfvNWHS3GfA3RdtaF-pSg
-    short-id: 89e97b6542785ca6
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: gw.v1.MetricsService
-- name: 🏳️_未知_369
-  type: vless
-  server: 104.17.99.201
-  port: 443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  tls: true
-  servername: vp19.cc.cd
   network: ws
   ws-opts:
-    path: /
+    path: /cctv13.m3u8
     headers:
-      Host: vp19.cc.cd
-- name: US 🇺🇸 | @Raydikalx | 877
+      Host: 129.146.77.248
+- name: 🇺🇸_美国_147
   type: vmess
-  server: c722s801.portablesubmarines.com
-  port: 16025
-  uuid: 4bd2af9a-67a3-4e1a-8eef-c443ec86e80b
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   alterId: 0
   cipher: auto
-- name: 🏳️_未知_250
-  type: vless
-  server: 104.16.247.6
-  port: 443
-  uuid: e4dfa054-4b6e-405f-c439-6e4f0b6b700b
   tls: true
-  servername: 40t1.wxgqlfx.vip
-  network: ws
-  ws-opts:
-    path: /TG@wxgqlfx
-    headers:
-      Host: 40t1.wxgqlfx.vip
+  skip-cert-verify: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - ✈️
-  - US 🇺🇸 | @Raydikalx | 3167
-  - US 🇺🇸 | @Raydikalx | 3543
-  - 🇺🇸_美国_69
-  - 🏳️_未知_343
-  - US 🇺🇸 | @Raydikalx | 3589
-  - 🇺🇸_美国_140
-  - '@Daily_Configs : کانال تلگرام'
-  - 🏳️_未知_369
-  - US 🇺🇸 | @Raydikalx | 877
-  - 🏳️_未知_250
+  - 🇺🇸_美国_309
+  - 'Channel : @Daily_Configs'
+  - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  - 🇺🇸_美国_127
+  - 🔵@chillguy_vpn
+  - '@meliproyy'
+  - US 🇺🇸 | @Raydikalx | 3158
+  - 🇮🇪_爱尔兰_68
+  - Global 🌐 | @Raydikalx | 3424
+  - US 🇺🇸 | @Raydikalx | 3856
+  - 🇺🇸_美国_147
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
