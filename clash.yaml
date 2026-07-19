@@ -14,115 +14,31 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: '@Daily_Configs : کانال تلگرام'
+- name: '>>@oneclickvpnkeys::US'
   type: vless
-  server: dl.onetimeok.com
+  server: staticdelivery.nexusmods.com
   port: 443
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
   tls: true
-  servername: dl.onetimeok.com
-  reality-opts:
-    public-key: 4o20JlNKKsAzSGEvEMw6g1A8Ij37tiSU1CFwTZI4b3o
-    short-id: 8ba32e7cefbf524a
-  client-fingerprint: chrome
+  servername: vp1.cc.cd
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vp1.cc.cd
+- name: '>>@oneclickvpnkeys::GB'
+  type: vless
+  server: gbos2.osvp.online
+  port: 443
+  uuid: 367ff772-a8f4-4895-8e99-3702a868f0c6
+  tls: true
+  servername: gbos2.osvp.online
   network: grpc
   grpc-opts:
-    grpc-service-name: api.v2.PushService
-- name: 🇺🇸_美国_7
-  type: trojan
-  server: pretty-clam.rooster465.autos
-  port: 443
-  password: HW85960347
-  sni: pretty-clam.rooster465.autos
-- name: 🇬🇧_英国_273
+    grpc-service-name: grpc-api
+- name: 🇬🇧_英国_345
   type: vless
-  server: 91.193.59.18
-  port: 80
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5gydl.936.us.ci
-- name: 🇬🇧_英国_213
-  type: vless
-  server: 91.193.59.41
-  port: 80
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5gydl.936.us.ci
-- name: 🇬🇧_英国_323
-  type: vless
-  server: 91.193.59.26
-  port: 80
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5gydl.936.us.ci
-- name: 🇬🇧_英国_238
-  type: vless
-  server: 91.193.59.2
-  port: 80
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5gydl.936.us.ci
-- name: 🇺🇸_美国_163
-  type: vless
-  server: 64.186.237.44
-  port: 443
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-  tls: true
-  servername: s5gydl.936.us.ci
-  network: ws
-  ws-opts:
-    path: /proxyip=tw.william.us.ci?uuid=f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-    headers:
-      Host: s5gydl.936.us.ci
-- name: 🇬🇧_英国_232
-  type: vless
-  server: 91.193.59.79
-  port: 80
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5gydl.936.us.ci
-- name: 🇬🇧_英国_284
-  type: vless
-  server: 91.193.59.8
-  port: 80
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5gydl.936.us.ci
-- name: 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 156ms
-  type: vless
-  server: tracker.oneokgames.com
-  port: 443
-  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
-  tls: true
-  servername: tracker.oneokgames.com
-  reality-opts:
-    public-key: VTO26jBMVVnEnnHQON7k8lB3ED46_JHshPorJHHXSRU
-    short-id: a30b344b5214d62f
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: push.v2.FeedService
-- name: 🇬🇧_英国_226
-  type: vless
-  server: 91.193.59.141
+  server: 91.193.59.226
   port: 80
   uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
   network: ws
@@ -140,9 +56,9 @@ proxies:
     path: /Telegram🇨🇳+@WangCai2
     headers:
       Host: s5gydl.936.us.ci
-- name: 🇬🇧_英国_316
+- name: 🇬🇧_英国_233
   type: vless
-  server: 91.193.59.63
+  server: 91.193.59.197
   port: 80
   uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
   network: ws
@@ -150,47 +66,266 @@ proxies:
     path: /Telegram🇨🇳+@WangCai2
     headers:
       Host: s5gydl.936.us.ci
-- name: 🇬🇧_英国_343
+- name: '>>@oneclickvpnkeys::NL'
   type: vless
-  server: 91.193.59.40
-  port: 80
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5gydl.936.us.ci
-- name: 🏳️_未知_192
-  type: vless
-  server: 104.16.148.8
+  server: osnl4.ghast.sbs
   port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  uuid: 367ff772-a8f4-4895-8e99-3702a868f0c6
   tls: true
-  servername: t1s1.rittbo.kdns.fr
+  servername: osnl4.ghast.sbs
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-api
+- name: 🇬🇧_英国_255
+  type: vless
+  server: 91.193.59.39
+  port: 80
+  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳+@WangCai2
+    headers:
+      Host: s5gydl.936.us.ci
+- name: V2rayByUnknown™
+  type: vless
+  server: 8.35.211.186
+  port: 8443
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  tls: true
+  servername: vp11.cc.cd
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: t1s1.rittbo.kdns.fr
+      Host: vp11.cc.cd
+- name: 🇬🇧_英国_222
+  type: vless
+  server: 91.193.59.101
+  port: 80
+  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳+@WangCai2
+    headers:
+      Host: s5gydl.936.us.ci
+- name: '>>@v2nodes::US'
+  type: trojan
+  server: sharing-porpoise.rooster465.autos
+  port: 443
+  password: NQ26071394
+  sni: sharing-porpoise.rooster465.autos
+- name: 🇬🇧_英国_277
+  type: vless
+  server: 91.193.59.177
+  port: 80
+  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳+@WangCai2
+    headers:
+      Host: s5gydl.936.us.ci
+- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇬🇧_英国_337
+  type: vless
+  server: 91.193.59.144
+  port: 80
+  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳+@WangCai2
+    headers:
+      Host: s5gydl.936.us.ci
+- name: 🇬🇧_英国_306
+  type: vless
+  server: 91.193.59.17
+  port: 80
+  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳+@WangCai2
+    headers:
+      Host: s5gydl.936.us.ci
+- name: 'Channel : @Daily_Configs'
+  type: vless
+  server: media.oneokgames.com
+  port: 443
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+  tls: true
+  servername: media.oneokgames.com
+  reality-opts:
+    public-key: aDNsk312UNfOEh0RiyGZdK6opt__mMyKBSglqFKFP38
+    short-id: dbdbeaf4aa6e1a5c
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: api.v2.ObjectService
+- name: 🇬🇧_英国_264
+  type: vless
+  server: 91.193.59.71
+  port: 80
+  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳+@WangCai2
+    headers:
+      Host: s5gydl.936.us.ci
+- name: 🍓
+  type: vless
+  server: grid.onetimeok.com
+  port: 443
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+  tls: true
+  servername: grid.onetimeok.com
+  reality-opts:
+    public-key: 28oR3ji9c2CneMNkbvcDL8WfvNWHS3GfA3RdtaF-pSg
+    short-id: 89e97b6542785ca6
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: gw.v1.MetricsService
+- name: ✈️
+  type: vless
+  server: 144.225.187.179
+  port: 51015
+  uuid: c7ba28f1-dd0a-4fd8-941e-e622f24c8a19
+  flow: xtls-rprx-vision
+  tls: true
+  servername: apple.com
+  reality-opts:
+    public-key: wr6ERYaZWWT_P38sI5n-ZBgiNNWUzzQefuXgX_LvZCk
+    short-id: f25f1104
+  client-fingerprint: chrome
+- name: 🇬🇧_英国_296
+  type: vless
+  server: 91.193.59.199
+  port: 80
+  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳+@WangCai2
+    headers:
+      Host: s5gydl.936.us.ci
+- name: 🇬🇧_英国_313
+  type: vless
+  server: 91.193.59.58
+  port: 80
+  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳+@WangCai2
+    headers:
+      Host: s5gydl.936.us.ci
+- name: 🇬🇧_英国_220
+  type: vless
+  server: 91.193.59.34
+  port: 80
+  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳+@WangCai2
+    headers:
+      Host: s5gydl.936.us.ci
+- name: 🇺🇸_美国_6
+  type: trojan
+  server: wondrous-dogfish.rooster465.autos
+  port: 443
+  password: KV63147582
+  sni: wondrous-dogfish.rooster465.autos
+- name: 🇬🇧_英国_327
+  type: vless
+  server: 91.193.59.198
+  port: 80
+  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳+@WangCai2
+    headers:
+      Host: s5gydl.936.us.ci
+- name: 🆔v2ray1_ng 🔒 VL-GRPC- ❔ XX 176ms
+  type: vless
+  server: tracker.oneokgames.com
+  port: 443
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+  tls: true
+  servername: tracker.oneokgames.com
+  reality-opts:
+    public-key: VTO26jBMVVnEnnHQON7k8lB3ED46_JHshPorJHHXSRU
+    short-id: a30b344b5214d62f
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: push.v2.FeedService
+- name: 🇺🇸 @mobilesignal | کانال تلگرام ⚡️
+  type: vless
+  server: api.onetimeok.com
+  port: 443
+  uuid: 86208db7-8bbc-42c2-9eb2-ffe5675502c3
+  tls: true
+  servername: api.onetimeok.com
+  reality-opts:
+    public-key: CQhnOxCj9UuA67kiDGGOcXB1G_XayWfHyhmlWGeG4Uw
+    short-id: cfb882e7dcf03ef2
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: api.v2.ApiService
+- name: 🇬🇧_英国_304
+  type: vless
+  server: 91.193.59.119
+  port: 80
+  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳+@WangCai2
+    headers:
+      Host: s5gydl.936.us.ci
+- name: 🇬🇧_英国_279
+  type: vless
+  server: 91.193.59.129
+  port: 80
+  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳+@WangCai2
+    headers:
+      Host: s5gydl.936.us.ci
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - '@Daily_Configs : کانال تلگرام'
-  - 🇺🇸_美国_7
-  - 🇬🇧_英国_273
-  - 🇬🇧_英国_213
-  - 🇬🇧_英国_323
-  - 🇬🇧_英国_238
-  - 🇺🇸_美国_163
-  - 🇬🇧_英国_232
-  - 🇬🇧_英国_284
-  - 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 156ms
-  - 🇬🇧_英国_226
+  - '>>@oneclickvpnkeys::US'
+  - '>>@oneclickvpnkeys::GB'
+  - 🇬🇧_英国_345
   - 🇬🇧_英国_262
-  - 🇬🇧_英国_316
-  - 🇬🇧_英国_343
-  - 🏳️_未知_192
+  - 🇬🇧_英国_233
+  - '>>@oneclickvpnkeys::NL'
+  - 🇬🇧_英国_255
+  - V2rayByUnknown™
+  - 🇬🇧_英国_222
+  - '>>@v2nodes::US'
+  - 🇬🇧_英国_277
+  - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  - 🇬🇧_英国_337
+  - 🇬🇧_英国_306
+  - 'Channel : @Daily_Configs'
+  - 🇬🇧_英国_264
+  - 🍓
+  - ✈️
+  - 🇬🇧_英国_296
+  - 🇬🇧_英国_313
+  - 🇬🇧_英国_220
+  - 🇺🇸_美国_6
+  - 🇬🇧_英国_327
+  - 🆔v2ray1_ng 🔒 VL-GRPC- ❔ XX 176ms
+  - 🇺🇸 @mobilesignal | کانال تلگرام ⚡️
+  - 🇬🇧_英国_304
+  - 🇬🇧_英国_279
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
