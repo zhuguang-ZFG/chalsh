@@ -14,64 +14,44 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: '>>@ShadowsocksM::US'
-  type: vless
-  server: 172.64.94.251
-  port: 8880
-  uuid: 645ea5d2-7d0a-4d66-940d-eefc2b84f4e9
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net
-    headers:
-      Host: fragrant-surf-4797.496-345.workers.dev
 - name: '>>@oneclickvpnkeys::US'
   type: vless
-  server: 47.253.226.114
-  port: 443
-  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
-  flow: xtls-rprx-vision
+  server: using.neobo-tooth.ru
+  port: 2083
+  uuid: 0c6b632a-cd96-4b74-9b51-151e3b5697db
   tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
-  client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | 3081
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🆔soskeynet 🔒 VL-GRPC- 🇬🇧 GB 298ms
-  type: vless
-  server: gr022.allenshop66250.ir
-  port: 2053
-  uuid: 70f28a55-1e6c-4082-aef4-2dc2cfa78fca
-  tls: true
-  servername: play.google.com
-  reality-opts:
-    public-key: GS0dfvzX-bVKBDl2brVxsrE6T2WyXXkfgP3x-mQC7BY
-    short-id: 524efc1f88592266
-  client-fingerprint: firefox
   network: grpc
   grpc-opts:
-    grpc-service-name: api.v1.data
-- name: US 🇺🇸 | @Raydikalx | 3099
+    grpc-service-name: grpc
+- name: '@meliproyy'
   type: vmess
-  server: 216.106.185.141
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 803
+  type: vmess
+  server: 165.140.216.142
+  port: 443
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - '>>@ShadowsocksM::US'
   - '>>@oneclickvpnkeys::US'
-  - US 🇺🇸 | @Raydikalx | 3081
-  - 🆔soskeynet 🔒 VL-GRPC- 🇬🇧 GB 298ms
-  - US 🇺🇸 | @Raydikalx | 3099
+  - '@meliproyy'
+  - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  - US 🇺🇸 | @Raydikalx | 803
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
