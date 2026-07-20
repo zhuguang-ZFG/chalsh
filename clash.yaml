@@ -14,256 +14,64 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇬🇧_英国_290
+- name: '>>@ShadowsocksM::US'
   type: vless
-  server: 91.193.59.0
-  port: 80
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
+  server: 172.64.94.251
+  port: 8880
+  uuid: 645ea5d2-7d0a-4d66-940d-eefc2b84f4e9
   network: ws
   ws-opts:
-    path: /Telegram🇨🇳+@WangCai2
+    path: /pyip=ProxyIP.US.CMLiussss.net
     headers:
-      Host: s5gydl.936.us.ci
-- name: 🔋
+      Host: fragrant-surf-4797.496-345.workers.dev
+- name: '>>@oneclickvpnkeys::US'
   type: vless
-  server: 15.204.97.198
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: 🇬🇧_英国_216
-  type: vless
-  server: 91.193.59.5
-  port: 80
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5gydl.936.us.ci
-- name: US 🇺🇸 | @Raydikalx | 2985
-  type: vmess
-  server: 67.220.72.237
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇬🇧_英国_309
-  type: vless
-  server: 91.193.59.205
-  port: 80
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5gydl.936.us.ci
-- name: 🇬🇧_英国_230
-  type: vless
-  server: 91.193.59.252
-  port: 80
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5gydl.936.us.ci
-- name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 68ms
-  type: vless
-  server: 137.184.218.169
-  port: 36925
-  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
+  server: 47.253.226.114
+  port: 443
+  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
   flow: xtls-rprx-vision
   tls: true
   servername: www.cloudflare.com
   reality-opts:
-    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
+    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
   client-fingerprint: chrome
-- name: 🇬🇧_英国_280
-  type: vless
-  server: 91.193.59.133
-  port: 80
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5gydl.936.us.ci
-- name: 🇬🇧_英国_296
-  type: vless
-  server: 91.193.59.199
-  port: 80
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5gydl.936.us.ci
-- name: 🇬🇧_英国_307
-  type: vless
-  server: 91.193.59.169
-  port: 80
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5gydl.936.us.ci
-- name: 🇬🇧_英国_336
-  type: vless
-  server: 91.193.59.86
-  port: 80
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5gydl.936.us.ci
-- name: 🇬🇧_英国_341
-  type: vless
-  server: 91.193.59.107
-  port: 80
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5gydl.936.us.ci
-- name: 🇬🇧_英国_329
-  type: vless
-  server: 91.193.59.149
-  port: 80
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5gydl.936.us.ci
-- name: 🇬🇧_英国_258
-  type: vless
-  server: 91.193.59.73
-  port: 80
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5gydl.936.us.ci
-- name: 🇬🇧_英国_262
-  type: vless
-  server: 91.193.59.178
-  port: 80
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5gydl.936.us.ci
-- name: 🇬🇧_英国_232
-  type: vless
-  server: 91.193.59.79
-  port: 80
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5gydl.936.us.ci
-- name: 🇬🇧_英国_226
-  type: vless
-  server: 91.193.59.141
-  port: 80
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5gydl.936.us.ci
-- name: 🇬🇧_英国_303
-  type: vless
-  server: 91.193.59.229
-  port: 80
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5gydl.936.us.ci
-- name: 🇬🇧_英国_240
-  type: vless
-  server: 91.193.59.89
-  port: 80
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5gydl.936.us.ci
-- name: 🇬🇧_英国_310
-  type: vless
-  server: 91.193.59.189
-  port: 80
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5gydl.936.us.ci
-- name: 🇬🇧_英国_283
-  type: vless
-  server: 91.193.59.172
-  port: 80
-  uuid: f4e91fac-25eb-4d26-a14c-c82c3778a0e4
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳+@WangCai2
-    headers:
-      Host: s5gydl.936.us.ci
-- name: 🔵@chillguy_vpn
+- name: US 🇺🇸 | @Raydikalx | 3081
   type: vmess
-  server: 67.220.95.3
+  server: 84.17.41.2
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
-  cipher: aes-128-gcm
-- name: 🇺🇸_美国_11
-  type: trojan
-  server: hardy-seahorse.rooster465.autos
-  port: 443
-  password: KV63147582
-  sni: hardy-seahorse.rooster465.autos
+  cipher: auto
+- name: 🆔soskeynet 🔒 VL-GRPC- 🇬🇧 GB 298ms
+  type: vless
+  server: gr022.allenshop66250.ir
+  port: 2053
+  uuid: 70f28a55-1e6c-4082-aef4-2dc2cfa78fca
+  tls: true
+  servername: play.google.com
+  reality-opts:
+    public-key: GS0dfvzX-bVKBDl2brVxsrE6T2WyXXkfgP3x-mQC7BY
+    short-id: 524efc1f88592266
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: api.v1.data
+- name: US 🇺🇸 | @Raydikalx | 3099
+  type: vmess
+  server: 216.106.185.141
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇬🇧_英国_290
-  - 🔋
-  - 🇬🇧_英国_216
-  - US 🇺🇸 | @Raydikalx | 2985
-  - 🇬🇧_英国_309
-  - 🇬🇧_英国_230
-  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 68ms
-  - 🇬🇧_英国_280
-  - 🇬🇧_英国_296
-  - 🇬🇧_英国_307
-  - 🇬🇧_英国_336
-  - 🇬🇧_英国_341
-  - 🇬🇧_英国_329
-  - 🇬🇧_英国_258
-  - 🇬🇧_英国_262
-  - 🇬🇧_英国_232
-  - 🇬🇧_英国_226
-  - 🇬🇧_英国_303
-  - 🇬🇧_英国_240
-  - 🇬🇧_英国_310
-  - 🇬🇧_英国_283
-  - 🔵@chillguy_vpn
-  - 🇺🇸_美国_11
+  - '>>@ShadowsocksM::US'
+  - '>>@oneclickvpnkeys::US'
+  - US 🇺🇸 | @Raydikalx | 3081
+  - 🆔soskeynet 🔒 VL-GRPC- 🇬🇧 GB 298ms
+  - US 🇺🇸 | @Raydikalx | 3099
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
