@@ -14,18 +14,6 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: V2rayByUnknown™
-  type: vless
-  server: 8.39.125.74
-  port: 2083
-  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
-  tls: true
-  servername: vp2.cc.cd
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vp2.cc.cd
 - name: 🇺🇸[@LevikoConfig] vmess-US-14952625
   type: vmess
   server: 165.140.216.142
@@ -33,42 +21,82 @@ proxies:
   uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
   alterId: 0
   cipher: auto
-- name: 🇺🇸_美国_59
-  type: trojan
-  server: 163.245.196.68
-  port: 49361
-  password: 0ebb269c9f2d4e8e46b0cd4105a55134
-  sni: 163.245.196.68.sslip.io
-- name: US 🇺🇸 | @Raydikalx | 3202
-  type: vmess
-  server: 165.140.216.141
+- name: '>>@oneclickvpnkeys::US'
+  type: vless
+  server: support.zoom.us
   port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  uuid: 5aafc2be-9348-4dec-b896-f4a91253bbca
+  tls: true
+  servername: support.zoom.us.yxls.eu.cc
+  network: ws
+  ws-opts:
+    path: /id-tksi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+- name: ✈️
+  type: vless
+  server: 144.225.187.179
+  port: 51015
+  uuid: c7ba28f1-dd0a-4fd8-941e-e622f24c8a19
+  flow: xtls-rprx-vision
+  tls: true
+  servername: apple.com
+  reality-opts:
+    public-key: wr6ERYaZWWT_P38sI5n-ZBgiNNWUzzQefuXgX_LvZCk
+    short-id: f25f1104
+  client-fingerprint: chrome
+- name: 🏳️_未知_74
+  type: vless
+  server: cf.877774.xyz
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  servername: t1s1.rittbo.kdns.fr
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- name: 🇺🇸_美国_56
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   alterId: 0
   cipher: auto
-- name: 🇺🇸[openproxylist.com
-  type: trojan
-  server: dashing-possum.rooster465.autos
-  port: 443
-  password: HW85960347
-  sni: dashing-possum.rooster465.autos
-- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  tls: true
+  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | 3160
   type: vmess
-  server: 82.198.246.37
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: aes-128-gcm
+- name: US 🇺🇸 | @Raydikalx | 3127
+  type: vmess
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
+- name: 🇺🇸_美国_53
+  type: trojan
+  server: optimal-dane.rooster465.autos
+  port: 443
+  password: IQ68037294
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - V2rayByUnknown™
   - 🇺🇸[@LevikoConfig] vmess-US-14952625
-  - 🇺🇸_美国_59
-  - US 🇺🇸 | @Raydikalx | 3202
-  - 🇺🇸[openproxylist.com
-  - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  - '>>@oneclickvpnkeys::US'
+  - ✈️
+  - 🏳️_未知_74
+  - 🇺🇸_美国_56
+  - US 🇺🇸 | @Raydikalx | 3160
+  - US 🇺🇸 | @Raydikalx | 3127
+  - 🇺🇸_美国_53
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
