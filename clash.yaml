@@ -14,6 +14,70 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
+- name: '>>@v2nodes::US'
+  type: trojan
+  server: polite-coyote.rooster465.autos
+  port: 443
+  password: CF68213490
+  sni: polite-coyote.rooster465.autos
+- name: 🆔configfa 🔒 VL-TCP- ❔ XX 14ms
+  type: vless
+  server: 137.184.218.169
+  port: 36925
+  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  skip-cert-verify: true
+  reality-opts:
+    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
+  client-fingerprint: chrome
+- name: 🇺🇸_美国_56
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+- name: 🏳️_未知_106
+  type: vless
+  server: cf.090227.xyz
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  servername: t1s1.rittbo.kdns.fr
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- name: Global 🌐 | @Raydikalx | 3448
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: aes-128-gcm
+- name: 美国+CloudFlare节点
+  type: vless
+  server: cdn.9889888.xyz
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  servername: t1s1.rittbo.kdns.fr
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- name: 🇺🇸_美国_59
+  type: trojan
+  server: 163.245.196.68
+  port: 49361
+  password: 0ebb269c9f2d4e8e46b0cd4105a55134
+  sni: 163.245.196.68.sslip.io
 - name: 🇺🇸[@LevikoConfig] vmess-US-14952625
   type: vmess
   server: 165.140.216.142
@@ -33,53 +97,19 @@ proxies:
     public-key: wr6ERYaZWWT_P38sI5n-ZBgiNNWUzzQefuXgX_LvZCk
     short-id: f25f1104
   client-fingerprint: chrome
-- name: PzIojpYa_vless
-  type: vless
-  server: 104.16.72.50
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  servername: t1s1.rittbo.kdns.fr
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-- name: V2rayByUnknown™
-  type: vless
-  server: 86.109.75.147
-  port: 444
-  uuid: 0b9bcbc1-b289-4a64-86fa-a5b731b65384
-  tls: true
-  servername: web.max.ru
-  reality-opts:
-    public-key: MF_E-_CYAXdWxC1N_wTkdFyk3K7_1cNqNDPb0vnwl20
-    short-id: 8311761729abcdef
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: web.max.ru
-- name: US 🇺🇸 | @Raydikalx | 3638
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 129.146.77.248
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
+  - '>>@v2nodes::US'
+  - 🆔configfa 🔒 VL-TCP- ❔ XX 14ms
+  - 🇺🇸_美国_56
+  - 🏳️_未知_106
+  - Global 🌐 | @Raydikalx | 3448
+  - 美国+CloudFlare节点
+  - 🇺🇸_美国_59
   - 🇺🇸[@LevikoConfig] vmess-US-14952625
   - ✈️
-  - PzIojpYa_vless
-  - V2rayByUnknown™
-  - US 🇺🇸 | @Raydikalx | 3638
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
