@@ -14,30 +14,33 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: '@vpnparsajo'
-  type: vless
-  server: cloudflare-ip.mofashi.ltd
+- name: CA 🇨🇦 | @Raydikalx | 934
+  type: vmess
+  server: 158.51.121.63
   port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: t1s1.rittbo.kdns.fr
+  servername: seribus.org
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: linkvws
     headers:
-      Host: t1s1.rittbo.kdns.fr
-- name: US 🇺🇸 | @Raydikalx | 3108
+      Host: seribus.org
+- name: US 🇺🇸 | @Raydikalx | 3183
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸US_25_@Surfboardv2ray
+- name: US 🇺🇸 | @Raydikalx | 3172
   type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
   alterId: 0
   cipher: auto
 - name: 🇺🇸[@LevikoConfig] vmess-US-14952625
@@ -47,13 +50,22 @@ proxies:
   uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
   alterId: 0
   cipher: auto
-- name: 🇺🇸_美国_12
-  type: trojan
-  server: pretty-clam.rooster465.autos
+- name: US 🇺🇸 | @Raydikalx | 3192
+  type: vmess
+  server: xsj004-10.facai2024.com
   port: 443
-  password: HW85960347
-  sni: pretty-clam.rooster465.autos
-- name: US 🇺🇸 | @Raydikalx | 3135
+  uuid: 1f1aa362-2576-4989-8fdb-7cf1c2c96490
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xsj004-10.facai2024.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /1f1aa362-25
+    headers:
+      Host: xsj004-10.facai2024.com
+- name: US 🇺🇸 | @Raydikalx | 3207
   type: vmess
   server: 67.220.72.237
   port: 22324
@@ -64,12 +76,12 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - '@vpnparsajo'
-  - US 🇺🇸 | @Raydikalx | 3108
-  - 🇺🇸US_25_@Surfboardv2ray
+  - CA 🇨🇦 | @Raydikalx | 934
+  - US 🇺🇸 | @Raydikalx | 3183
+  - US 🇺🇸 | @Raydikalx | 3172
   - 🇺🇸[@LevikoConfig] vmess-US-14952625
-  - 🇺🇸_美国_12
-  - US 🇺🇸 | @Raydikalx | 3135
+  - US 🇺🇸 | @Raydikalx | 3192
+  - US 🇺🇸 | @Raydikalx | 3207
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
