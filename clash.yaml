@@ -14,35 +14,18 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: CA 🇨🇦 | @Raydikalx | 934
-  type: vmess
-  server: 158.51.121.63
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+- name: V2rayByUnknown™
+  type: vless
+  server: 8.39.125.74
+  port: 2083
+  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
   tls: true
-  servername: seribus.org
-  skip-cert-verify: true
+  servername: vp2.cc.cd
   network: ws
   ws-opts:
-    path: linkvws
+    path: /
     headers:
-      Host: seribus.org
-- name: US 🇺🇸 | @Raydikalx | 3183
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 3172
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
+      Host: vp2.cc.cd
 - name: 🇺🇸[@LevikoConfig] vmess-US-14952625
   type: vmess
   server: 165.140.216.142
@@ -50,38 +33,42 @@ proxies:
   uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 3192
+- name: 🇺🇸_美国_59
+  type: trojan
+  server: 163.245.196.68
+  port: 49361
+  password: 0ebb269c9f2d4e8e46b0cd4105a55134
+  sni: 163.245.196.68.sslip.io
+- name: US 🇺🇸 | @Raydikalx | 3202
   type: vmess
-  server: xsj004-10.facai2024.com
+  server: 165.140.216.141
   port: 443
-  uuid: 1f1aa362-2576-4989-8fdb-7cf1c2c96490
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
   alterId: 0
   cipher: auto
-  tls: true
-  servername: xsj004-10.facai2024.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /1f1aa362-25
-    headers:
-      Host: xsj004-10.facai2024.com
-- name: US 🇺🇸 | @Raydikalx | 3207
+- name: 🇺🇸[openproxylist.com
+  type: trojan
+  server: dashing-possum.rooster465.autos
+  port: 443
+  password: HW85960347
+  sni: dashing-possum.rooster465.autos
+- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
   type: vmess
-  server: 67.220.72.237
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - CA 🇨🇦 | @Raydikalx | 934
-  - US 🇺🇸 | @Raydikalx | 3183
-  - US 🇺🇸 | @Raydikalx | 3172
+  - V2rayByUnknown™
   - 🇺🇸[@LevikoConfig] vmess-US-14952625
-  - US 🇺🇸 | @Raydikalx | 3192
-  - US 🇺🇸 | @Raydikalx | 3207
+  - 🇺🇸_美国_59
+  - US 🇺🇸 | @Raydikalx | 3202
+  - 🇺🇸[openproxylist.com
+  - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
