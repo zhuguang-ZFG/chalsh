@@ -14,74 +14,72 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 美国+CloudFlare节点
+- name: 🇺🇸[@LevikoConfig] vmess-US-14952625
+  type: vmess
+  server: 165.140.216.142
+  port: 443
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  alterId: 0
+  cipher: auto
+- name: ✈️
   type: vless
-  server: cdn.9889888.xyz
+  server: 144.225.187.179
+  port: 51015
+  uuid: c7ba28f1-dd0a-4fd8-941e-e622f24c8a19
+  flow: xtls-rprx-vision
+  tls: true
+  servername: apple.com
+  reality-opts:
+    public-key: wr6ERYaZWWT_P38sI5n-ZBgiNNWUzzQefuXgX_LvZCk
+    short-id: f25f1104
+  client-fingerprint: chrome
+- name: PzIojpYa_vless
+  type: vless
+  server: 104.16.72.50
   port: 443
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   tls: true
   servername: t1s1.rittbo.kdns.fr
   network: ws
   ws-opts:
-    path: /
+    path: /fp
     headers:
       Host: t1s1.rittbo.kdns.fr
-- name: '@meliproyy'
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸_美国_56
-  type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
 - name: V2rayByUnknown™
   type: vless
-  server: 8.39.125.74
-  port: 2083
-  uuid: 663cf772-829c-4bc6-893d-b7d021d42f5b
+  server: 86.109.75.147
+  port: 444
+  uuid: 0b9bcbc1-b289-4a64-86fa-a5b731b65384
   tls: true
-  servername: vp2.cc.cd
+  servername: web.max.ru
+  reality-opts:
+    public-key: MF_E-_CYAXdWxC1N_wTkdFyk3K7_1cNqNDPb0vnwl20
+    short-id: 8311761729abcdef
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: web.max.ru
+- name: US 🇺🇸 | @Raydikalx | 3638
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /
+    path: /cctv13.m3u8
     headers:
-      Host: vp2.cc.cd
-- name: '>>@v2nodes::US'
-  type: trojan
-  server: engaging-elephant.rooster465.autos
-  port: 443
-  password: NQ26071394
-  sni: engaging-elephant.rooster465.autos
-- name: '>>@oneclickvpnkeys::US'
-  type: vless
-  server: 104.20.13.116
-  port: 443
-  uuid: fb978279-0a28-4045-8258-e9ab97deaf2b
-  tls: true
-  servername: ourfast.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ourfast.ccwu.cc
+      Host: 129.146.77.248
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 美国+CloudFlare节点
-  - '@meliproyy'
-  - 🇺🇸_美国_56
+  - 🇺🇸[@LevikoConfig] vmess-US-14952625
+  - ✈️
+  - PzIojpYa_vless
   - V2rayByUnknown™
-  - '>>@v2nodes::US'
-  - '>>@oneclickvpnkeys::US'
+  - US 🇺🇸 | @Raydikalx | 3638
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
