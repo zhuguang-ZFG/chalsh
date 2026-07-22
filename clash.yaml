@@ -14,25 +14,45 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: V2rayByUnknown™
-  type: vless
-  server: 45.206.5.122
-  port: 443
-  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
-  flow: xtls-rprx-vision
-  tls: true
-  servername: storage.yandex.net
-  reality-opts:
-    public-key: pPi-WO8qQFFZ9UJWNLW9YClbjcoAAZWJQ2_FM3Kjhz8
-    short-id: 500aec9e9e5e2212
-  client-fingerprint: qq
-- name: 🇺🇸[@LevikoConfig] vmess-US-14952625
+- name: US 🇺🇸 | @Raydikalx | 3406
   type: vmess
-  server: 165.140.216.142
+  server: 165.140.216.141
   port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
   alterId: 0
   cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 3405
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: '>>@ShadowsocksM::US'
+  type: trojan
+  server: tolerant-rattler.rooster465.autos
+  port: 443
+  password: CF68213490
+  sni: tolerant-rattler.rooster465.autos
+- name: Global 🌐 | @Raydikalx | 3680
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: aes-128-gcm
+- name: V2rayByUnknown™
+  type: vless
+  server: 144.124.246.55
+  port: 443
+  uuid: 40de6299-d792-4868-8a82-411ead0aa943
+  flow: xtls-rprx-vision
+  tls: true
+  servername: gateway.icloud.com
+  reality-opts:
+    public-key: L0acYoTxKR5ix7LXAmP10cy06n2JjgkXTojGjtWAqww
+    short-id: ed7b9bdfedb9b8e5
+  client-fingerprint: firefox
 - name: 🏳️_未知_110
   type: vless
   server: cdn.9889888.xyz
@@ -45,21 +65,24 @@ proxies:
     path: /
     headers:
       Host: t1s1.rittbo.kdns.fr
-- name: '>>@ShadowsocksM::US'
+- name: US 🇺🇸 | @Raydikalx | 1180
   type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 165.140.216.142
+  port: 443
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - V2rayByUnknown™
-  - 🇺🇸[@LevikoConfig] vmess-US-14952625
-  - 🏳️_未知_110
+  - US 🇺🇸 | @Raydikalx | 3406
+  - US 🇺🇸 | @Raydikalx | 3405
   - '>>@ShadowsocksM::US'
+  - Global 🌐 | @Raydikalx | 3680
+  - V2rayByUnknown™
+  - 🏳️_未知_110
+  - US 🇺🇸 | @Raydikalx | 1180
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
