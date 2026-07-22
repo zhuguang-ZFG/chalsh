@@ -14,108 +14,109 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: '>>@oneclickvpnkeys::IE'
-  type: trojan
-  server: correct-starfish.rooster465.autos
-  port: 443
-  password: NQ26071394
-- name: US 🇺🇸 | @Raydikalx | 3277
+- name: US 🇺🇸 | @Raydikalx | 3483
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 'B - 🇺🇸 US 18 TG: @nodpai'
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: '@hi_proxy_iran'
-  type: vless
-  server: eventloophub.org
-  port: 8443
-  uuid: aa28b265-baff-42e4-927e-7a8dee0ef623
-  tls: true
-  servername: eventloophub.org
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: US 🇺🇸 | @Raydikalx | 1073
-  type: vmess
-  server: 165.140.216.142
+- name: '>>@ShadowsocksM::US'
+  type: trojan
+  server: tolerant-rattler.rooster465.autos
   port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-  alterId: 0
-  cipher: auto
-- name: '@meliproyy'
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-- name: '@V2ray_confiig'
+  password: CF68213490
+  sni: tolerant-rattler.rooster465.autos
+- name: 'Channel : @Daily_Configs'
   type: vless
-  server: blog.webex.com
+  server: qq.utiltools.ru
   port: 443
-  uuid: bc6e7cf0-9526-4fea-b2e3-5bcf992c565e
-  tls: true
-  servername: blog.webex.com.yxls.eu.cc
-  network: ws
-  ws-opts:
-    path: /my-kc
-    headers:
-      Host: blog.webex.com.yxls.eu.cc
-- name: 🆔configfa 🔒 VL-TCP- ❔ XX 14ms
-  type: vless
-  server: 137.184.218.169
-  port: 36925
-  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
+  uuid: eb78e1f0-d921-4ca9-a889-261fcc5a0547
   flow: xtls-rprx-vision
   tls: true
-  servername: www.cloudflare.com
-  skip-cert-verify: true
+  servername: qq.utiltools.ru
   reality-opts:
-    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
-  client-fingerprint: chrome
-- name: 🏳️_未知_118
-  type: vless
-  server: 104.16.253.227
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  servername: t1s1.rittbo.kdns.fr
+    public-key: drY21DHNOr6ezJLA2B10mzTExeJ9-gVBfTBNLwVBtWI
+  client-fingerprint: qq
+- name: US 🇺🇸 | @Raydikalx | 3493
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /
+    path: /cctv13.m3u8
     headers:
-      Host: t1s1.rittbo.kdns.fr
+      Host: 129.146.77.248
 - name: '>>@oneclickvpnkeys::US'
   type: vless
-  server: using.neobo-tooth.ru
-  port: 2083
-  uuid: 0c6b632a-cd96-4b74-9b51-151e3b5697db
+  server: support.zoom.us
+  port: 443
+  uuid: 5aafc2be-9348-4dec-b896-f4a91253bbca
   tls: true
+  servername: support.zoom.us.yxls.eu.cc
+  network: ws
+  ws-opts:
+    path: /id-tksi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+- name: US 🇺🇸 | @Raydikalx | 3247
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: aes-128-gcm
+- name: '@Feroxvpn_3'
+  type: vless
+  server: 93.152.205.216
+  port: 444
+  uuid: 0b9bcbc1-b289-4a64-86fa-a5b731b65384
+  tls: true
+  servername: web.max.ru
+  reality-opts:
+    public-key: X-YL5VNtlMNIaBrwaHt3hJCeF_gMT9gPRDDlK1Qg7Tc
+    short-id: 8321461729abcdef
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
-    grpc-service-name: grpc
+    grpc-service-name: web.max.ru
+- name: 🇺🇸[openproxylist.com
+  type: trojan
+  server: dashing-possum.rooster465.autos
+  port: 443
+  password: HW85960347
+  sni: dashing-possum.rooster465.autos
+- name: 未知4
+  type: vmess
+  server: 158.51.121.63
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: seribus.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: seribus.org
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - '>>@oneclickvpnkeys::IE'
-  - US 🇺🇸 | @Raydikalx | 3277
-  - 'B - 🇺🇸 US 18 TG: @nodpai'
-  - '@hi_proxy_iran'
-  - US 🇺🇸 | @Raydikalx | 1073
-  - '@meliproyy'
-  - '@V2ray_confiig'
-  - 🆔configfa 🔒 VL-TCP- ❔ XX 14ms
-  - 🏳️_未知_118
+  - US 🇺🇸 | @Raydikalx | 3483
+  - '>>@ShadowsocksM::US'
+  - 'Channel : @Daily_Configs'
+  - US 🇺🇸 | @Raydikalx | 3493
   - '>>@oneclickvpnkeys::US'
+  - US 🇺🇸 | @Raydikalx | 3247
+  - '@Feroxvpn_3'
+  - 🇺🇸[openproxylist.com
+  - 未知4
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
