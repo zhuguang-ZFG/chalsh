@@ -14,33 +14,74 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: Global 🌐 | @Raydikalx | 3427
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
 - name: 🇺🇸[openproxylist.com
   type: trojan
-  server: dashing-possum.rooster465.autos
+  server: primary-mallard.rooster465.autos
   port: 443
-  password: HW85960347
-  sni: dashing-possum.rooster465.autos
-- name: US 🇺🇸 | @Raydikalx | 3395
+  password: JA96378052
+  sni: primary-mallard.rooster465.autos
+  skip-cert-verify: true
+- name: 🏳️_未知_206
+  type: vless
+  server: 104.17.108.103
+  port: 443
+  uuid: c19735a7-ff97-a112-3f07-60e500f7719b
+  tls: true
+  servername: l-j-o-MiTiVPN---MiTiVPN-o.MAQROR.ir
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN=sweden
+    headers:
+      Host: l-j--bMiTiVPN---MiTiVPN-o.MAQROR.ir
+- name: '>>@oneclickvpnkeys::US'
+  type: vless
+  server: 47.253.226.114
+  port: 443
+  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+  client-fingerprint: chrome
+- name: '@Feroxvpn_3'
+  type: vless
+  server: 93.152.205.216
+  port: 444
+  uuid: 0b9bcbc1-b289-4a64-86fa-a5b731b65384
+  tls: true
+  servername: web.max.ru
+  reality-opts:
+    public-key: X-YL5VNtlMNIaBrwaHt3hJCeF_gMT9gPRDDlK1Qg7Tc
+    short-id: 8321461729abcdef
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: web.max.ru
+- name: US 🇺🇸 | @Raydikalx | 1464
   type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 165.140.216.142
+  port: 443
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
   alterId: 0
   cipher: auto
+- name: 🔵@chillguy_vpn
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: aes-128-gcm
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - Global 🌐 | @Raydikalx | 3427
   - 🇺🇸[openproxylist.com
-  - US 🇺🇸 | @Raydikalx | 3395
+  - 🏳️_未知_206
+  - '>>@oneclickvpnkeys::US'
+  - '@Feroxvpn_3'
+  - US 🇺🇸 | @Raydikalx | 1464
+  - 🔵@chillguy_vpn
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
