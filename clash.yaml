@@ -14,25 +14,60 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸[openproxylist.com
-  type: trojan
-  server: primary-mallard.rooster465.autos
-  port: 443
-  password: JA96378052
-  sni: primary-mallard.rooster465.autos
-  skip-cert-verify: true
-- name: 🏳️_未知_206
+- name: '>>@ShadowsocksM::US'
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 𝗝𝗼𝗶𝗻➠@PlanB_net
   type: vless
-  server: 104.17.108.103
-  port: 443
-  uuid: c19735a7-ff97-a112-3f07-60e500f7719b
+  server: 86.109.75.147
+  port: 444
+  uuid: 0b9bcbc1-b289-4a64-86fa-a5b731b65384
   tls: true
-  servername: l-j-o-MiTiVPN---MiTiVPN-o.MAQROR.ir
+  servername: web.max.ru
+  reality-opts:
+    public-key: MF_E-_CYAXdWxC1N_wTkdFyk3K7_1cNqNDPb0vnwl20
+    short-id: 8311761729abcdef
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: web.max.ru
+- name: CA 🇨🇦 | @Raydikalx | 3605
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
+  type: vless
+  server: support.zoom.us
+  port: 443
+  uuid: 5aafc2be-9348-4dec-b896-f4a91253bbca
+  tls: true
+  servername: support.zoom.us.yxls.eu.cc
   network: ws
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN=sweden
+    path: /id-tksi
     headers:
-      Host: l-j--bMiTiVPN---MiTiVPN-o.MAQROR.ir
+      Host: support.zoom.us.yxls.eu.cc
+- name: '@Feroxvpn_2'
+  type: vless
+  server: 93.152.205.216
+  port: 444
+  uuid: 0b9bcbc1-b289-4a64-86fa-a5b731b65384
+  tls: true
+  servername: web.max.ru
+  reality-opts:
+    public-key: X-YL5VNtlMNIaBrwaHt3hJCeF_gMT9gPRDDlK1Qg7Tc
+    short-id: 8321461729abcdef
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: web.max.ru
 - name: '>>@oneclickvpnkeys::US'
   type: vless
   server: 47.253.226.114
@@ -44,44 +79,16 @@ proxies:
   reality-opts:
     public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
   client-fingerprint: chrome
-- name: '@Feroxvpn_3'
-  type: vless
-  server: 93.152.205.216
-  port: 444
-  uuid: 0b9bcbc1-b289-4a64-86fa-a5b731b65384
-  tls: true
-  servername: web.max.ru
-  reality-opts:
-    public-key: X-YL5VNtlMNIaBrwaHt3hJCeF_gMT9gPRDDlK1Qg7Tc
-    short-id: 8321461729abcdef
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: web.max.ru
-- name: US 🇺🇸 | @Raydikalx | 1464
-  type: vmess
-  server: 165.140.216.142
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-  alterId: 0
-  cipher: auto
-- name: 🔵@chillguy_vpn
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: aes-128-gcm
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸[openproxylist.com
-  - 🏳️_未知_206
+  - '>>@ShadowsocksM::US'
+  - 𝗝𝗼𝗶𝗻➠@PlanB_net
+  - CA 🇨🇦 | @Raydikalx | 3605
+  - 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
+  - '@Feroxvpn_2'
   - '>>@oneclickvpnkeys::US'
-  - '@Feroxvpn_3'
-  - US 🇺🇸 | @Raydikalx | 1464
-  - 🔵@chillguy_vpn
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
