@@ -14,13 +14,65 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 3664
+- name: US 🇺🇸 | @Raydikalx | 1202
   type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 43.173.74.241
+  port: 10086
+  uuid: bd7e0c40-79c7-4db1-ba27-43894d59a4a1
   alterId: 0
   cipher: auto
+- name: 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
+  type: vless
+  server: 31-76-252-48.sslip.io
+  port: 443
+  uuid: 3820aab5-ffaf-43b7-8741-af720c6690a4
+  tls: true
+  servername: 31-76-252-48.sslip.io
+  network: ws
+  ws-opts:
+    path: /yt
+    headers:
+      Host: 31-76-252-48.sslip.io
+- name: 🆔soskeynet 🔒 VL-GRPC- 🇩🇪 DE 202ms
+  type: vless
+  server: gr157.bamajobin.ir
+  port: 2053
+  uuid: 70f28a55-1e6c-4082-aef4-2dc2cfa78fca
+  tls: true
+  servername: play.google.com
+  reality-opts:
+    public-key: GS0dfvzX-bVKBDl2brVxsrE6T2WyXXkfgP3x-mQC7BY
+    short-id: 524efc1f88592266
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: api.v1.data
+- name: 8LWaJVmE_vless
+  type: vless
+  server: 104.16.72.50
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  servername: t1s1.rittbo.kdns.fr
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- name: 𝗝𝗼𝗶𝗻➠@PlanB_net
+  type: vless
+  server: 86.109.75.147
+  port: 444
+  uuid: 0b9bcbc1-b289-4a64-86fa-a5b731b65384
+  tls: true
+  servername: web.max.ru
+  reality-opts:
+    public-key: MF_E-_CYAXdWxC1N_wTkdFyk3K7_1cNqNDPb0vnwl20
+    short-id: 8311761729abcdef
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: web.max.ru
 - name: '>>@oneclickvpnkeys::US'
   type: vless
   server: 47.253.226.114
@@ -32,7 +84,7 @@ proxies:
   reality-opts:
     public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
   client-fingerprint: chrome
-- name: 🆔v2ray1_ng 🔒 VL-GRPC- ❔ XX 98ms
+- name: 'Channel : @Daily_Configs'
   type: vless
   server: 2.26.82.237
   port: 443
@@ -45,73 +97,17 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc
-- name: 未知76
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 3429
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: V2rayByUnknown™
-  type: vless
-  server: 47.89.186.170
-  port: 55861
-  uuid: d51ed55c-d6dd-400b-aaf6-017c33969bfe
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.intel.com
-  reality-opts:
-    public-key: t2ndf6SeVxinFCo5bcemnW_ZZhAtmHWiAkllks5qPWs
-    short-id: 7551ed1b
-  client-fingerprint: firefox
-- name: US 🇺🇸 | @Raydikalx | 3674
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: '@Feroxvpn_2'
-  type: vless
-  server: 93.152.205.216
-  port: 444
-  uuid: 0b9bcbc1-b289-4a64-86fa-a5b731b65384
-  tls: true
-  servername: web.max.ru
-  reality-opts:
-    public-key: X-YL5VNtlMNIaBrwaHt3hJCeF_gMT9gPRDDlK1Qg7Tc
-    short-id: 8321461729abcdef
-  client-fingerprint: safari
-  network: grpc
-  grpc-opts:
-    grpc-service-name: web.max.ru
-- name: 🔵@chillguy_vpn
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 3664
+  - US 🇺🇸 | @Raydikalx | 1202
+  - 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
+  - 🆔soskeynet 🔒 VL-GRPC- 🇩🇪 DE 202ms
+  - 8LWaJVmE_vless
+  - 𝗝𝗼𝗶𝗻➠@PlanB_net
   - '>>@oneclickvpnkeys::US'
-  - 🆔v2ray1_ng 🔒 VL-GRPC- ❔ XX 98ms
-  - 未知76
-  - US 🇺🇸 | @Raydikalx | 3429
-  - V2rayByUnknown™
-  - US 🇺🇸 | @Raydikalx | 3674
-  - '@Feroxvpn_2'
-  - 🔵@chillguy_vpn
+  - 'Channel : @Daily_Configs'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
