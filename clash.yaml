@@ -14,67 +14,33 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 'Channel : @Daily_Configs'
-  type: vless
-  server: 2.26.82.237
-  port: 443
-  uuid: 906be882-7f16-47c3-8702-59db2ada9688
-  tls: true
-  servername: speed.cloudflare.com
-  reality-opts:
-    public-key: VmBEjLUpiEnoNIaPNGDfVPIOzH_ktSDdsGGAvissxgI
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇺🇸[openproxylist.com
-  type: trojan
-  server: primary-mallard.rooster465.autos
-  port: 443
-  password: JA96378052
-  sni: primary-mallard.rooster465.autos
-  skip-cert-verify: true
-- name: 未知64
+- name: Global 🌐 | @Raydikalx | 3427
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: vmxciiuW_vless
-  type: vless
-  server: 104.16.72.50
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  servername: t1s1.rittbo.kdns.fr
-  network: ws
-  ws-opts:
-    path: /fp
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-- name: '>>@v2nodes::US'
+- name: 🇺🇸[openproxylist.com
   type: trojan
-  server: engaging-elephant.rooster465.autos
+  server: dashing-possum.rooster465.autos
   port: 443
-  password: NQ26071394
-  sni: engaging-elephant.rooster465.autos
-- name: '>>@ShadowsocksM::US'
-  type: trojan
-  server: tolerant-rattler.rooster465.autos
-  port: 443
-  password: CF68213490
-  sni: tolerant-rattler.rooster465.autos
+  password: HW85960347
+  sni: dashing-possum.rooster465.autos
+- name: US 🇺🇸 | @Raydikalx | 3395
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 'Channel : @Daily_Configs'
+  - Global 🌐 | @Raydikalx | 3427
   - 🇺🇸[openproxylist.com
-  - 未知64
-  - vmxciiuW_vless
-  - '>>@v2nodes::US'
-  - '>>@ShadowsocksM::US'
+  - US 🇺🇸 | @Raydikalx | 3395
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
