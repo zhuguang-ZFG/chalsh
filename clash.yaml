@@ -14,21 +14,59 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🏳️_未知_271
-  type: vless
-  server: 104.17.108.103
+- name: US 🇺🇸 | @Raydikalx | 1421
+  type: vmess
+  server: 165.140.216.142
   port: 443
-  uuid: c19735a7-ff97-a112-3f07-60e500f7719b
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  alterId: 0
+  cipher: auto
+- name: 🏳️_未知_356
+  type: vless
+  server: 104.16.72.50
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   tls: true
-  servername: l-j-o-MiTiVPN---MiTiVPN-o.MAQROR.ir
+  servername: t1s1.rittbo.kdns.fr
   network: ws
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN=sweden
+    path: /fp
     headers:
-      Host: l-j--bMiTiVPN---MiTiVPN-o.MAQROR.ir
-- name: 🏳️_未知_429
+      Host: t1s1.rittbo.kdns.fr
+- name: 南非+V2CROSS.COM
   type: vless
-  server: 8.34.146.26
+  server: 154.193.55.183
+  port: 443
+  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
+  flow: xtls-rprx-vision
+  tls: true
+  servername: storage.yandex.net
+  reality-opts:
+    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
+    short-id: dbbe8dca27a92c35
+  client-fingerprint: firefox
+- name: Global 🌐 | @Raydikalx | 3593
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: '>>@oneclickvpnkeys::US'
+  type: vless
+  server: support.zoom.us
+  port: 443
+  uuid: 5aafc2be-9348-4dec-b896-f4a91253bbca
+  tls: true
+  servername: support.zoom.us.yxls.eu.cc
+  network: ws
+  ws-opts:
+    path: /id-tksi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+- name: 🏳️_未知_409
+  type: vless
+  server: 190.93.247.26
   port: 2095
   uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   network: ws
@@ -36,98 +74,16 @@ proxies:
     path: /?Telegram🇨🇳 @WangCai2
     headers:
       Host: fuckfangbinxing.pusytroller.gq
-- name: 🇺🇸_美国_245
-  type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-- name: 🏳️_未知_454
-  type: vless
-  server: mfa.gov.ua
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  servername: t1s1.rittbo.kdns.fr
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-- name: 🏳️_未知_401
-  type: vless
-  server: 104.16.253.227
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  servername: t1s1.rittbo.kdns.fr
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-- name: 🔵@chillguy_vpn
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🏳️_未知_411
-  type: vless
-  server: 104.16.148.8
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  servername: t1s1.rittbo.kdns.fr
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-- name: 🏳️_未知_466
-  type: vless
-  server: cloudflare-ip.mofashi.ltd
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  servername: t1s1.rittbo.kdns.fr
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-- name: US 🇺🇸 | @Raydikalx | 3896
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 1461
-  type: vmess
-  server: 165.140.216.142
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🏳️_未知_271
-  - 🏳️_未知_429
-  - 🇺🇸_美国_245
-  - 🏳️_未知_454
-  - 🏳️_未知_401
-  - 🔵@chillguy_vpn
-  - 🏳️_未知_411
-  - 🏳️_未知_466
-  - US 🇺🇸 | @Raydikalx | 3896
-  - US 🇺🇸 | @Raydikalx | 1461
+  - US 🇺🇸 | @Raydikalx | 1421
+  - 🏳️_未知_356
+  - 南非+V2CROSS.COM
+  - Global 🌐 | @Raydikalx | 3593
+  - '>>@oneclickvpnkeys::US'
+  - 🏳️_未知_409
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
