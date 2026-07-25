@@ -14,16 +14,76 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: CA 🇨🇦 | @Raydikalx | 3605
+- name: Global 🌐 | @Raydikalx | 3831
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: GV9s6w9a_vless
+  type: vless
+  server: 104.16.72.50
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  servername: t1s1.rittbo.kdns.fr
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- name: CA 🇨🇦 | @Raydikalx | 3581
+  type: vmess
+  server: 158.51.121.63
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: seribus.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: seribus.org
+- name: CA 🇨🇦 | @Raydikalx | 3584
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🏳️_未知_81
+  type: vless
+  server: 104.16.148.8
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  servername: t1s1.rittbo.kdns.fr
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+- name: US 🇺🇸 | @Raydikalx | 3920
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: CA 🇨🇦 | @Raydikalx | 3587
   type: vmess
   server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🏳️_未知_61
+- name: 🏳️_未知_65
   type: vless
-  server: cf.130519.xyz
+  server: cloudflare-ip.mofashi.ltd
   port: 443
   uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   tls: true
@@ -42,80 +102,32 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc
-- name: US 🇺🇸 | @Raydikalx | 3839
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 美国+CloudFlare节点
+- name: 🇺🇸
   type: vless
-  server: www.cnae.top
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  server: 154.21.93.106
+  port: 8443
+  uuid: 29ca503d-e6b8-4509-b666-48133f450857
   tls: true
-  servername: t1s1.rittbo.kdns.fr
-  skip-cert-verify: true
+  servername: learn00.evany.de5.net
   network: ws
   ws-opts:
-    path: /
+    path: /fdip=tw.william.us.ci!txt
     headers:
-      Host: t1s1.rittbo.kdns.fr
-- name: 🏳️_未知_59
-  type: vless
-  server: cf.090227.xyz
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  servername: t1s1.rittbo.kdns.fr
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-- name: DE 🇩🇪 | @Raydikalx | 3601
-  type: vmess
-  server: 110.34.38.23
-  port: 521
-  uuid: 8d8458d9-7b00-49c4-90ad-4d98a92c8a4a
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 1393
-  type: vmess
-  server: 165.140.216.142
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-  alterId: 0
-  cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | 3602
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: Global 🌐 | @Raydikalx | 3844
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+      Host: learn00.evany.de5.net
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - CA 🇨🇦 | @Raydikalx | 3605
-  - 🏳️_未知_61
+  - Global 🌐 | @Raydikalx | 3831
+  - GV9s6w9a_vless
+  - CA 🇨🇦 | @Raydikalx | 3581
+  - CA 🇨🇦 | @Raydikalx | 3584
+  - 🏳️_未知_81
+  - US 🇺🇸 | @Raydikalx | 3920
+  - CA 🇨🇦 | @Raydikalx | 3587
+  - 🏳️_未知_65
   - '>>@oneclickvpnkeys::US'
-  - US 🇺🇸 | @Raydikalx | 3839
-  - 美国+CloudFlare节点
-  - 🏳️_未知_59
-  - DE 🇩🇪 | @Raydikalx | 3601
-  - US 🇺🇸 | @Raydikalx | 1393
-  - CA 🇨🇦 | @Raydikalx | 3602
-  - Global 🌐 | @Raydikalx | 3844
+  - 🇺🇸
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
