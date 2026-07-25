@@ -14,31 +14,31 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🏳️_未知_271
+- name: 🏳️_未知_398
   type: vless
-  server: 104.17.108.103
+  server: cf.877774.xyz
   port: 443
-  uuid: c19735a7-ff97-a112-3f07-60e500f7719b
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
   tls: true
-  servername: l-j-o-MiTiVPN---MiTiVPN-o.MAQROR.ir
+  servername: t1s1.rittbo.kdns.fr
   network: ws
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN---@MiTiVPN=sweden
+    path: /
     headers:
-      Host: l-j--bMiTiVPN---MiTiVPN-o.MAQROR.ir
-- name: 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
+      Host: t1s1.rittbo.kdns.fr
+- name: 🏳️_未知_266
   type: vless
-  server: support.zoom.us
+  server: skk.moe
   port: 443
-  uuid: 5aafc2be-9348-4dec-b896-f4a91253bbca
+  uuid: 0ba5211f-fb2b-42a0-8e18-9ce7a41745a5
   tls: true
-  servername: support.zoom.us.yxls.eu.cc
+  servername: sg.xfj123.top
   network: ws
   ws-opts:
-    path: /id-tksi
+    path: /0ba5211f-fb2b-42a0-8e18-9ce7a41745a5-vless
     headers:
-      Host: support.zoom.us.yxls.eu.cc
-- name: US 🇺🇸 | @Raydikalx | 4092
+      Host: sg.xfj123.top
+- name: US 🇺🇸 | @Raydikalx | 4210
   type: vmess
   server: 129.146.77.248
   port: 39495
@@ -48,31 +48,67 @@ proxies:
   network: ws
   ws-opts:
     path: /cctv13.m3u8
-- name: 🇺🇸_美国_245
+- name: 🇱🇹_立陶宛_300
+  type: vless
+  server: 89.117.112.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime11.workers.dev
+- name: 🏳️_未知_347
+  type: vless
+  server: 104.16.107.139
+  port: 8880
+  uuid: ff7390de-ce93-4d7d-b08b-bef8f71a85cf
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: tiny-lake-c7f3.16-1af.workers.dev
+- name: US 🇺🇸 | @Raydikalx | 3902
   type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-- name: 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles🅿️ping:178ms
-  type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 4121
+  type: vmess
+  server: 129.146.143.80
+  port: 48111
+  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+  alterId: 0
+  cipher: auto
+- name: '>>@ShadowsocksM::US'
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 4123
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🏳️_未知_271
-  - 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
-  - US 🇺🇸 | @Raydikalx | 4092
-  - 🇺🇸_美国_245
-  - 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles🅿️ping:178ms
+  - 🏳️_未知_398
+  - 🏳️_未知_266
+  - US 🇺🇸 | @Raydikalx | 4210
+  - 🇱🇹_立陶宛_300
+  - 🏳️_未知_347
+  - US 🇺🇸 | @Raydikalx | 3902
+  - US 🇺🇸 | @Raydikalx | 4121
+  - '>>@ShadowsocksM::US'
+  - US 🇺🇸 | @Raydikalx | 4123
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
