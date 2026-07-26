@@ -14,49 +14,6 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 3690
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-- name: 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
-  type: vless
-  server: support.zoom.us
-  port: 443
-  uuid: 5aafc2be-9348-4dec-b896-f4a91253bbca
-  tls: true
-  servername: support.zoom.us.yxls.eu.cc
-  network: ws
-  ws-opts:
-    path: /id-tksi
-    headers:
-      Host: support.zoom.us.yxls.eu.cc
-- name: US 🇺🇸 | @Raydikalx | 3645
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 3961
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 3905
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
 - name: '>>@oneclickvpnkeys::US'
   type: vless
   server: 47.253.226.114
@@ -68,47 +25,33 @@ proxies:
   reality-opts:
     public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
   client-fingerprint: chrome
-- name: 🇺🇸_美国_525
-  type: vmess
-  server: 154.17.234.39
-  port: 2086
-  uuid: 7e25875e-50bb-47ed-9627-261e6d232f69
-  alterId: 0
-  cipher: auto
+- name: 🏳️_未知_179
+  type: vless
+  server: yx.cloudflare.182682.xyz
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  servername: t1s1.rittbo.kdns.fr
   network: ws
   ws-opts:
-    path: 7e25875e-50bb-47ed-9627-261e6d232f69-vm
+    path: /
     headers:
-      Host: www.bing.com
-- name: 🇺🇸_美国_34
+      Host: t1s1.rittbo.kdns.fr
+- name: 🇺🇸_美国_55
   type: vless
-  server: 154.193.55.183
-  port: 443
-  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
+  server: 72.18.215.40
+  port: 41639
+  uuid: 083f9234-76f8-47f4-915e-726a767b7ad5
   flow: xtls-rprx-vision
   tls: true
-  servername: storage.yandex.net
+  servername: apple.com
   reality-opts:
-    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
-    short-id: dbbe8dca27a92c35
-  client-fingerprint: firefox
-- name: US 🇺🇸 | @Raydikalx | 3707
+    public-key: nBsIaD1ngEZoLYTGSjQiEigvafTyOHFwwcAjFaBjt00
+    short-id: 0c343439
+  client-fingerprint: chrome
+- name: Global 🌐 | @Raydikalx | 3938
   type: vmess
-  server: 216.106.185.141
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: Global 🌐 | @Raydikalx | 3638
-  type: vmess
-  server: 74.211.102.179
-  port: 20001
-  uuid: 7f5f0705-3dfb-4f56-9657-c95cade2ba83
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 3912
-  type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -117,17 +60,10 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 3690
-  - 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
-  - US 🇺🇸 | @Raydikalx | 3645
-  - US 🇺🇸 | @Raydikalx | 3961
-  - US 🇺🇸 | @Raydikalx | 3905
   - '>>@oneclickvpnkeys::US'
-  - 🇺🇸_美国_525
-  - 🇺🇸_美国_34
-  - US 🇺🇸 | @Raydikalx | 3707
-  - Global 🌐 | @Raydikalx | 3638
-  - US 🇺🇸 | @Raydikalx | 3912
+  - 🏳️_未知_179
+  - 🇺🇸_美国_55
+  - Global 🌐 | @Raydikalx | 3938
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
