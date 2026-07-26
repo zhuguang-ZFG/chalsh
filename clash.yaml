@@ -14,14 +14,73 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: CA 🇨🇦 | @Raydikalx | 3714
+- name: US 🇺🇸 | @Raydikalx | 3690
   type: vmess
-  server: 23.162.200.198
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+- name: 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
+  type: vless
+  server: support.zoom.us
+  port: 443
+  uuid: 5aafc2be-9348-4dec-b896-f4a91253bbca
+  tls: true
+  servername: support.zoom.us.yxls.eu.cc
+  network: ws
+  ws-opts:
+    path: /id-tksi
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+- name: US 🇺🇸 | @Raydikalx | 3645
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 3961
+  type: vmess
+  server: 38.91.107.49
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 南非+V2CROSS.COM
+- name: US 🇺🇸 | @Raydikalx | 3905
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: '>>@oneclickvpnkeys::US'
+  type: vless
+  server: 47.253.226.114
+  port: 443
+  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+  client-fingerprint: chrome
+- name: 🇺🇸_美国_525
+  type: vmess
+  server: 154.17.234.39
+  port: 2086
+  uuid: 7e25875e-50bb-47ed-9627-261e6d232f69
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: 7e25875e-50bb-47ed-9627-261e6d232f69-vm
+    headers:
+      Host: www.bing.com
+- name: 🇺🇸_美国_34
   type: vless
   server: 154.193.55.183
   port: 443
@@ -33,102 +92,42 @@ proxies:
     public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
     short-id: dbbe8dca27a92c35
   client-fingerprint: firefox
-- name: US 🇺🇸 | @Raydikalx | 3650
+- name: US 🇺🇸 | @Raydikalx | 3707
   type: vmess
-  server: 82.198.246.233
+  server: 216.106.185.141
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: Global 🌐 | @Raydikalx | 3638
+  type: vmess
+  server: 74.211.102.179
+  port: 20001
+  uuid: 7f5f0705-3dfb-4f56-9657-c95cade2ba83
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 3912
+  type: vmess
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: '@Feroxvpn_3'
-  type: vless
-  server: 93.152.205.216
-  port: 444
-  uuid: 0b9bcbc1-b289-4a64-86fa-a5b731b65384
-  tls: true
-  servername: web.max.ru
-  reality-opts:
-    public-key: X-YL5VNtlMNIaBrwaHt3hJCeF_gMT9gPRDDlK1Qg7Tc
-    short-id: 8321461729abcdef
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: web.max.ru
-- name: 🇺🇸_美国_41
-  type: vless
-  server: 38.65.90.102
-  port: 443
-  uuid: e884cba0-4621-4217-bbe4-9201d929cc26
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: nj5Q3jFyD23Rqw7PH8fAf6CQhJscPW99TT_1X2duVD4
-    short-id: 4ad04a90
-  client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | 1436
-  type: vmess
-  server: 165.140.216.142
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸_美国_54
-  type: vless
-  server: 69.63.204.31
-  port: 65264
-  uuid: 542bd1db-f5e7-4c81-a08a-d95da62a914b
-  flow: xtls-rprx-vision
-  tls: true
-  servername: apple.com
-  reality-opts:
-    public-key: GNAY_vQKIyS4dYA1nKevc4_2vCM2_ZhsT2N9VmhL1T8
-    short-id: a83e16b0
-  client-fingerprint: chrome
-- name: 🇺🇸_美国_527
-  type: vmess
-  server: 154.26.183.5
-  port: 8880
-  uuid: f4a047d5-f419-4e3f-9054-bd2a087e1dc2
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: f4a047d5-f419-4e3f-9054-bd2a087e1dc2-vm
-    headers:
-      Host: www.bing.com
-- name: CA 🇨🇦 | @Raydikalx | 3698
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸_美国_274
-  type: trojan
-  server: 66.81.247.27
-  port: 443
-  password: '521314'
-  sni: hhtj.hhllfly.kdns.fr
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - CA 🇨🇦 | @Raydikalx | 3714
-  - 南非+V2CROSS.COM
-  - US 🇺🇸 | @Raydikalx | 3650
-  - '@Feroxvpn_3'
-  - 🇺🇸_美国_41
-  - US 🇺🇸 | @Raydikalx | 1436
-  - 🇺🇸_美国_54
-  - 🇺🇸_美国_527
-  - CA 🇨🇦 | @Raydikalx | 3698
-  - 🇺🇸_美国_274
+  - US 🇺🇸 | @Raydikalx | 3690
+  - 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
+  - US 🇺🇸 | @Raydikalx | 3645
+  - US 🇺🇸 | @Raydikalx | 3961
+  - US 🇺🇸 | @Raydikalx | 3905
+  - '>>@oneclickvpnkeys::US'
+  - 🇺🇸_美国_525
+  - 🇺🇸_美国_34
+  - US 🇺🇸 | @Raydikalx | 3707
+  - Global 🌐 | @Raydikalx | 3638
+  - US 🇺🇸 | @Raydikalx | 3912
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
