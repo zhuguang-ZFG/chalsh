@@ -14,28 +14,58 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 1467
+- name: 🇺🇸_美国_28
+  type: vless
+  server: 154.193.55.183
+  port: 443
+  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
+  flow: xtls-rprx-vision
+  tls: true
+  servername: storage.yandex.net
+  reality-opts:
+    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
+    short-id: dbbe8dca27a92c35
+  client-fingerprint: firefox
+- name: US 🇺🇸 | @Raydikalx | 4380
+  type: vmess
+  server: 64.186.253.113
+  port: 2095
+  uuid: 3df54c90-5cc4-4a70-98f7-52245f25230b
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: 3df54c90-5cc4-4a70-98f7-52245f25230b-vm
+    headers:
+      Host: www.bing.com
+- name: 🇺🇸_美国_274
+  type: trojan
+  server: 66.81.247.27
+  port: 443
+  password: '521314'
+  sni: hhtj.hhllfly.kdns.fr
+  network: ws
+  ws-opts:
+    path: /pyip=Telegram-WangCai2🇨🇳
+    headers:
+      Host: hhtj.hhllfly.kdns.fr
+- name: US 🇺🇸 | @Raydikalx | 4402
+  type: vmess
+  server: 129.146.143.80
+  port: 48111
+  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 1599
   type: vmess
   server: 165.140.216.142
   port: 443
   uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
   alterId: 0
   cipher: auto
-- name: 🏳️_未知_136
-  type: vless
-  server: cf.877774.xyz
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  tls: true
-  servername: t1s1.rittbo.kdns.fr
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-- name: 🇺🇸_美国_398
+- name: 🏳️_未知_384
   type: trojan
-  server: 66.235.200.27
+  server: 8.34.70.27
   port: 443
   password: '521314'
   sni: hhtj.hhllfly.kdns.fr
@@ -44,49 +74,48 @@ proxies:
     path: /pyip=Telegram-WangCai2🇨🇳
     headers:
       Host: hhtj.hhllfly.kdns.fr
-- name: 🏳️_未知_199
+- name: 🇺🇸_美国_53
   type: vless
-  server: 1.rmgyvpn.rest
-  port: 443
-  uuid: 98262dbd-3606-437b-b12e-3f38ca62522f
+  server: 64.186.253.113
+  port: 54571
+  uuid: 3df54c90-5cc4-4a70-98f7-52245f25230b
+  flow: xtls-rprx-vision
   tls: true
-  servername: 1.rmgyvpn.rest
+  servername: apple.com
+  reality-opts:
+    public-key: ly3RP6YcYmLhCv8Dj4oBBut3ez2Pk0hOOQ11X-ipCUI
+    short-id: 705fb6cc
+  client-fingerprint: chrome
+- name: 🏳️_未知_544
+  type: vless
+  server: 172.65.90.52
+  port: 8880
+  uuid: 667a035b-6656-4a4f-a74c-8cd6a679f8d4
   network: ws
   ws-opts:
-    path: /ws-cdn
+    path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
-      Host: 1.rmgyvpn.rest
-- name: 🏳️_未知_385
-  type: trojan
-  server: 8.34.146.27
-  port: 443
-  password: '521314'
-  sni: hhtj.hhllfly.kdns.fr
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-- name: US 🇺🇸 | @Raydikalx | 4155
+      Host: winter-mode-7f4e.89-136.workers.dev
+- name: 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles🅿️ping:178ms
   type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 1467
-  - 🏳️_未知_136
-  - 🇺🇸_美国_398
-  - 🏳️_未知_199
-  - 🏳️_未知_385
-  - US 🇺🇸 | @Raydikalx | 4155
+  - 🇺🇸_美国_28
+  - US 🇺🇸 | @Raydikalx | 4380
+  - 🇺🇸_美国_274
+  - US 🇺🇸 | @Raydikalx | 4402
+  - US 🇺🇸 | @Raydikalx | 1599
+  - 🏳️_未知_384
+  - 🇺🇸_美国_53
+  - 🏳️_未知_544
+  - 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles🅿️ping:178ms
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
