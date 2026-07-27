@@ -14,18 +14,25 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸_美国_137
-  type: vless
-  server: 154.193.55.183
-  port: 443
-  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
-  flow: xtls-rprx-vision
-  tls: true
-  servername: storage.yandex.net
-  reality-opts:
-    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
-    short-id: dbbe8dca27a92c35
-  client-fingerprint: random
+- name: 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles🅿️ping:178ms
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: Global 🌐 | @Raydikalx | 3709
+  type: vmess
+  server: 154.17.238.183
+  port: 8880
+  uuid: b7479b73-8cea-4a82-97e8-bacf9bd86605
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: b7479b73-8cea-4a82-97e8-bacf9bd86605-vm
+    headers:
+      Host: www.bing.com
 - name: 🏳️_未知_308
   type: vless
   server: 104.16.148.8
@@ -38,20 +45,13 @@ proxies:
     path: /
     headers:
       Host: t1s1.rittbo.kdns.fr
-- name: US 🇺🇸 | @Raydikalx | 3734
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸_美国_137
+  - 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles🅿️ping:178ms
+  - Global 🌐 | @Raydikalx | 3709
   - 🏳️_未知_308
-  - US 🇺🇸 | @Raydikalx | 3734
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
