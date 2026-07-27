@@ -14,108 +14,43 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸_美国_28
+- name: 🆔soskeynet 🔒 VL-GRPC- 🇫🇮 FI 166ms
   type: vless
-  server: 154.193.55.183
-  port: 443
-  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
-  flow: xtls-rprx-vision
+  server: 170.168.97.3
+  port: 8443
+  uuid: 5e243126-4a2a-84b6-782a-73b14797fb5f
   tls: true
-  servername: storage.yandex.net
+  servername: download.nvidia.com
   reality-opts:
-    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
-    short-id: dbbe8dca27a92c35
-  client-fingerprint: firefox
-- name: US 🇺🇸 | @Raydikalx | 4380
-  type: vmess
-  server: 64.186.253.113
-  port: 2095
-  uuid: 3df54c90-5cc4-4a70-98f7-52245f25230b
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: 3df54c90-5cc4-4a70-98f7-52245f25230b-vm
-    headers:
-      Host: www.bing.com
-- name: 🇺🇸_美国_274
-  type: trojan
-  server: 66.81.247.27
-  port: 443
-  password: '521314'
-  sni: hhtj.hhllfly.kdns.fr
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-- name: US 🇺🇸 | @Raydikalx | 4402
-  type: vmess
-  server: 129.146.143.80
-  port: 48111
-  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 1599
-  type: vmess
-  server: 165.140.216.142
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-  alterId: 0
-  cipher: auto
-- name: 🏳️_未知_384
-  type: trojan
-  server: 8.34.70.27
-  port: 443
-  password: '521314'
-  sni: hhtj.hhllfly.kdns.fr
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram-WangCai2🇨🇳
-    headers:
-      Host: hhtj.hhllfly.kdns.fr
-- name: 🇺🇸_美国_53
-  type: vless
-  server: 64.186.253.113
-  port: 54571
-  uuid: 3df54c90-5cc4-4a70-98f7-52245f25230b
-  flow: xtls-rprx-vision
-  tls: true
-  servername: apple.com
-  reality-opts:
-    public-key: ly3RP6YcYmLhCv8Dj4oBBut3ez2Pk0hOOQ11X-ipCUI
-    short-id: 705fb6cc
+    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
   client-fingerprint: chrome
-- name: 🏳️_未知_544
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: GB 🇬🇧 | @Raydikalx | 3761
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 美国+CloudFlare节点
   type: vless
-  server: 172.65.90.52
+  server: deepl.com
   port: 8880
-  uuid: 667a035b-6656-4a4f-a74c-8cd6a679f8d4
+  uuid: 6d73dc1e-1627-4b16-b471-53e63aa16c78
   network: ws
   ws-opts:
     path: /pyip=ProxyIP.SG.CMLiussss.net
     headers:
-      Host: winter-mode-7f4e.89-136.workers.dev
-- name: 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles🅿️ping:178ms
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+      Host: sweet-truth-ccdb.134-7e9.workers.dev
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸_美国_28
-  - US 🇺🇸 | @Raydikalx | 4380
-  - 🇺🇸_美国_274
-  - US 🇺🇸 | @Raydikalx | 4402
-  - US 🇺🇸 | @Raydikalx | 1599
-  - 🏳️_未知_384
-  - 🇺🇸_美国_53
-  - 🏳️_未知_544
-  - 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles🅿️ping:178ms
+  - 🆔soskeynet 🔒 VL-GRPC- 🇫🇮 FI 166ms
+  - GB 🇬🇧 | @Raydikalx | 3761
+  - 美国+CloudFlare节点
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
