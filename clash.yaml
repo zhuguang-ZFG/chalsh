@@ -14,43 +14,44 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🆔soskeynet 🔒 VL-GRPC- 🇫🇮 FI 166ms
+- name: 🇺🇸_美国_137
   type: vless
-  server: 170.168.97.3
-  port: 8443
-  uuid: 5e243126-4a2a-84b6-782a-73b14797fb5f
+  server: 154.193.55.183
+  port: 443
+  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
+  flow: xtls-rprx-vision
   tls: true
-  servername: download.nvidia.com
+  servername: storage.yandex.net
   reality-opts:
-    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: GB 🇬🇧 | @Raydikalx | 3761
-  type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 美国+CloudFlare节点
+    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
+    short-id: dbbe8dca27a92c35
+  client-fingerprint: random
+- name: 🏳️_未知_308
   type: vless
-  server: deepl.com
-  port: 8880
-  uuid: 6d73dc1e-1627-4b16-b471-53e63aa16c78
+  server: 104.16.148.8
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  tls: true
+  servername: t1s1.rittbo.kdns.fr
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /
     headers:
-      Host: sweet-truth-ccdb.134-7e9.workers.dev
+      Host: t1s1.rittbo.kdns.fr
+- name: US 🇺🇸 | @Raydikalx | 3734
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🆔soskeynet 🔒 VL-GRPC- 🇫🇮 FI 166ms
-  - GB 🇬🇧 | @Raydikalx | 3761
-  - 美国+CloudFlare节点
+  - 🇺🇸_美国_137
+  - 🏳️_未知_308
+  - US 🇺🇸 | @Raydikalx | 3734
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
