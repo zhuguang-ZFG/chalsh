@@ -14,47 +14,6 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸_美国_162
-  type: vless
-  server: 154.193.55.183
-  port: 443
-  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
-  flow: xtls-rprx-vision
-  tls: true
-  servername: storage.yandex.net
-  reality-opts:
-    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
-    short-id: dbbe8dca27a92c35
-  client-fingerprint: random
-- name: 🇳🇱_荷兰_115
-  type: vless
-  server: 158.101.207.136
-  port: 62145
-  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-- name: 🇩🇪_德国_138
-  type: vless
-  server: 169.40.42.232
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: ios
-- name: 🇩🇪_德国_18
-  type: vless
-  server: 169.40.42.179
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: ios
 - name: 🇺🇸_美国_103
   type: vless
   server: 167.99.48.117
@@ -67,15 +26,24 @@ proxies:
     public-key: U1wgcKgoj-pgHELpRRsg1ghhsfgAlwkoPY-yu694VkY
     short-id: 6ba85179e30d4fc2
   client-fingerprint: chrome
+- name: 美国+CloudFlare节点
+  type: vless
+  server: ip.sb
+  port: 443
+  uuid: 29ca503d-e6b8-4509-b666-48133f450857
+  tls: true
+  servername: learn00.evany.de5.net
+  network: ws
+  ws-opts:
+    path: /fdip=tw.william.us.ci!txt
+    headers:
+      Host: learn00.evany.de5.net
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸_美国_162
-  - 🇳🇱_荷兰_115
-  - 🇩🇪_德国_138
-  - 🇩🇪_德国_18
   - 🇺🇸_美国_103
+  - 美国+CloudFlare节点
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
