@@ -26,47 +26,32 @@ proxies:
     public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
     short-id: dbbe8dca27a92c35
   client-fingerprint: random
-- name: US 🇺🇸 | @Raydikalx | 694
+- name: US 🇺🇸 | @Raydikalx | 3416
   type: vmess
-  server: 192.204.57.30
-  port: 443
-  uuid: 4da9adf3-8c0c-48a7-92ac-429c72a76ef8
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
-    path: /speed
-- name: 🆔v2ray1_ng 🔒 VL-GRPC- ❔ XX 146ms
-  type: vless
-  server: 31.77.131.97
-  port: 8444
-  uuid: b05346a9-4d13-41a4-8d2a-6b7b64e73ffc
-  tls: true
-  servername: cloudflare.com
-  reality-opts:
-    public-key: DYhUefVTZg0ol7QLdgp6hqcZ_TjIt02uoZk8iQz4WHM
-    short-id: d6b2e9f1a4c8d3f5
-  client-fingerprint: qq
-  network: grpc
-  grpc-opts:
-    grpc-service-name: auragrpc
-- name: 🇺🇸_美国_173
+    path: /cctv13.m3u8
+    headers:
+      Host: 129.146.77.248
+- name: 未知42
   type: vmess
-  server: guanwang.awsno.com
+  server: 165.140.216.142
   port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
   alterId: 0
   cipher: auto
-  tls: true
-  skip-cert-verify: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
   - 🇺🇸_美国_162
-  - US 🇺🇸 | @Raydikalx | 694
-  - 🆔v2ray1_ng 🔒 VL-GRPC- ❔ XX 146ms
-  - 🇺🇸_美国_173
+  - US 🇺🇸 | @Raydikalx | 3416
+  - 未知42
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
