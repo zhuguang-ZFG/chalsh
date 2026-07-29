@@ -14,44 +14,31 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸_美国_162
+- name: 🇺🇸_美国_61
   type: vless
   server: 154.193.55.183
   port: 443
-  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
+  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
   flow: xtls-rprx-vision
   tls: true
   servername: storage.yandex.net
   reality-opts:
     public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
-    short-id: dbbe8dca27a92c35
-  client-fingerprint: random
-- name: US 🇺🇸 | @Raydikalx | 3416
+    short-id: c76ba2c2fb172e8b
+  client-fingerprint: firefox
+- name: 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles🅿️ping:178ms
   type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 129.146.77.248
-- name: 未知42
-  type: vmess
-  server: 165.140.216.142
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸_美国_162
-  - US 🇺🇸 | @Raydikalx | 3416
-  - 未知42
+  - 🇺🇸_美国_61
+  - 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles🅿️ping:178ms
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
