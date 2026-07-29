@@ -14,26 +14,34 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 61EC2C
+- name: US 🇺🇸 | @Raydikalx | D39BB5
   type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 48AF8D
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 129.146.77.248
+- name: US 🇺🇸 | @Raydikalx | A4A62F
   type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 192.204.57.30
+  port: 443
+  uuid: 4da9adf3-8c0c-48a7-92ac-429c72a76ef8
   alterId: 0
   cipher: auto
+  network: ws
+  ws-opts:
+    path: /speed
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 61EC2C
-  - US 🇺🇸 | @Raydikalx | 48AF8D
+  - US 🇺🇸 | @Raydikalx | D39BB5
+  - US 🇺🇸 | @Raydikalx | A4A62F
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
