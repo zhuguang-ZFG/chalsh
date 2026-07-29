@@ -14,46 +14,18 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🆔v2ray1_ng 🔒 VL-GRPC- ❔ XX 146ms
-  type: vless
-  server: 31.77.131.97
-  port: 8444
-  uuid: b05346a9-4d13-41a4-8d2a-6b7b64e73ffc
-  tls: true
-  servername: cloudflare.com
-  reality-opts:
-    public-key: DYhUefVTZg0ol7QLdgp6hqcZ_TjIt02uoZk8iQz4WHM
-    short-id: d6b2e9f1a4c8d3f5
-  client-fingerprint: qq
-  network: grpc
-  grpc-opts:
-    grpc-service-name: auragrpc
-- name: US 🇺🇸 | @Raydikalx | C7D66A
+- name: US 🇺🇸 | @Raydikalx | A57557
   type: vmess
-  server: 154.17.234.39
-  port: 2086
-  uuid: 7e25875e-50bb-47ed-9627-261e6d232f69
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: 7e25875e-50bb-47ed-9627-261e6d232f69-vm
-    headers:
-      Host: www.bing.com
-- name: US 🇺🇸 | @Raydikalx | CD1C34
-  type: vmess
-  server: 165.140.216.142
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  server: 216.106.183.35
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🆔v2ray1_ng 🔒 VL-GRPC- ❔ XX 146ms
-  - US 🇺🇸 | @Raydikalx | C7D66A
-  - US 🇺🇸 | @Raydikalx | CD1C34
+  - US 🇺🇸 | @Raydikalx | A57557
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
