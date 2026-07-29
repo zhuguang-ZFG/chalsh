@@ -14,44 +14,46 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸_美国_34
+- name: 🆔v2ray1_ng 🔒 VL-GRPC- ❔ XX 146ms
   type: vless
-  server: us1.mifbot.pro
-  port: 443
-  uuid: 11113f77-b439-4911-a8dd-414d2ee36b59
-  flow: xtls-rprx-vision
+  server: 31.77.131.97
+  port: 8444
+  uuid: b05346a9-4d13-41a4-8d2a-6b7b64e73ffc
   tls: true
-  servername: deepl.com
+  servername: cloudflare.com
   reality-opts:
-    public-key: Jpmm2Xjanq6p0n9EPshmmR8yjuO38NW3280_zCK3XSs
-    short-id: f0bde8d1c9247efe
-  client-fingerprint: firefox
-- name: 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Santa Clara🅿️ping:148.39ms
+    public-key: DYhUefVTZg0ol7QLdgp6hqcZ_TjIt02uoZk8iQz4WHM
+    short-id: d6b2e9f1a4c8d3f5
+  client-fingerprint: qq
+  network: grpc
+  grpc-opts:
+    grpc-service-name: auragrpc
+- name: US 🇺🇸 | @Raydikalx | C7D66A
   type: vmess
-  server: 216.106.185.141
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 154.17.234.39
+  port: 2086
+  uuid: 7e25875e-50bb-47ed-9627-261e6d232f69
   alterId: 0
   cipher: auto
-- name: 🏳️_未知_196
-  type: vless
-  server: 104.17.24.8
-  port: 443
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: true
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
   network: ws
   ws-opts:
-    path: /
+    path: 7e25875e-50bb-47ed-9627-261e6d232f69-vm
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: www.bing.com
+- name: US 🇺🇸 | @Raydikalx | CD1C34
+  type: vmess
+  server: 165.140.216.142
+  port: 443
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸_美国_34
-  - 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Santa Clara🅿️ping:148.39ms
-  - 🏳️_未知_196
+  - 🆔v2ray1_ng 🔒 VL-GRPC- ❔ XX 146ms
+  - US 🇺🇸 | @Raydikalx | C7D66A
+  - US 🇺🇸 | @Raydikalx | CD1C34
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
