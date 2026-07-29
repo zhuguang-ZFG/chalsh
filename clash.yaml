@@ -14,34 +14,79 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | D39BB5
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 129.146.77.248
-- name: US 🇺🇸 | @Raydikalx | A4A62F
-  type: vmess
-  server: 192.204.57.30
+- name: 🆔configx2ray 🔒 VL-GRPC- ❔ XX 90ms
+  type: vless
+  server: 185.68.184.237
   port: 443
-  uuid: 4da9adf3-8c0c-48a7-92ac-429c72a76ef8
+  uuid: b0f08ae1-7cf9-4612-ad61-72681e0b92da
+  tls: true
+  servername: google.com
+  reality-opts:
+    public-key: kPBXTe2KCp55GrHS_qU_sF7ohUcT8Vu-e8i6Yd9MERI
+    short-id: d5c7f84e37e0c12d
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: data-sync
+- name: 🇺🇸_美国_53
+  type: vless
+  server: 154.193.55.183
+  port: 443
+  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+  flow: xtls-rprx-vision
+  tls: true
+  servername: storage.yandex.net
+  reality-opts:
+    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
+    short-id: c76ba2c2fb172e8b
+  client-fingerprint: chrome
+- name: 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles🅿️ping:178ms
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-  network: ws
-  ws-opts:
-    path: /speed
+- name: GB 🇬🇧 | @Raydikalx | 5B2BD1
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 8ms
+  type: vless
+  server: 137.184.218.169
+  port: 36925
+  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
+  client-fingerprint: chrome
+- name: 每天更新，请加电报群防止失联
+  type: vless
+  server: a1.amazontradinghub.com
+  port: 443
+  uuid: 55ea14cb-f077-47e0-852b-9a94d7a52605
+  flow: xtls-rprx-vision
+  tls: true
+  servername: m.media-amazon.com
+  reality-opts:
+    public-key: zCeRZCK7gCGFmPlOzBaTWHVkmysMFJlPqgDTPZRjRx0
+    short-id: 6ba85179e30d4fc2
+  client-fingerprint: chrome
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | D39BB5
-  - US 🇺🇸 | @Raydikalx | A4A62F
+  - 🆔configx2ray 🔒 VL-GRPC- ❔ XX 90ms
+  - 🇺🇸_美国_53
+  - 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles🅿️ping:178ms
+  - GB 🇬🇧 | @Raydikalx | 5B2BD1
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 8ms
+  - 每天更新，请加电报群防止失联
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
