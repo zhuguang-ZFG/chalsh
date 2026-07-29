@@ -14,91 +14,26 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 510D7C
+- name: US 🇺🇸 | @Raydikalx | 61EC2C
   type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | D39BB5
+- name: US 🇺🇸 | @Raydikalx | 48AF8D
   type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 129.146.77.248
-- name: 🏳️_未知_423
-  type: vless
-  server: ad-013.pixel9xdmq.info
-  port: 8443
-  uuid: 304a1e62-eb26-4b44-994e-b96a70fff9b4
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-- name: CA 🇨🇦 | @Raydikalx | 9DD6DE
-  type: vmess
-  server: 158.51.121.63
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: seribus.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: seribus.org
-- name: 🇺🇸_美国_32
-  type: vless
-  server: 88.218.44.4
-  port: 993
-  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
-  flow: xtls-rprx-vision
-  tls: true
-  servername: dl.google.com
-  reality-opts:
-    public-key: Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8
-  client-fingerprint: chrome
-- name: 🆔v2ray1_ng 🔒 VL-GRPC- ❔ XX 114ms
-  type: vless
-  server: 170.168.97.3
-  port: 8443
-  uuid: 5e243126-4a2a-84b6-782a-73b14797fb5f
-  tls: true
-  servername: download.nvidia.com
-  reality-opts:
-    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: US 🇺🇸 | @Raydikalx | C0A390
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 510D7C
-  - US 🇺🇸 | @Raydikalx | D39BB5
-  - 🏳️_未知_423
-  - CA 🇨🇦 | @Raydikalx | 9DD6DE
-  - 🇺🇸_美国_32
-  - 🆔v2ray1_ng 🔒 VL-GRPC- ❔ XX 114ms
-  - US 🇺🇸 | @Raydikalx | C0A390
+  - US 🇺🇸 | @Raydikalx | 61EC2C
+  - US 🇺🇸 | @Raydikalx | 48AF8D
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
