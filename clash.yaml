@@ -14,31 +14,44 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸_美国_61
+- name: 🇺🇸_美国_34
   type: vless
-  server: 154.193.55.183
+  server: us1.mifbot.pro
   port: 443
-  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+  uuid: 11113f77-b439-4911-a8dd-414d2ee36b59
   flow: xtls-rprx-vision
   tls: true
-  servername: storage.yandex.net
+  servername: deepl.com
   reality-opts:
-    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
-    short-id: c76ba2c2fb172e8b
+    public-key: Jpmm2Xjanq6p0n9EPshmmR8yjuO38NW3280_zCK3XSs
+    short-id: f0bde8d1c9247efe
   client-fingerprint: firefox
-- name: 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles🅿️ping:178ms
+- name: 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Santa Clara🅿️ping:148.39ms
   type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 216.106.185.141
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
+- name: 🏳️_未知_196
+  type: vless
+  server: 104.17.24.8
+  port: 443
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  tls: true
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸_美国_61
-  - 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Los Angeles🅿️ping:178ms
+  - 🇺🇸_美国_34
+  - 👉🆔@v2ray_configs_pool📡🇺🇸®️United States©️Santa Clara🅿️ping:148.39ms
+  - 🏳️_未知_196
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
