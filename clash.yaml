@@ -14,18 +14,76 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 076263
+- name: US 🇺🇸 | @Raydikalx | C0A390
   type: vmess
-  server: 169.197.142.22
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 172ms
+  type: vless
+  server: net1.wizardx1.com
+  port: 2045
+  uuid: 8ba5361f-2d12-40fe-9f33-eca6847f1475
+  tls: true
+  servername: icloud.com
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: xyz
+- name: 🆔v2ray1_ng 🔒 VL-GRPC- ❔ XX 113ms
+  type: vless
+  server: 170.168.97.3
+  port: 8443
+  uuid: 5e243126-4a2a-84b6-782a-73b14797fb5f
+  tls: true
+  servername: download.nvidia.com
+  reality-opts:
+    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: CA 🇨🇦 | @Raydikalx | 0BB678
+  type: vmess
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
+- name: 美国+CloudFlare节点
+  type: vless
+  server: deepl.com
+  port: 8880
+  uuid: f15a5586-23f6-453f-97f5-c301b949e699
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: mute-sunset-0849.40-aeb.workers.dev
+- name: US
+  type: vmess
+  server: 64.186.253.113
+  port: 2095
+  uuid: 3df54c90-5cc4-4a70-98f7-52245f25230b
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: 3df54c90-5cc4-4a70-98f7-52245f25230b-vm
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 076263
+  - US 🇺🇸 | @Raydikalx | C0A390
+  - 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 172ms
+  - 🆔v2ray1_ng 🔒 VL-GRPC- ❔ XX 113ms
+  - CA 🇨🇦 | @Raydikalx | 0BB678
+  - 美国+CloudFlare节点
+  - US
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
