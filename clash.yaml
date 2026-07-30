@@ -14,71 +14,45 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 48ms
-  type: vless
-  server: 15.204.97.206
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | 91742A
+- name: US 🇺🇸 | @Raydikalx | CEA7F1
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸_美国_101
-  type: vless
-  server: 88.218.44.4
-  port: 993
-  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
-  flow: xtls-rprx-vision
-  tls: true
-  servername: dl.google.com
-  reality-opts:
-    public-key: Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8
-  client-fingerprint: chrome
-- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 93ms
-  type: vless
-  server: 70.39.178.231
-  port: 46197
-  uuid: 5aab0d40-c509-4560-b048-ade921fdfb6a
-  tls: true
-  servername: updates.cdn-apple.com
-  reality-opts:
-    public-key: npJEB6VpYJ9iYTZ-z0IL06Xs7PEz0N3fZU_IRwftQ00
-    short-id: f24c17bb7fc284
-  client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | 549733
+- name: CA 🇨🇦 | @Raydikalx | 0BB678
   type: vmess
-  server: 129.146.143.80
-  port: 48111
-  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 44DCF4
-  type: vmess
-  server: 38.91.107.49
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 510D7C
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 4DA029
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 48ms
-  - US 🇺🇸 | @Raydikalx | 91742A
-  - 🇺🇸_美国_101
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 93ms
-  - US 🇺🇸 | @Raydikalx | 549733
-  - US 🇺🇸 | @Raydikalx | 44DCF4
+  - US 🇺🇸 | @Raydikalx | CEA7F1
+  - CA 🇨🇦 | @Raydikalx | 0BB678
+  - US 🇺🇸 | @Raydikalx | 510D7C
+  - US 🇺🇸 | @Raydikalx | 4DA029
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
