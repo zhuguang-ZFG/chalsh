@@ -14,6 +14,20 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
+- name: US 🇺🇸 | @Raydikalx | B94E7F
+  type: vmess
+  server: 216.106.185.141
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 9192D6
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 - name: US 🇺🇸 | @Raydikalx | 44DCF4
   type: vmess
   server: 38.91.107.49
@@ -21,29 +35,70 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 2A93E9
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸_美国_120
-  type: vmess
-  server: guanwang.awsno.com
+- name: 🆔configfa 🔒 VL-TCP- ❔ XX 27ms
+  type: vless
+  server: 47.253.226.114
   port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+  client-fingerprint: chrome
+- name: 🇨🇦@FreakConfig
+  type: vmess
+  server: 158.51.121.63
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
   tls: true
+  servername: seribus.org
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: seribus.org
+- name: 美国+CloudFlare节点
+  type: vless
+  server: orange.seeck.cn
+  port: 443
+  uuid: 29ca503d-e6b8-4509-b666-48133f450857
+  tls: true
+  servername: learn00.evany.de5.net
+  network: ws
+  ws-opts:
+    path: /fdip
+    headers:
+      Host: learn00.evany.de5.net
+- name: US 🇺🇸 | @Raydikalx | A57557
+  type: vmess
+  server: 216.106.183.35
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 48AF8D
+  type: vmess
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
+  - US 🇺🇸 | @Raydikalx | B94E7F
+  - US 🇺🇸 | @Raydikalx | 9192D6
   - US 🇺🇸 | @Raydikalx | 44DCF4
-  - US 🇺🇸 | @Raydikalx | 2A93E9
-  - 🇺🇸_美国_120
+  - 🆔configfa 🔒 VL-TCP- ❔ XX 27ms
+  - 🇨🇦@FreakConfig
+  - 美国+CloudFlare节点
+  - US 🇺🇸 | @Raydikalx | A57557
+  - US 🇺🇸 | @Raydikalx | 48AF8D
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
