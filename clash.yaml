@@ -14,44 +14,36 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US8
+- name: US 🇺🇸 | @Raydikalx | 44DCF4
   type: vmess
-  server: 154.17.234.39
-  port: 2086
-  uuid: 7e25875e-50bb-47ed-9627-261e6d232f69
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-  network: ws
-  ws-opts:
-    path: /7e25875e-50bb-47ed-9627-261e6d232f69-vm
-    headers:
-      Host: www.bing.com
-- name: 🇺🇸_美国_116
-  type: vless
-  server: 154.193.55.183
-  port: 443
-  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
-  flow: xtls-rprx-vision
-  tls: true
-  servername: storage.yandex.net
-  reality-opts:
-    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
-    short-id: dbbe8dca27a92c35
-  client-fingerprint: firefox
-- name: US 🇺🇸 | @Raydikalx | C0A390
+- name: US 🇺🇸 | @Raydikalx | 2A93E9
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
+- name: 🇺🇸_美国_120
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US8
-  - 🇺🇸_美国_116
-  - US 🇺🇸 | @Raydikalx | C0A390
+  - US 🇺🇸 | @Raydikalx | 44DCF4
+  - US 🇺🇸 | @Raydikalx | 2A93E9
+  - 🇺🇸_美国_120
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
