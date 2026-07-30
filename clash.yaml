@@ -14,76 +14,39 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | C0A390
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 172ms
+- name: 🇺🇸_美国_21
   type: vless
-  server: net1.wizardx1.com
-  port: 2045
-  uuid: 8ba5361f-2d12-40fe-9f33-eca6847f1475
+  server: 154.193.55.183
+  port: 443
+  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+  flow: xtls-rprx-vision
   tls: true
-  servername: icloud.com
+  servername: storage.yandex.net
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: xyz
-- name: 🆔v2ray1_ng 🔒 VL-GRPC- ❔ XX 113ms
-  type: vless
-  server: 170.168.97.3
-  port: 8443
-  uuid: 5e243126-4a2a-84b6-782a-73b14797fb5f
-  tls: true
-  servername: download.nvidia.com
-  reality-opts:
-    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: CA 🇨🇦 | @Raydikalx | 0BB678
+    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
+    short-id: c76ba2c2fb172e8b
+  client-fingerprint: firefox
+- name: US 🇺🇸 | @Raydikalx | 076263
   type: vmess
-  server: 23.162.200.198
+  server: 169.197.142.22
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 美国+CloudFlare节点
-  type: vless
-  server: deepl.com
-  port: 8880
-  uuid: f15a5586-23f6-453f-97f5-c301b949e699
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: mute-sunset-0849.40-aeb.workers.dev
-- name: US
+- name: US 🇺🇸 | @Raydikalx | 48AF8D
   type: vmess
-  server: 64.186.253.113
-  port: 2095
-  uuid: 3df54c90-5cc4-4a70-98f7-52245f25230b
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-  network: ws
-  ws-opts:
-    path: 3df54c90-5cc4-4a70-98f7-52245f25230b-vm
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | C0A390
-  - 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 172ms
-  - 🆔v2ray1_ng 🔒 VL-GRPC- ❔ XX 113ms
-  - CA 🇨🇦 | @Raydikalx | 0BB678
-  - 美国+CloudFlare节点
-  - US
+  - 🇺🇸_美国_21
+  - US 🇺🇸 | @Raydikalx | 076263
+  - US 🇺🇸 | @Raydikalx | 48AF8D
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
