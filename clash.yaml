@@ -14,56 +14,31 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 美国+CloudFlare节点
-  type: vless
-  server: cf.9999669.xyz
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
-  tls: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: US 🇺🇸 | @Raydikalx | 5D5BC2
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 31ms
-  type: vless
-  server: 15.204.97.206
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: 未知64
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸_美国_61
+- name: 🇺🇸_美国_70
   type: vless
   server: 154.193.55.183
   port: 443
-  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
+  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
   flow: xtls-rprx-vision
   tls: true
   servername: storage.yandex.net
   reality-opts:
     public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
-    short-id: dbbe8dca27a92c35
+    short-id: c76ba2c2fb172e8b
   client-fingerprint: chrome
+- name: '@Daily_Configs'
+  type: vless
+  server: one-for-all.levikogjgfdd.ir
+  port: 443
+  uuid: 29ca503d-e6b8-4509-b666-48133f450857
+  tls: true
+  servername: learn00.evany.de5.net
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /fdip
+    headers:
+      Host: learn00.evany.de5.net
 - name: US 🇺🇸 | @Raydikalx | D5C520
   type: vmess
   server: 82.198.246.233
@@ -75,11 +50,8 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 美国+CloudFlare节点
-  - US 🇺🇸 | @Raydikalx | 5D5BC2
-  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 31ms
-  - 未知64
-  - 🇺🇸_美国_61
+  - 🇺🇸_美国_70
+  - '@Daily_Configs'
   - US 🇺🇸 | @Raydikalx | D5C520
   url: https://www.gstatic.com/generate_204
   interval: 300
