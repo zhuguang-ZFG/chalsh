@@ -14,34 +14,40 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸_美国_70
+- name: 🇺🇸_美国_61
   type: vless
   server: 154.193.55.183
   port: 443
-  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
   flow: xtls-rprx-vision
   tls: true
   servername: storage.yandex.net
   reality-opts:
     public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
-    short-id: c76ba2c2fb172e8b
+    short-id: dbbe8dca27a92c35
   client-fingerprint: chrome
-- name: '@Daily_Configs'
-  type: vless
-  server: one-for-all.levikogjgfdd.ir
-  port: 443
-  uuid: 29ca503d-e6b8-4509-b666-48133f450857
-  tls: true
-  servername: learn00.evany.de5.net
-  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | C9A050
+  type: vmess
+  server: 64.186.253.113
+  port: 2095
+  uuid: 3df54c90-5cc4-4a70-98f7-52245f25230b
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /fdip
+    path: 3df54c90-5cc4-4a70-98f7-52245f25230b-vm
     headers:
-      Host: learn00.evany.de5.net
-- name: US 🇺🇸 | @Raydikalx | D5C520
+      Host: www.bing.com
+- name: CA 🇨🇦 | @Raydikalx | 4BA3A6
   type: vmess
-  server: 82.198.246.233
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 642933
+  type: vmess
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -50,9 +56,10 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸_美国_70
-  - '@Daily_Configs'
-  - US 🇺🇸 | @Raydikalx | D5C520
+  - 🇺🇸_美国_61
+  - US 🇺🇸 | @Raydikalx | C9A050
+  - CA 🇨🇦 | @Raydikalx | 4BA3A6
+  - US 🇺🇸 | @Raydikalx | 642933
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
