@@ -14,51 +14,57 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
-  type: vless
-  server: one-for-all.levikogjgfdd.ir
-  port: 443
-  uuid: 29ca503d-e6b8-4509-b666-48133f450857
-  tls: true
-  servername: learn00.evany.de5.net
-  network: ws
-  ws-opts:
-    path: /fdip
-    headers:
-      Host: learn00.evany.de5.net
-- name: CA 🇨🇦 | @Raydikalx | 1755A5
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🆔configfa 🔒 VL-TCP- ❔ XX 27ms
-  type: vless
-  server: 47.253.226.114
-  port: 443
-  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
-  client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | F9CD48
+- name: US 🇺🇸 | @Raydikalx | 9616E9
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
+- name: 未知84
+  type: vmess
+  server: 158.51.121.63
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: seribus.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: seribus.org
+- name: 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 163ms
+  type: vless
+  server: 152.233.41.31
+  port: 16923
+  uuid: b8e74de0-42c6-4b84-8889-bf348f32730c
+  tls: true
+  servername: mail.yandex.ru
+  reality-opts:
+    public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
+    short-id: 10ffb85da1c2d986
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-service-name: neurex
+- name: US 🇺🇸 | @Raydikalx | C66890
+  type: vmess
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
-  - CA 🇨🇦 | @Raydikalx | 1755A5
-  - 🆔configfa 🔒 VL-TCP- ❔ XX 27ms
-  - US 🇺🇸 | @Raydikalx | F9CD48
+  - US 🇺🇸 | @Raydikalx | 9616E9
+  - 未知84
+  - 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 163ms
+  - US 🇺🇸 | @Raydikalx | C66890
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
