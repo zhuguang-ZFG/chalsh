@@ -14,45 +14,69 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | CEA7F1
+- name: 美国+CloudFlare节点
+  type: vless
+  server: 104.17.191.15
+  port: 8880
+  uuid: adcce8be-9de7-41bd-abcd-52939cec108b
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: fancy-haze-ab00.236-68b.workers.dev
+- name: 🇺🇸_美国_91
+  type: vless
+  server: 154.193.55.183
+  port: 443
+  uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+  flow: xtls-rprx-vision
+  tls: true
+  servername: storage.yandex.net
+  reality-opts:
+    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
+    short-id: c76ba2c2fb172e8b
+  client-fingerprint: firefox
+- name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 48ms
+  type: vless
+  server: 15.204.97.206
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
+- name: 🇺🇸_美国_52
+  type: vless
+  server: 180.178.60.252
+  port: 10000
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+- name: US 🇺🇸 | @Raydikalx | A57557
   type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 216.106.183.35
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | 0BB678
+- name: US 🇺🇸 | @Raydikalx | 2D1DC4
   type: vmess
-  server: 23.162.200.198
+  server: 67.220.95.3
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 510D7C
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 4DA029
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
+  cipher: aes-128-gcm
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | CEA7F1
-  - CA 🇨🇦 | @Raydikalx | 0BB678
-  - US 🇺🇸 | @Raydikalx | 510D7C
-  - US 🇺🇸 | @Raydikalx | 4DA029
+  - 美国+CloudFlare节点
+  - 🇺🇸_美国_91
+  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 48ms
+  - 🇺🇸_美国_52
+  - US 🇺🇸 | @Raydikalx | A57557
+  - US 🇺🇸 | @Raydikalx | 2D1DC4
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
