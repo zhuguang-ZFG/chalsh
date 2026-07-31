@@ -14,57 +14,73 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 9616E9
+- name: 美国+CloudFlare节点
+  type: vless
+  server: cf.9999669.xyz
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: US 🇺🇸 | @Raydikalx | 5D5BC2
   type: vmess
-  server: 82.198.246.37
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 未知84
-  type: vmess
-  server: 158.51.121.63
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: seribus.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: seribus.org
-- name: 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 163ms
+- name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 31ms
   type: vless
-  server: 152.233.41.31
-  port: 16923
-  uuid: b8e74de0-42c6-4b84-8889-bf348f32730c
+  server: 15.204.97.206
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
   tls: true
-  servername: mail.yandex.ru
+  servername: fuck.rkn
   reality-opts:
-    public-key: _QeslG3rHGM7DoM99pYC8-jpc16pM2MbNZ6NRMoxmHA
-    short-id: 10ffb85da1c2d986
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: neurex
-- name: US 🇺🇸 | @Raydikalx | C66890
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
+- name: 未知64
   type: vmess
-  server: 169.197.142.22
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸_美国_61
+  type: vless
+  server: 154.193.55.183
+  port: 443
+  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
+  flow: xtls-rprx-vision
+  tls: true
+  servername: storage.yandex.net
+  reality-opts:
+    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
+    short-id: dbbe8dca27a92c35
+  client-fingerprint: chrome
+- name: US 🇺🇸 | @Raydikalx | D5C520
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 9616E9
-  - 未知84
-  - 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 163ms
-  - US 🇺🇸 | @Raydikalx | C66890
+  - 美国+CloudFlare节点
+  - US 🇺🇸 | @Raydikalx | 5D5BC2
+  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 31ms
+  - 未知64
+  - 🇺🇸_美国_61
+  - US 🇺🇸 | @Raydikalx | D5C520
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
