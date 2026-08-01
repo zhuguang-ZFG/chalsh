@@ -14,40 +14,70 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸_美国_61
+- name: 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 150ms
   type: vless
-  server: 154.193.55.183
-  port: 443
-  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
-  flow: xtls-rprx-vision
+  server: 83.228.197.195
+  port: 8082
+  uuid: b4bc10bf-80f9-40c9-b4e5-29817c2f0992
   tls: true
-  servername: storage.yandex.net
+  servername: id.vk.com
   reality-opts:
-    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
-    short-id: dbbe8dca27a92c35
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | C9A050
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless-grpc-reality
+- name: US 🇺🇸 | @Raydikalx | DBC3FD
   type: vmess
-  server: 64.186.253.113
-  port: 2095
-  uuid: 3df54c90-5cc4-4a70-98f7-52245f25230b
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-  network: ws
-  ws-opts:
-    path: 3df54c90-5cc4-4a70-98f7-52245f25230b-vm
-    headers:
-      Host: www.bing.com
-- name: CA 🇨🇦 | @Raydikalx | 4BA3A6
+- name: 🇺🇸_美国_25
+  type: vless
+  server: 154.17.239.145
+  port: 443
+  uuid: f5692768-5288-43c6-8cef-341dde6344a5
+  flow: xtls-rprx-vision
+  tls: true
+  servername: learn.microsoft.com
+  reality-opts:
+    public-key: cFOObXBY1O7-LqMqwQ4qDbRdH104xyMb6XwrNHuCkho
+  client-fingerprint: chrome
+- name: 🇺🇸_美国_67
+  type: vless
+  server: 88.218.44.4
+  port: 993
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+  flow: xtls-rprx-vision
+  tls: true
+  servername: swcdn.apple.com
+  reality-opts:
+    public-key: Nnpwm8dqFl9dlMJmg0M9G11vmgCKzNagFTn4tH4sWy4
+  client-fingerprint: chrome
+- name: US 🇺🇸 | @Raydikalx | 3A610C
   type: vmess
-  server: 23.162.200.198
+  server: 38.91.107.49
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 642933
+- name: 🇦🇪_阿拉伯联合酋长国_108
+  type: vless
+  server: sha3.o4ka-internet.com
+  port: 443
+  uuid: a03df445-0666-4d61-acde-9705009e409c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: sha3.o4ka-internet.com
+  reality-opts:
+    public-key: V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8
+    short-id: 5629431325884ff0
+  client-fingerprint: random
+- name: US 🇺🇸 | @Raydikalx | 761214
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -56,10 +86,13 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸_美国_61
-  - US 🇺🇸 | @Raydikalx | C9A050
-  - CA 🇨🇦 | @Raydikalx | 4BA3A6
-  - US 🇺🇸 | @Raydikalx | 642933
+  - 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 150ms
+  - US 🇺🇸 | @Raydikalx | DBC3FD
+  - 🇺🇸_美国_25
+  - 🇺🇸_美国_67
+  - US 🇺🇸 | @Raydikalx | 3A610C
+  - 🇦🇪_阿拉伯联合酋长国_108
+  - US 🇺🇸 | @Raydikalx | 761214
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
