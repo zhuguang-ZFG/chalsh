@@ -14,7 +14,14 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸_美国_101
+- name: US 🇺🇸 | @Raydikalx | BA43A3
+  type: vmess
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸_美国_44
   type: vless
   server: 154.193.55.183
   port: 443
@@ -25,37 +32,21 @@ proxies:
   reality-opts:
     public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
     short-id: dbbe8dca27a92c35
-  client-fingerprint: firefox
-- name: '@Daily_Configs'
-  type: vless
-  server: one-for-all.levikogjgfdd.ir
-  port: 443
-  uuid: 29ca503d-e6b8-4509-b666-48133f450857
-  tls: true
-  servername: learn00.evany.de5.net
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fdip
-    headers:
-      Host: learn00.evany.de5.net
-- name: 🏳️_未知_116
-  type: vless
-  server: nmslfangbinxing.pusytroller.gq
-  port: 2095
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nmslfangbinxing.pusytroller.gq
+  client-fingerprint: chrome
+- name: CA 🇨🇦 | @Raydikalx | 4BA3A6
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸_美国_101
-  - '@Daily_Configs'
-  - 🏳️_未知_116
+  - US 🇺🇸 | @Raydikalx | BA43A3
+  - 🇺🇸_美国_44
+  - CA 🇨🇦 | @Raydikalx | 4BA3A6
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
