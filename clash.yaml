@@ -14,34 +14,93 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 3B1D0A
+- name: 🇺🇸_美国_48
+  type: vless
+  server: 88.218.44.4
+  port: 993
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+  flow: xtls-rprx-vision
+  tls: true
+  servername: download.nvidia.com
+  reality-opts:
+    public-key: EG3y7UktGRlzSZZ2oXT_YaO2gVP4ca3Xe6AQ0u9A5DQ
+  client-fingerprint: chrome
+- name: 🇺🇸_美国_60
+  type: vless
+  server: 154.193.55.183
+  port: 443
+  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
+  flow: xtls-rprx-vision
+  tls: true
+  servername: storage.yandex.net
+  reality-opts:
+    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
+    short-id: dbbe8dca27a92c35
+  client-fingerprint: random
+- name: US 🇺🇸 | @Raydikalx | D2935F
   type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: cg1c02.waimaojd.com
+  port: 443
+  uuid: 332774e5-9371-48bb-b518-1fe56c7268da
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | C5987F
+  tls: true
+  servername: cg1c02.waimaojd.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      Host: cg1c02.waimaojd.com
+- name: 🇼🇸 CDN
+  type: vless
+  server: millionaire.levikogjgfdd.ir
+  port: 443
+  uuid: 29ca503d-e6b8-4509-b666-48133f450857
+  tls: true
+  servername: learn00.evany.de5.net
+  network: ws
+  ws-opts:
+    path: /fdip
+    headers:
+      Host: learn00.evany.de5.net
+- name: US 🇺🇸 | @Raydikalx | 5552BD
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: GB 🇬🇧 | @Raydikalx | 1CCC9A
+- name: US 🇺🇸 | @Raydikalx | 8CDB07
   type: vmess
-  server: 66.163.117.58
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 165.140.216.142
+  port: 443
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
   alterId: 0
   cipher: auto
+- name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 16ms
+  type: vless
+  server: 15.204.97.206
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 3B1D0A
-  - US 🇺🇸 | @Raydikalx | C5987F
-  - GB 🇬🇧 | @Raydikalx | 1CCC9A
+  - 🇺🇸_美国_48
+  - 🇺🇸_美国_60
+  - US 🇺🇸 | @Raydikalx | D2935F
+  - 🇼🇸 CDN
+  - US 🇺🇸 | @Raydikalx | 5552BD
+  - US 🇺🇸 | @Raydikalx | 8CDB07
+  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 16ms
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
