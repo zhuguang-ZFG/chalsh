@@ -14,42 +14,48 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 66526B
-  type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: aes-128-gcm
-- name: US 🇺🇸 | @Raydikalx | 101269
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | 577620
-  type: vmess
-  server: 158.51.121.63
+- name: 🇺🇸_美国_101
+  type: vless
+  server: 154.193.55.183
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
+  flow: xtls-rprx-vision
   tls: true
-  servername: seribus.org
+  servername: storage.yandex.net
+  reality-opts:
+    public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
+    short-id: dbbe8dca27a92c35
+  client-fingerprint: firefox
+- name: '@Daily_Configs'
+  type: vless
+  server: one-for-all.levikogjgfdd.ir
+  port: 443
+  uuid: 29ca503d-e6b8-4509-b666-48133f450857
+  tls: true
+  servername: learn00.evany.de5.net
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: linkvws
+    path: /fdip
     headers:
-      Host: seribus.org
+      Host: learn00.evany.de5.net
+- name: 🏳️_未知_116
+  type: vless
+  server: nmslfangbinxing.pusytroller.gq
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nmslfangbinxing.pusytroller.gq
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 66526B
-  - US 🇺🇸 | @Raydikalx | 101269
-  - CA 🇨🇦 | @Raydikalx | 577620
+  - 🇺🇸_美国_101
+  - '@Daily_Configs'
+  - 🏳️_未知_116
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
