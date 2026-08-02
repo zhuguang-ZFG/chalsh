@@ -14,47 +14,47 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+- name: US 🇺🇸 | @Raydikalx | 9B4F83
   type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 5552BD
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 18811D
-  type: vmess
-  server: 129.146.143.80
-  port: 48111
-  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 1763CB
-  type: vmess
-  server: 154.17.238.183
-  port: 8880
-  uuid: b7479b73-8cea-4a82-97e8-bacf9bd86605
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
-    path: /b7479b73-8cea-4a82-97e8-bacf9bd86605-vm
+    path: /cctv13.m3u8
     headers:
-      Host: www.bing.com
+      Host: 129.146.77.248
+- name: 🏳️_未知_116
+  type: vless
+  server: nmslfangbinxing.pusytroller.gq
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: nmslfangbinxing.pusytroller.gq
+- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 18ms
+  type: vless
+  server: 15.204.97.216
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
-  - US 🇺🇸 | @Raydikalx | 5552BD
-  - US 🇺🇸 | @Raydikalx | 18811D
-  - US 🇺🇸 | @Raydikalx | 1763CB
+  - US 🇺🇸 | @Raydikalx | 9B4F83
+  - 🏳️_未知_116
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 18ms
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
