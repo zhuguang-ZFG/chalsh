@@ -14,62 +14,45 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 15ms
-  type: vless
-  server: 15.204.97.206
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: 🇺🇸_美国_5
-  type: vless
-  server: 64.49.38.6
-  port: 993
-  uuid: e6d41d6f-d58a-7650-bba4-d7f0dde3ba4d
-  flow: xtls-rprx-vision
-  tls: true
-  servername: dl.google.com
-  reality-opts:
-    public-key: 92KJ-ibs1qTy8nODGrHTW8T0b_trG7McLYv8My9o2EE
-  client-fingerprint: firefox
-- name: 美国+CloudFlare节点
-  type: vless
-  server: www.glassdoor.com
-  port: 8880
-  uuid: 3bf2781f-63a2-4c38-ad02-2cc337c2f7fa
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: silent-heart-175f.325-a85.workers.dev
-- name: US 🇺🇸 | @Raydikalx | 3B1D0A
+- name: 未知60
   type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 158.51.121.63
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 274A64
+  tls: true
+  servername: seribus.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: seribus.org
+- name: US4
   type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 64.186.253.113
+  port: 2095
+  uuid: 3df54c90-5cc4-4a70-98f7-52245f25230b
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: 3df54c90-5cc4-4a70-98f7-52245f25230b-vm
+- name: US 🇺🇸 | @Raydikalx | FC2FFF
+  type: vmess
+  server: 107.172.75.141
+  port: 10086
+  uuid: e02c67a8-d769-4d73-833a-ab6acdb86e6e
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 15ms
-  - 🇺🇸_美国_5
-  - 美国+CloudFlare节点
-  - US 🇺🇸 | @Raydikalx | 3B1D0A
-  - US 🇺🇸 | @Raydikalx | 274A64
+  - 未知60
+  - US4
+  - US 🇺🇸 | @Raydikalx | FC2FFF
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
