@@ -14,13 +14,21 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 9EEDF3
+- name: 未知11
   type: vmess
-  server: 216.106.183.35
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 158.51.121.63
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
+  tls: true
+  servername: seribus.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: seribus.org
 - name: US 🇺🇸 | @Raydikalx | ED1E85
   type: vmess
   server: 82.198.246.37
@@ -28,16 +36,27 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | A67E60
+- name: 🇺🇸_美国_137
+  type: vless
+  server: 88.218.44.4
+  port: 993
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+  flow: xtls-rprx-vision
+  tls: true
+  servername: download.nvidia.com
+  reality-opts:
+    public-key: EG3y7UktGRlzSZZ2oXT_YaO2gVP4ca3Xe6AQ0u9A5DQ
+  client-fingerprint: chrome
+- name: US 🇺🇸 | @Raydikalx | 18811D
   type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 129.146.143.80
+  port: 48111
+  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
   alterId: 0
   cipher: auto
-- name: 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
+- name: 🇮🇱
   type: vless
-  server: one-for-all.levikogjgfdd.ir
+  server: millionaire.levikogjgfdd.ir
   port: 443
   uuid: 29ca503d-e6b8-4509-b666-48133f450857
   tls: true
@@ -47,55 +66,15 @@ proxies:
     path: /fdip
     headers:
       Host: learn00.evany.de5.net
-- name: V2ray_Alpha🛤️ 10
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸_美国_117
-  type: vless
-  server: 64.49.38.6
-  port: 993
-  uuid: e6d41d6f-d58a-7650-bba4-d7f0dde3ba4d
-  flow: xtls-rprx-vision
-  tls: true
-  servername: download.nvidia.com
-  reality-opts:
-    public-key: JeVpfwIwteGa8xfysPJUzrbHgmOPyLGomRqyH8Pi7W0
-  client-fingerprint: firefox
-- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 73ms
-  type: vless
-  server: 15.204.97.206
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | 3A610C
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 9EEDF3
+  - 未知11
   - US 🇺🇸 | @Raydikalx | ED1E85
-  - US 🇺🇸 | @Raydikalx | A67E60
-  - 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
-  - V2ray_Alpha🛤️ 10
-  - 🇺🇸_美国_117
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 73ms
-  - US 🇺🇸 | @Raydikalx | 3A610C
+  - 🇺🇸_美国_137
+  - US 🇺🇸 | @Raydikalx | 18811D
+  - 🇮🇱
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
