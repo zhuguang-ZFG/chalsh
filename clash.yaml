@@ -14,6 +14,27 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
+- name: US 🇺🇸 | @Raydikalx | 9EEDF3
+  type: vmess
+  server: 216.106.183.35
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | ED1E85
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | A67E60
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 - name: 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
   type: vless
   server: one-for-all.levikogjgfdd.ir
@@ -26,13 +47,24 @@ proxies:
     path: /fdip
     headers:
       Host: learn00.evany.de5.net
-- name: CA 🇨🇦 | @Raydikalx | A53DAC
+- name: V2ray_Alpha🛤️ 10
   type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
+- name: 🇺🇸_美国_117
+  type: vless
+  server: 64.49.38.6
+  port: 993
+  uuid: e6d41d6f-d58a-7650-bba4-d7f0dde3ba4d
+  flow: xtls-rprx-vision
+  tls: true
+  servername: download.nvidia.com
+  reality-opts:
+    public-key: JeVpfwIwteGa8xfysPJUzrbHgmOPyLGomRqyH8Pi7W0
+  client-fingerprint: firefox
 - name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 73ms
   type: vless
   server: 15.204.97.206
@@ -45,23 +77,25 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   client-fingerprint: chrome
-- name: 🇺🇸_美国_158
+- name: US 🇺🇸 | @Raydikalx | 3A610C
   type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-  tls: true
-  skip-cert-verify: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
+  - US 🇺🇸 | @Raydikalx | 9EEDF3
+  - US 🇺🇸 | @Raydikalx | ED1E85
+  - US 🇺🇸 | @Raydikalx | A67E60
   - 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
-  - CA 🇨🇦 | @Raydikalx | A53DAC
+  - V2ray_Alpha🛤️ 10
+  - 🇺🇸_美国_117
   - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 73ms
-  - 🇺🇸_美国_158
+  - US 🇺🇸 | @Raydikalx | 3A610C
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
