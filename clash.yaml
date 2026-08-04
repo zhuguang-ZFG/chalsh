@@ -14,33 +14,25 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 642933
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 9EEDF3
-  type: vmess
-  server: 216.106.183.35
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸_美国_40
+- name: 🇮🇪_爱尔兰_45
   type: trojan
-  server: fleet-bonefish.rooster465.autos
+  server: skilled-lioness.rooster465.autos
   port: 443
   password: ND91608427
-  sni: fleet-bonefish.rooster465.autos
+  sni: skilled-lioness.rooster465.autos
+- name: 未知96
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 642933
-  - US 🇺🇸 | @Raydikalx | 9EEDF3
-  - 🇺🇸_美国_40
+  - 🇮🇪_爱尔兰_45
+  - 未知96
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
