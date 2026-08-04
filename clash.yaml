@@ -14,42 +14,38 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 66526B
+- name: 🇺🇸_美国_66
   type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: aes-128-gcm
-- name: US 🇺🇸 | @Raydikalx | ED1E85
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | DAAD50
-  type: vmess
-  server: 165.140.216.141
+  server: guanwang.awsno.com
   port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 274A64
+  tls: true
+  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | 642933
   type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
+- name: 🏳️_未知_288
+  type: vless
+  server: josni.hoyes.cloudns.ch
+  port: 2053
+  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 66526B
-  - US 🇺🇸 | @Raydikalx | ED1E85
-  - US 🇺🇸 | @Raydikalx | DAAD50
-  - US 🇺🇸 | @Raydikalx | 274A64
+  - 🇺🇸_美国_66
+  - US 🇺🇸 | @Raydikalx | 642933
+  - 🏳️_未知_288
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
