@@ -14,53 +14,30 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: '@Daily_Configs'
-  type: vless
-  server: one-for-all.levikogjgfdd.ir
-  port: 443
-  uuid: 29ca503d-e6b8-4509-b666-48133f450857
-  tls: true
-  servername: learn00.evany.de5.net
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /fdip
-    headers:
-      Host: learn00.evany.de5.net
-- name: 🇮🇪_爱尔兰_45
-  type: trojan
-  server: skilled-lioness.rooster465.autos
-  port: 443
-  password: ND91608427
-  sni: skilled-lioness.rooster465.autos
-- name: 🏳️_未知_149
-  type: trojan
-  server: 104.17.148.22
-  port: 443
-  password: MITIVPN
-  sni: Duss-a-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.S-s-S.iR
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/usa---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: Duss-a-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.S-s-S.iR
-- name: US 🇺🇸 | @Raydikalx | B6570F
+- name: US 🇺🇸 | @Raydikalx | 66526B
   type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: aes-128-gcm
-- name: US 🇺🇸 | @Raydikalx | 392623
+- name: US 🇺🇸 | @Raydikalx | ED1E85
   type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | C3EE83
+- name: US 🇺🇸 | @Raydikalx | DAAD50
   type: vmess
-  server: 82.198.246.97
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 274A64
+  type: vmess
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -69,12 +46,10 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - '@Daily_Configs'
-  - 🇮🇪_爱尔兰_45
-  - 🏳️_未知_149
-  - US 🇺🇸 | @Raydikalx | B6570F
-  - US 🇺🇸 | @Raydikalx | 392623
-  - US 🇺🇸 | @Raydikalx | C3EE83
+  - US 🇺🇸 | @Raydikalx | 66526B
+  - US 🇺🇸 | @Raydikalx | ED1E85
+  - US 🇺🇸 | @Raydikalx | DAAD50
+  - US 🇺🇸 | @Raydikalx | 274A64
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
