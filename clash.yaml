@@ -14,119 +14,67 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 452ED5
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-- name: V2ray_Alpha🌶️ 10
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | 4BA3A6
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🏳️_未知_111
+- name: '@Daily_Configs'
   type: vless
-  server: 104.17.162.2
+  server: one-for-all.levikogjgfdd.ir
   port: 443
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  uuid: 29ca503d-e6b8-4509-b666-48133f450857
   tls: true
-  servername: b8k86.z3xq.fzi.hh.vavava.kdns.fr
+  servername: learn00.evany.de5.net
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /fdip
     headers:
-      Host: b8k86.z3xq.fzi.hh.vavava.kdns.fr
-- name: US 🇺🇸 | @Raydikalx | 3A610C
+      Host: learn00.evany.de5.net
+- name: 🇮🇪_爱尔兰_45
+  type: trojan
+  server: skilled-lioness.rooster465.autos
+  port: 443
+  password: ND91608427
+  sni: skilled-lioness.rooster465.autos
+- name: 🏳️_未知_149
+  type: trojan
+  server: 104.17.148.22
+  port: 443
+  password: MITIVPN
+  sni: Duss-a-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.S-s-S.iR
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/usa---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: Duss-a-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.S-s-S.iR
+- name: US 🇺🇸 | @Raydikalx | B6570F
   type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+- name: US 🇺🇸 | @Raydikalx | 392623
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🏳️_未知_101
-  type: vless
-  server: www.shopify.com
-  port: 443
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: true
-  servername: b8k86.z3xq.fzi.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: b8k86.z3xq.fzi.hh.vavava.kdns.fr
-- name: 🏳️_未知_126
-  type: vless
-  server: 104.17.126.160
-  port: 443
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: true
-  servername: b8k86.z3xq.fzi.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: b8k86.z3xq.fzi.hh.vavava.kdns.fr
-- name: V2ray_Alpha🛤️ 10
+- name: US 🇺🇸 | @Raydikalx | C3EE83
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 73ms
-  type: vless
-  server: 15.204.97.206
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: CA 🇨🇦 | @Raydikalx | 5BB664
-  type: vmess
-  server: 158.51.121.63
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: seribus.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: linkvws
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 452ED5
-  - V2ray_Alpha🌶️ 10
-  - CA 🇨🇦 | @Raydikalx | 4BA3A6
-  - 🏳️_未知_111
-  - US 🇺🇸 | @Raydikalx | 3A610C
-  - 🏳️_未知_101
-  - 🏳️_未知_126
-  - V2ray_Alpha🛤️ 10
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 73ms
-  - CA 🇨🇦 | @Raydikalx | 5BB664
+  - '@Daily_Configs'
+  - 🇮🇪_爱尔兰_45
+  - 🏳️_未知_149
+  - US 🇺🇸 | @Raydikalx | B6570F
+  - US 🇺🇸 | @Raydikalx | 392623
+  - US 🇺🇸 | @Raydikalx | C3EE83
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
