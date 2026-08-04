@@ -14,15 +14,6 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸_美国_66
-  type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
 - name: US 🇺🇸 | @Raydikalx | 642933
   type: vmess
   server: 82.198.246.97
@@ -30,22 +21,26 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🏳️_未知_288
-  type: vless
-  server: josni.hoyes.cloudns.ch
-  port: 2053
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
+- name: US 🇺🇸 | @Raydikalx | 9EEDF3
+  type: vmess
+  server: 216.106.183.35
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸_美国_40
+  type: trojan
+  server: fleet-bonefish.rooster465.autos
+  port: 443
+  password: ND91608427
+  sni: fleet-bonefish.rooster465.autos
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸_美国_66
   - US 🇺🇸 | @Raydikalx | 642933
-  - 🏳️_未知_288
+  - US 🇺🇸 | @Raydikalx | 9EEDF3
+  - 🇺🇸_美国_40
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
