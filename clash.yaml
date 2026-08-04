@@ -14,25 +14,39 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇮🇪_爱尔兰_45
-  type: trojan
-  server: skilled-lioness.rooster465.autos
-  port: 443
-  password: ND91608427
-  sni: skilled-lioness.rooster465.autos
-- name: 未知96
+- name: US 🇺🇸 | @Raydikalx | BA43A3
   type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 9B4F83
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 129.146.77.248
+- name: US 🇺🇸 | @Raydikalx | 357575
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇮🇪_爱尔兰_45
-  - 未知96
+  - US 🇺🇸 | @Raydikalx | BA43A3
+  - US 🇺🇸 | @Raydikalx | 9B4F83
+  - US 🇺🇸 | @Raydikalx | 357575
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
