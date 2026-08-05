@@ -14,46 +14,41 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸_美国_25
-  type: trojan
-  server: natural-collie.rooster465.autos
-  port: 443
-  password: ND91608427
-  sni: natural-collie.rooster465.autos
-- name: 🏳️_未知_121
+- name: 🇺🇸_美国_12
   type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 88.218.44.4
+  port: 993
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+  flow: xtls-rprx-vision
   tls: true
-  servername: hn205.54dn.96i.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hn205.54dn.96i.hh.vavava.kdns.fr
-- name: V2ray_Alpha🛤️ 10
+  servername: download.nvidia.com
+  reality-opts:
+    public-key: EG3y7UktGRlzSZZ2oXT_YaO2gVP4ca3Xe6AQ0u9A5DQ
+  client-fingerprint: chrome
+- name: 🇨🇦_加拿大_35
+  type: vless
+  server: 185.206.170.69
+  port: 5151
+  uuid: 26c0589f-79e5-4789-8ff7-914f2e26e8e5
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.yahoo.com
+  reality-opts:
+    public-key: T3vWH0zPUrOsgdK7cvEEnMbS3LIJDxQ17_L_GhmZJ0E
+    short-id: 69b851
+  client-fingerprint: chrome
+- name: US 🇺🇸 | @Raydikalx | E38DDB
+  type: vmess
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | FF8539
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🏳️_未知_104
-  type: vless
-  server: skk.moe
-  port: 8880
-  uuid: d8a7b463-dc98-474d-a87e-8781476aef32
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: ancient-tree-7dc9.336-5f9.workers.dev
-- name: US 🇺🇸 | @Raydikalx | BA43A3
-  type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
 - name: US 🇺🇸 | @Raydikalx | 86CEF2
@@ -63,42 +58,37 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🏳️_未知_120
+- name: 美国+CloudFlare节点
   type: vless
-  server: 104.17.111.174
-  port: 443
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: true
-  servername: hn205.54dn.96i.hh.vavava.kdns.fr
+  server: cf3.466688.xyz
+  port: 8880
+  uuid: 50c91104-c1fc-471e-914f-3ad252a0a34c
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.US.CMLiussss.net@https://t.me/QiangLieTuiJian
+    headers:
+      Host: quiet-snowflake-e1dd.374-ac3.workers.dev
+- name: US 🇺🇸 | @Raydikalx | DA749F
+  type: vmess
+  server: 173.249.209.146
+  port: 20086
+  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: hn205.54dn.96i.hh.vavava.kdns.fr
-- name: 🏳️_未知_160
-  type: vless
-  server: www.shopify.com
-  port: 443
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  tls: true
-  servername: hn205.54dn.96i.hh.vavava.kdns.fr
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hn205.54dn.96i.hh.vavava.kdns.fr
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸_美国_25
-  - 🏳️_未知_121
-  - V2ray_Alpha🛤️ 10
-  - 🏳️_未知_104
-  - US 🇺🇸 | @Raydikalx | BA43A3
+  - 🇺🇸_美国_12
+  - 🇨🇦_加拿大_35
+  - US 🇺🇸 | @Raydikalx | E38DDB
+  - US 🇺🇸 | @Raydikalx | FF8539
   - US 🇺🇸 | @Raydikalx | 86CEF2
-  - 🏳️_未知_120
-  - 🏳️_未知_160
+  - 美国+CloudFlare节点
+  - US 🇺🇸 | @Raydikalx | DA749F
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
