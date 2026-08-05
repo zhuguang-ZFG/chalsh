@@ -14,81 +14,69 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸_美国_12
-  type: vless
-  server: 88.218.44.4
-  port: 993
-  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
-  flow: xtls-rprx-vision
-  tls: true
-  servername: download.nvidia.com
-  reality-opts:
-    public-key: EG3y7UktGRlzSZZ2oXT_YaO2gVP4ca3Xe6AQ0u9A5DQ
-  client-fingerprint: chrome
-- name: 🇨🇦_加拿大_35
-  type: vless
-  server: 185.206.170.69
-  port: 5151
-  uuid: 26c0589f-79e5-4789-8ff7-914f2e26e8e5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.yahoo.com
-  reality-opts:
-    public-key: T3vWH0zPUrOsgdK7cvEEnMbS3LIJDxQ17_L_GhmZJ0E
-    short-id: 69b851
-  client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | E38DDB
+- name: US 🇺🇸 | @Raydikalx | A67E60
   type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | FF8539
-  type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 86CEF2
+- name: US 🇺🇸 | @Raydikalx | 3B1D0A
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 34CAC1
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 美国+CloudFlare节点
+- name: Server 14
   type: vless
-  server: cf3.466688.xyz
-  port: 8880
-  uuid: 50c91104-c1fc-471e-914f-3ad252a0a34c
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.US.CMLiussss.net@https://t.me/QiangLieTuiJian
-    headers:
-      Host: quiet-snowflake-e1dd.374-ac3.workers.dev
-- name: US 🇺🇸 | @Raydikalx | DA749F
+  server: gr005.bamajobin.ir
+  port: 2053
+  uuid: d9aa9ea3-9388-483f-a58d-a754f33ec505
+  tls: true
+  servername: play.google.com
+  reality-opts:
+    public-key: GS0dfvzX-bVKBDl2brVxsrE6T2WyXXkfgP3x-mQC7BY
+    short-id: 524efc1f88592266
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: api.v1.data
+- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 12ms
+  type: vless
+  server: 78.111.89.171
+  port: 443
+  uuid: 0370b162-baff-4757-86cc-cce4bf07f6f1
+  tls: true
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: lYcMPEgf6ePmF_d8RXR5fsVorycW37v_ECl-fz_H6w4
+    short-id: cfe08c23a85f24
+  client-fingerprint: random
+- name: US 🇺🇸 | @Raydikalx | 18811D
   type: vmess
-  server: 173.249.209.146
-  port: 20086
-  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
+  server: 129.146.143.80
+  port: 48111
+  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
   alterId: 0
   cipher: auto
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸_美国_12
-  - 🇨🇦_加拿大_35
-  - US 🇺🇸 | @Raydikalx | E38DDB
-  - US 🇺🇸 | @Raydikalx | FF8539
-  - US 🇺🇸 | @Raydikalx | 86CEF2
-  - 美国+CloudFlare节点
-  - US 🇺🇸 | @Raydikalx | DA749F
+  - US 🇺🇸 | @Raydikalx | A67E60
+  - US 🇺🇸 | @Raydikalx | 3B1D0A
+  - US 🇺🇸 | @Raydikalx | 34CAC1
+  - Server 14
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 12ms
+  - US 🇺🇸 | @Raydikalx | 18811D
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
