@@ -14,45 +14,58 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: CA 🇨🇦 | @Raydikalx | A53DAC
+- name: 🇺🇸_美国_147
   type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | DA749F
+  tls: true
+  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | 86CEF2
   type: vmess
-  server: 173.249.209.146
-  port: 20086
-  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: US 🇺🇸 | @Raydikalx | B47D80
+- name: US 🇺🇸 | @Raydikalx | 7938FE
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | DBC3FD
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 18AAF4
+- name: CA 🇨🇦 | @Raydikalx | 5BB664
   type: vmess
-  server: 216.106.183.35
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 1
+  server: 158.51.121.63
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
   cipher: auto
+  tls: true
+  servername: seribus.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: linkvws
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - CA 🇨🇦 | @Raydikalx | A53DAC
-  - US 🇺🇸 | @Raydikalx | DA749F
-  - US 🇺🇸 | @Raydikalx | B47D80
-  - US 🇺🇸 | @Raydikalx | 18AAF4
+  - 🇺🇸_美国_147
+  - US 🇺🇸 | @Raydikalx | 86CEF2
+  - US 🇺🇸 | @Raydikalx | 7938FE
+  - US 🇺🇸 | @Raydikalx | DBC3FD
+  - CA 🇨🇦 | @Raydikalx | 5BB664
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
