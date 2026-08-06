@@ -14,13 +14,6 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | B1FB97
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
 - name: CA 🇨🇦 | @Raydikalx | A53DAC
   type: vmess
   server: 134.195.196.211
@@ -28,80 +21,38 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 4E8CA4
+- name: US 🇺🇸 | @Raydikalx | DA749F
   type: vmess
-  server: 82.198.246.37
+  server: 173.249.209.146
+  port: 20086
+  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: US 🇺🇸 | @Raydikalx | B47D80
+  type: vmess
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | 5BB664
+- name: US 🇺🇸 | @Raydikalx | 18AAF4
   type: vmess
-  server: 158.51.121.63
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: seribus.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: linkvws
-- name: 🏳️_未知_91
-  type: vless
-  server: www.baipiao.eu.org
-  port: 8880
-  uuid: ea29d6f1-3567-4d45-b8c2-e42f162caef4
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: mute-dawn-f27b.375.workers.dev
-- name: US 🇺🇸 | @Raydikalx | 392623
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | F5B1CA
-  type: vmess
-  server: 216.106.185.141
+  server: 216.106.183.35
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
+  alterId: 1
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 3B1D0A
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🏳️_未知_104
-  type: vless
-  server: skk.moe
-  port: 8880
-  uuid: d8a7b463-dc98-474d-a87e-8781476aef32
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net
-    headers:
-      Host: ancient-tree-7dc9.336-5f9.workers.dev
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | B1FB97
   - CA 🇨🇦 | @Raydikalx | A53DAC
-  - US 🇺🇸 | @Raydikalx | 4E8CA4
-  - CA 🇨🇦 | @Raydikalx | 5BB664
-  - 🏳️_未知_91
-  - US 🇺🇸 | @Raydikalx | 392623
-  - US 🇺🇸 | @Raydikalx | F5B1CA
-  - US 🇺🇸 | @Raydikalx | 3B1D0A
-  - 🏳️_未知_104
+  - US 🇺🇸 | @Raydikalx | DA749F
+  - US 🇺🇸 | @Raydikalx | B47D80
+  - US 🇺🇸 | @Raydikalx | 18AAF4
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
