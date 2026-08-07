@@ -14,31 +14,20 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+- name: '@Hope_Net-join-us-on-Telegram'
   type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 357575
+- name: US 🇺🇸 | @Raydikalx | ED1E85
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸_美国_62
-  type: vless
-  server: 88.218.44.4
-  port: 993
-  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
-  flow: xtls-rprx-vision
-  tls: true
-  servername: download.nvidia.com
-  reality-opts:
-    public-key: EG3y7UktGRlzSZZ2oXT_YaO2gVP4ca3Xe6AQ0u9A5DQ
-  client-fingerprint: chrome
 - name: US 🇺🇸 | @Raydikalx | F5B1CA
   type: vmess
   server: 216.106.185.141
@@ -46,38 +35,13 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 18AAF4
-  type: vmess
-  server: 216.106.183.35
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 1
-  cipher: auto
-- name: 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
-  type: vmess
-  server: 165.140.216.142
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | B00608
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: aes-128-gcm
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
-  - US 🇺🇸 | @Raydikalx | 357575
-  - 🇺🇸_美国_62
+  - '@Hope_Net-join-us-on-Telegram'
+  - US 🇺🇸 | @Raydikalx | ED1E85
   - US 🇺🇸 | @Raydikalx | F5B1CA
-  - US 🇺🇸 | @Raydikalx | 18AAF4
-  - 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
-  - US 🇺🇸 | @Raydikalx | B00608
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
