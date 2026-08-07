@@ -14,7 +14,49 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: CA 🇨🇦 | @Raydikalx | 577620
+- name: US 🇺🇸 | @Raydikalx | 8CDB07
+  type: vmess
+  server: 165.140.216.142
+  port: 443
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 274A64
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 761214
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 582641
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸 (7)
+  type: vless
+  server: 169.40.42.179
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: ios
+- name: CA 🇨🇦 | @Raydikalx | 5BB664
   type: vmess
   server: 158.51.121.63
   port: 443
@@ -27,32 +69,9 @@ proxies:
   network: ws
   ws-opts:
     path: linkvws
-    headers:
-      Host: seribus.org
-- name: US 🇺🇸 | @Raydikalx | BA43A3
-  type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | E4DC87
+- name: US 🇺🇸 | @Raydikalx | FF8539
   type: vmess
   server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | ED1E85
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 392623
-  type: vmess
-  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -61,11 +80,13 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - CA 🇨🇦 | @Raydikalx | 577620
-  - US 🇺🇸 | @Raydikalx | BA43A3
-  - US 🇺🇸 | @Raydikalx | E4DC87
-  - US 🇺🇸 | @Raydikalx | ED1E85
-  - US 🇺🇸 | @Raydikalx | 392623
+  - US 🇺🇸 | @Raydikalx | 8CDB07
+  - US 🇺🇸 | @Raydikalx | 274A64
+  - US 🇺🇸 | @Raydikalx | 761214
+  - US 🇺🇸 | @Raydikalx | 582641
+  - 🇺🇸 (7)
+  - CA 🇨🇦 | @Raydikalx | 5BB664
+  - US 🇺🇸 | @Raydikalx | FF8539
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
