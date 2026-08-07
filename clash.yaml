@@ -14,34 +14,38 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: '@Hope_Net-join-us-on-Telegram'
+- name: 🇺🇸_美国_62
+  type: vless
+  server: 88.218.44.4
+  port: 993
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+  flow: xtls-rprx-vision
+  tls: true
+  servername: download.nvidia.com
+  reality-opts:
+    public-key: EG3y7UktGRlzSZZ2oXT_YaO2gVP4ca3Xe6AQ0u9A5DQ
+  client-fingerprint: chrome
+- name: US 🇺🇸 | @Raydikalx | D60DC5
   type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | ED1E85
+- name: US 🇺🇸 | @Raydikalx | E38DDB
   type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | F5B1CA
-  type: vmess
-  server: 216.106.185.141
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - '@Hope_Net-join-us-on-Telegram'
-  - US 🇺🇸 | @Raydikalx | ED1E85
-  - US 🇺🇸 | @Raydikalx | F5B1CA
+  - 🇺🇸_美国_62
+  - US 🇺🇸 | @Raydikalx | D60DC5
+  - US 🇺🇸 | @Raydikalx | E38DDB
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
