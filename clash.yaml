@@ -14,27 +14,37 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸_美国_61
-  type: vless
-  server: 88.218.44.4
-  port: 993
-  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
-  flow: xtls-rprx-vision
-  tls: true
-  servername: download.nvidia.com
-  reality-opts:
-    public-key: EG3y7UktGRlzSZZ2oXT_YaO2gVP4ca3Xe6AQ0u9A5DQ
-  client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | DAAD50
+- name: US 🇺🇸 | @Raydikalx | 3A610C
   type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 4E8CA4
+- name: US 🇺🇸 | @Raydikalx | 642933
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: CA 🇨🇦 | @Raydikalx | 4BA3A6
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | ED1E85
   type: vmess
   server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 5C2EE9
+  type: vmess
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -43,9 +53,11 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸_美国_61
-  - US 🇺🇸 | @Raydikalx | DAAD50
-  - US 🇺🇸 | @Raydikalx | 4E8CA4
+  - US 🇺🇸 | @Raydikalx | 3A610C
+  - US 🇺🇸 | @Raydikalx | 642933
+  - CA 🇨🇦 | @Raydikalx | 4BA3A6
+  - US 🇺🇸 | @Raydikalx | ED1E85
+  - US 🇺🇸 | @Raydikalx | 5C2EE9
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
