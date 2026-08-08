@@ -14,6 +14,20 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
+- name: 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 27ms
+  type: vless
+  server: 88.218.44.4
+  port: 8443
+  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+  tls: true
+  servername: dl.google.com
+  skip-cert-verify: true
+  reality-opts:
+    public-key: Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
 - name: 🇺🇸_美国_143
   type: vmess
   server: guanwang.awsno.com
@@ -23,51 +37,55 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-- name: US 🇺🇸 | @Raydikalx | 120B0A
+- name: US 🇺🇸 | @Raydikalx | 3A610C
   type: vmess
-  server: 67.220.72.237
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 66526B
-  type: vmess
-  server: 67.220.85.46
+  server: 38.91.107.49
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
-  cipher: aes-128-gcm
-- name: US 🇺🇸 | @Raydikalx | B6570F
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 350DAC
   type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: aes-128-gcm
-- name: US 🇺🇸 | @Raydikalx | DAAD50
-  type: vmess
-  server: 165.140.216.141
+  server: 165.140.216.142
   port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 101269
+- name: US 🇺🇸 | @Raydikalx | 9B4F83
   type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
   alterId: 0
   cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 129.146.77.248
+- name: CA 🇨🇦 | @Raydikalx | 5BB664
+  type: vmess
+  server: 158.51.121.63
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: seribus.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: linkvws
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
+  - 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 27ms
   - 🇺🇸_美国_143
-  - US 🇺🇸 | @Raydikalx | 120B0A
-  - US 🇺🇸 | @Raydikalx | 66526B
-  - US 🇺🇸 | @Raydikalx | B6570F
-  - US 🇺🇸 | @Raydikalx | DAAD50
-  - US 🇺🇸 | @Raydikalx | 101269
+  - US 🇺🇸 | @Raydikalx | 3A610C
+  - US 🇺🇸 | @Raydikalx | 350DAC
+  - US 🇺🇸 | @Raydikalx | 9B4F83
+  - CA 🇨🇦 | @Raydikalx | 5BB664
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
