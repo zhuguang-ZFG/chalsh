@@ -14,78 +14,60 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 27ms
-  type: vless
-  server: 88.218.44.4
-  port: 8443
-  uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
-  tls: true
-  servername: dl.google.com
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇺🇸_美国_143
+- name: US 🇺🇸 | @Raydikalx | 66526B
   type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-- name: US 🇺🇸 | @Raydikalx | 3A610C
+  cipher: aes-128-gcm
+- name: CA 🇨🇦 | @Raydikalx | A53DAC
   type: vmess
-  server: 38.91.107.49
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 350DAC
+- name: 🏳️_未知_179
   type: vmess
-  server: 165.140.216.142
+  server: US122203.ssgreen.org
   port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 9B4F83
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 129.146.77.248
-- name: CA 🇨🇦 | @Raydikalx | 5BB664
-  type: vmess
-  server: 158.51.121.63
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: cad02463-62ed-45a5-b34e-714a601921bf
   alterId: 0
   cipher: auto
   tls: true
-  servername: seribus.org
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: linkvws
+    path: /wes
+- name: 🏳️_未知_178
+  type: vmess
+  server: US122202.ssgreen.org
+  port: 443
+  uuid: 3ce6300b-809e-48a8-9118-29115ce4f953
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /wes
+- name: US 🇺🇸 | @Raydikalx | B47D80
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 27ms
-  - 🇺🇸_美国_143
-  - US 🇺🇸 | @Raydikalx | 3A610C
-  - US 🇺🇸 | @Raydikalx | 350DAC
-  - US 🇺🇸 | @Raydikalx | 9B4F83
-  - CA 🇨🇦 | @Raydikalx | 5BB664
+  - US 🇺🇸 | @Raydikalx | 66526B
+  - CA 🇨🇦 | @Raydikalx | A53DAC
+  - 🏳️_未知_179
+  - 🏳️_未知_178
+  - US 🇺🇸 | @Raydikalx | B47D80
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
