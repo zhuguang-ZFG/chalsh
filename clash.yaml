@@ -14,55 +14,63 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 3A610C
+- name: US 🇺🇸 | @Raydikalx | 3B1D0A
   type: vmess
-  server: 38.91.107.49
+  server: 67.220.95.3
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 86CEF2
+- name: US 🇺🇸 | @Raydikalx | 5C2EE9
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 9B4F83
+- name: US 🇺🇸 | @Raydikalx | DA749F
   type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  server: 173.249.209.146
+  port: 20086
+  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 129.146.77.248
-- name: US 🇺🇸 | @Raydikalx | BCBC4C
+    path: /
+- name: 🇺🇸_美国_143
   type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 66526B
+  tls: true
+  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | CBA65B
   type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: us.klxiaogou.com
+  port: 41963
+  uuid: 7a4830df-5391-4748-b1c7-b6857ad04acb
   alterId: 0
-  cipher: aes-128-gcm
+  cipher: auto
+  tls: true
+  servername: us.klxiaogou.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /124
+    headers:
+      Host: us.klxiaogou.com
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 3A610C
-  - US 🇺🇸 | @Raydikalx | 86CEF2
-  - US 🇺🇸 | @Raydikalx | 9B4F83
-  - US 🇺🇸 | @Raydikalx | BCBC4C
-  - US 🇺🇸 | @Raydikalx | 66526B
+  - US 🇺🇸 | @Raydikalx | 3B1D0A
+  - US 🇺🇸 | @Raydikalx | 5C2EE9
+  - US 🇺🇸 | @Raydikalx | DA749F
+  - 🇺🇸_美国_143
+  - US 🇺🇸 | @Raydikalx | CBA65B
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
