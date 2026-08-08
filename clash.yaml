@@ -14,34 +14,37 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 8CDB07
+- name: US 🇺🇸 | @Raydikalx | 392623
   type: vmess
-  server: 165.140.216.142
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | F52DD6
+- name: US 🇺🇸 | @Raydikalx | DA749F
+  type: vmess
+  server: 173.249.209.146
+  port: 20086
+  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: US 🇺🇸 | @Raydikalx | 5552BD
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | E38DDB
-  type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 8CDB07
-  - US 🇺🇸 | @Raydikalx | F52DD6
-  - US 🇺🇸 | @Raydikalx | E38DDB
+  - US 🇺🇸 | @Raydikalx | 392623
+  - US 🇺🇸 | @Raydikalx | DA749F
+  - US 🇺🇸 | @Raydikalx | 5552BD
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
