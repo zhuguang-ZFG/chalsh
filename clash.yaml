@@ -14,15 +14,41 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸_美国_86
+- name: US 🇺🇸 | @Raydikalx | B47D80
   type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-  tls: true
-  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | E38DDB
+  type: vmess
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | B00608
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: aes-128-gcm
+- name: US 🇺🇸 | @Raydikalx | A67E60
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 120B0A
+  type: vmess
+  server: 67.220.72.237
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
 - name: US 🇺🇸 | @Raydikalx | 9B4F83
   type: vmess
   server: 129.146.77.248
@@ -35,39 +61,24 @@ proxies:
     path: /cctv13.m3u8
     headers:
       Host: 129.146.77.248
-- name: US 🇺🇸 | @Raydikalx | DA749F
+- name: US 🇺🇸 | @Raydikalx | 9B6A17
   type: vmess
-  server: 173.249.209.146
-  port: 20086
-  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: US 🇺🇸 | @Raydikalx | 50B762
-  type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 3A610C
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸_美国_86
+  - US 🇺🇸 | @Raydikalx | B47D80
+  - US 🇺🇸 | @Raydikalx | E38DDB
+  - US 🇺🇸 | @Raydikalx | B00608
+  - US 🇺🇸 | @Raydikalx | A67E60
+  - US 🇺🇸 | @Raydikalx | 120B0A
   - US 🇺🇸 | @Raydikalx | 9B4F83
-  - US 🇺🇸 | @Raydikalx | DA749F
-  - US 🇺🇸 | @Raydikalx | 50B762
-  - US 🇺🇸 | @Raydikalx | 3A610C
+  - US 🇺🇸 | @Raydikalx | 9B6A17
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
