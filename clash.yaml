@@ -14,62 +14,64 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 加拿大+V2CROSS.COM
-  type: vless
-  server: 167.17.68.205
+- name: 美国+CloudFlare节点
+  type: trojan
+  server: 104.19.229.21
   port: 443
-  uuid: 4e0f4e59-3613-4f0c-b824-7348413d20e6
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: UE8hUjH1WYwemxIriq5lvtFCnHTdLF817okXr-u7MGs
-    short-id: 250b5976473a
-  client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | 86CEF2
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 4E8CA4
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 9B4F83
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
+  password: humanity
+  sni: www.ignitelimit.com
   network: ws
   ws-opts:
-    path: /cctv13.m3u8
+    path: /assignment
     headers:
-      Host: 129.146.77.248
-- name: US 🇺🇸 | @Raydikalx | 582641
+      Host: www.ignitelimit.com
+- name: US 🇺🇸 | @Raydikalx | B6570F
   type: vmess
-  server: guanwang.awsno.com
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+- name: CA 🇨🇦 | @Raydikalx | 5BB664
+  type: vmess
+  server: 158.51.121.63
   port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
   tls: true
+  servername: seribus.org
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: linkvws
+- name: US 🇺🇸 | @Raydikalx | DAAD50
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸_美国_115
+  type: trojan
+  server: 151.101.56.7
+  port: 443
+  password: MiTiVPN
+  sni: default.fastly.com
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/dde---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    headers:
+      Host: s1a-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 加拿大+V2CROSS.COM
-  - US 🇺🇸 | @Raydikalx | 86CEF2
-  - US 🇺🇸 | @Raydikalx | 4E8CA4
-  - US 🇺🇸 | @Raydikalx | 9B4F83
-  - US 🇺🇸 | @Raydikalx | 582641
+  - 美国+CloudFlare节点
+  - US 🇺🇸 | @Raydikalx | B6570F
+  - CA 🇨🇦 | @Raydikalx | 5BB664
+  - US 🇺🇸 | @Raydikalx | DAAD50
+  - 🇺🇸_美国_115
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
