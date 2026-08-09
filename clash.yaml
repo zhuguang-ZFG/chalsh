@@ -14,7 +14,33 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 452ED5
+- name: 加拿大+V2CROSS.COM
+  type: vless
+  server: 167.17.68.205
+  port: 443
+  uuid: 4e0f4e59-3613-4f0c-b824-7348413d20e6
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: UE8hUjH1WYwemxIriq5lvtFCnHTdLF817okXr-u7MGs
+    short-id: 250b5976473a
+  client-fingerprint: chrome
+- name: US 🇺🇸 | @Raydikalx | 86CEF2
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 4E8CA4
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 9B4F83
   type: vmess
   server: 129.146.77.248
   port: 39495
@@ -24,47 +50,26 @@ proxies:
   network: ws
   ws-opts:
     path: /cctv13.m3u8
-- name: US 🇺🇸 | @Raydikalx | 34CAC1
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 4F5D7F
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | B00608
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: aes-128-gcm
-- name: 🇺🇸_美国_101
-  type: trojan
-  server: 151.101.56.172
-  port: 443
-  password: MiTiVPN
-  sni: default.fastly.com
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/sw---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
-      Host: s4b-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
+      Host: 129.146.77.248
+- name: US 🇺🇸 | @Raydikalx | 582641
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 452ED5
-  - US 🇺🇸 | @Raydikalx | 34CAC1
-  - US 🇺🇸 | @Raydikalx | 4F5D7F
-  - US 🇺🇸 | @Raydikalx | B00608
-  - 🇺🇸_美国_101
+  - 加拿大+V2CROSS.COM
+  - US 🇺🇸 | @Raydikalx | 86CEF2
+  - US 🇺🇸 | @Raydikalx | 4E8CA4
+  - US 🇺🇸 | @Raydikalx | 9B4F83
+  - US 🇺🇸 | @Raydikalx | 582641
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
