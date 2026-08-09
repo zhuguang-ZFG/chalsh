@@ -14,54 +14,45 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 4F5D7F
+- name: US 🇺🇸 | @Raydikalx | 361E5E
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | BCBC4C
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 美国+CloudFlare节点
+  type: vless
+  server: 172.66.170.53
+  port: 8880
+  uuid: 9b14cdbe-bcfe-4178-a674-3ad88a7c6f6a
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: summer-snow-c151.320-3ef.workers.dev
+- name: US 🇺🇸 | @Raydikalx | D60DC5
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: V2ray_Alpha🐺 2
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸_美国_108
-  type: trojan
-  server: 151.101.56.172
-  port: 443
-  password: MiTiVPN
-  sni: default.fastly.com
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/sw---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s4b-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: US 🇺🇸 | @Raydikalx | B6570F
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: aes-128-gcm
-- name: US 🇺🇸 | @Raydikalx | 2B97CF
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 4F5D7F
-  - V2ray_Alpha🐺 2
-  - 🇺🇸_美国_108
-  - US 🇺🇸 | @Raydikalx | B6570F
-  - US 🇺🇸 | @Raydikalx | 2B97CF
+  - US 🇺🇸 | @Raydikalx | 361E5E
+  - US 🇺🇸 | @Raydikalx | BCBC4C
+  - 美国+CloudFlare节点
+  - US 🇺🇸 | @Raydikalx | D60DC5
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
