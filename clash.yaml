@@ -14,6 +14,23 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
+- name: US 🇺🇸 | @Raydikalx | FF8539
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 美国+V2CROSS.COM
+  type: vless
+  server: 45.40.145.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime35.workers.dev
 - name: US 🇺🇸 | @Raydikalx | 86CEF2
   type: vmess
   server: 82.198.246.250
@@ -21,30 +38,63 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🏳️_未知_144
+- name: CA 🇨🇦 | @Raydikalx | 4BA3A6
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🏳️_未知_471
   type: vless
-  server: 104.17.21.32
-  port: 8880
-  uuid: 6e5270b6-9f28-4bc6-8a41-9c197f33f4bb
+  server: cf-ak-us01.ziyoufly.xyz
+  port: 443
+  uuid: d2740529-3e77-4151-93b9-470bf9615d84
+  tls: true
+  servername: cf-ak-us01.ziyoufly.xyz
   network: ws
   ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
+    path: /ziyou
     headers:
-      Host: autumn-dawn-fa6b.337-272.workers.dev
-- name: US 🇺🇸 | @Raydikalx | 8BD1E0
+      Host: cf-ak-us01.ziyoufly.xyz
+- name: US 🇺🇸 | @Raydikalx | ED1E85
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | B6570F
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
-  cipher: auto
+  cipher: aes-128-gcm
+- name: 🏳️_未知_388
+  type: vless
+  server: cf-uh-us01.ziyoufly.xyz
+  port: 443
+  uuid: 78873c1e-e9de-4583-8195-bd071ebb38d2
+  tls: true
+  servername: cf-uh-us01.ziyoufly.xyz
+  network: ws
+  ws-opts:
+    path: /ziyou
+    headers:
+      Host: cf-uh-us01.ziyoufly.xyz
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
+  - US 🇺🇸 | @Raydikalx | FF8539
+  - 美国+V2CROSS.COM
   - US 🇺🇸 | @Raydikalx | 86CEF2
-  - 🏳️_未知_144
-  - US 🇺🇸 | @Raydikalx | 8BD1E0
+  - CA 🇨🇦 | @Raydikalx | 4BA3A6
+  - 🏳️_未知_471
+  - US 🇺🇸 | @Raydikalx | ED1E85
+  - US 🇺🇸 | @Raydikalx | B6570F
+  - 🏳️_未知_388
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
