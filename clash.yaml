@@ -14,23 +14,61 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 德国+V2CROSS.COM
-  type: vless
-  server: 185.164.111.48
+- name: US 🇺🇸 | @Raydikalx | 737B46
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 8CDB07
+  type: vmess
+  server: 165.140.216.142
   port: 443
-  uuid: 59eefc04-b831-45cf-8d68-63ca23381171
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: 4-qE0E0B5ShfnAe0KFM0qRkXJ33rRF39AlHK7MpBzAE
-    short-id: 4c5a76834671
-  client-fingerprint: chrome
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 83B9FE
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 3A610C
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 452ED5
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+- name: US 🇺🇸 | @Raydikalx | B00608
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: aes-128-gcm
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 德国+V2CROSS.COM
+  - US 🇺🇸 | @Raydikalx | 737B46
+  - US 🇺🇸 | @Raydikalx | 8CDB07
+  - US 🇺🇸 | @Raydikalx | 83B9FE
+  - US 🇺🇸 | @Raydikalx | 3A610C
+  - US 🇺🇸 | @Raydikalx | 452ED5
+  - US 🇺🇸 | @Raydikalx | B00608
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
