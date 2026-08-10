@@ -14,39 +14,23 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | E38DDB
-  type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇹🇷_土耳其_261
+- name: 德国+V2CROSS.COM
   type: vless
-  server: us.rexten.cc
+  server: 185.164.111.48
   port: 443
-  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
+  uuid: 59eefc04-b831-45cf-8d68-63ca23381171
   flow: xtls-rprx-vision
   tls: true
-  servername: us.rexten.cc
+  servername: www.cloudflare.com
   reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
-  client-fingerprint: firefox
-- name: 🇺🇸_美国_482
-  type: vless
-  server: us02hk.lockdwn.com
-  port: 443
-  uuid: 9d440601-dafc-40fc-a844-f7328b303604
-  network: ws
-  ws-opts:
-    path: /
+    public-key: 4-qE0E0B5ShfnAe0KFM0qRkXJ33rRF39AlHK7MpBzAE
+    short-id: 4c5a76834671
+  client-fingerprint: chrome
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | E38DDB
-  - 🇹🇷_土耳其_261
-  - 🇺🇸_美国_482
+  - 德国+V2CROSS.COM
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
