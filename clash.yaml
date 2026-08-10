@@ -14,7 +14,21 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | C5987F
+- name: US 🇺🇸 | @Raydikalx | 9B6A17
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | E38DDB
+  type: vmess
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | DBC3FD
   type: vmess
   server: 82.198.246.97
   port: 180
@@ -25,7 +39,9 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | C5987F
+  - US 🇺🇸 | @Raydikalx | 9B6A17
+  - US 🇺🇸 | @Raydikalx | E38DDB
+  - US 🇺🇸 | @Raydikalx | DBC3FD
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
