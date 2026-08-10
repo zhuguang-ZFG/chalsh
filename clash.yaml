@@ -14,31 +14,39 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: Server 19
-  type: vless
-  server: 169.40.42.173
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: ios
-- name: US 🇺🇸 | @Raydikalx | DAAD50
+- name: US 🇺🇸 | @Raydikalx | E38DDB
   type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
+- name: 🇹🇷_土耳其_261
+  type: vless
+  server: us.rexten.cc
+  port: 443
+  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: us.rexten.cc
+  reality-opts:
+    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
+  client-fingerprint: firefox
+- name: 🇺🇸_美国_482
+  type: vless
+  server: us02hk.lockdwn.com
+  port: 443
+  uuid: 9d440601-dafc-40fc-a844-f7328b303604
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - Server 19
-  - US 🇺🇸 | @Raydikalx | DAAD50
+  - US 🇺🇸 | @Raydikalx | E38DDB
+  - 🇹🇷_土耳其_261
+  - 🇺🇸_美国_482
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
