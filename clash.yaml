@@ -14,21 +14,59 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: CA 🇨🇦 | @Raydikalx | A53DAC
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 357575
+- name: US 🇺🇸 | @Raydikalx | DBC3FD
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸_美国_403
+- name: US 🇺🇸 | @Raydikalx | BCBC4C
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 加拿大+V2CROSS.COM
+  type: vless
+  server: jyvlryz.cvewfjg.shop
+  port: 443
+  uuid: 4e0f4e59-3613-4f0c-b824-7348413d20e6
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: UE8hUjH1WYwemxIriq5lvtFCnHTdLF817okXr-u7MGs
+    short-id: 250b5976473a
+  client-fingerprint: chrome
+- name: 🏳️_未知_494
+  type: vless
+  server: 8.39.125.209
+  port: 2083
+  uuid: 2c029086-e4b3-4f22-82d8-b84dd70f243c
+  tls: true
+  servername: pphmsubs.911388.xyz
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: pphmsubs.911388.xyz
+- name: US 🇺🇸 | @Raydikalx | 350DAC
+  type: vmess
+  server: 165.140.216.142
+  port: 443
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | F8ECE8
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸_美国_360
   type: trojan
   server: 151.101.56.7
   port: 443
@@ -39,51 +77,23 @@ proxies:
     path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/dde---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
       Host: s1a-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
-- name: US 🇺🇸 | @Raydikalx | 350DAC
-  type: vmess
-  server: 165.140.216.142
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸_美国_482
+- name: 🇭🇰_香港_94
   type: vless
-  server: us02hk.lockdwn.com
-  port: 443
-  uuid: 9d440601-dafc-40fc-a844-f7328b303604
-  network: ws
-  ws-opts:
-    path: /
-- name: 🆔vpnbaz 🔒 VL-TCP- ❔ XX 65ms
-  type: vless
-  server: 169.40.42.212
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
-- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+  server: 182.16.61.4
+  port: 45647
+  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - CA 🇨🇦 | @Raydikalx | A53DAC
-  - US 🇺🇸 | @Raydikalx | 357575
-  - 🇺🇸_美国_403
+  - US 🇺🇸 | @Raydikalx | DBC3FD
+  - US 🇺🇸 | @Raydikalx | BCBC4C
+  - 加拿大+V2CROSS.COM
+  - 🏳️_未知_494
   - US 🇺🇸 | @Raydikalx | 350DAC
-  - 🇺🇸_美国_482
-  - 🆔vpnbaz 🔒 VL-TCP- ❔ XX 65ms
-  - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  - US 🇺🇸 | @Raydikalx | F8ECE8
+  - 🇺🇸_美国_360
+  - 🇭🇰_香港_94
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
