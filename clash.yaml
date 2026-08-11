@@ -14,42 +14,42 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | DBC3FD
+- name: US 🇺🇸 | @Raydikalx | C3EE83
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 3B1D0A
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | B1FB97
+- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | F5B1CA
+- name: '@Hope_Net-join-us-on-Telegram'
   type: vmess
-  server: 216.106.185.141
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | DAAD50
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | DBC3FD
-  - US 🇺🇸 | @Raydikalx | 3B1D0A
-  - US 🇺🇸 | @Raydikalx | B1FB97
-  - US 🇺🇸 | @Raydikalx | F5B1CA
+  - US 🇺🇸 | @Raydikalx | C3EE83
+  - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  - '@Hope_Net-join-us-on-Telegram'
+  - US 🇺🇸 | @Raydikalx | DAAD50
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
