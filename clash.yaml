@@ -14,86 +14,53 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | DBC3FD
+- name: US 🇺🇸 | @Raydikalx | D60DC5
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | BCBC4C
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 加拿大+V2CROSS.COM
-  type: vless
-  server: jyvlryz.cvewfjg.shop
-  port: 443
-  uuid: 4e0f4e59-3613-4f0c-b824-7348413d20e6
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: UE8hUjH1WYwemxIriq5lvtFCnHTdLF817okXr-u7MGs
-    short-id: 250b5976473a
-  client-fingerprint: chrome
-- name: 🏳️_未知_494
-  type: vless
-  server: 8.39.125.209
-  port: 2083
-  uuid: 2c029086-e4b3-4f22-82d8-b84dd70f243c
-  tls: true
-  servername: pphmsubs.911388.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: pphmsubs.911388.xyz
-- name: US 🇺🇸 | @Raydikalx | 350DAC
+- name: US 🇺🇸 | @Raydikalx | 8CDB07
   type: vmess
   server: 165.140.216.142
   port: 443
   uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | F8ECE8
+- name: US 🇺🇸 | @Raydikalx | B1FB97
   type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸_美国_360
-  type: trojan
-  server: 151.101.56.7
-  port: 443
-  password: MiTiVPN
-  sni: default.fastly.com
+- name: 🏳️_未知_370
+  type: vless
+  server: 104.17.2.112
+  port: 2052
+  uuid: b4cee115-cb5e-4571-99fa-a8f80dc902b1
   network: ws
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/dde---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    path: /
     headers:
-      Host: s1a-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
-- name: 🇭🇰_香港_94
-  type: vless
-  server: 182.16.61.4
-  port: 45647
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+      Host: KAmraN04-9Q7IUQ-1.kAMran-04.WorkeRS.DEV
+- name: US 🇺🇸 | @Raydikalx | 3A610C
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | DBC3FD
-  - US 🇺🇸 | @Raydikalx | BCBC4C
-  - 加拿大+V2CROSS.COM
-  - 🏳️_未知_494
-  - US 🇺🇸 | @Raydikalx | 350DAC
-  - US 🇺🇸 | @Raydikalx | F8ECE8
-  - 🇺🇸_美国_360
-  - 🇭🇰_香港_94
+  - US 🇺🇸 | @Raydikalx | D60DC5
+  - US 🇺🇸 | @Raydikalx | 8CDB07
+  - US 🇺🇸 | @Raydikalx | B1FB97
+  - 🏳️_未知_370
+  - US 🇺🇸 | @Raydikalx | 3A610C
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
