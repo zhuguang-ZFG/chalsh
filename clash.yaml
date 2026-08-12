@@ -14,13 +14,16 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | B00608
+- name: US 🇺🇸 | @Raydikalx | 452ED5
   type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
   alterId: 0
-  cipher: aes-128-gcm
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
 - name: US 🇺🇸 | @Raydikalx | F52DD6
   type: vmess
   server: 82.198.246.97
@@ -28,9 +31,9 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: '@Hope_Net-join-us-on-Telegram'
+- name: US 🇺🇸 | @Raydikalx | 4E8CA4
   type: vmess
-  server: 82.198.246.250
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -39,9 +42,9 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | B00608
+  - US 🇺🇸 | @Raydikalx | 452ED5
   - US 🇺🇸 | @Raydikalx | F52DD6
-  - '@Hope_Net-join-us-on-Telegram'
+  - US 🇺🇸 | @Raydikalx | 4E8CA4
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
