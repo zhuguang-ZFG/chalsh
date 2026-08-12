@@ -14,50 +14,59 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 18AAF4
+- name: US 🇺🇸 | @Raydikalx | BCBC4C
   type: vmess
-  server: 216.106.183.35
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 1
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 4E8CA4
-  type: vmess
-  server: 82.198.246.37
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 101269
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | DAAD50
-  type: vmess
-  server: 165.140.216.141
+- name: 🏳️_未知_209
+  type: vless
+  server: millionaire.levikogjgfdd.ir
   port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 2B97CF
+  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  tls: true
+  servername: josni.hoyes.cloudns.ch
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: josni.hoyes.cloudns.ch
+- name: US 🇺🇸 | @Raydikalx | F8ECE8
   type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 021D03
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇹🇷_土耳其_155
+  type: vless
+  server: us.rexten.cc
+  port: 443
+  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: us.rexten.cc
+  reality-opts:
+    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
+  client-fingerprint: firefox
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 18AAF4
-  - US 🇺🇸 | @Raydikalx | 4E8CA4
-  - US 🇺🇸 | @Raydikalx | 101269
-  - US 🇺🇸 | @Raydikalx | DAAD50
-  - US 🇺🇸 | @Raydikalx | 2B97CF
+  - US 🇺🇸 | @Raydikalx | BCBC4C
+  - 🏳️_未知_209
+  - US 🇺🇸 | @Raydikalx | F8ECE8
+  - US 🇺🇸 | @Raydikalx | 021D03
+  - 🇹🇷_土耳其_155
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
