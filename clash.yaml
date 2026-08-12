@@ -14,59 +14,53 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | BCBC4C
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🏳️_未知_209
-  type: vless
-  server: millionaire.levikogjgfdd.ir
+- name: 美国+V2CROSS.COM
+  type: trojan
+  server: 199.232.78.160
   port: 443
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
-  tls: true
-  servername: josni.hoyes.cloudns.ch
+  password: MITIVPN
+  sni: ssl.fastly.com
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /sg-melbi
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e2@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
     headers:
-      Host: josni.hoyes.cloudns.ch
-- name: US 🇺🇸 | @Raydikalx | F8ECE8
+      Host: s2z-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
+- name: US 🇺🇸 | @Raydikalx | B00608
   type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 021D03
+  cipher: aes-128-gcm
+- name: US 🇺🇸 | @Raydikalx | B47D80
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇹🇷_土耳其_155
+- name: US 🇺🇸 | @Raydikalx | 86CEF2
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸_美国_37
   type: vless
-  server: us.rexten.cc
-  port: 443
-  uuid: f61025f4-7973-4e3e-883c-a0fe85f0489c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: us.rexten.cc
-  reality-opts:
-    public-key: OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ
-  client-fingerprint: firefox
+  server: 180.178.60.253
+  port: 10000
+  uuid: caec0d8d-ab2f-4247-b97d-7fb1a34ab195
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | BCBC4C
-  - 🏳️_未知_209
-  - US 🇺🇸 | @Raydikalx | F8ECE8
-  - US 🇺🇸 | @Raydikalx | 021D03
-  - 🇹🇷_土耳其_155
+  - 美国+V2CROSS.COM
+  - US 🇺🇸 | @Raydikalx | B00608
+  - US 🇺🇸 | @Raydikalx | B47D80
+  - US 🇺🇸 | @Raydikalx | 86CEF2
+  - 🇺🇸_美国_37
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
