@@ -14,94 +14,60 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 4E8CA4
+- name: US 🇺🇸 | @Raydikalx | 120B0A
+  type: vmess
+  server: 67.220.72.237
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | ED1E85
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🏳️_未知_187
-  type: vless
-  server: premium-us-az-01-hostinger.efgwf.online
-  port: 8080
-  uuid: 59eefc04-b831-45cf-8d68-63ca23381171
-  network: ws
-  ws-opts:
-    path: /ws-hTopcF3L
-    headers:
-      Host: premium-us-az-01-hostinger.efgwf.online
-- name: US 🇺🇸 | @Raydikalx | 3A610C
+- name: ✨ @NamiraConfigs | ❤️ وصل شدی جوین شو | ⚡ | 🇩🇪
   type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸_美国_188
-  type: trojan
-  server: 151.101.56.0
-  port: 443
-  password: MiTiVPN
-  sni: default.fastly.com
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/s-w@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s4z-mitivpn--mitivpn------mitivpn.global.ssl.fastly.net
-- name: CA 🇨🇦 | @Raydikalx | 432AAE
+- name: US 🇺🇸 | @Raydikalx | 16964D
   type: vmess
-  server: rush-w1niu.teeopp.online
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸_美国_172
+  type: vmess
+  server: guanwang.awsno.com
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   alterId: 0
   cipher: auto
   tls: true
-  servername: rush-w1niu.teeopp.online
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /video/v4sx3q/zxzrurkc.m3u8
-    headers:
-      Host: rush-w1niu.teeopp.online
-- name: 🏳️_未知_209
-  type: vless
-  server: millionaire.levikogjgfdd.ir
-  port: 443
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
-  tls: true
-  servername: josni.hoyes.cloudns.ch
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: josni.hoyes.cloudns.ch
-- name: US 🇺🇸 | @Raydikalx | DAAD50
+- name: US 🇺🇸 | @Raydikalx | BCBC4C
   type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 9EEDF3
-  type: vmess
-  server: 216.106.183.35
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 4E8CA4
-  - 🏳️_未知_187
-  - US 🇺🇸 | @Raydikalx | 3A610C
-  - 🇺🇸_美国_188
-  - CA 🇨🇦 | @Raydikalx | 432AAE
-  - 🏳️_未知_209
-  - US 🇺🇸 | @Raydikalx | DAAD50
-  - US 🇺🇸 | @Raydikalx | 9EEDF3
+  - US 🇺🇸 | @Raydikalx | 120B0A
+  - US 🇺🇸 | @Raydikalx | ED1E85
+  - ✨ @NamiraConfigs | ❤️ وصل شدی جوین شو | ⚡ | 🇩🇪
+  - US 🇺🇸 | @Raydikalx | 16964D
+  - 🇺🇸_美国_172
+  - US 🇺🇸 | @Raydikalx | BCBC4C
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
