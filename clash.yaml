@@ -14,21 +14,26 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | D60DC5
+- name: US 🇺🇸 | @Raydikalx | 86CEF2
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US13
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸_美国_172
+- name: 🏳️_未知_209
+  type: vless
+  server: millionaire.levikogjgfdd.ir
+  port: 443
+  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  tls: true
+  servername: josni.hoyes.cloudns.ch
+  network: ws
+  ws-opts:
+    path: /sg-melbi
+    headers:
+      Host: josni.hoyes.cloudns.ch
+- name: US4
   type: vmess
   server: guanwang.awsno.com
   port: 443
@@ -37,21 +42,13 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
-- name: US7
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | D60DC5
-  - US13
-  - 🇺🇸_美国_172
-  - US7
+  - US 🇺🇸 | @Raydikalx | 86CEF2
+  - 🏳️_未知_209
+  - US4
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
