@@ -14,53 +14,34 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 美国+V2CROSS.COM
-  type: trojan
-  server: 199.232.78.160
-  port: 443
-  password: MITIVPN
-  sni: ssl.fastly.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e2@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: s2z-mitivpn--mitivpn--mitivpn-mitivpn---mitivpn.global.ssl.fastly.net
-- name: US 🇺🇸 | @Raydikalx | B00608
+- name: CA 🇨🇦 | @Raydikalx | 00DD16
   type: vmess
-  server: 67.220.95.3
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
-  cipher: aes-128-gcm
-- name: US 🇺🇸 | @Raydikalx | B47D80
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 3A610C
   type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 86CEF2
+- name: US 🇺🇸 | @Raydikalx | 361E5E
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸_美国_37
-  type: vless
-  server: 180.178.60.253
-  port: 10000
-  uuid: caec0d8d-ab2f-4247-b97d-7fb1a34ab195
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 美国+V2CROSS.COM
-  - US 🇺🇸 | @Raydikalx | B00608
-  - US 🇺🇸 | @Raydikalx | B47D80
-  - US 🇺🇸 | @Raydikalx | 86CEF2
-  - 🇺🇸_美国_37
+  - CA 🇨🇦 | @Raydikalx | 00DD16
+  - US 🇺🇸 | @Raydikalx | 3A610C
+  - US 🇺🇸 | @Raydikalx | 361E5E
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
