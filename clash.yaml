@@ -14,34 +14,50 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 737B46
+- name: US 🇺🇸 | @Raydikalx | 18AAF4
   type: vmess
-  server: 82.198.246.97
+  server: 216.106.183.35
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 1
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 4E8CA4
+  type: vmess
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 18811D
+- name: US 🇺🇸 | @Raydikalx | 101269
   type: vmess
-  server: 129.146.143.80
-  port: 48111
-  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | F25196
+- name: US 🇺🇸 | @Raydikalx | DAAD50
   type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 2B97CF
+  type: vmess
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 737B46
-  - US 🇺🇸 | @Raydikalx | 18811D
-  - US 🇺🇸 | @Raydikalx | F25196
+  - US 🇺🇸 | @Raydikalx | 18AAF4
+  - US 🇺🇸 | @Raydikalx | 4E8CA4
+  - US 🇺🇸 | @Raydikalx | 101269
+  - US 🇺🇸 | @Raydikalx | DAAD50
+  - US 🇺🇸 | @Raydikalx | 2B97CF
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
