@@ -14,40 +14,58 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 16964D
+- name: US 🇺🇸 | @Raydikalx | 8CDB07
   type: vmess
-  server: 82.198.246.250
+  server: 165.140.216.142
+  port: 443
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | E4DC87
+  type: vmess
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 120B0A
+- name: US 🇺🇸 | @Raydikalx | 8BD1E0
   type: vmess
-  server: 67.220.72.237
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸_美国_159
+- name: 🇺🇸_美国_120
+  type: vless
+  server: 198.251.78.29
+  port: 2053
+  uuid: 5ffc78d7-b582-460f-b6a5-4b74b66f4700
+  tls: true
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: uO6RPMi31-Q2JwZ1YALarJplhlBRVhpA7NsXDW3KTyk
+    short-id: 4104ca12a90b4285
+  client-fingerprint: firefox
+- name: 🇺🇸_美国_90
   type: trojan
-  server: liked-serval.rooster465.autos
+  server: dear-hermit.rooster465.autos
   port: 443
   password: AE62539071
-- name: US 🇺🇸 | @Raydikalx | 9EEDF3
-  type: vmess
-  server: 216.106.183.35
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+- name: 🇺🇸_美国_78
+  type: trojan
+  server: dominant-jaguar.rooster465.autos
+  port: 443
+  password: AE62539071
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 16964D
-  - US 🇺🇸 | @Raydikalx | 120B0A
-  - 🇺🇸_美国_159
-  - US 🇺🇸 | @Raydikalx | 9EEDF3
+  - US 🇺🇸 | @Raydikalx | 8CDB07
+  - US 🇺🇸 | @Raydikalx | E4DC87
+  - US 🇺🇸 | @Raydikalx | 8BD1E0
+  - 🇺🇸_美国_120
+  - 🇺🇸_美国_90
+  - 🇺🇸_美国_78
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
