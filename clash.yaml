@@ -24,30 +24,16 @@ proxies:
   network: ws
   ws-opts:
     path: /cctv13.m3u8
-- name: US 🇺🇸 | @Raydikalx | 357575
+- name: US 🇺🇸 | @Raydikalx | C5987F
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 3C6931
+- name: US 🇺🇸 | @Raydikalx | 16964D
   type: vmess
-  server: 35.212.204.142
-  port: 56723
-  uuid: 987dc12e-cd35-4df9-9542-6e96908c754a
-  alterId: 0
-  cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | 8F8AB8
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 1DFAB8
-  type: vmess
-  server: 82.198.246.233
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -57,10 +43,8 @@ proxy-groups:
   type: url-test
   proxies:
   - US 🇺🇸 | @Raydikalx | 452ED5
-  - US 🇺🇸 | @Raydikalx | 357575
-  - US 🇺🇸 | @Raydikalx | 3C6931
-  - CA 🇨🇦 | @Raydikalx | 8F8AB8
-  - US 🇺🇸 | @Raydikalx | 1DFAB8
+  - US 🇺🇸 | @Raydikalx | C5987F
+  - US 🇺🇸 | @Raydikalx | 16964D
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
