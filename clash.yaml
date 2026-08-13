@@ -14,36 +14,24 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | C3EE83
+- name: CA 🇨🇦 | @Raydikalx | 432AAE
   type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | 5BB664
-  type: vmess
-  server: 158.51.121.63
+  server: rush-w1niu.teeopp.online
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
   tls: true
-  servername: seribus.org
+  servername: rush-w1niu.teeopp.online
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: linkvws
-- name: US 🇺🇸 | @Raydikalx | 361E5E
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
+    path: /video/v4sx3q/zxzrurkc.m3u8
+    headers:
+      Host: rush-w1niu.teeopp.online
+- name: Server 19
   type: vless
-  server: 169.40.42.15
+  server: 169.40.42.173
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   flow: xtls-rprx-vision
@@ -52,27 +40,53 @@ proxies:
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
-  client-fingerprint: firefox
-- name: 🇺🇸_美国_120
-  type: vless
-  server: 198.251.78.29
-  port: 2053
-  uuid: 5ffc78d7-b582-460f-b6a5-4b74b66f4700
+  client-fingerprint: ios
+- name: US 🇺🇸 | @Raydikalx | 021D03
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸_美国_210
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: uO6RPMi31-Q2JwZ1YALarJplhlBRVhpA7NsXDW3KTyk
-    short-id: 4104ca12a90b4285
-  client-fingerprint: firefox
+  skip-cert-verify: true
+- name: 🇮🇪_爱尔兰_105
+  type: trojan
+  server: unbiased-garfish.rooster465.autos
+  port: 443
+  password: AE62539071
+- name: US 🇺🇸 | @Raydikalx | 274A64
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 66526B
+  type: vmess
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: aes-128-gcm
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | C3EE83
-  - CA 🇨🇦 | @Raydikalx | 5BB664
-  - US 🇺🇸 | @Raydikalx | 361E5E
-  - 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
-  - 🇺🇸_美国_120
+  - CA 🇨🇦 | @Raydikalx | 432AAE
+  - Server 19
+  - US 🇺🇸 | @Raydikalx | 021D03
+  - 🇺🇸_美国_210
+  - 🇮🇪_爱尔兰_105
+  - US 🇺🇸 | @Raydikalx | 274A64
+  - US 🇺🇸 | @Raydikalx | 66526B
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
