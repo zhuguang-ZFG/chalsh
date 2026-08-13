@@ -14,69 +14,65 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸_美国_184
-  type: vless
-  server: 180.178.60.253
-  port: 10000
-  uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-- name: US 🇺🇸 | @Raydikalx | 4E8CA4
+- name: US 🇺🇸 | @Raydikalx | C3EE83
   type: vmess
-  server: 82.198.246.37
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 18AAF4
+- name: CA 🇨🇦 | @Raydikalx | 5BB664
   type: vmess
-  server: 216.106.183.35
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 1
+  server: 158.51.121.63
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 86CEF2
+  tls: true
+  servername: seribus.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: linkvws
+- name: US 🇺🇸 | @Raydikalx | 361E5E
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: V2ray_Alpha🐺 2
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-- name: 🏳️_未知_209
+- name: 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
   type: vless
-  server: millionaire.levikogjgfdd.ir
+  server: 169.40.42.15
   port: 443
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
   tls: true
-  servername: josni.hoyes.cloudns.ch
-  network: ws
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: josni.hoyes.cloudns.ch
-- name: US 🇺🇸 | @Raydikalx | BA43A3
-  type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: firefox
+- name: 🇺🇸_美国_120
+  type: vless
+  server: 198.251.78.29
+  port: 2053
+  uuid: 5ffc78d7-b582-460f-b6a5-4b74b66f4700
+  tls: true
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: uO6RPMi31-Q2JwZ1YALarJplhlBRVhpA7NsXDW3KTyk
+    short-id: 4104ca12a90b4285
+  client-fingerprint: firefox
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸_美国_184
-  - US 🇺🇸 | @Raydikalx | 4E8CA4
-  - US 🇺🇸 | @Raydikalx | 18AAF4
-  - US 🇺🇸 | @Raydikalx | 86CEF2
-  - V2ray_Alpha🐺 2
-  - 🏳️_未知_209
-  - US 🇺🇸 | @Raydikalx | BA43A3
+  - US 🇺🇸 | @Raydikalx | C3EE83
+  - CA 🇨🇦 | @Raydikalx | 5BB664
+  - US 🇺🇸 | @Raydikalx | 361E5E
+  - 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
+  - 🇺🇸_美国_120
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
