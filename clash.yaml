@@ -14,58 +14,69 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 8CDB07
-  type: vmess
-  server: 165.140.216.142
+- name: Server 19
+  type: vless
+  server: 169.40.42.173
   port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: ios
+- name: 🇺🇸_美国_92
+  type: trojan
+  server: bright-baboon.rooster465.autos
+  port: 443
+  password: AE62539071
+- name: 🇺🇸_美国_210
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | E4DC87
+  tls: true
+  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | F25196
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 8BD1E0
+- name: US 🇺🇸 | @Raydikalx | BCBC4C
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸_美国_120
-  type: vless
-  server: 198.251.78.29
-  port: 2053
-  uuid: 5ffc78d7-b582-460f-b6a5-4b74b66f4700
-  tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: uO6RPMi31-Q2JwZ1YALarJplhlBRVhpA7NsXDW3KTyk
-    short-id: 4104ca12a90b4285
-  client-fingerprint: firefox
-- name: 🇺🇸_美国_90
+- name: US 🇺🇸 | @Raydikalx | B47D80
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸_美国_94
   type: trojan
-  server: dear-hermit.rooster465.autos
-  port: 443
-  password: AE62539071
-- name: 🇺🇸_美国_78
-  type: trojan
-  server: dominant-jaguar.rooster465.autos
+  server: humorous-hawk.rooster465.autos
   port: 443
   password: AE62539071
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 8CDB07
-  - US 🇺🇸 | @Raydikalx | E4DC87
-  - US 🇺🇸 | @Raydikalx | 8BD1E0
-  - 🇺🇸_美国_120
-  - 🇺🇸_美国_90
-  - 🇺🇸_美国_78
+  - Server 19
+  - 🇺🇸_美国_92
+  - 🇺🇸_美国_210
+  - US 🇺🇸 | @Raydikalx | F25196
+  - US 🇺🇸 | @Raydikalx | BCBC4C
+  - US 🇺🇸 | @Raydikalx | B47D80
+  - 🇺🇸_美国_94
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
