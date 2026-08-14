@@ -14,16 +14,30 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | B00608
+- name: '@Hope_Net-join-us-on-Telegram'
   type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
-  cipher: aes-128-gcm
-- name: Server 3
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | B93671
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 021D03
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 (7)
   type: vless
-  server: 169.40.42.184
+  server: 169.40.42.179
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   flow: xtls-rprx-vision
@@ -33,39 +47,51 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   client-fingerprint: ios
-- name: 🔷🆔@v2ray_configs_pool🔷
+- name: 美国_🇺🇸_9
+  type: vless
+  server: 51.81.223.225
+  port: 11094
+  uuid: f1fa0ad9-b122-4b7c-da82-4bea9edc48dd
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.yahoo.com
+  reality-opts:
+    public-key: 9dnXiXxP4xgvtTVRj9SBFdyO6mjGvVhWD8qVZZLCCCk
+    short-id: a356addf
+  client-fingerprint: chrome
+- name: Server 19
+  type: vless
+  server: 169.40.42.173
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: ios
+- name: US 🇺🇸 | @Raydikalx | 452ED5
   type: vmess
-  server: 66.42.72.146
-  port: 46373
-  uuid: f98fdefd-1b61-4052-c5b5-2a196f6e0541
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
-    path: /my-vmess-path
-- name: US 🇺🇸 | @Raydikalx | 18AAF4
-  type: vmess
-  server: 216.106.183.35
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 1
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 83B9FE
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+    path: /cctv13.m3u8
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | B00608
-  - Server 3
-  - 🔷🆔@v2ray_configs_pool🔷
-  - US 🇺🇸 | @Raydikalx | 18AAF4
-  - US 🇺🇸 | @Raydikalx | 83B9FE
+  - '@Hope_Net-join-us-on-Telegram'
+  - US 🇺🇸 | @Raydikalx | B93671
+  - US 🇺🇸 | @Raydikalx | 021D03
+  - 🇺🇸 (7)
+  - 美国_🇺🇸_9
+  - Server 19
+  - US 🇺🇸 | @Raydikalx | 452ED5
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
