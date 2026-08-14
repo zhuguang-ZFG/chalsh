@@ -14,74 +14,42 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | B6570F
+- name: US 🇺🇸 | @Raydikalx | 3A610C
   type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
-  cipher: aes-128-gcm
-- name: US 🇺🇸 | @Raydikalx | B47D80
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | D60DC5
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | 432AAE
+- name: US 🇺🇸 | @Raydikalx | 9B6A17
   type: vmess
-  server: rush-w1niu.teeopp.online
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-  tls: true
-  servername: rush-w1niu.teeopp.online
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /video/v4sx3q/zxzrurkc.m3u8
-    headers:
-      Host: rush-w1niu.teeopp.online
-- name: US 🇺🇸 | @Raydikalx | 3B1D0A
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | A53DAC
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 86CEF2
+- name: US 🇺🇸 | @Raydikalx | 16964D
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | 4BA3A6
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | B6570F
-  - US 🇺🇸 | @Raydikalx | B47D80
-  - CA 🇨🇦 | @Raydikalx | 432AAE
-  - US 🇺🇸 | @Raydikalx | 3B1D0A
-  - CA 🇨🇦 | @Raydikalx | A53DAC
-  - US 🇺🇸 | @Raydikalx | 86CEF2
-  - CA 🇨🇦 | @Raydikalx | 4BA3A6
+  - US 🇺🇸 | @Raydikalx | 3A610C
+  - US 🇺🇸 | @Raydikalx | D60DC5
+  - US 🇺🇸 | @Raydikalx | 9B6A17
+  - US 🇺🇸 | @Raydikalx | 16964D
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
