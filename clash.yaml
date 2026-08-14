@@ -14,33 +14,18 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 101269
+- name: US 🇺🇸 | @Raydikalx | 582641
   type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 86CEF2
+  tls: true
+  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | 642933
   type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 爱尔兰_🇮🇪_88
-  type: trojan
-  server: worthy-labrador.rooster465.autos
-  port: 443
-  password: AE62539071
-- name: 爱尔兰_🇮🇪_86
-  type: trojan
-  server: kind-stork.rooster465.autos
-  port: 443
-  password: AE62539071
-- name: US 🇺🇸 | @Raydikalx | 7938FE
-  type: vmess
-  server: 82.198.246.37
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -49,11 +34,8 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 101269
-  - US 🇺🇸 | @Raydikalx | 86CEF2
-  - 爱尔兰_🇮🇪_88
-  - 爱尔兰_🇮🇪_86
-  - US 🇺🇸 | @Raydikalx | 7938FE
+  - US 🇺🇸 | @Raydikalx | 582641
+  - US 🇺🇸 | @Raydikalx | 642933
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
