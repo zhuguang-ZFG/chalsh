@@ -14,18 +14,45 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 582641
+- name: US 🇺🇸 | @Raydikalx | B00608
   type: vmess
-  server: guanwang.awsno.com
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: aes-128-gcm
+- name: Server 3
+  type: vless
+  server: 169.40.42.184
   port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: ios
+- name: 🔷🆔@v2ray_configs_pool🔷
+  type: vmess
+  server: 66.42.72.146
+  port: 46373
+  uuid: f98fdefd-1b61-4052-c5b5-2a196f6e0541
   alterId: 0
   cipher: auto
-  tls: true
-  skip-cert-verify: true
-- name: US 🇺🇸 | @Raydikalx | 642933
+  network: ws
+  ws-opts:
+    path: /my-vmess-path
+- name: US 🇺🇸 | @Raydikalx | 18AAF4
   type: vmess
-  server: 82.198.246.97
+  server: 216.106.183.35
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 1
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 83B9FE
+  type: vmess
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -34,8 +61,11 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 582641
-  - US 🇺🇸 | @Raydikalx | 642933
+  - US 🇺🇸 | @Raydikalx | B00608
+  - Server 3
+  - 🔷🆔@v2ray_configs_pool🔷
+  - US 🇺🇸 | @Raydikalx | 18AAF4
+  - US 🇺🇸 | @Raydikalx | 83B9FE
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
