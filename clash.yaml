@@ -14,45 +14,27 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇮🇪_爱尔兰_111
-  type: trojan
-  server: cunning-grub.rooster465.autos
-  port: 443
-  password: FH72359861
-  sni: cunning-grub.rooster465.autos
-- name: US 🇺🇸 | @Raydikalx | B1FB97
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | F9D797
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | D60DC5
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 392623
+- name: US 🇺🇸 | @Raydikalx | 5C2EE9
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 2B97CF
+- name: US 🇺🇸 | @Raydikalx | 582641
   type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | FF8539
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
 - name: US 🇺🇸 | @Raydikalx | 101269
@@ -62,25 +44,22 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | 8F8AB8
+- name: US 🇺🇸 | @Raydikalx | DF48F9
   type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇮🇪_爱尔兰_111
-  - US 🇺🇸 | @Raydikalx | B1FB97
-  - US 🇺🇸 | @Raydikalx | F9D797
-  - US 🇺🇸 | @Raydikalx | D60DC5
-  - US 🇺🇸 | @Raydikalx | 392623
-  - US 🇺🇸 | @Raydikalx | 2B97CF
+  - US 🇺🇸 | @Raydikalx | 5C2EE9
+  - US 🇺🇸 | @Raydikalx | 582641
+  - US 🇺🇸 | @Raydikalx | FF8539
   - US 🇺🇸 | @Raydikalx | 101269
-  - CA 🇨🇦 | @Raydikalx | 8F8AB8
+  - US 🇺🇸 | @Raydikalx | DF48F9
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
