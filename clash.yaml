@@ -14,37 +14,53 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 274A64
+- name: CA 🇨🇦 | @Raydikalx | 432AAE
+  type: vmess
+  server: rush-w1niu.teeopp.online
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: rush-w1niu.teeopp.online
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /video/v4sx3q/zxzrurkc.m3u8
+    headers:
+      Host: rush-w1niu.teeopp.online
+- name: US 🇺🇸 | @Raydikalx | 361E5E
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | E4DC87
+- name: US 🇺🇸 | @Raydikalx | DBC3FD
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | DA749F
-  type: vmess
-  server: 173.249.209.146
-  port: 20086
-  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
-  alterId: 0
-  cipher: auto
+- name: 🇺🇸_美国_327
+  type: vless
+  server: support.zoom.us
+  port: 80
+  uuid: 4093e0fe-939d-41a8-95c1-395728cbbd93
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: j03.sahanwickramasinghe.me
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 274A64
-  - US 🇺🇸 | @Raydikalx | E4DC87
-  - US 🇺🇸 | @Raydikalx | DA749F
+  - CA 🇨🇦 | @Raydikalx | 432AAE
+  - US 🇺🇸 | @Raydikalx | 361E5E
+  - US 🇺🇸 | @Raydikalx | DBC3FD
+  - 🇺🇸_美国_327
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
