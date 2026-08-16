@@ -14,90 +14,66 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 021D03
+- name: US 🇺🇸 | @Raydikalx | 120B0A
   type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 67.220.72.237
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: 🇩🇪_德国_91
-  type: vless
-  server: 169.40.42.35
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: ios
-- name: US 🇺🇸 | @Raydikalx | B93671
+- name: US 🇺🇸 | @Raydikalx | 3A610C
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 4E8CA4
   type: vmess
   server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 8BD1E0
+- name: US 🇺🇸 | @Raydikalx | 5C2EE9
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 101269
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | B47D80
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | A52A9B
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | DA749F
-  type: vmess
-  server: 173.249.209.146
-  port: 20086
-  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: CA 🇨🇦 | @Raydikalx | 577620
-  type: vmess
-  server: 158.51.121.63
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: seribus.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: seribus.org
-- name: CA 🇨🇦 | @Raydikalx | EE5FED
-  type: vmess
-  server: rush-w1niu.teeopp.online
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: rush-w1niu.teeopp.online
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /video/v4sx3q/zxzrurkc.m3u8
-    headers:
-      Host: rush-w1niu.teeopp.online
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 021D03
-  - 🇩🇪_德国_91
-  - US 🇺🇸 | @Raydikalx | B93671
-  - US 🇺🇸 | @Raydikalx | 8BD1E0
-  - US 🇺🇸 | @Raydikalx | DA749F
-  - CA 🇨🇦 | @Raydikalx | 577620
-  - CA 🇨🇦 | @Raydikalx | EE5FED
+  - US 🇺🇸 | @Raydikalx | 120B0A
+  - US 🇺🇸 | @Raydikalx | 3A610C
+  - US 🇺🇸 | @Raydikalx | 4E8CA4
+  - US 🇺🇸 | @Raydikalx | 5C2EE9
+  - US 🇺🇸 | @Raydikalx | 101269
+  - US 🇺🇸 | @Raydikalx | B47D80
+  - US 🇺🇸 | @Raydikalx | A52A9B
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
