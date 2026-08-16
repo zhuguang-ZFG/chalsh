@@ -26,20 +26,6 @@ proxies:
   network: ws
   ws-opts:
     path: /wes
-- name: US 🇺🇸 | @Raydikalx | 9B6A17
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 120B0A
-  type: vmess
-  server: 67.220.72.237
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
 - name: 🏳️_未知_384
   type: vmess
   server: US122202.ssgreen.org
@@ -52,22 +38,31 @@ proxies:
   network: ws
   ws-opts:
     path: /wes
-- name: US 🇺🇸 | @Raydikalx | 3E46F6
+- name: V2ray_Alpha🐺 2
   type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
   alterId: 0
   cipher: auto
+- name: 🇺🇸_美国_328
+  type: vless
+  server: support.zoom.us
+  port: 80
+  uuid: 4093e0fe-939d-41a8-95c1-395728cbbd93
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: j03.sahanwickramasinghe.me
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
   - 🏳️_未知_386
-  - US 🇺🇸 | @Raydikalx | 9B6A17
-  - US 🇺🇸 | @Raydikalx | 120B0A
   - 🏳️_未知_384
-  - US 🇺🇸 | @Raydikalx | 3E46F6
+  - V2ray_Alpha🐺 2
+  - 🇺🇸_美国_328
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
