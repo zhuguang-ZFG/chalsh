@@ -14,55 +14,102 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🏳️_未知_386
+- name: US 🇺🇸 | @Raydikalx | F52DD6
   type: vmess
-  server: US122204.ssgreen.org
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 7938FE
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: CA 🇨🇦 | @Raydikalx | 98B3C1
+  type: vmess
+  server: rush-6it6b.teeopp.quest
   port: 443
-  uuid: 4905e64c-bfe8-4045-ae83-1766f718213a
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /wes
-- name: 🏳️_未知_384
-  type: vmess
-  server: US122202.ssgreen.org
-  port: 443
-  uuid: 9f705642-24ef-4388-ad58-d36b3c91b639
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /wes
-- name: V2ray_Alpha🐺 2
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸_美国_328
+    path: /video/kz49hf/gbin5jve.m3u8
+- name: 🇩🇪_德国_88
   type: vless
-  server: support.zoom.us
-  port: 80
-  uuid: 4093e0fe-939d-41a8-95c1-395728cbbd93
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: j03.sahanwickramasinghe.me
+  server: 169.40.42.231
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: ios
+- name: US 🇺🇸 | @Raydikalx | 3A610C
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪_德国_87
+  type: vless
+  server: 169.40.42.89
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: ios
+- name: 🇺🇸 (7)
+  type: vless
+  server: 169.40.42.179
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: ios
+- name: US 🇺🇸 | @Raydikalx | 8BD1E0
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: CA 🇨🇦 | @Raydikalx | 00DD16
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🏳️_未知_386
-  - 🏳️_未知_384
-  - V2ray_Alpha🐺 2
-  - 🇺🇸_美国_328
+  - US 🇺🇸 | @Raydikalx | F52DD6
+  - US 🇺🇸 | @Raydikalx | 7938FE
+  - CA 🇨🇦 | @Raydikalx | 98B3C1
+  - 🇩🇪_德国_88
+  - US 🇺🇸 | @Raydikalx | 3A610C
+  - 🇩🇪_德国_87
+  - 🇺🇸 (7)
+  - US 🇺🇸 | @Raydikalx | 8BD1E0
+  - CA 🇨🇦 | @Raydikalx | 00DD16
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
