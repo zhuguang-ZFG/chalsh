@@ -14,101 +14,47 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 642933
+- name: 🏳️_未知_386
   type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 582641
-  type: vmess
-  server: guanwang.awsno.com
+  server: US122204.ssgreen.org
   port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-- name: US 🇺🇸 | @Raydikalx | A8A9F5
-  type: vmess
-  server: 157.254.227.163
-  port: 443
-  uuid: eba24d1d-0c2b-4b67-862f-cae68626f3fa
+  uuid: 4905e64c-bfe8-4045-ae83-1766f718213a
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /cae68626f3fa
-- name: CA 🇨🇦 | @Raydikalx | 432AAE
-  type: vmess
-  server: rush-w1niu.teeopp.online
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: rush-w1niu.teeopp.online
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /video/v4sx3q/zxzrurkc.m3u8
-    headers:
-      Host: rush-w1niu.teeopp.online
-- name: US 🇺🇸 | @Raydikalx | 34CAC1
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 (7)
-  type: vless
-  server: 169.40.42.179
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: ios
-- name: CA 🇨🇦 | @Raydikalx | 577620
-  type: vmess
-  server: 158.51.121.63
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: seribus.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: seribus.org
-- name: CA 🇨🇦 | @Raydikalx | BDC5A3
-  type: vmess
-  server: rush-6it6b.teeopp.quest
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: rush-6it6b.teeopp.quest
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rush-6it6b.teeopp.quest
-- name: US 🇺🇸 | @Raydikalx | DF48F9
+    path: /wes
+- name: US 🇺🇸 | @Raydikalx | 9B6A17
   type: vmess
   server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 120B0A
+  type: vmess
+  server: 67.220.72.237
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🏳️_未知_384
+  type: vmess
+  server: US122202.ssgreen.org
+  port: 443
+  uuid: 9f705642-24ef-4388-ad58-d36b3c91b639
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /wes
+- name: US 🇺🇸 | @Raydikalx | 3E46F6
+  type: vmess
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -117,15 +63,11 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 642933
-  - US 🇺🇸 | @Raydikalx | 582641
-  - US 🇺🇸 | @Raydikalx | A8A9F5
-  - CA 🇨🇦 | @Raydikalx | 432AAE
-  - US 🇺🇸 | @Raydikalx | 34CAC1
-  - 🇺🇸 (7)
-  - CA 🇨🇦 | @Raydikalx | 577620
-  - CA 🇨🇦 | @Raydikalx | BDC5A3
-  - US 🇺🇸 | @Raydikalx | DF48F9
+  - 🏳️_未知_386
+  - US 🇺🇸 | @Raydikalx | 9B6A17
+  - US 🇺🇸 | @Raydikalx | 120B0A
+  - 🏳️_未知_384
+  - US 🇺🇸 | @Raydikalx | 3E46F6
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
