@@ -14,46 +14,15 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | F5B1CA
+- name: US5
   type: vmess
-  server: 216.106.185.141
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | B00608
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: aes-128-gcm
-- name: US 🇺🇸 | @Raydikalx | 8CDB07
-  type: vmess
-  server: 165.140.216.142
+  server: guanwang.awsno.com
   port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | D60DC5
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇩🇪_德国_65
-  type: vless
-  server: 169.40.42.104
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
   tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: ios
+  skip-cert-verify: true
 - name: US 🇺🇸 | @Raydikalx | DA749F
   type: vmess
   server: 173.249.209.146
@@ -64,53 +33,92 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+- name: US 🇺🇸 | @Raydikalx | 761214
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | 98B3C1
+- name: US 🇺🇸 | @Raydikalx | DAAD50
   type: vmess
-  server: rush-6it6b.teeopp.quest
+  server: 165.140.216.141
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
   alterId: 0
   cipher: auto
+- name: 🇩🇪_德国_43
+  type: vless
+  server: 169.40.42.35
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
   tls: true
-  skip-cert-verify: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: ios
+- name: 美国+CloudFlare节点
+  type: vless
+  server: www.baipiao.eu.org
+  port: 8880
+  uuid: 4212034d-c18b-4060-b218-4f8372e5473a
   network: ws
   ws-opts:
-    path: /video/kz49hf/gbin5jve.m3u8
-- name: CA 🇨🇦 | @Raydikalx | A53DAC
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+    headers:
+      Host: summer-hill-7f65.275-521.workers.dev
+- name: US 🇺🇸 | @Raydikalx | 3A610C
   type: vmess
-  server: 134.195.196.211
+  server: 38.91.107.49
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 18AAF4
+- name: US 🇺🇸 | @Raydikalx | BA43A3
   type: vmess
-  server: 216.106.183.35
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 1
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
   cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 452ED5
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+- name: 🇩🇪_德国_54
+  type: vless
+  server: 169.40.42.231
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: chrome
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | F5B1CA
-  - US 🇺🇸 | @Raydikalx | B00608
-  - US 🇺🇸 | @Raydikalx | 8CDB07
-  - US 🇺🇸 | @Raydikalx | D60DC5
-  - 🇩🇪_德国_65
+  - US5
   - US 🇺🇸 | @Raydikalx | DA749F
-  - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
-  - CA 🇨🇦 | @Raydikalx | 98B3C1
-  - CA 🇨🇦 | @Raydikalx | A53DAC
-  - US 🇺🇸 | @Raydikalx | 18AAF4
+  - US 🇺🇸 | @Raydikalx | 761214
+  - US 🇺🇸 | @Raydikalx | DAAD50
+  - 🇩🇪_德国_43
+  - 美国+CloudFlare节点
+  - US 🇺🇸 | @Raydikalx | 3A610C
+  - US 🇺🇸 | @Raydikalx | BA43A3
+  - US 🇺🇸 | @Raydikalx | 452ED5
+  - 🇩🇪_德国_54
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
