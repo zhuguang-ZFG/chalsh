@@ -14,69 +14,68 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 452ED5
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-- name: US11
+- name: US 🇺🇸 | @Raydikalx | 18AAF4
   type: vmess
   server: 216.106.183.35
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 1
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 761214
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | B00608
+- name: US 🇺🇸 | @Raydikalx | 350DAC
   type: vmess
-  server: 67.220.95.3
+  server: 165.140.216.142
+  port: 443
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  alterId: 0
+  cipher: auto
+- name: CA 🇨🇦 | @Raydikalx | 00DFFE
+  type: vmess
+  server: rush-6it6b.teeopp.quest
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: rush-6it6b.teeopp.quest
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /video/kz49hf/gbin5jve.m3u8
+    headers:
+      Host: rush-6it6b.teeopp.quest
+- name: CA 🇨🇦 | @Raydikalx | A53DAC
+  type: vmess
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
-  cipher: aes-128-gcm
-- name: 🏳️_未知_56
-  type: vless
-  server: 104.17.28.89
+  cipher: auto
+- name: US13
+  type: vmess
+  server: guanwang.awsno.com
   port: 443
-  uuid: 1078d418-b4e0-4668-9018-dc90c2042d61
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: workspace.evan00.dpdns.org
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: workspace.evan00.dpdns.org
-- name: CA 🇨🇦 | @Raydikalx | B676D1
-  type: vmess
-  server: 216.128.176.166
-  port: 28809
-  uuid: ebca559c-a4a1-4062-9453-6412d8ff5255
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /ebca559c-a4a1-4062-9453-6412d8ff5255
-- name: US 🇺🇸 | @Raydikalx | F5B1CA
-  type: vmess
-  server: 216.106.185.141
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+  skip-cert-verify: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 452ED5
-  - US11
-  - US 🇺🇸 | @Raydikalx | B00608
-  - 🏳️_未知_56
-  - CA 🇨🇦 | @Raydikalx | B676D1
-  - US 🇺🇸 | @Raydikalx | F5B1CA
+  - US 🇺🇸 | @Raydikalx | 18AAF4
+  - US 🇺🇸 | @Raydikalx | 761214
+  - US 🇺🇸 | @Raydikalx | 350DAC
+  - CA 🇨🇦 | @Raydikalx | 00DFFE
+  - CA 🇨🇦 | @Raydikalx | A53DAC
+  - US13
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
