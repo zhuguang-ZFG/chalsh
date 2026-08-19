@@ -14,44 +14,55 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | F25196
+- name: US 🇺🇸 | @Raydikalx | E61B00
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🆔vpnserverrr 🔒 VL-TCP- ❔ XX 13ms
-  type: vless
-  server: 169.40.42.212
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | 761214
+- name: US 🇺🇸 | @Raydikalx | E38DDB
   type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇺🇸 (7)
-  type: vless
-  server: 169.40.42.179
+- name: CA 🇨🇦 | @Raydikalx | B676D1
+  type: vmess
+  server: 216.128.176.166
+  port: 28809
+  uuid: ebca559c-a4a1-4062-9453-6412d8ff5255
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /ebca559c-a4a1-4062-9453-6412d8ff5255
+- name: 🇨🇦@FreakConfig
+  type: vmess
+  server: 158.51.121.63
   port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: ios
+  servername: seribus.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: seribus.org
+- name: US 🇺🇸 | @Raydikalx | DA749F
+  type: vmess
+  server: 173.249.209.146
+  port: 20086
+  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
 - name: US 🇺🇸 | @Raydikalx | 582641
   type: vmess
   server: guanwang.awsno.com
@@ -61,15 +72,24 @@ proxies:
   cipher: auto
   tls: true
   skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | 101269
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | F25196
-  - 🆔vpnserverrr 🔒 VL-TCP- ❔ XX 13ms
-  - US 🇺🇸 | @Raydikalx | 761214
-  - 🇺🇸 (7)
+  - US 🇺🇸 | @Raydikalx | E61B00
+  - US 🇺🇸 | @Raydikalx | E38DDB
+  - CA 🇨🇦 | @Raydikalx | B676D1
+  - 🇨🇦@FreakConfig
+  - US 🇺🇸 | @Raydikalx | DA749F
   - US 🇺🇸 | @Raydikalx | 582641
+  - US 🇺🇸 | @Raydikalx | 101269
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
