@@ -14,20 +14,42 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | E61B00
+- name: US 🇺🇸 | @Raydikalx | 452ED5
   type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | E38DDB
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+- name: US11
   type: vmess
-  server: 169.197.142.22
+  server: 216.106.183.35
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | B00608
+  type: vmess
+  server: 67.220.95.3
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
-  cipher: auto
+  cipher: aes-128-gcm
+- name: 🏳️_未知_56
+  type: vless
+  server: 104.17.28.89
+  port: 443
+  uuid: 1078d418-b4e0-4668-9018-dc90c2042d61
+  tls: true
+  servername: workspace.evan00.dpdns.org
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: workspace.evan00.dpdns.org
 - name: CA 🇨🇦 | @Raydikalx | B676D1
   type: vmess
   server: 216.128.176.166
@@ -38,58 +60,23 @@ proxies:
   network: ws
   ws-opts:
     path: /ebca559c-a4a1-4062-9453-6412d8ff5255
-- name: 🇨🇦@FreakConfig
+- name: US 🇺🇸 | @Raydikalx | F5B1CA
   type: vmess
-  server: 158.51.121.63
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: seribus.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: linkvws
-    headers:
-      Host: seribus.org
-- name: US 🇺🇸 | @Raydikalx | DA749F
-  type: vmess
-  server: 173.249.209.146
-  port: 20086
-  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: US 🇺🇸 | @Raydikalx | 582641
-  type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-- name: US 🇺🇸 | @Raydikalx | 101269
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 216.106.185.141
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | E61B00
-  - US 🇺🇸 | @Raydikalx | E38DDB
+  - US 🇺🇸 | @Raydikalx | 452ED5
+  - US11
+  - US 🇺🇸 | @Raydikalx | B00608
+  - 🏳️_未知_56
   - CA 🇨🇦 | @Raydikalx | B676D1
-  - 🇨🇦@FreakConfig
-  - US 🇺🇸 | @Raydikalx | DA749F
-  - US 🇺🇸 | @Raydikalx | 582641
-  - US 🇺🇸 | @Raydikalx | 101269
+  - US 🇺🇸 | @Raydikalx | F5B1CA
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
