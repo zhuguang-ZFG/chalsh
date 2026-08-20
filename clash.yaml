@@ -14,70 +14,31 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🏳️_未知_178
+- name: US 🇺🇸 | @Raydikalx | D60DC5
   type: vmess
-  server: US032022.ssgreen.org
-  port: 443
-  uuid: bd42aa53-1f41-45e0-a4ab-023d913525f4
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /wes
-- name: US 🇺🇸 | @Raydikalx | B00608
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: aes-128-gcm
-- name: US 🇺🇸 | @Raydikalx | AA510F
-  type: vmess
-  server: 82.198.246.37
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | F5B1CA
-  type: vmess
-  server: 216.106.185.141
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🏳️_未知_144
+- name: 🇺🇸 (7)
   type: vless
-  server: 104.16.79.73
+  server: 169.40.42.179
   port: 443
-  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
   tls: true
-  servername: josni.hoyes.cloudns.ch
-  network: ws
-  ws-opts:
-    path: /?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI
-    headers:
-      Host: josni.hoyes.cloudns.ch
-- name: US9
-  type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: ios
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🏳️_未知_178
-  - US 🇺🇸 | @Raydikalx | B00608
-  - US 🇺🇸 | @Raydikalx | AA510F
-  - US 🇺🇸 | @Raydikalx | F5B1CA
-  - 🏳️_未知_144
-  - US9
+  - US 🇺🇸 | @Raydikalx | D60DC5
+  - 🇺🇸 (7)
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
