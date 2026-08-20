@@ -14,72 +14,93 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 8C331C
-  type: vmess
-  server: 129.146.143.80
-  port: 48111
-  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 86CEF2
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 9B4F83
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 129.146.77.248
-- name: US 🇺🇸 | @Raydikalx | E38DDB
-  type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸_美国_87
-  type: trojan
-  server: 128.14.148.84
-  port: 5531
-  password: fg20mtCFHy
-  sni: ycgsc.southbyte.xyz
-- name: US 🇺🇸 | @Raydikalx | 582641
-  type: vmess
-  server: guanwang.awsno.com
+- name: 🇩🇪telegram➠@v2rayNG_Matsuri
+  type: vless
+  server: 169.40.42.173
   port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: ios
+- name: US 🇺🇸 | @Raydikalx | F5B1CA
+  type: vmess
+  server: 216.106.185.141
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: CA 🇨🇦 | @Raydikalx | 577620
+  type: vmess
+  server: 158.51.121.63
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
   tls: true
+  servername: seribus.org
   skip-cert-verify: true
-- name: 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
+  network: ws
+  ws-opts:
+    path: linkvws
+    headers:
+      Host: seribus.org
+- name: US 🇺🇸 | @Raydikalx | 9EEDF3
   type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 216.106.183.35
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
+- name: 🇺🇸_美国_15
+  type: vless
+  server: 38.125.120.76
+  port: 443
+  uuid: 085c75ad-c00b-43fb-8fea-fa0caefa0a60
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.apple.com
+  reality-opts:
+    public-key: tOWJAWnCPaJZvqorglX2JAuT5mDrSSA9VPCd90DSZRY
+    short-id: 241c2a5b9073f934
+  client-fingerprint: chrome
+- name: Server 3
+  type: vless
+  server: 169.40.42.184
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: ios
+- name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 9ms
+  type: vless
+  server: 137.184.218.169
+  port: 36925
+  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
+  client-fingerprint: chrome
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 8C331C
-  - US 🇺🇸 | @Raydikalx | 86CEF2
-  - US 🇺🇸 | @Raydikalx | 9B4F83
-  - US 🇺🇸 | @Raydikalx | E38DDB
-  - 🇺🇸_美国_87
-  - US 🇺🇸 | @Raydikalx | 582641
-  - 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
+  - 🇩🇪telegram➠@v2rayNG_Matsuri
+  - US 🇺🇸 | @Raydikalx | F5B1CA
+  - CA 🇨🇦 | @Raydikalx | 577620
+  - US 🇺🇸 | @Raydikalx | 9EEDF3
+  - 🇺🇸_美国_15
+  - Server 3
+  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 9ms
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
