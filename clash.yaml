@@ -14,57 +14,49 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: CA 🇨🇦 | @Raydikalx | A69B88
+- name: US 🇺🇸 | @Raydikalx | BA43A3
   type: vmess
-  server: rush-6it6b.teeopp.quest
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: rush-6it6b.teeopp.quest
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rush-6it6b.teeopp.quest
-- name: 🏳️_未知_101
-  type: vless
-  server: ed8d.wdz.de5.net
-  port: 443
-  uuid: 0b06f318-ab9d-4de7-8779-360bd5f7ea67
-  tls: true
-  servername: ed8d.wdz.de5.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ed8d.wdz.de5.net
-- name: US 🇺🇸 | @Raydikalx | 9B6A17
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 8C331C
-  type: vmess
-  server: 129.146.143.80
-  port: 48111
-  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | E38DDB
-  type: vmess
-  server: 169.197.142.22
+  server: 67.220.85.46
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
+- name: US 🇺🇸 | @Raydikalx | 18AAF4
+  type: vmess
+  server: 216.106.183.35
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 1
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 054E6A
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | F25196
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 9B4F83
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 129.146.77.248
+- name: 🇺🇸 (7)
   type: vless
-  server: 169.40.42.15
+  server: 169.40.42.179
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   flow: xtls-rprx-vision
@@ -73,17 +65,25 @@ proxies:
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
-  client-fingerprint: firefox
+  client-fingerprint: ios
+- name: US 🇺🇸 | @Raydikalx | B1FB97
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - CA 🇨🇦 | @Raydikalx | A69B88
-  - 🏳️_未知_101
-  - US 🇺🇸 | @Raydikalx | 9B6A17
-  - US 🇺🇸 | @Raydikalx | 8C331C
-  - US 🇺🇸 | @Raydikalx | E38DDB
-  - 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
+  - US 🇺🇸 | @Raydikalx | BA43A3
+  - US 🇺🇸 | @Raydikalx | 18AAF4
+  - US 🇺🇸 | @Raydikalx | 054E6A
+  - US 🇺🇸 | @Raydikalx | F25196
+  - US 🇺🇸 | @Raydikalx | 9B4F83
+  - 🇺🇸 (7)
+  - US 🇺🇸 | @Raydikalx | B1FB97
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
