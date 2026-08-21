@@ -14,73 +14,79 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | F25196
+- name: US 🇺🇸 | @Raydikalx | 7DB48C
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 8CDB07
+- name: 未知124
   type: vmess
-  server: 165.140.216.142
+  server: rush-6it6b.teeopp.quest
   port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | DA749F
-  type: vmess
-  server: 173.249.209.146
-  port: 20086
-  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
-  alterId: 0
-  cipher: auto
+  tls: true
+  servername: rush-6it6b.teeopp.quest
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
-- name: US 🇺🇸 | @Raydikalx | F5B1CA
+    headers:
+      Host: rush-6it6b.teeopp.quest
+- name: 🇺🇸_美国_277
+  type: vless
+  server: family.bucket.3.kfc-520.com
+  port: 10004
+  uuid: 3979cfac-7f7b-3dcf-a4e4-513eb8d125a7
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.intel.com
+  reality-opts:
+    public-key: YoLRlSFCOiQjky1hQVHuSkiaPER4pro1uDyCTHVSfwY
+    short-id: df52dd28ff
+  client-fingerprint: firefox
+- name: CA 🇨🇦 | @Raydikalx | EE5FED
   type: vmess
-  server: 216.106.185.141
+  server: rush-w1niu.teeopp.online
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: rush-w1niu.teeopp.online
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /video/v4sx3q/zxzrurkc.m3u8
+    headers:
+      Host: rush-w1niu.teeopp.online
+- name: US 🇺🇸 | @Raydikalx | 9EEDF3
+  type: vmess
+  server: 216.106.183.35
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 18811D
+- name: US 🇺🇸 | @Raydikalx | C0EB3C
   type: vmess
-  server: 129.146.143.80
-  port: 48111
-  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | A53DAC
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 9ms
-  type: vless
-  server: 137.184.218.169
-  port: 36925
-  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
-  client-fingerprint: chrome
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | F25196
-  - US 🇺🇸 | @Raydikalx | 8CDB07
-  - US 🇺🇸 | @Raydikalx | DA749F
-  - US 🇺🇸 | @Raydikalx | F5B1CA
-  - US 🇺🇸 | @Raydikalx | 18811D
-  - CA 🇨🇦 | @Raydikalx | A53DAC
-  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 9ms
+  - US 🇺🇸 | @Raydikalx | 7DB48C
+  - 未知124
+  - 🇺🇸_美国_277
+  - CA 🇨🇦 | @Raydikalx | EE5FED
+  - US 🇺🇸 | @Raydikalx | 9EEDF3
+  - US 🇺🇸 | @Raydikalx | C0EB3C
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
