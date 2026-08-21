@@ -14,77 +14,53 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | BA43A3
+- name: US 🇺🇸 | @Raydikalx | E38DDB
   type: vmess
-  server: 67.220.85.46
+  server: 169.197.142.22
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 美国+CloudFlare节点
-  type: vless
-  server: cf3.466688.xyz
-  port: 8880
-  uuid: 00ff7e5f-9b6f-4401-aab9-4d044660411f
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.KR.CMLiussss.net@https://t.me/QiangLieTuiJian
-    headers:
-      Host: summer-bonus-aa63.52-c03.workers.dev
-- name: 未知121
+- name: US 🇺🇸 | @Raydikalx | 8CDB07
   type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | F25196
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | 7EB937
-  type: vmess
-  server: node.socks5.kdns.fr
+  server: 165.140.216.142
   port: 443
-  uuid: ca63bc09-a7b3-47c2-8fe5-7233c38ad489
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
   alterId: 0
   cipher: auto
-  tls: true
-  servername: written-maple-inquiries-exceptional.trycloudflare.com
-  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | DA749F
+  type: vmess
+  server: 173.249.209.146
+  port: 20086
+  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /ca63bc09-a7b3-47c2-8fe5-7233c38ad489-vm
-    headers:
-      Host: written-maple-inquiries-exceptional.trycloudflare.com
-- name: CA 🇨🇦 | @Raydikalx | A53DAC
+    path: /
+- name: US 🇺🇸 | @Raydikalx | 4E8CA4
   type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | B00608
+- name: US 🇺🇸 | @Raydikalx | DAAD50
   type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
   alterId: 0
-  cipher: aes-128-gcm
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | BA43A3
-  - 美国+CloudFlare节点
-  - 未知121
-  - US 🇺🇸 | @Raydikalx | F25196
-  - CA 🇨🇦 | @Raydikalx | 7EB937
-  - CA 🇨🇦 | @Raydikalx | A53DAC
-  - US 🇺🇸 | @Raydikalx | B00608
+  - US 🇺🇸 | @Raydikalx | E38DDB
+  - US 🇺🇸 | @Raydikalx | 8CDB07
+  - US 🇺🇸 | @Raydikalx | DA749F
+  - US 🇺🇸 | @Raydikalx | 4E8CA4
+  - US 🇺🇸 | @Raydikalx | DAAD50
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
