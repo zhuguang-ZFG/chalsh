@@ -14,44 +14,11 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 24C446
+- name: CA 🇨🇦 | @Raydikalx | A53DAC
   type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | B00608
-  type: vmess
-  server: 67.220.95.3
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: aes-128-gcm
-- name: CA 🇨🇦 | @Raydikalx | 4BA3A6
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 9B4F83
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 129.146.77.248
-- name: US 🇺🇸 | @Raydikalx | 054E6A
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
 - name: US 🇺🇸 | @Raydikalx | 9EEDF3
@@ -61,26 +28,39 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 582641
-  type: vmess
-  server: guanwang.awsno.com
+- name: Server 19
+  type: vless
+  server: 169.40.42.173
   port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: ios
+- name: 🇮🇪_爱尔兰_296
+  type: trojan
+  server: worthy-labrador.rooster465.autos
+  port: 443
+  password: AE62539071
+- name: US 🇺🇸 | @Raydikalx | 120B0A
+  type: vmess
+  server: 67.220.72.237
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-  tls: true
-  skip-cert-verify: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 24C446
-  - US 🇺🇸 | @Raydikalx | B00608
-  - CA 🇨🇦 | @Raydikalx | 4BA3A6
-  - US 🇺🇸 | @Raydikalx | 9B4F83
-  - US 🇺🇸 | @Raydikalx | 054E6A
+  - CA 🇨🇦 | @Raydikalx | A53DAC
   - US 🇺🇸 | @Raydikalx | 9EEDF3
-  - US 🇺🇸 | @Raydikalx | 582641
+  - Server 19
+  - 🇮🇪_爱尔兰_296
+  - US 🇺🇸 | @Raydikalx | 120B0A
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
