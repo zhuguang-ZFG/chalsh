@@ -14,26 +14,62 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 8CDB07
+- name: US13
   type: vmess
-  server: 165.140.216.142
+  server: guanwang.awsno.com
   port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 101269
+  tls: true
+  skip-cert-verify: true
+- name: 🏳️_未知_227
   type: vmess
-  server: 84.17.41.2
+  server: US032020.ssgreen.org
+  port: 443
+  uuid: da3a4ee7-b2dd-4820-a327-0e1b8b23e670
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /wes
+- name: US 🇺🇸 | @Raydikalx | 2B97CF
+  type: vmess
+  server: 38.110.1.246
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🏳️_未知_447
+  type: vless
+  server: yx.zhourf2006.dpdns.org
+  port: 443
+  uuid: 7e81824b-35e0-4eb1-89e9-592f0c92aa6b
+  tls: true
+  servername: yx.zhourf2006.dpdns.org
+  network: ws
+  ws-opts:
+    path: /blog/ranking/task/proxyip=156.246.92.195,172.238.6.57,43.207.197.79,156.246.91.114,161.248.254.27,153.121.45.101,101.36.105.226
+    headers:
+      Host: yx.zhourf2006.dpdns.org
+- name: US 🇺🇸 | @Raydikalx | AA510F
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 8CDB07
-  - US 🇺🇸 | @Raydikalx | 101269
+  - US13
+  - 🏳️_未知_227
+  - US 🇺🇸 | @Raydikalx | 2B97CF
+  - 🏳️_未知_447
+  - US 🇺🇸 | @Raydikalx | AA510F
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
