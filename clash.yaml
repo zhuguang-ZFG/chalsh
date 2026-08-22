@@ -14,26 +14,48 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 24C446
+- name: CA 🇨🇦 | @Raydikalx | 4BA3A6
   type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | BA43A3
-  type: vmess
-  server: 67.220.85.46
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
+- name: US 🇺🇸 | @Raydikalx | B1FB97
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | E4DC87
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | F5B1CA
+  type: vmess
+  server: 216.106.185.141
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇳🇱_荷兰_32
+  type: vless
+  server: 141.148.232.137
+  port: 62145
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 24C446
-  - US 🇺🇸 | @Raydikalx | BA43A3
+  - CA 🇨🇦 | @Raydikalx | 4BA3A6
+  - US 🇺🇸 | @Raydikalx | B1FB97
+  - US 🇺🇸 | @Raydikalx | E4DC87
+  - US 🇺🇸 | @Raydikalx | F5B1CA
+  - 🇳🇱_荷兰_32
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
