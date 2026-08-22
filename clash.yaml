@@ -14,23 +14,27 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 76CB44
+- name: US 🇺🇸 | @Raydikalx | 3E46F6
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | B676D1
+- name: US 🇺🇸 | @Raydikalx | 3A610C
   type: vmess
-  server: 216.128.176.166
-  port: 28809
-  uuid: ebca559c-a4a1-4062-9453-6412d8ff5255
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-  network: ws
-  ws-opts:
-    path: /ebca559c-a4a1-4062-9453-6412d8ff5255
+- name: US 🇺🇸 | @Raydikalx | 101269
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 - name: US 🇺🇸 | @Raydikalx | AA510F
   type: vmess
   server: 82.198.246.37
@@ -38,47 +42,22 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🏳️_未知_449
-  type: vless
-  server: ed8d.wdz.de5.net
-  port: 443
-  uuid: 0b06f318-ab9d-4de7-8779-360bd5f7ea67
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-- name: US 🇺🇸 | @Raydikalx | E38DDB
+- name: US 🇺🇸 | @Raydikalx | E33913
   type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 8CDB07
-  type: vmess
-  server: 165.140.216.142
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 18AAF4
-  type: vmess
-  server: 216.106.183.35
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 1
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 76CB44
-  - CA 🇨🇦 | @Raydikalx | B676D1
+  - US 🇺🇸 | @Raydikalx | 3E46F6
+  - US 🇺🇸 | @Raydikalx | 3A610C
+  - US 🇺🇸 | @Raydikalx | 101269
   - US 🇺🇸 | @Raydikalx | AA510F
-  - 🏳️_未知_449
-  - US 🇺🇸 | @Raydikalx | E38DDB
-  - US 🇺🇸 | @Raydikalx | 8CDB07
-  - US 🇺🇸 | @Raydikalx | 18AAF4
+  - US 🇺🇸 | @Raydikalx | E33913
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
