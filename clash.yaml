@@ -14,20 +14,17 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US13
-  type: vmess
-  server: guanwang.awsno.com
+- name: 巴西圣保罗+CloudFlare节点
+  type: trojan
+  server: 188.114.97.7
   port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-- name: 🏳️_未知_227
+  password: humanity
+  sni: www.ignitelimit.com
+- name: 🏳️_未知_212
   type: vmess
-  server: US032020.ssgreen.org
+  server: US122204.ssgreen.org
   port: 443
-  uuid: da3a4ee7-b2dd-4820-a327-0e1b8b23e670
+  uuid: c35ad85d-8385-4eb9-95c2-7e6679d7e21c
   alterId: 0
   cipher: auto
   tls: true
@@ -35,41 +32,47 @@ proxies:
   network: ws
   ws-opts:
     path: /wes
-- name: US 🇺🇸 | @Raydikalx | 2B97CF
+- name: US 🇺🇸 | @Raydikalx | DAAD50
   type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
   alterId: 0
   cipher: auto
-- name: 🏳️_未知_447
-  type: vless
-  server: yx.zhourf2006.dpdns.org
-  port: 443
-  uuid: 7e81824b-35e0-4eb1-89e9-592f0c92aa6b
-  tls: true
-  servername: yx.zhourf2006.dpdns.org
-  network: ws
-  ws-opts:
-    path: /blog/ranking/task/proxyip=156.246.92.195,172.238.6.57,43.207.197.79,156.246.91.114,161.248.254.27,153.121.45.101,101.36.105.226
-    headers:
-      Host: yx.zhourf2006.dpdns.org
-- name: US 🇺🇸 | @Raydikalx | AA510F
+- name: US 🇺🇸 | @Raydikalx | 375F33
   type: vmess
-  server: 82.198.246.37
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 18AAF4
+  type: vmess
+  server: 216.106.183.35
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 1
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | DA749F
+  type: vmess
+  server: 173.249.209.146
+  port: 20086
+  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US13
-  - 🏳️_未知_227
-  - US 🇺🇸 | @Raydikalx | 2B97CF
-  - 🏳️_未知_447
-  - US 🇺🇸 | @Raydikalx | AA510F
+  - 巴西圣保罗+CloudFlare节点
+  - 🏳️_未知_212
+  - US 🇺🇸 | @Raydikalx | DAAD50
+  - US 🇺🇸 | @Raydikalx | 375F33
+  - US 🇺🇸 | @Raydikalx | 18AAF4
+  - US 🇺🇸 | @Raydikalx | DA749F
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
