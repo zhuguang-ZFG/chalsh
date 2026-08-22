@@ -1,0 +1,47 @@
+mixed-port: 7890
+allow-lan: false
+bind-address: '*'
+mode: global
+log-level: info
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+  - https://dns.google/dns-query
+  - https://1.1.1.1/dns-query
+  fallback:
+  - https://dns.alidns.com/dns-query
+proxies:
+- name: US 🇺🇸 | @Raydikalx | 16964D
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: CA 🇨🇦 | @Raydikalx | A53DAC
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+proxy-groups:
+- name: AUTO
+  type: url-test
+  proxies:
+  - US 🇺🇸 | @Raydikalx | 16964D
+  - CA 🇨🇦 | @Raydikalx | A53DAC
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+rules:
+- DOMAIN,storeedge.microsoft.com,DIRECT
+- DOMAIN,displaycatalog.mp.microsoft.com,DIRECT
+- DOMAIN,login.live.com,DIRECT
+- DOMAIN,store-images.microsoft.com,DIRECT
+- DOMAIN-SUFFIX,mp.microsoft.com,DIRECT
+- DOMAIN-SUFFIX,microsoftstore.com,DIRECT
+- DOMAIN-SUFFIX,store.microsoft.com,DIRECT
