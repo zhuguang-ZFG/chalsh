@@ -14,33 +14,23 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 101269
+- name: US 🇺🇸 | @Raydikalx | 18811D
   type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 129.146.143.80
+  port: 48111
+  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 18AAF4
+- name: 🇺🇸_美国_155
   type: vmess
-  server: 216.106.183.35
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 1
-  cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | AED0D9
-  type: vmess
-  server: 216.128.176.166
-  port: 28809
-  uuid: ebca559c-a4a1-4062-9453-6412d8ff5255
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   alterId: 0
   cipher: auto
-  network: ws
-  ws-opts:
-    path: /ebca559c-a4a1-4062-9453-6412d8ff5255
-    headers:
-      Host: 216.128.176.166
-- name: '@Hope_Net-join-us-on-Telegram'
+  tls: true
+  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | E0A47F
   type: vmess
   server: 82.198.246.250
   port: 180
@@ -51,10 +41,9 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 101269
-  - US 🇺🇸 | @Raydikalx | 18AAF4
-  - CA 🇨🇦 | @Raydikalx | AED0D9
-  - '@Hope_Net-join-us-on-Telegram'
+  - US 🇺🇸 | @Raydikalx | 18811D
+  - 🇺🇸_美国_155
+  - US 🇺🇸 | @Raydikalx | E0A47F
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
