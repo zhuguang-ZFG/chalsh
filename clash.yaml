@@ -14,26 +14,100 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 34CAC1
+- name: 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
+  type: vmess
+  server: 165.140.216.142
+  port: 443
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | DA749F
+  type: vmess
+  server: 173.249.209.146
+  port: 20086
+  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 每天更新，请加电报群防止失联
+  type: vless
+  server: 157.137.233.98
+  port: 62145
+  uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+- name: US 🇺🇸 | @Raydikalx | 18AAF4
+  type: vmess
+  server: 216.106.183.35
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 1
+  cipher: auto
+- name: 🇺🇸_美国_40
+  type: vless
+  server: 84.75.220.220
+  port: 443
+  uuid: 1b627e4d-4ea4-4dce-8bd8-fc2d3ffbeaba
+  flow: xtls-rprx-vision
+  tls: true
+  servername: us.srv.anti-zapret.com
+  reality-opts:
+    public-key: 0AVsyS7udTbxKRdSyQ2rtFC63icDQOVWq8FvAhhU-WY
+    short-id: 58fbcddfaae3ade9
+  client-fingerprint: firefox
+- name: US 🇺🇸 | @Raydikalx | F8ECE8
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | F52DD6
+- name: US 🇺🇸 | @Raydikalx | 3A610C
   type: vmess
-  server: 82.198.246.97
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🏳️_未知_382
+  type: vless
+  server: ed8d.wdz.de5.net
+  port: 443
+  uuid: 0b06f318-ab9d-4de7-8779-360bd5f7ea67
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+- name: US 🇺🇸 | @Raydikalx | E33913
+  type: vmess
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
+- name: 🇺🇸_美国_155
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 34CAC1
-  - US 🇺🇸 | @Raydikalx | F52DD6
+  - 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
+  - US 🇺🇸 | @Raydikalx | DA749F
+  - 每天更新，请加电报群防止失联
+  - US 🇺🇸 | @Raydikalx | 18AAF4
+  - 🇺🇸_美国_40
+  - US 🇺🇸 | @Raydikalx | F8ECE8
+  - US 🇺🇸 | @Raydikalx | 3A610C
+  - 🏳️_未知_382
+  - US 🇺🇸 | @Raydikalx | E33913
+  - 🇺🇸_美国_155
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
