@@ -14,34 +14,6 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: CA 🇨🇦 | @Raydikalx | 4BA3A6
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 未知88
-  type: vmess
-  server: 216.128.176.166
-  port: 28809
-  uuid: ebca559c-a4a1-4062-9453-6412d8ff5255
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /ebca559c-a4a1-4062-9453-6412d8ff5255
-- name: 美国+CloudFlare节点
-  type: trojan
-  server: 104.16.174.121
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
 - name: US 🇺🇸 | @Raydikalx | 34CAC1
   type: vmess
   server: 82.198.246.250
@@ -49,30 +21,19 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | DAAD50
+- name: US 🇺🇸 | @Raydikalx | F52DD6
   type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | A53DAC
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - CA 🇨🇦 | @Raydikalx | 4BA3A6
-  - 未知88
-  - 美国+CloudFlare节点
   - US 🇺🇸 | @Raydikalx | 34CAC1
-  - US 🇺🇸 | @Raydikalx | DAAD50
-  - CA 🇨🇦 | @Raydikalx | A53DAC
+  - US 🇺🇸 | @Raydikalx | F52DD6
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
