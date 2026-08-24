@@ -14,29 +14,41 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🏳️_未知_72
-  type: vless
-  server: 104.18.93.3
-  port: 80
-  uuid: a41322e9-d0f1-4ff1-ac5c-a486e2b680b2
-  network: ws
-  ws-opts:
-    path: /2EP6G0LoOvs5eNZj
-    headers:
-      Host: worker3.yahoya44555.workers.dev
-- name: US 🇺🇸 | @Raydikalx | F25196
+- name: US 🇺🇸 | @Raydikalx | F8ECE8
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
+- name: 🇺🇸_美国_29
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+- name: 🏳️_未知_89
+  type: vless
+  server: 104.16.6.70
+  port: 443
+  uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
+  tls: true
+  servername: josni.hoyes.cloudns.ch
+  network: ws
+  ws-opts:
+    path: musiclovers85
+    headers:
+      Host: josni.hoyes.cloudns.ch
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🏳️_未知_72
-  - US 🇺🇸 | @Raydikalx | F25196
+  - US 🇺🇸 | @Raydikalx | F8ECE8
+  - 🇺🇸_美国_29
+  - 🏳️_未知_89
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
