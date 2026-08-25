@@ -14,23 +14,16 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 0EDBDB
+- name: 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
+  type: vmess
+  server: 165.140.216.142
+  port: 443
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 34CAC1
   type: vmess
   server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | F5B1CA
-  type: vmess
-  server: 216.106.185.141
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | AA510F
-  type: vmess
-  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -44,9 +37,8 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 0EDBDB
-  - US 🇺🇸 | @Raydikalx | F5B1CA
-  - US 🇺🇸 | @Raydikalx | AA510F
+  - 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
+  - US 🇺🇸 | @Raydikalx | 34CAC1
   - 🇸🇨_塞舌尔_98
   url: https://www.gstatic.com/generate_204
   interval: 300
