@@ -14,55 +14,16 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | C0EB3C
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | B00608
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: aes-128-gcm
-- name: US 🇺🇸 | @Raydikalx | F8ECE8
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 101269
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 9B4F83
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: 129.146.77.248
+- name: 🇸🇨_塞舌尔_98
+  type: trojan
+  server: kuso30.pacemakere.com
+  port: 101
+  password: 5e89314202a8405f
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | C0EB3C
-  - US 🇺🇸 | @Raydikalx | B00608
-  - US 🇺🇸 | @Raydikalx | F8ECE8
-  - US 🇺🇸 | @Raydikalx | 101269
-  - US 🇺🇸 | @Raydikalx | 9B4F83
+  - 🇸🇨_塞舌尔_98
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
