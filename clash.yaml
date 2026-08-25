@@ -14,37 +14,34 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸_美国_500
-  type: vless
-  server: 104.238.71.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime51.workers.dev
-- name: '@Hope_Net-join-us-on-Telegram'
+- name: US 🇺🇸 | @Raydikalx | E61B00
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 8C331C
+- name: US 🇺🇸 | @Raydikalx | 2B97CF
   type: vmess
-  server: 129.146.143.80
-  port: 48111
-  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 021D03
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸_美国_500
-  - '@Hope_Net-join-us-on-Telegram'
-  - US 🇺🇸 | @Raydikalx | 8C331C
+  - US 🇺🇸 | @Raydikalx | E61B00
+  - US 🇺🇸 | @Raydikalx | 2B97CF
+  - US 🇺🇸 | @Raydikalx | 021D03
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
