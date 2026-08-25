@@ -14,32 +14,50 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
+- name: US 🇺🇸 | @Raydikalx | E33913
   type: vmess
-  server: 165.140.216.142
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 34CAC1
+- name: US 🇺🇸 | @Raydikalx | 9EEDF3
+  type: vmess
+  server: 216.106.183.35
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | C0EB3C
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | E0A47F
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇸🇨_塞舌尔_98
-  type: trojan
-  server: kuso30.pacemakere.com
-  port: 101
-  password: 5e89314202a8405f
+- name: US 🇺🇸 | @Raydikalx | 8C331C
+  type: vmess
+  server: 129.146.143.80
+  port: 48111
+  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
-  - US 🇺🇸 | @Raydikalx | 34CAC1
-  - 🇸🇨_塞舌尔_98
+  - US 🇺🇸 | @Raydikalx | E33913
+  - US 🇺🇸 | @Raydikalx | 9EEDF3
+  - US 🇺🇸 | @Raydikalx | C0EB3C
+  - US 🇺🇸 | @Raydikalx | E0A47F
+  - US 🇺🇸 | @Raydikalx | 8C331C
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
