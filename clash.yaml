@@ -14,58 +14,18 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 16964D
+- name: '@Hope_Net-join-us-on-Telegram'
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: ✨ @NamiraConfigs | ❤️ وصل شدی جوین شو | ⚡ | 🇩🇪
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | 576CCB
-  type: vmess
-  server: rush-w1niu.teeopp.online
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: rush-w1niu.teeopp.online
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rush-w1niu.teeopp.online
-- name: DE 🇩🇪 | @Raydikalx | F00EF1
-  type: vmess
-  server: 94.156.179.138
-  port: 110
-  uuid: 8e9687fc-a3a7-414a-8676-8e2136797cfe
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 16964D
-  - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
-  - ✨ @NamiraConfigs | ❤️ وصل شدی جوین شو | ⚡ | 🇩🇪
-  - CA 🇨🇦 | @Raydikalx | 576CCB
-  - DE 🇩🇪 | @Raydikalx | F00EF1
+  - '@Hope_Net-join-us-on-Telegram'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
