@@ -14,28 +14,89 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 582641
+- name: US 🇺🇸 | @Raydikalx | 19450F
   type: vmess
-  server: guanwang.awsno.com
+  server: 107.173.254.27
+  port: 15311
+  uuid: ad78d02b-873f-4cff-8d4a-673f53d6ce0f
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 350DAC
+  type: vmess
+  server: 165.140.216.142
   port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 761214
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🆔v2ray1_ng 🔒 VL-GRPC- ❔ XX 193ms
+  type: vless
+  server: 31.76.91.72
+  port: 2087
+  uuid: 524e00ce-ed89-481d-b4a4-6d7017f884e3
+  tls: true
+  servername: ads.x5.ru
+  reality-opts:
+    public-key: -ZTJcZ_UcqAB7LHgkUqhnlJsQs_oBafRgjsFtWZElmM
+    short-id: c226283c4de5b1ad
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: CA 🇨🇦 | @Raydikalx | EE5FED
+  type: vmess
+  server: rush-w1niu.teeopp.online
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
   tls: true
+  servername: rush-w1niu.teeopp.online
   skip-cert-verify: true
-- name: US 🇺🇸 | @Raydikalx | 18811D
+  network: ws
+  ws-opts:
+    path: /video/v4sx3q/zxzrurkc.m3u8
+    headers:
+      Host: rush-w1niu.teeopp.online
+- name: US 🇺🇸 | @Raydikalx | 8C331C
   type: vmess
   server: 129.146.143.80
   port: 48111
   uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
   alterId: 0
   cipher: auto
+- name: ✨ @NamiraConfigs | ❤️ وصل شدی جوین شو | ⚡ | 🇩🇪
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | E0A47F
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 582641
-  - US 🇺🇸 | @Raydikalx | 18811D
+  - US 🇺🇸 | @Raydikalx | 19450F
+  - US 🇺🇸 | @Raydikalx | 350DAC
+  - US 🇺🇸 | @Raydikalx | 761214
+  - 🆔v2ray1_ng 🔒 VL-GRPC- ❔ XX 193ms
+  - CA 🇨🇦 | @Raydikalx | EE5FED
+  - US 🇺🇸 | @Raydikalx | 8C331C
+  - ✨ @NamiraConfigs | ❤️ وصل شدی جوین شو | ⚡ | 🇩🇪
+  - US 🇺🇸 | @Raydikalx | E0A47F
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
