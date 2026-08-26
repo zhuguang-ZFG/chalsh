@@ -14,80 +14,93 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 3A610C
+- name: CA 🇨🇦 | @Raydikalx | A69B88
   type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 11ms
-  type: vless
-  server: 167.17.69.171
+  server: rush-6it6b.teeopp.quest
   port: 443
-  uuid: 00144519-7e0d-476b-8d28-435576af9262
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk
-    short-id: 0990d22f
-  client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | 2B97CF
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | F8ECE8
+  tls: true
+  servername: rush-6it6b.teeopp.quest
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rush-6it6b.teeopp.quest
+- name: 🇺🇸_美国_500
+  type: vless
+  server: 104.238.71.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime51.workers.dev
+- name: ✨ @NamiraConfigs | ❤️ وصل شدی جوین شو | ⚡ | 🇩🇪
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 9B6A17
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: '@Hope_Net-join-us-on-Telegram'
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 18AAF4
+- name: CA 🇨🇦 | @Raydikalx | 26EDB2
   type: vmess
-  server: 216.106.183.35
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 1
+  server: nomino.11hi8itbaf.workers.dev
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
   cipher: auto
-- name: 🇺🇸_美国_99
-  type: trojan
-  server: lisa89.zxom.eu.org
-  port: 99
-  password: 1215e2b3af8f4f3f
-- name: US 🇺🇸 | @Raydikalx | E33913
+  tls: true
+  servername: nomino.11hi8itbaf.workers.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /rush-6it6b.teeopp.quest/
+    headers:
+      Host: nomino.11hi8itbaf.workers.dev
+- name: US 🇺🇸 | @Raydikalx | 205480
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🏳️_未知_499
-  type: vless
-  server: 104.18.12.149
-  port: 80
-  uuid: 5f4845b4-11dc-41d6-9508-4ff6a02e36c1
-  network: ws
-  ws-opts:
-    path: /@ProxyVPN11
-    headers:
-      Host: silent-paper-fa57.fipiyag989.workers.dev
+- name: US 🇺🇸 | @Raydikalx | B00608
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: aes-128-gcm
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 3A610C
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 11ms
-  - US 🇺🇸 | @Raydikalx | 2B97CF
-  - US 🇺🇸 | @Raydikalx | F8ECE8
-  - US 🇺🇸 | @Raydikalx | 18AAF4
-  - 🇺🇸_美国_99
-  - US 🇺🇸 | @Raydikalx | E33913
-  - 🏳️_未知_499
+  - CA 🇨🇦 | @Raydikalx | A69B88
+  - 🇺🇸_美国_500
+  - ✨ @NamiraConfigs | ❤️ وصل شدی جوین شو | ⚡ | 🇩🇪
+  - US 🇺🇸 | @Raydikalx | 9B6A17
+  - '@Hope_Net-join-us-on-Telegram'
+  - CA 🇨🇦 | @Raydikalx | 26EDB2
+  - US 🇺🇸 | @Raydikalx | 205480
+  - US 🇺🇸 | @Raydikalx | B00608
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
