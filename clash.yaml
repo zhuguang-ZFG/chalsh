@@ -14,18 +14,28 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: '@Hope_Net-join-us-on-Telegram'
+- name: US 🇺🇸 | @Raydikalx | 582641
   type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | 18811D
+  type: vmess
+  server: 129.146.143.80
+  port: 48111
+  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - '@Hope_Net-join-us-on-Telegram'
+  - US 🇺🇸 | @Raydikalx | 582641
+  - US 🇺🇸 | @Raydikalx | 18811D
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
