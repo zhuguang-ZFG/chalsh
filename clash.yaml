@@ -14,93 +14,42 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: CA 🇨🇦 | @Raydikalx | A69B88
+- name: CA 🇨🇦 | @Raydikalx | A53DAC
   type: vmess
-  server: rush-6it6b.teeopp.quest
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-  tls: true
-  servername: rush-6it6b.teeopp.quest
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rush-6it6b.teeopp.quest
-- name: 🇺🇸_美国_500
-  type: vless
-  server: 104.238.71.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime51.workers.dev
-- name: ✨ @NamiraConfigs | ❤️ وصل شدی جوین شو | ⚡ | 🇩🇪
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 9B6A17
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: '@Hope_Net-join-us-on-Telegram'
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | 26EDB2
-  type: vmess
-  server: nomino.11hi8itbaf.workers.dev
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: nomino.11hi8itbaf.workers.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /rush-6it6b.teeopp.quest/
-    headers:
-      Host: nomino.11hi8itbaf.workers.dev
-- name: US 🇺🇸 | @Raydikalx | 205480
+- name: 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | B00608
+- name: US 🇺🇸 | @Raydikalx | 24C446
   type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
-  cipher: aes-128-gcm
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 021D03
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - CA 🇨🇦 | @Raydikalx | A69B88
-  - 🇺🇸_美国_500
-  - ✨ @NamiraConfigs | ❤️ وصل شدی جوین شو | ⚡ | 🇩🇪
-  - US 🇺🇸 | @Raydikalx | 9B6A17
-  - '@Hope_Net-join-us-on-Telegram'
-  - CA 🇨🇦 | @Raydikalx | 26EDB2
-  - US 🇺🇸 | @Raydikalx | 205480
-  - US 🇺🇸 | @Raydikalx | B00608
+  - CA 🇨🇦 | @Raydikalx | A53DAC
+  - 🇺🇸 Join+Telegram:@Farah_VPN 🇺🇸
+  - US 🇺🇸 | @Raydikalx | 24C446
+  - US 🇺🇸 | @Raydikalx | 021D03
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
