@@ -14,37 +14,35 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | BA43A3
+- name: CA 🇨🇦 | @Raydikalx | EE5FED
   type: vmess
-  server: 67.220.85.46
+  server: rush-w1niu.teeopp.online
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: rush-w1niu.teeopp.online
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /video/v4sx3q/zxzrurkc.m3u8
+    headers:
+      Host: rush-w1niu.teeopp.online
+- name: US 🇺🇸 | @Raydikalx | 9B6A17
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: CA 🇨🇦 | @Raydikalx | 4BA3A6
+  type: vmess
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: United
-  type: vless
-  server: 47.89.186.170
-  port: 55861
-  uuid: d51ed55c-d6dd-400b-aaf6-017c33969bfe
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.intel.com
-  reality-opts:
-    public-key: t2ndf6SeVxinFCo5bcemnW_ZZhAtmHWiAkllks5qPWs
-    short-id: 7551ed1b
-  client-fingerprint: firefox
-- name: 🇺🇸_美国_29
-  type: vless
-  server: 2.24.124.64
-  port: 443
-  uuid: 719b9354-45e2-4718-8709-d965b64554db
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: zpXR6Y36C8qUCIVk2p_j8C9KGeBk5xisLw66j3WFOls
-    short-id: 9f1fc5a631ef3126
-  client-fingerprint: firefox
 - name: US 🇺🇸 | @Raydikalx | 452ED5
   type: vmess
   server: 129.146.77.248
@@ -55,38 +53,22 @@ proxies:
   network: ws
   ws-opts:
     path: /cctv13.m3u8
-- name: US 🇺🇸 | @Raydikalx | 021D03
+- name: US 🇺🇸 | @Raydikalx | F8ECE8
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 4E8CA4
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | DAAD50
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | BA43A3
-  - United
-  - 🇺🇸_美国_29
+  - CA 🇨🇦 | @Raydikalx | EE5FED
+  - US 🇺🇸 | @Raydikalx | 9B6A17
+  - CA 🇨🇦 | @Raydikalx | 4BA3A6
   - US 🇺🇸 | @Raydikalx | 452ED5
-  - US 🇺🇸 | @Raydikalx | 021D03
-  - US 🇺🇸 | @Raydikalx | 4E8CA4
-  - US 🇺🇸 | @Raydikalx | DAAD50
+  - US 🇺🇸 | @Raydikalx | F8ECE8
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
