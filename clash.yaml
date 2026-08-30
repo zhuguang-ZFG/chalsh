@@ -14,63 +14,41 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | DAAD50
-  type: vmess
-  server: 165.140.216.141
-  port: 443
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
-  alterId: 0
-  cipher: auto
 - name: United
-  type: vless
-  server: 104.16.107.139
-  port: 8880
-  uuid: 56eba3f8-94f8-48f2-920b-d79bb042d0bb
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: lingering-glade-21ce.61-b6f.workers.dev
-- name: US 🇺🇸 | @Raydikalx | 582641
+  type: ss
+  server: 108.181.57.93
+  port: 8388
+  password: RSo52SbxW40r
+  cipher: chacha20-ietf-poly1305
+- name: US 🇺🇸 | @Raydikalx | 054E6A
   type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-  tls: true
-  skip-cert-verify: true
-- name: US 🇺🇸 | @Raydikalx | 375F33
+- name: US 🇺🇸 | @Raydikalx | 34CAC1
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: ghCcDpVo_vmess
+- name: US 🇺🇸 | @Raydikalx | 19450F
   type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | 4BA3A6
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 107.173.254.27
+  port: 15311
+  uuid: ad78d02b-873f-4cff-8d4a-673f53d6ce0f
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | DAAD50
   - United
-  - US 🇺🇸 | @Raydikalx | 582641
-  - US 🇺🇸 | @Raydikalx | 375F33
-  - ghCcDpVo_vmess
-  - CA 🇨🇦 | @Raydikalx | 4BA3A6
+  - US 🇺🇸 | @Raydikalx | 054E6A
+  - US 🇺🇸 | @Raydikalx | 34CAC1
+  - US 🇺🇸 | @Raydikalx | 19450F
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
