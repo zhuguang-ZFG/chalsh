@@ -14,13 +14,32 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 4E8CA4
+- name: US 🇺🇸 | @Raydikalx | DAAD50
   type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
   alterId: 0
   cipher: auto
+- name: United
+  type: vless
+  server: 104.16.107.139
+  port: 8880
+  uuid: 56eba3f8-94f8-48f2-920b-d79bb042d0bb
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: lingering-glade-21ce.61-b6f.workers.dev
+- name: US 🇺🇸 | @Raydikalx | 582641
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
 - name: US 🇺🇸 | @Raydikalx | 375F33
   type: vmess
   server: 82.198.246.250
@@ -28,62 +47,30 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: United
-  type: vless
-  server: 137.184.218.169
-  port: 36925
-  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
-  client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | F5B1CA
+- name: ghCcDpVo_vmess
   type: vmess
-  server: 216.106.185.141
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇹🇷_土耳其_253
-  type: vless
-  server: 91.206.71.8
-  port: 80
-  uuid: c20a0bcf-aa6f-4c35-9e62-a39b47b04e73
-  network: ws
-  ws-opts:
-    path: /pyip=Telegram🇨🇳+@WangCai2
-    headers:
-      Host: round-haze-8783.294.workers.dev
-- name: 🇺🇸_美国_40
-  type: vless
-  server: 45.40.149.50
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime39.workers.dev
-- name: US 🇺🇸 | @Raydikalx | 054E6A
-  type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: CA 🇨🇦 | @Raydikalx | 4BA3A6
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 4E8CA4
-  - US 🇺🇸 | @Raydikalx | 375F33
+  - US 🇺🇸 | @Raydikalx | DAAD50
   - United
-  - US 🇺🇸 | @Raydikalx | F5B1CA
-  - 🇹🇷_土耳其_253
-  - 🇺🇸_美国_40
-  - US 🇺🇸 | @Raydikalx | 054E6A
+  - US 🇺🇸 | @Raydikalx | 582641
+  - US 🇺🇸 | @Raydikalx | 375F33
+  - ghCcDpVo_vmess
+  - CA 🇨🇦 | @Raydikalx | 4BA3A6
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
