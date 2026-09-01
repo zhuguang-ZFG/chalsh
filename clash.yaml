@@ -14,30 +14,13 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 1D76B4
+- name: US 🇺🇸 | @Raydikalx | C0EB3C
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 18811D
-  type: vmess
-  server: 129.146.143.80
-  port: 48111
-  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
-  alterId: 0
-  cipher: auto
-- name: 美国+CloudFlare节点
-  type: vless
-  server: 162.159.48.32
-  port: 8880
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: US 🇺🇸 | @Raydikalx | 101269
   type: vmess
   server: 84.17.41.2
@@ -45,35 +28,49 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: '@Vpn_Tehran ❤️‍🔥 کانال تلگرام'
+- name: US 🇺🇸 | @Raydikalx | 9B4F83
   type: vmess
-  server: 82.198.246.37
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 129.146.77.248
+- name: US 🇺🇸 | @Raydikalx | 2B97CF
+  type: vmess
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | E61B00
+  type: vmess
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: United
-  type: vless
-  server: 47.89.186.170
-  port: 55861
-  uuid: d51ed55c-d6dd-400b-aaf6-017c33969bfe
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.intel.com
-  reality-opts:
-    public-key: t2ndf6SeVxinFCo5bcemnW_ZZhAtmHWiAkllks5qPWs
-    short-id: 7551ed1b
-  client-fingerprint: firefox
+- name: US 🇺🇸 | @Raydikalx | 120B0A
+  type: vmess
+  server: 67.220.72.237
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 1D76B4
-  - US 🇺🇸 | @Raydikalx | 18811D
-  - 美国+CloudFlare节点
+  - US 🇺🇸 | @Raydikalx | C0EB3C
   - US 🇺🇸 | @Raydikalx | 101269
-  - '@Vpn_Tehran ❤️‍🔥 کانال تلگرام'
-  - United
+  - US 🇺🇸 | @Raydikalx | 9B4F83
+  - US 🇺🇸 | @Raydikalx | 2B97CF
+  - US 🇺🇸 | @Raydikalx | E61B00
+  - US 🇺🇸 | @Raydikalx | 120B0A
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
