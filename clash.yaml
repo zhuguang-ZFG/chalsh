@@ -14,89 +14,39 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 7DB48C
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | ADD49C
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | A96BDD
-  type: vmess
-  server: p05.rghvf.sbs
-  port: 1233
-  uuid: 9b6419f8-8120-442e-a48c-6bf52aef0abf
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: gb.uniquenames.net
-  skip-cert-verify: true
-- name: Germany
+- name: United
   type: vless
-  server: 217.69.167.135
-  port: 15392
-  uuid: 9e998501-eaae-4d7e-bbe5-6cecfaef8334
+  server: 47.89.186.170
+  port: 55861
+  uuid: d51ed55c-d6dd-400b-aaf6-017c33969bfe
+  flow: xtls-rprx-vision
   tls: true
-  servername: google.com
+  servername: www.intel.com
   reality-opts:
-    public-key: O8yFUnhj9NOtJ2eUVQTwrGk8HrkHq94QAO090azV428
-    short-id: 6a326909
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: US 🇺🇸 | @Raydikalx | 18811D
+    public-key: t2ndf6SeVxinFCo5bcemnW_ZZhAtmHWiAkllks5qPWs
+    short-id: 7551ed1b
+  client-fingerprint: firefox
+- name: GB 🇬🇧 | @Raydikalx | 1CCC9A
   type: vmess
-  server: 129.146.143.80
-  port: 48111
-  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 9EEDF3
-  type: vmess
-  server: 216.106.183.35
+  server: 66.163.117.58
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 48ms
-  type: vless
-  server: 172.233.156.42
-  port: 12668
-  uuid: 1990630e-c2cf-4d1f-bba0-a51423df89a9
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.tesla.com
-  reality-opts:
-    public-key: 3sM_YEGrVBcvVyTzs6wes0zYq3GSGYbDfgkseWaYFmU
-    short-id: 7403a0a9d45e89
-  client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | 350DAC
+- name: US 🇺🇸 | @Raydikalx | 4E8CA4
   type: vmess
-  server: 165.140.216.142
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 7DB48C
-  - US 🇺🇸 | @Raydikalx | ADD49C
-  - US 🇺🇸 | @Raydikalx | A96BDD
-  - Germany
-  - US 🇺🇸 | @Raydikalx | 18811D
-  - US 🇺🇸 | @Raydikalx | 9EEDF3
-  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 48ms
-  - US 🇺🇸 | @Raydikalx | 350DAC
+  - United
+  - GB 🇬🇧 | @Raydikalx | 1CCC9A
+  - US 🇺🇸 | @Raydikalx | 4E8CA4
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
