@@ -14,62 +14,100 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 4E8CA4
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: United
-  type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: 1c94a079-e41d-48d3-b5b6-d8f7f761a00d
-  tls: true
-  servername: SILENt-kiNG-5030.AipRoINteR.WorkErS.DEv
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiZ3RXWk45UVhpRVB3R3VPIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OjExOjY0OjpdIl19
-    headers:
-      Host: silent-king-5030.aiprointer.workers.dev
-- name: US 🇺🇸 | @Raydikalx | 761214
-  type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 0ECD21
-  type: vmess
-  server: www.361371.xyz
-  port: 443
-  uuid: da77c564-3815-468c-8867-0aea0b397027
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: www.361371.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-6rm27y
-    headers:
-      Host: www.361371.xyz
 - name: France
   type: ss
   server: 51.77.225.200
   port: 8388
   password: zRZNBszYyWo5
   cipher: chacha20-ietf-poly1305
+- name: United
+  type: ss
+  server: 138.199.42.68
+  port: 8080
+  password: 14fFPrbezE3HDZzsMOr6
+  cipher: rc4-md5
+- name: US 🇺🇸 | @Raydikalx | 4F5D7F
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 9B4F83
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 129.146.77.248
+- name: US 🇺🇸 | @Raydikalx | DAAD50
+  type: vmess
+  server: 165.140.216.141
+  port: 443
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
+- name: 🆔anty_filter 🔒 VL-TCP- ❔ XX 64ms
+  type: vless
+  server: 15.204.97.195
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
+- name: 🇺🇸_美国_266
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+- name: GB 🇬🇧 | @Raydikalx | 1CCC9A
+  type: vmess
+  server: 66.163.117.58
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: CA 🇨🇦 | @Raydikalx | A53DAC
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | B1FB97
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 4E8CA4
-  - United
-  - US 🇺🇸 | @Raydikalx | 761214
-  - US 🇺🇸 | @Raydikalx | 0ECD21
   - France
+  - United
+  - US 🇺🇸 | @Raydikalx | 4F5D7F
+  - US 🇺🇸 | @Raydikalx | 9B4F83
+  - US 🇺🇸 | @Raydikalx | DAAD50
+  - 🆔anty_filter 🔒 VL-TCP- ❔ XX 64ms
+  - 🇺🇸_美国_266
+  - GB 🇬🇧 | @Raydikalx | 1CCC9A
+  - CA 🇨🇦 | @Raydikalx | A53DAC
+  - US 🇺🇸 | @Raydikalx | B1FB97
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
