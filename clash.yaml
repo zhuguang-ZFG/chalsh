@@ -14,57 +14,53 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 10ms
-  type: vless
-  server: 15.204.97.195
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | 7DE6C1
-  type: vmess
-  server: 192.227.247.27
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-- name: US 🇺🇸 | @Raydikalx | F52DD6
+- name: US 🇺🇸 | @Raydikalx | 021D03
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 9EEDF3
+- name: US 🇺🇸 | @Raydikalx | F5B1CA
   type: vmess
-  server: 216.106.183.35
+  server: 216.106.185.141
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 491BE8
+- name: US 🇺🇸 | @Raydikalx | F8ECE8
   type: vmess
-  server: 82.198.246.37
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🏳️_未知_286
+  type: vless
+  server: 172.64.52.6
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: '@V2ray_Alpha🫚 1'
+  type: vmess
+  server: 94.156.170.102
+  port: 110
+  uuid: 8e9687fc-a3a7-414a-8676-8e2136797cfe
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 10ms
-  - US 🇺🇸 | @Raydikalx | 7DE6C1
-  - US 🇺🇸 | @Raydikalx | F52DD6
-  - US 🇺🇸 | @Raydikalx | 9EEDF3
-  - US 🇺🇸 | @Raydikalx | 491BE8
+  - US 🇺🇸 | @Raydikalx | 021D03
+  - US 🇺🇸 | @Raydikalx | F5B1CA
+  - US 🇺🇸 | @Raydikalx | F8ECE8
+  - 🏳️_未知_286
+  - '@V2ray_Alpha🫚 1'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
