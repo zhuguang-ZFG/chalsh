@@ -14,24 +14,6 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | D60DC5
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 65ms
-  type: vless
-  server: 47.253.226.114
-  port: 443
-  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
-  client-fingerprint: chrome
 - name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 10ms
   type: vless
   server: 15.204.97.195
@@ -44,16 +26,32 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | AA510F
+- name: US 🇺🇸 | @Raydikalx | 7DE6C1
   type: vmess
-  server: 82.198.246.37
+  server: 192.227.247.27
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | F52DD6
+  type: vmess
+  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 86CEF2
+- name: US 🇺🇸 | @Raydikalx | 9EEDF3
   type: vmess
-  server: 82.198.246.250
+  server: 216.106.183.35
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 491BE8
+  type: vmess
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -62,11 +60,11 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | D60DC5
-  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 65ms
   - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 10ms
-  - US 🇺🇸 | @Raydikalx | AA510F
-  - US 🇺🇸 | @Raydikalx | 86CEF2
+  - US 🇺🇸 | @Raydikalx | 7DE6C1
+  - US 🇺🇸 | @Raydikalx | F52DD6
+  - US 🇺🇸 | @Raydikalx | 9EEDF3
+  - US 🇺🇸 | @Raydikalx | 491BE8
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
