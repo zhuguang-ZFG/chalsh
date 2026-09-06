@@ -14,16 +14,30 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | F25196
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🆔vpnserverrr 🔒 VL-TCP- ❔ XX 31ms
+- name: 🆔surfboardv2ray 🔒 VL-GRPC- ❔ XX 131ms
   type: vless
-  server: 15.204.97.206
+  server: 95.211.164.121
+  port: 443
+  uuid: d7430ae7-320c-4658-808b-3006d0627d82
+  tls: true
+  servername: devua.nubuntuhosting.host
+  reality-opts:
+    public-key: QJW15WZWLNjA8KEpe4GqSdOe4rfW8KgqjjVmKxPk-ng
+    short-id: 3fa234ea9feaa048
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: gun
+- name: US 🇺🇸 | @Raydikalx | 18AAF4
+  type: vmess
+  server: 216.106.183.35
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 1
+  cipher: auto
+- name: 🆔vpnbaz 🔒 VL-TCP- ❔ XX 30ms
+  type: vless
+  server: 15.204.97.195
   port: 23576
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   flow: xtls-rprx-vision
@@ -33,11 +47,36 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | 120B0A
+- name: US 🇺🇸 | @Raydikalx | 054E6A
   type: vmess
-  server: 67.220.72.237
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | E61B00
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🆔surfboardv2ray 🔒 VL-TCP- 🇺🇸 US 53ms
+  type: vless
+  server: 47.253.226.114
+  port: 443
+  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+  client-fingerprint: chrome
+- name: US 🇺🇸 | @Raydikalx | 2B97CF
+  type: vmess
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
 - name: US 🇺🇸 | @Raydikalx | 3B1D0A
@@ -47,30 +86,31 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 8CDB07
+- name: US 🇺🇸 | @Raydikalx | 9B4F83
   type: vmess
-  server: 165.140.216.142
-  port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 491BE8
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 129.146.77.248
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | F25196
-  - 🆔vpnserverrr 🔒 VL-TCP- ❔ XX 31ms
-  - US 🇺🇸 | @Raydikalx | 120B0A
+  - 🆔surfboardv2ray 🔒 VL-GRPC- ❔ XX 131ms
+  - US 🇺🇸 | @Raydikalx | 18AAF4
+  - 🆔vpnbaz 🔒 VL-TCP- ❔ XX 30ms
+  - US 🇺🇸 | @Raydikalx | 054E6A
+  - US 🇺🇸 | @Raydikalx | E61B00
+  - 🆔surfboardv2ray 🔒 VL-TCP- 🇺🇸 US 53ms
+  - US 🇺🇸 | @Raydikalx | 2B97CF
   - US 🇺🇸 | @Raydikalx | 3B1D0A
-  - US 🇺🇸 | @Raydikalx | 8CDB07
-  - US 🇺🇸 | @Raydikalx | 491BE8
+  - US 🇺🇸 | @Raydikalx | 9B4F83
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
