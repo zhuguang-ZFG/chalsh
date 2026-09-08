@@ -14,42 +14,45 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | F25196
+- name: US 🇺🇸 | @Raydikalx | 375F33
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | A53DAC
+- name: US 🇺🇸 | @Raydikalx | 9EEDF3
   type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 216.106.183.35
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | ADD49C
+- name: US 🇺🇸 | @Raydikalx | 8CDB07
   type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 165.140.216.142
+  port: 443
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 3A610C
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+- name: 𝗝𝗼𝗶𝗻➠@PlanB_net
+  type: vless
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | F25196
-  - CA 🇨🇦 | @Raydikalx | A53DAC
-  - US 🇺🇸 | @Raydikalx | ADD49C
-  - US 🇺🇸 | @Raydikalx | 3A610C
+  - US 🇺🇸 | @Raydikalx | 375F33
+  - US 🇺🇸 | @Raydikalx | 9EEDF3
+  - US 🇺🇸 | @Raydikalx | 8CDB07
+  - 𝗝𝗼𝗶𝗻➠@PlanB_net
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
