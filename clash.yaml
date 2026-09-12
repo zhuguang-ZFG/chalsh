@@ -14,57 +14,82 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 491BE8
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 0EDBDB
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: '@V2rayng_Fast 🇩🇪'
+- name: 美国+CloudFlare节点
   type: vless
-  server: 31.76.91.72
-  port: 2087
-  uuid: 524e00ce-ed89-481d-b4a4-6d7017f884e3
+  server: 172.66.214.247
+  port: 8880
+  uuid: e7f6f783-6754-4228-a5d0-aeed84b9949a
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+    headers:
+      Host: sweet-sun-c70f.317-ba5.workers.dev
+- name: US 🇺🇸 | @Raydikalx | 9B4F83
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 129.146.77.248
+- name: US 🇺🇸 | @Raydikalx | 803F01
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: United
+  type: ss
+  server: 82.38.31.205
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
+- name: US 🇺🇸 | @Raydikalx | 8CDB07
+  type: vmess
+  server: 165.140.216.142
+  port: 443
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  alterId: 0
+  cipher: auto
+- name: Canada
+  type: vless
+  server: 184.107.106.68
+  port: 443
+  uuid: 716426fa-bcb7-4eb9-b460-36399ebf740d
   tls: true
-  servername: ads.x5.ru
-  reality-opts:
-    public-key: -ZTJcZ_UcqAB7LHgkUqhnlJsQs_oBafRgjsFtWZElmM
-    short-id: c226283c4de5b1ad
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: US 🇺🇸 | @Raydikalx | 18811D
+  servername: lizca2.footballfantasyforum.com
+  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | 8C331C
   type: vmess
   server: 129.146.143.80
   port: 48111
   uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 565003
+- name: US 🇺🇸 | @Raydikalx | DAAD50
   type: vmess
-  server: 165.140.217.2
+  server: 165.140.216.141
   port: 443
-  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
   alterId: 0
-  cipher: chacha20-poly1305
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 491BE8
-  - US 🇺🇸 | @Raydikalx | 0EDBDB
-  - '@V2rayng_Fast 🇩🇪'
-  - US 🇺🇸 | @Raydikalx | 18811D
-  - US 🇺🇸 | @Raydikalx | 565003
+  - 美国+CloudFlare节点
+  - US 🇺🇸 | @Raydikalx | 9B4F83
+  - US 🇺🇸 | @Raydikalx | 803F01
+  - United
+  - US 🇺🇸 | @Raydikalx | 8CDB07
+  - Canada
+  - US 🇺🇸 | @Raydikalx | 8C331C
+  - US 🇺🇸 | @Raydikalx | DAAD50
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
