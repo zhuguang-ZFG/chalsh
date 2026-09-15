@@ -14,34 +14,55 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 056B70
+- name: US 🇺🇸 | @Raydikalx | 9B6A17
   type: vmess
-  server: 82.198.246.97
+  server: 82.198.246.37
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | F8ECE8
+- name: US 🇺🇸 | @Raydikalx | F25196
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 8C331C
+- name: US 🇺🇸 | @Raydikalx | E4DC87
   type: vmess
-  server: 129.146.143.80
-  port: 48111
-  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: United
+  type: vless
+  server: 104.16.150.130
+  port: 2087
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  tls: true
+  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+- name: US 🇺🇸 | @Raydikalx | 9EEDF3
+  type: vmess
+  server: 216.106.183.35
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 056B70
-  - US 🇺🇸 | @Raydikalx | F8ECE8
-  - US 🇺🇸 | @Raydikalx | 8C331C
+  - US 🇺🇸 | @Raydikalx | 9B6A17
+  - US 🇺🇸 | @Raydikalx | F25196
+  - US 🇺🇸 | @Raydikalx | E4DC87
+  - United
+  - US 🇺🇸 | @Raydikalx | 9EEDF3
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
