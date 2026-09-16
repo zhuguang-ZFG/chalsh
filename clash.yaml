@@ -1,0 +1,84 @@
+mixed-port: 7890
+allow-lan: false
+bind-address: '*'
+mode: global
+log-level: info
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+  - https://dns.google/dns-query
+  - https://1.1.1.1/dns-query
+  fallback:
+  - https://dns.alidns.com/dns-query
+proxies:
+- name: US 🇺🇸 | @Raydikalx | 761214
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | F5B1CA
+  type: vmess
+  server: 216.106.185.141
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 4F5D7F
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 18811D
+  type: vmess
+  server: 129.146.143.80
+  port: 48111
+  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+  alterId: 0
+  cipher: auto
+- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 69ms
+  type: vless
+  server: 45.149.172.80
+  port: 443
+  uuid: 21a4d978-2c0b-4b26-8ac9-37d54e3a4ab1
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.amazon.com
+  reality-opts:
+    public-key: FKTaFzF4zfAqXBdDQHwSVl_XyNcC3T17s_FqhHyZchg
+    short-id: fb9456392070128e
+  client-fingerprint: chrome
+- name: US 🇺🇸 | @Raydikalx | 34CAC1
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+proxy-groups:
+- name: AUTO
+  type: url-test
+  proxies:
+  - US 🇺🇸 | @Raydikalx | 761214
+  - US 🇺🇸 | @Raydikalx | F5B1CA
+  - US 🇺🇸 | @Raydikalx | 4F5D7F
+  - US 🇺🇸 | @Raydikalx | 18811D
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 69ms
+  - US 🇺🇸 | @Raydikalx | 34CAC1
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+rules:
+- DOMAIN,storeedge.microsoft.com,DIRECT
+- DOMAIN,displaycatalog.mp.microsoft.com,DIRECT
+- DOMAIN,login.live.com,DIRECT
+- DOMAIN,store-images.microsoft.com,DIRECT
+- DOMAIN-SUFFIX,mp.microsoft.com,DIRECT
+- DOMAIN-SUFFIX,microsoftstore.com,DIRECT
+- DOMAIN-SUFFIX,store.microsoft.com,DIRECT
