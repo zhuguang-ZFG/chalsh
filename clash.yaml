@@ -14,47 +14,39 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: '@Vpn_Tehran ❤️‍🔥 کانال تلگرام'
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | C895A6
-  type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: Germany
-  type: vless
-  server: 169.40.42.224
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | F8ECE8
+- name: US 🇺🇸 | @Raydikalx | 83B9FE
   type: vmess
   server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
+- name: US 🇺🇸 | @Raydikalx | B1FB97
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 49ms
+  type: vless
+  server: 88.216.195.13
+  port: 443
+  uuid: 3c48b5f5-7766-4896-874e-b3ba1860e83a
+  flow: xtls-rprx-vision
+  tls: true
+  servername: w-mebel.pro
+  reality-opts:
+    public-key: 4VzPARgETZ4lJIffknTNqmfkP567FqYV94A18Be8vxQ
+    short-id: 837f454e9c8a7e19
+  client-fingerprint: chrome
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - '@Vpn_Tehran ❤️‍🔥 کانال تلگرام'
-  - US 🇺🇸 | @Raydikalx | C895A6
-  - Germany
-  - US 🇺🇸 | @Raydikalx | F8ECE8
+  - US 🇺🇸 | @Raydikalx | 83B9FE
+  - US 🇺🇸 | @Raydikalx | B1FB97
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 49ms
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
