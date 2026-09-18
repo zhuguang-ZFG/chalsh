@@ -14,26 +14,72 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: '@V2ray_Alpha💈 4'
+- name: United
+  type: vless
+  server: 162.159.39.218
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: US 🇺🇸 | @Raydikalx | E0A47F
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+- name: 美国+CloudFlare节点
+  type: vless
+  server: 172.64.158.146
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: US 🇺🇸 | @Raydikalx | 1DFAB8
   type: vmess
   server: 82.198.246.233
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 737B46
+- name: US 🇺🇸 | @Raydikalx | 2B97CF
   type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
+- name: CA 🇨🇦 | @Raydikalx | 618C2B
+  type: vmess
+  server: www.shopify.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: guanwang.awsno.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - '@V2ray_Alpha💈 4'
-  - US 🇺🇸 | @Raydikalx | 737B46
+  - United
+  - US 🇺🇸 | @Raydikalx | E0A47F
+  - 美国+CloudFlare节点
+  - US 🇺🇸 | @Raydikalx | 1DFAB8
+  - US 🇺🇸 | @Raydikalx | 2B97CF
+  - CA 🇨🇦 | @Raydikalx | 618C2B
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
