@@ -14,21 +14,33 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | F52DD6
+- name: US 🇺🇸 | @Raydikalx | 4F5D7F
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 18811D
+- name: United
+  type: vless
+  server: usa.superbuba.top
+  port: 443
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  tls: true
+  servername: usa.superbuba.top
+  reality-opts:
+    public-key: 5en_SFrWntR3ZtxGn7_ZnnK5UW_Prh90rs-o8p7glw4
+    short-id: 9c2378562188c3cb
+  client-fingerprint: firefox
+  network: grpc
+- name: US 🇺🇸 | @Raydikalx | 16964D
   type: vmess
-  server: 129.146.143.80
-  port: 48111
-  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🆔v2ray1_ng 🔒 VL-GRPC- ❔ XX 155ms
+- name: 🆔v2ray1_ng 🔒 VL-GRPC- ❔ XX 149ms
   type: vless
   server: 31.56.184.132
   port: 8443
@@ -46,9 +58,10 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | F52DD6
-  - US 🇺🇸 | @Raydikalx | 18811D
-  - 🆔v2ray1_ng 🔒 VL-GRPC- ❔ XX 155ms
+  - US 🇺🇸 | @Raydikalx | 4F5D7F
+  - United
+  - US 🇺🇸 | @Raydikalx | 16964D
+  - 🆔v2ray1_ng 🔒 VL-GRPC- ❔ XX 149ms
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
