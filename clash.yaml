@@ -14,39 +14,21 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | E0A47F
+- name: Germany
+  type: vless
+  server: 169.40.42.90
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: chrome
+- name: US 🇺🇸 | @Raydikalx | 8410ED
   type: vmess
   server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 19450F
-  type: vmess
-  server: 107.173.254.27
-  port: 15311
-  uuid: ad78d02b-873f-4cff-8d4a-673f53d6ce0f
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 452ED5
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-- name: United
-  type: ss
-  server: 37.19.198.160
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-- name: US 🇺🇸 | @Raydikalx | C895A6
-  type: vmess
-  server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
@@ -55,11 +37,8 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | E0A47F
-  - US 🇺🇸 | @Raydikalx | 19450F
-  - US 🇺🇸 | @Raydikalx | 452ED5
-  - United
-  - US 🇺🇸 | @Raydikalx | C895A6
+  - Germany
+  - US 🇺🇸 | @Raydikalx | 8410ED
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
