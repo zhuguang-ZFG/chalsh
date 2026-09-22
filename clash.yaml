@@ -14,42 +14,75 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: United
+- name: Germany
   type: vless
-  server: 162.159.38.127
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  server: 169.40.42.184
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: chrome
+- name: 🇺🇸_美国_495
+  type: vless
+  server: 174.138.48.29
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  tls: true
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: US 🇺🇸 | @Raydikalx | E38DDB
-  type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 9B4F83
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
+      Host: shuma.ccwu.cc
+- name: 🇨🇦_加拿大_478
+  type: vless
+  server: 147.182.156.112
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  tls: true
+  servername: shuma.ccwu.cc
   network: ws
   ws-opts:
-    path: /cctv13.m3u8
+    path: /
     headers:
-      Host: 129.146.77.248
+      Host: shuma.ccwu.cc
+- name: 🇺🇸_美国_470
+  type: vless
+  server: 3.234.249.2
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  tls: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: Cyprus
+  type: vless
+  server: cy2.zuoai.cf
+  port: 443
+  uuid: b2593749-691c-428c-9481-14979cba3446
+  tls: true
+  servername: xi.tbv.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /proxyip
+    headers:
+      Host: xi.tbv.ccwu.cc
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - United
-  - US 🇺🇸 | @Raydikalx | E38DDB
-  - US 🇺🇸 | @Raydikalx | 9B4F83
+  - Germany
+  - 🇺🇸_美国_495
+  - 🇨🇦_加拿大_478
+  - 🇺🇸_美国_470
+  - Cyprus
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
