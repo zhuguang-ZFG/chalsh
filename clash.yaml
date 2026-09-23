@@ -14,60 +14,83 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🆔anty_filter 🔒 VL-TCP- ❔ XX 7ms
+- name: 🇺🇸@FreakConfig
   type: vless
-  server: 169.40.42.75
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  server: 15.204.97.197
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   flow: xtls-rprx-vision
   tls: true
-  servername: yahoo.com
+  servername: fuck.rkn
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
   client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | F8ECE8
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 美国+乔治亚洲亚特兰大Fastly节点
-  type: trojan
-  server: 151.101.56.90
-  port: 443
-  password: MITIVpN
-  sni: ssl.fastly.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
-    headers:
-      Host: mitivpn---ss--s---mitivpn-66e.global.ssl.fastly.net
-- name: US 🇺🇸 | @Raydikalx | 054E6A
+- name: 🆔spotify_porteghali 🔒 VL-GRPC- ❔ XX 91ms
+  type: vless
+  server: 31.56.184.132
+  port: 8443
+  uuid: 11f21602-47aa-42e2-9149-69120f2e6df6
+  tls: true
+  servername: cloudflare.com
+  reality-opts:
+    public-key: bzbe7QdD633ew_Er1_YWEhuCEHWurmDpxpz3fRzXr0A
+    short-id: b4e3b0b55b8dc75b
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: shiforgrpc
+- name: US 🇺🇸 | @Raydikalx | E4DC87
   type: vmess
   server: 82.198.246.97
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 4B0BA9
+- name: United
+  type: vless
+  server: 45.149.172.80
+  port: 443
+  uuid: 91d28760-ecf1-450b-9170-d310111a0e6d
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.amazon.com
+  reality-opts:
+    public-key: FKTaFzF4zfAqXBdDQHwSVl_XyNcC3T17s_FqhHyZchg
+    short-id: fb9456392070128e
+  client-fingerprint: chrome
+- name: US 🇺🇸 | @Raydikalx | BB13BB
   type: vmess
-  server: 167.88.63.59
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  server: vspeedfast.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vspeedfast.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: vspeedfast.org
+- name: US 🇺🇸 | @Raydikalx | A2205B
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🆔anty_filter 🔒 VL-TCP- ❔ XX 7ms
-  - US 🇺🇸 | @Raydikalx | F8ECE8
-  - 美国+乔治亚洲亚特兰大Fastly节点
-  - US 🇺🇸 | @Raydikalx | 054E6A
-  - US 🇺🇸 | @Raydikalx | 4B0BA9
+  - 🇺🇸@FreakConfig
+  - 🆔spotify_porteghali 🔒 VL-GRPC- ❔ XX 91ms
+  - US 🇺🇸 | @Raydikalx | E4DC87
+  - United
+  - US 🇺🇸 | @Raydikalx | BB13BB
+  - US 🇺🇸 | @Raydikalx | A2205B
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
