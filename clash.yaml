@@ -14,59 +14,71 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: United
-  type: vless
-  server: 66.90.104.42
-  port: 2083
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: US 🇺🇸 | @Raydikalx | 80491F
+- name: US 🇺🇸 | @Raydikalx | 0EC14E
   type: vmess
-  server: aksai.org
+  server: vspeedfast.org
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
   tls: true
-  servername: aksai.org
+  servername: vspeedfast.org
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /linkvws
     headers:
-      Host: aksai.org
-- name: US 🇺🇸 | @Raydikalx | B6570F
+      Host: vspeedfast.org
+- name: 未知73
   type: vmess
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 216.152.152.187
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
-  cipher: aes-128-gcm
-- name: US 🇺🇸 | @Raydikalx | 9FCB1A
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | BA43A3
   type: vmess
-  server: 82.198.246.9
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: Germany
+  type: vless
+  server: 169.40.42.15
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: ios
+- name: US 🇺🇸 | @Raydikalx | 375F33
+  type: vmess
+  server: 82.198.246.250
   port: 180
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 18811D
+- name: US 🇺🇸 | @Raydikalx | 4E8CA4
   type: vmess
-  server: 129.146.143.80
-  port: 48111
-  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - United
-  - US 🇺🇸 | @Raydikalx | 80491F
-  - US 🇺🇸 | @Raydikalx | B6570F
-  - US 🇺🇸 | @Raydikalx | 9FCB1A
-  - US 🇺🇸 | @Raydikalx | 18811D
+  - US 🇺🇸 | @Raydikalx | 0EC14E
+  - 未知73
+  - US 🇺🇸 | @Raydikalx | BA43A3
+  - Germany
+  - US 🇺🇸 | @Raydikalx | 375F33
+  - US 🇺🇸 | @Raydikalx | 4E8CA4
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
