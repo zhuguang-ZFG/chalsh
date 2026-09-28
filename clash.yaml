@@ -16,17 +16,7 @@ dns:
 proxies:
 - name: United
   type: vless
-  server: 162.159.38.127
-  port: 2082
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: v2ray_dalghak
-  type: vless
-  server: 15.204.97.197
+  server: 15.204.97.216
   port: 23576
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   flow: xtls-rprx-vision
@@ -36,14 +26,19 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | 2B97CF
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 9B4F83
+- name: 'Telegram : @Daily_Configs'
+  type: trojan
+  server: 199.232.78.188
+  port: 443
+  password: MiTiVPN
+  sni: ssl.fastly.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?DailyConfigs--DailyConfigs
+    headers:
+      Host: mitivpn---gb--s---mitivpn-1.global.ssl.fastly.net
+- name: US 🇺🇸 | @Raydikalx | 452ED5
   type: vmess
   server: 129.146.77.248
   port: 39495
@@ -53,16 +48,21 @@ proxies:
   network: ws
   ws-opts:
     path: /cctv13.m3u8
-    headers:
-      Host: 129.146.77.248
+- name: US 🇺🇸 | @Raydikalx | 55BE05
+  type: vmess
+  server: 169.197.143.116
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
   - United
-  - v2ray_dalghak
-  - US 🇺🇸 | @Raydikalx | 2B97CF
-  - US 🇺🇸 | @Raydikalx | 9B4F83
+  - 'Telegram : @Daily_Configs'
+  - US 🇺🇸 | @Raydikalx | 452ED5
+  - US 🇺🇸 | @Raydikalx | 55BE05
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
