@@ -14,55 +14,38 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: United
-  type: vless
-  server: 108.162.198.178
-  port: 2086
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+- name: CA 🇨🇦 | @Raydikalx | 028A48
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: US 🇺🇸 | @Raydikalx | 4B0BA9
+    path: /hls/cctv5phd.m3u8
+- name: US 🇺🇸 | @Raydikalx | 73199F
   type: vmess
-  server: 167.88.63.59
+  server: 167.17.68.89
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: Germany
-  type: vless
-  server: 169.40.42.202
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
-- name: 𝗝𝗼𝗶𝗻 ➠ @vpnplusee_free | 🇺🇸
-  type: vless
-  server: 169.40.42.168
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: ios
+- name: 🇺🇸[www.v2nodes.com] ss-US-1584...
+  type: ss
+  server: 103.214.111.162
+  port: 16469
+  password: 87e9cb62706b5cd08da95b8b423cb673
+  cipher: aes-128-gcm
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - United
-  - US 🇺🇸 | @Raydikalx | 4B0BA9
-  - Germany
-  - 𝗝𝗼𝗶𝗻 ➠ @vpnplusee_free | 🇺🇸
+  - CA 🇨🇦 | @Raydikalx | 028A48
+  - US 🇺🇸 | @Raydikalx | 73199F
+  - 🇺🇸[www.v2nodes.com] ss-US-1584...
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
