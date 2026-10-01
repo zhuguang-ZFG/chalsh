@@ -14,21 +14,27 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
+- name: CA 🇨🇦 | @Raydikalx | 82A9E2
+  type: vmess
+  server: 134.195.198.214
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🆔ar14n24b 🔒 VL-TCP- 🇺🇸 US 30ms
   type: vless
-  server: 169.40.42.15
+  server: 47.253.226.114
   port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
   flow: xtls-rprx-vision
   tls: true
-  servername: yahoo.com
+  servername: www.cloudflare.com
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: firefox
-- name: 🆔v2ray1_ng 🔒 VL-TCP- 🇺🇸 US 26ms
+    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+  client-fingerprint: chrome
+- name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 29ms
   type: vless
-  server: 169.40.42.184
+  server: 169.40.42.225
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   flow: xtls-rprx-vision
@@ -38,12 +44,26 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   client-fingerprint: chrome
+- name: US 🇺🇸 | @Raydikalx | 7CF2F0
+  type: vmess
+  server: 66.163.115.23
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /linkvws
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
-  - 🆔v2ray1_ng 🔒 VL-TCP- 🇺🇸 US 26ms
+  - CA 🇨🇦 | @Raydikalx | 82A9E2
+  - 🆔ar14n24b 🔒 VL-TCP- 🇺🇸 US 30ms
+  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 29ms
+  - US 🇺🇸 | @Raydikalx | 7CF2F0
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
