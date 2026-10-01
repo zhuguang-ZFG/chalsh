@@ -14,38 +14,106 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: CA 🇨🇦 | @Raydikalx | 028A48
-  type: vmess
-  server: guanwang.awsno.com
+- name: United
+  type: vless
+  server: 188.114.97.6
   port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
+  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
   tls: true
-  skip-cert-verify: true
+  servername: edgetunnel-4uw.pages.dev
   network: ws
   ws-opts:
-    path: /hls/cctv5phd.m3u8
-- name: US 🇺🇸 | @Raydikalx | 73199F
+    path: /fp=chrome?ed#
+    headers:
+      Host: edgetunnel-4uw.pages.dev
+- name: 🇩🇪@FreakConfig
+  type: trojan
+  server: 199.232.78.170
+  port: 443
+  password: mitivpn
+  sni: ssl.fastly.com
+  network: ws
+  ws-opts:
+    path: '@mehrosabiran'
+    headers:
+      Host: mitivpn---de--s---mitivpn-11.global.ssl.fastly.net
+- name: Germany
+  type: vless
+  server: 169.40.42.89
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: ios
+- name: 🆔vpnbaz 🔒 VL-TCP- ❔ XX 19ms
+  type: vless
+  server: 169.40.42.75
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: chrome
+- name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 19ms
+  type: vless
+  server: 169.40.42.184
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: chrome
+- name: Server 29
+  type: vless
+  server: 169.40.42.104
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: ios
+- name: US 🇺🇸 | @Raydikalx | 18AAF4
   type: vmess
-  server: 167.17.68.89
+  server: 216.106.183.35
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 1
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 452ED5
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
   alterId: 0
   cipher: auto
-- name: 🇺🇸[www.v2nodes.com] ss-US-1584...
-  type: ss
-  server: 103.214.111.162
-  port: 16469
-  password: 87e9cb62706b5cd08da95b8b423cb673
-  cipher: aes-128-gcm
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - CA 🇨🇦 | @Raydikalx | 028A48
-  - US 🇺🇸 | @Raydikalx | 73199F
-  - 🇺🇸[www.v2nodes.com] ss-US-1584...
+  - United
+  - 🇩🇪@FreakConfig
+  - Germany
+  - 🆔vpnbaz 🔒 VL-TCP- ❔ XX 19ms
+  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 19ms
+  - Server 29
+  - US 🇺🇸 | @Raydikalx | 18AAF4
+  - US 🇺🇸 | @Raydikalx | 452ED5
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
