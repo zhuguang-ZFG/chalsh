@@ -14,32 +14,9 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: United
+- name: 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
   type: vless
-  server: 188.114.97.6
-  port: 443
-  uuid: fdc48be3-a615-41ac-8bd1-ed844c931048
-  tls: true
-  servername: edgetunnel-4uw.pages.dev
-  network: ws
-  ws-opts:
-    path: /fp=chrome?ed#
-    headers:
-      Host: edgetunnel-4uw.pages.dev
-- name: 🇩🇪@FreakConfig
-  type: trojan
-  server: 199.232.78.170
-  port: 443
-  password: mitivpn
-  sni: ssl.fastly.com
-  network: ws
-  ws-opts:
-    path: '@mehrosabiran'
-    headers:
-      Host: mitivpn---de--s---mitivpn-11.global.ssl.fastly.net
-- name: Germany
-  type: vless
-  server: 169.40.42.89
+  server: 169.40.42.15
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   flow: xtls-rprx-vision
@@ -48,20 +25,8 @@ proxies:
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
-  client-fingerprint: ios
-- name: 🆔vpnbaz 🔒 VL-TCP- ❔ XX 19ms
-  type: vless
-  server: 169.40.42.75
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
-- name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 19ms
+  client-fingerprint: firefox
+- name: 🆔v2ray1_ng 🔒 VL-TCP- 🇺🇸 US 26ms
   type: vless
   server: 169.40.42.184
   port: 443
@@ -73,47 +38,12 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   client-fingerprint: chrome
-- name: Server 29
-  type: vless
-  server: 169.40.42.104
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: ios
-- name: US 🇺🇸 | @Raydikalx | 18AAF4
-  type: vmess
-  server: 216.106.183.35
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 1
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 452ED5
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - United
-  - 🇩🇪@FreakConfig
-  - Germany
-  - 🆔vpnbaz 🔒 VL-TCP- ❔ XX 19ms
-  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 19ms
-  - Server 29
-  - US 🇺🇸 | @Raydikalx | 18AAF4
-  - US 🇺🇸 | @Raydikalx | 452ED5
+  - 'اگه میخوای قطع نشی جوین شو : @farsiproxy'
+  - 🆔v2ray1_ng 🔒 VL-TCP- 🇺🇸 US 26ms
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
