@@ -14,20 +14,9 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: United
+- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 28ms
   type: vless
-  server: xray2-direct-mci1-fs-ce.freesocks.work
-  port: 443
-  uuid: 715569e9-ee89-4b7d-b276-e73c8b4e964b
-  flow: xtls-rprx-vision
-  tls: true
-  servername: dl.google.com
-  reality-opts:
-    public-key: 7j3hmlHrEDk3Kjx-dFG3E3jf0c6PZF45trIPFsuKWmI
-  client-fingerprint: chrome
-- name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 32ms
-  type: vless
-  server: 169.40.42.182
+  server: 169.40.42.168
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   flow: xtls-rprx-vision
@@ -37,62 +26,69 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   client-fingerprint: ios
-- name: 🆔v2ray1_ng 🔒 VL-TCP- 🇺🇸 US 29ms
-  type: vless
-  server: 169.40.42.184
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | B00608
+- name: US 🇺🇸 | @Raydikalx | 101269
   type: vmess
-  server: 67.220.95.3
+  server: 84.17.41.2
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
-  cipher: aes-128-gcm
-- name: Server 29
-  type: vless
-  server: 169.40.42.104
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: ios
-- name: CA 🇨🇦 | @Raydikalx | 702C4F
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | BB13BB
   type: vmess
-  server: 158.51.121.123
+  server: vspeedfast.org
   port: 443
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   alterId: 0
   cipher: auto
   tls: true
-  servername: mygptagent.org
+  servername: vspeedfast.org
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /linkvws
     headers:
-      Host: mygptagent.org
+      Host: vspeedfast.org
+- name: 🆔anty_filter 🔒 VL-TCP- ❔ XX 29ms
+  type: vless
+  server: 169.40.42.223
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: chrome
+- name: 🆔ar14n24b 🔒 VL-TCP- 🇺🇸 US 41ms
+  type: vless
+  server: 169.40.42.212
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: chrome
+- name: 𝗝𝗼𝗶𝗻 ➠ @vpnplusee_free | 🇨🇦
+  type: vmess
+  server: 66.163.113.176
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - United
-  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 32ms
-  - 🆔v2ray1_ng 🔒 VL-TCP- 🇺🇸 US 29ms
-  - US 🇺🇸 | @Raydikalx | B00608
-  - Server 29
-  - CA 🇨🇦 | @Raydikalx | 702C4F
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 28ms
+  - US 🇺🇸 | @Raydikalx | 101269
+  - US 🇺🇸 | @Raydikalx | BB13BB
+  - 🆔anty_filter 🔒 VL-TCP- ❔ XX 29ms
+  - 🆔ar14n24b 🔒 VL-TCP- 🇺🇸 US 41ms
+  - 𝗝𝗼𝗶𝗻 ➠ @vpnplusee_free | 🇨🇦
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
