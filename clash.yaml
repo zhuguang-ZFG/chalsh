@@ -14,63 +14,50 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🏳️_未知_137
-  type: vless
-  server: 188.114.97.6
-  port: 8080
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+- name: DE 🇩🇪 | @Raydikalx | 3A8E0D
+  type: vmess
+  server: aidrivercat.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: aidrivercat.org
+  skip-cert-verify: true
   network: ws
   ws-opts:
+    path: /linkvws
     headers:
-      Host: 571x2.r4bn.bim.hh.vavava.kdns.fr
-- name: US 🇺🇸 | @Raydikalx | 9EEDF3
+      Host: aidrivercat.org
+- name: US 🇺🇸 | @Raydikalx | 92D70D
   type: vmess
-  server: 216.106.183.35
+  server: 38.107.226.227
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vspeedfast.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: vspeedfast.org
+- name: US 🇺🇸 | @Raydikalx | 55BE05
+  type: vmess
+  server: 169.197.143.116
   port: 22324
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | E38DDB
-  type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: '@mon_proxys کانالمون'
-  type: vless
-  server: 169.40.42.16
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  skip-cert-verify: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
-- name: 🆔vpnbaz 🔒 VL-TCP- ❔ XX 13ms
-  type: vless
-  server: 169.40.42.184
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🏳️_未知_137
-  - US 🇺🇸 | @Raydikalx | 9EEDF3
-  - US 🇺🇸 | @Raydikalx | E38DDB
-  - '@mon_proxys کانالمون'
-  - 🆔vpnbaz 🔒 VL-TCP- ❔ XX 13ms
+  - DE 🇩🇪 | @Raydikalx | 3A8E0D
+  - US 🇺🇸 | @Raydikalx | 92D70D
+  - US 🇺🇸 | @Raydikalx | 55BE05
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
