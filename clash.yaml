@@ -14,19 +14,45 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸_美国_213
+- name: 🏳️_未知_137
   type: vless
-  server: 3h-unitedstates1.09vpn.com
-  port: 80
-  uuid: 18cf8db1-9f86-43f7-baa0-382efb7f2dfa
+  server: 188.114.97.6
+  port: 8080
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /vless/
     headers:
-      Host: 3h-unitedstates1.09vpn.com
-- name: 🆔vpnbaz 🔒 VL-TCP- ❔ XX 67ms
+      Host: 571x2.r4bn.bim.hh.vavava.kdns.fr
+- name: US 🇺🇸 | @Raydikalx | 9EEDF3
+  type: vmess
+  server: 216.106.183.35
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | E38DDB
+  type: vmess
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: '@mon_proxys کانالمون'
   type: vless
-  server: 169.40.42.223
+  server: 169.40.42.16
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  skip-cert-verify: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: chrome
+- name: 🆔vpnbaz 🔒 VL-TCP- ❔ XX 13ms
+  type: vless
+  server: 169.40.42.184
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   flow: xtls-rprx-vision
@@ -36,44 +62,15 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   client-fingerprint: chrome
-- name: CA 🇨🇦 | @Raydikalx | A53DAC
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 68ms
-  type: vless
-  server: 169.40.42.74
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: ios
-- name: US 🇺🇸 | @Raydikalx | 452ED5
-  type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸_美国_213
-  - 🆔vpnbaz 🔒 VL-TCP- ❔ XX 67ms
-  - CA 🇨🇦 | @Raydikalx | A53DAC
-  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 68ms
-  - US 🇺🇸 | @Raydikalx | 452ED5
+  - 🏳️_未知_137
+  - US 🇺🇸 | @Raydikalx | 9EEDF3
+  - US 🇺🇸 | @Raydikalx | E38DDB
+  - '@mon_proxys کانالمون'
+  - 🆔vpnbaz 🔒 VL-TCP- ❔ XX 13ms
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
