@@ -14,43 +14,38 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇮🇪_爱尔兰_105
-  type: trojan
-  server: loved-shark.rooster465.autos
-  port: 443
-  password: UX82473651
-  sni: loved-shark.rooster465.autos
-- name: 🇺🇸_美国_58
+- name: 🇺🇸_美国_213
   type: vless
-  server: 34.48.220.167
-  port: 443
-  uuid: 8ea1a178-2719-47b7-99d0-33d8dc361ba3
-  tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: cTwhlN0bIkprnzvGCMPmsdxk8XkqUz3LcCrS0FKnbVI
-    short-id: c08efcd72d7e8389
-  client-fingerprint: chrome
-- name: United
-  type: vless
-  server: 8.34.70.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 3h-unitedstates1.09vpn.com
+  port: 80
+  uuid: 18cf8db1-9f86-43f7-baa0-382efb7f2dfa
   network: ws
   ws-opts:
-    path: /
+    path: /vless/
     headers:
-      Host: vms.lifetime09.workers.dev
-- name: US 🇺🇸 | @Raydikalx | 101269
+      Host: 3h-unitedstates1.09vpn.com
+- name: 🆔vpnbaz 🔒 VL-TCP- ❔ XX 67ms
+  type: vless
+  server: 169.40.42.223
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: chrome
+- name: CA 🇨🇦 | @Raydikalx | A53DAC
   type: vmess
-  server: 84.17.41.2
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 65ms
+- name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 68ms
   type: vless
-  server: 169.40.42.184
+  server: 169.40.42.74
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   flow: xtls-rprx-vision
@@ -60,40 +55,25 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   client-fingerprint: ios
-- name: 🇺🇸_美国_177
-  type: trojan
-  server: x.com
-  port: 2096
-  password: eaf47668-5442-4355-8c92-12cc5cee8468
-  sni: avengers5.yang-1989.xyz
+- name: US 🇺🇸 | @Raydikalx | 452ED5
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /o42w
-    headers:
-      Host: avengers5.yang-1989.xyz
-- name: 𝗝𝗼𝗶𝗻 ➠ @vpnplusee_free | 🇺🇸
-  type: vless
-  server: 169.40.42.235
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: ios
+    path: /cctv13.m3u8
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇮🇪_爱尔兰_105
-  - 🇺🇸_美国_58
-  - United
-  - US 🇺🇸 | @Raydikalx | 101269
-  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 65ms
-  - 🇺🇸_美国_177
-  - 𝗝𝗼𝗶𝗻 ➠ @vpnplusee_free | 🇺🇸
+  - 🇺🇸_美国_213
+  - 🆔vpnbaz 🔒 VL-TCP- ❔ XX 67ms
+  - CA 🇨🇦 | @Raydikalx | A53DAC
+  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 68ms
+  - US 🇺🇸 | @Raydikalx | 452ED5
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
