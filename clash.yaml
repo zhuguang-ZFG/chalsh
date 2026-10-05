@@ -14,50 +14,66 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: DE 🇩🇪 | @Raydikalx | 3A8E0D
-  type: vmess
-  server: aidrivercat.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: aidrivercat.org
-  skip-cert-verify: true
+- name: United
+  type: vless
+  server: 104.18.47.113
+  port: 2086
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /?ed=2560security=tls
     headers:
-      Host: aidrivercat.org
-- name: US 🇺🇸 | @Raydikalx | 92D70D
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: US 🇺🇸 | @Raydikalx | 8C331C
   type: vmess
-  server: 38.107.226.227
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  server: 129.146.143.80
+  port: 48111
+  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
   alterId: 0
   cipher: auto
-  tls: true
-  servername: vspeedfast.org
-  skip-cert-verify: true
+- name: 🏳️_未知_172
+  type: vless
+  server: 172.64.88.251
+  port: 8880
+  uuid: 7e3cd2f1-0de5-4717-9002-64d8597bc577
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /pyip=ProxyIP.KR.CMLiussss.net
     headers:
-      Host: vspeedfast.org
-- name: US 🇺🇸 | @Raydikalx | 55BE05
-  type: vmess
-  server: 169.197.143.116
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+      Host: dry-credit-fc26.203-d8c.workers.dev
+- name: Germany
+  type: vless
+  server: 169.40.42.35
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: chrome
+- name: 🇫🇮telegram➠@v2rayNG_Matsuri
+  type: vless
+  server: 169.40.42.225
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: ios
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - DE 🇩🇪 | @Raydikalx | 3A8E0D
-  - US 🇺🇸 | @Raydikalx | 92D70D
-  - US 🇺🇸 | @Raydikalx | 55BE05
+  - United
+  - US 🇺🇸 | @Raydikalx | 8C331C
+  - 🏳️_未知_172
+  - Germany
+  - 🇫🇮telegram➠@v2rayNG_Matsuri
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
