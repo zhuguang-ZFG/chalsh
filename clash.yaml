@@ -14,42 +14,17 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: '@V2ray_Alpha💎 11'
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | 9CCB24
-  type: vmess
-  server: 158.51.123.42
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 55BE05
-  type: vmess
-  server: 169.197.143.116
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | 76B176
-  type: vmess
-  server: 198.57.27.190
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
+- name: 🇨🇦[www.v2nodes.com] ss-CA-1588...
+  type: ss
+  server: 64.74.163.69
+  port: 18766
+  password: 4efe1af272e7292139b889f6a63ee071
+  cipher: aes-128-gcm
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - '@V2ray_Alpha💎 11'
-  - CA 🇨🇦 | @Raydikalx | 9CCB24
-  - US 🇺🇸 | @Raydikalx | 55BE05
-  - CA 🇨🇦 | @Raydikalx | 76B176
+  - 🇨🇦[www.v2nodes.com] ss-CA-1588...
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
