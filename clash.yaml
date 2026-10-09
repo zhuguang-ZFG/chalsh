@@ -14,34 +14,34 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | AB9F8D
+- name: CA 🇨🇦 | @Raydikalx | BE6BD0
   type: vmess
-  server: 173.249.198.111
+  server: nomino.11hi8itbaf.workers.dev
   port: 443
-  uuid: XEXEVIL
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   alterId: 0
   cipher: auto
+  tls: true
+  servername: nomino.11hi8itbaf.workers.dev
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /tel=@user_xexevil
-- name: 🆔vpnbaz 🔒 VL-TCP- ❔ XX 11ms
-  type: vless
-  server: 169.40.42.179
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: ios
+    path: /guanwang.awsno.com/hls/cctv5phd.m3u8
+    headers:
+      Host: nomino.11hi8itbaf.workers.dev
+- name: CA 🇨🇦 | @Raydikalx | 8F8AB8
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | AB9F8D
-  - 🆔vpnbaz 🔒 VL-TCP- ❔ XX 11ms
+  - CA 🇨🇦 | @Raydikalx | BE6BD0
+  - CA 🇨🇦 | @Raydikalx | 8F8AB8
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
