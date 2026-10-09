@@ -14,20 +14,49 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: United
+- name: 𝗝𝗼𝗶𝗻 ➠ @vpnplusee_free | 🇺🇸
   type: vless
-  server: 137.184.218.169
-  port: 36925
-  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
+  server: 169.40.42.35
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: chrome
+- name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 68ms
+  type: vless
+  server: 198.251.78.29
+  port: 2053
+  uuid: c423cc1b-f88e-421c-9a16-c480d84da20f
   tls: true
   servername: www.cloudflare.com
   reality-opts:
-    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
+    public-key: Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw
+    short-id: b5d625695ec82c7e
   client-fingerprint: chrome
-- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX down
+- name: 𝗝𝗼𝗶𝗻➠@PlanB_net
   type: vless
-  server: 169.40.42.182
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: US 🇺🇸 | @Raydikalx | 101269
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸 (7)
+  type: vless
+  server: 169.40.42.179
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   flow: xtls-rprx-vision
@@ -37,46 +66,15 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   client-fingerprint: ios
-- name: 🆔surfboardv2ray 🔒 VL-TCP- 🇺🇸 US 12ms
-  type: vless
-  server: 169.40.42.75
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
-- name: '@mon_proxys کانالمون'
-  type: vless
-  server: 169.40.42.16
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  skip-cert-verify: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
-- name: France
-  type: ss
-  server: 51.77.225.200
-  port: 8388
-  password: zRZNBszYyWo5
-  cipher: chacha20-ietf-poly1305
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - United
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX down
-  - 🆔surfboardv2ray 🔒 VL-TCP- 🇺🇸 US 12ms
-  - '@mon_proxys کانالمون'
-  - France
+  - 𝗝𝗼𝗶𝗻 ➠ @vpnplusee_free | 🇺🇸
+  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 68ms
+  - 𝗝𝗼𝗶𝗻➠@PlanB_net
+  - US 🇺🇸 | @Raydikalx | 101269
+  - 🇺🇸 (7)
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
