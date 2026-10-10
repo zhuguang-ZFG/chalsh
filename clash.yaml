@@ -14,9 +14,9 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 𝗝𝗼𝗶𝗻 ➠ @vpnplusee_free | 🇺🇸
+- name: Germany
   type: vless
-  server: 169.40.42.35
+  server: 169.40.42.168
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   flow: xtls-rprx-vision
@@ -25,18 +25,41 @@ proxies:
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
-  client-fingerprint: chrome
-- name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 68ms
+  client-fingerprint: ios
+- name: The
   type: vless
-  server: 198.251.78.29
-  port: 2053
-  uuid: c423cc1b-f88e-421c-9a16-c480d84da20f
+  server: 185.115.34.209
+  port: 8444
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
   tls: true
-  servername: www.cloudflare.com
+  servername: github.com
   reality-opts:
-    public-key: Uk5b-Wh_uxeCc7R8NS9iWE40xc0h9wWC04rSB9yhgAw
-    short-id: b5d625695ec82c7e
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
   client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
+- name: 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 135ms
+  type: vless
+  server: 185.170.211.187
+  port: 443
+  uuid: 267b3a79-81f2-42ac-a409-c23b05b6329d
+  tls: true
+  servername: nl2.bbobr.win
+  reality-opts:
+    public-key: eztZ1H-OkkHao6d4FhX8Q728qN1UIeFcYH2jObRq1gc
+    short-id: fbe9c012125d90d2
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: api.v2.nl2e63a0c5
+- name: CA 🇨🇦 | @Raydikalx | A53DAC
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 - name: 𝗝𝗼𝗶𝗻➠@PlanB_net
   type: vless
   server: 172.64.150.28
@@ -47,34 +70,15 @@ proxies:
     path: /fp
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-- name: US 🇺🇸 | @Raydikalx | 101269
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸 (7)
-  type: vless
-  server: 169.40.42.179
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: ios
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 𝗝𝗼𝗶𝗻 ➠ @vpnplusee_free | 🇺🇸
-  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 68ms
+  - Germany
+  - The
+  - 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 135ms
+  - CA 🇨🇦 | @Raydikalx | A53DAC
   - 𝗝𝗼𝗶𝗻➠@PlanB_net
-  - US 🇺🇸 | @Raydikalx | 101269
-  - 🇺🇸 (7)
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
