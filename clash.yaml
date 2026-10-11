@@ -14,53 +14,35 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 3A610C
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🆔lrnbymaa 🔒 VL-TCP- ❔ XX 27ms
+- name: 🇺🇸_美国_66
   type: vless
-  server: 169.40.42.179
+  server: 51.81.203.63
   port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  uuid: cb2dbb6a-a1ea-4023-9ace-6466cee57241
   flow: xtls-rprx-vision
   tls: true
-  servername: yahoo.com
+  servername: www.icloud.com
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: ios
-- name: Germany
-  type: ss
-  server: 51.195.126.38
-  port: 8388
-  password: 2YdE4lFOid5a
-  cipher: chacha20-ietf-poly1305
-- name: CA 🇨🇦 | @Raydikalx | 8F8AB8
+    public-key: nqwCf6oW49tEtmQ0EzxigZ0uu1pg0E30CS54G40Iti0
+    short-id: 4477382ff6d3d41c
+  client-fingerprint: chrome
+- name: CA 🇨🇦 | @Raydikalx | A53DAC
   type: vmess
   server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 44ms
+- name: US 🇺🇸 | @Raydikalx | 8C331C
+  type: vmess
+  server: 129.146.143.80
+  port: 48111
+  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+  alterId: 0
+  cipher: auto
+- name: '@v2raybaaz ⁵'
   type: vless
   server: 169.40.42.212
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
-- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 38ms
-  type: vless
-  server: 169.40.42.133
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   flow: xtls-rprx-vision
@@ -74,12 +56,10 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 3A610C
-  - 🆔lrnbymaa 🔒 VL-TCP- ❔ XX 27ms
-  - Germany
-  - CA 🇨🇦 | @Raydikalx | 8F8AB8
-  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 44ms
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 38ms
+  - 🇺🇸_美国_66
+  - CA 🇨🇦 | @Raydikalx | A53DAC
+  - US 🇺🇸 | @Raydikalx | 8C331C
+  - '@v2raybaaz ⁵'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
