@@ -14,18 +14,6 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 8ms
-  type: vless
-  server: 169.40.42.231
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
 - name: CA 🇨🇦 | @Raydikalx | 46B566
   type: vmess
   server: cf.0sm.com
@@ -41,59 +29,19 @@ proxies:
     path: /ws
     headers:
       Host: vmess.lbw666.dpdns.org
-- name: 𝗝𝗼𝗶𝗻 ➠ @vpnplusee_free | 🇺🇸
-  type: vless
-  server: 169.40.42.163
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: ios
-- name: CA 🇨🇦 | @Raydikalx | 8F8AB8
+- name: US 🇺🇸 | @Raydikalx | 101269
   type: vmess
-  server: 134.195.196.211
+  server: 84.17.41.2
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🆔lrnbymaa 🔒 VL-TCP- ❔ XX 68ms
-  type: vless
-  server: 15.204.97.216
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: 🇺🇸_美国_192
-  type: vless
-  server: 38.180.137.143
-  port: 9443
-  uuid: fe0721ac-c577-4938-b7ca-8ab5f43bb8da
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.amazon.com
-  reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-  client-fingerprint: random
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 8ms
   - CA 🇨🇦 | @Raydikalx | 46B566
-  - 𝗝𝗼𝗶𝗻 ➠ @vpnplusee_free | 🇺🇸
-  - CA 🇨🇦 | @Raydikalx | 8F8AB8
-  - 🆔lrnbymaa 🔒 VL-TCP- ❔ XX 68ms
-  - 🇺🇸_美国_192
+  - US 🇺🇸 | @Raydikalx | 101269
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
