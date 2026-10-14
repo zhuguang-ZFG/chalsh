@@ -14,40 +14,45 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🆔lrnbymaa 🔒 VL-TCP- ❔ XX 69ms
-  type: vless
-  server: 15.204.97.219
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: 🇺🇸_美国_210
-  type: vless
-  server: 213.165.50.45
-  port: 9443
-  uuid: c3db7657-88ce-42a6-b998-1e0364b277ac
-  flow: xtls-rprx-vision
-  tls: true
-  servername: usa.edgeses.org
-  reality-opts:
-    public-key: ELJzJkc4SiCeCn6OF-8V9oeoJqXcD1y9WUntP3It53g
-    short-id: 649ab61e575fdbc9
-  client-fingerprint: chrome
-- name: CA 🇨🇦 | @Raydikalx | 4BA3A6
+- name: CA 🇨🇦 | @Raydikalx | F25C32
   type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 104.17.147.222
+  port: 80
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
   cipher: auto
-- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 7ms
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: 🇫🇮telegram➠@v2rayNG_Matsuri
   type: vless
-  server: 169.40.42.15
+  server: 169.40.42.225
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: ios
+- name: US 🇺🇸 | @Raydikalx | 9B4F83
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 129.146.77.248
+- name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 7ms
+  type: vless
+  server: 169.40.42.163
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   flow: xtls-rprx-vision
@@ -57,14 +62,21 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   client-fingerprint: chrome
+- name: 🇨🇦[www.v2nodes.com] ss-CA-1558...
+  type: ss
+  server: 51.222.200.165
+  port: 5000
+  password: Y6R9pAtvxxzmGC
+  cipher: aes-256-gcm
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🆔lrnbymaa 🔒 VL-TCP- ❔ XX 69ms
-  - 🇺🇸_美国_210
-  - CA 🇨🇦 | @Raydikalx | 4BA3A6
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 7ms
+  - CA 🇨🇦 | @Raydikalx | F25C32
+  - 🇫🇮telegram➠@v2rayNG_Matsuri
+  - US 🇺🇸 | @Raydikalx | 9B4F83
+  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 7ms
+  - 🇨🇦[www.v2nodes.com] ss-CA-1558...
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
