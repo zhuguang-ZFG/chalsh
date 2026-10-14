@@ -14,34 +14,57 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: CA 🇨🇦 | @Raydikalx | 46B566
-  type: vmess
-  server: cf.0sm.com
-  port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
+- name: 🆔lrnbymaa 🔒 VL-TCP- ❔ XX 69ms
+  type: vless
+  server: 15.204.97.219
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
   tls: true
-  servername: vmess.lbw666.dpdns.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: US 🇺🇸 | @Raydikalx | 101269
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
+- name: 🇺🇸_美国_210
+  type: vless
+  server: 213.165.50.45
+  port: 9443
+  uuid: c3db7657-88ce-42a6-b998-1e0364b277ac
+  flow: xtls-rprx-vision
+  tls: true
+  servername: usa.edgeses.org
+  reality-opts:
+    public-key: ELJzJkc4SiCeCn6OF-8V9oeoJqXcD1y9WUntP3It53g
+    short-id: 649ab61e575fdbc9
+  client-fingerprint: chrome
+- name: CA 🇨🇦 | @Raydikalx | 4BA3A6
   type: vmess
-  server: 84.17.41.2
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
+- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 7ms
+  type: vless
+  server: 169.40.42.15
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: chrome
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - CA 🇨🇦 | @Raydikalx | 46B566
-  - US 🇺🇸 | @Raydikalx | 101269
+  - 🆔lrnbymaa 🔒 VL-TCP- ❔ XX 69ms
+  - 🇺🇸_美国_210
+  - CA 🇨🇦 | @Raydikalx | 4BA3A6
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 7ms
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
