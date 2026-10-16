@@ -14,22 +14,23 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🆔lrnbymaa 🔒 VL-TCP- ❔ XX 31ms
+- name: 🆔lrnbymaa 🔒 VL-TCP- ❔ XX 61ms
   type: vless
-  server: 47.253.226.114
-  port: 443
-  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
+  server: 15.204.97.206
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   flow: xtls-rprx-vision
   tls: true
-  servername: www.cloudflare.com
+  servername: fuck.rkn
   reality-opts:
-    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
   client-fingerprint: chrome
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🆔lrnbymaa 🔒 VL-TCP- ❔ XX 31ms
+  - 🆔lrnbymaa 🔒 VL-TCP- ❔ XX 61ms
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
