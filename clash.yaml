@@ -14,9 +14,43 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🆔surfboardv2ray 🔒 VL-TCP- 🇺🇸 US 9ms
+- name: CA 🇨🇦 | @Raydikalx | C40235
+  type: vmess
+  server: 172.67.187.145
+  port: 80
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: CA 🇨🇦 | @Raydikalx | 8BB1EE
+  type: vmess
+  server: us16-4.998998.best
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: server1.9966338.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /efrsdioy98wert
+    headers:
+      Host: server1.9966338.xyz
+- name: US 🇺🇸 | @Raydikalx | 56DF02
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: '@i10VPN🌕'
   type: vless
-  server: 169.40.42.16
+  server: 169.40.42.225
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   flow: xtls-rprx-vision
@@ -26,37 +60,14 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   client-fingerprint: chrome
-- name: 🆔lrnbymaa 🔒 VL-TCP- ❔ XX 63ms
-  type: vless
-  server: 15.204.97.219
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: Germany
-  type: vless
-  server: 169.40.42.232
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: ios
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🆔surfboardv2ray 🔒 VL-TCP- 🇺🇸 US 9ms
-  - 🆔lrnbymaa 🔒 VL-TCP- ❔ XX 63ms
-  - Germany
+  - CA 🇨🇦 | @Raydikalx | C40235
+  - CA 🇨🇦 | @Raydikalx | 8BB1EE
+  - US 🇺🇸 | @Raydikalx | 56DF02
+  - '@i10VPN🌕'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
