@@ -14,9 +14,9 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX down
+- name: 🆔surfboardv2ray 🔒 VL-TCP- 🇺🇸 US 9ms
   type: vless
-  server: 169.40.42.168
+  server: 169.40.42.16
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   flow: xtls-rprx-vision
@@ -26,70 +26,21 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   client-fingerprint: chrome
-- name: Telegram👉@v2rayNG_Matsuri
+- name: 🆔lrnbymaa 🔒 VL-TCP- ❔ XX 63ms
   type: vless
-  server: 169.40.42.182
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  server: 15.204.97.219
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   flow: xtls-rprx-vision
   tls: true
-  servername: yahoo.com
+  servername: fuck.rkn
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
   client-fingerprint: chrome
-- name: '@V2ray_Alpha💎 11'
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 𝗝𝗼𝗶𝗻 ➠ @vpnplusee_free | 🇺🇸
-  type: vless
-  server: 169.40.42.35
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
-- name: United
-  type: ss
-  server: 173.244.56.6
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-- name: 🆔lrnbymaa 🔒 VL-TCP- ❔ XX 8ms
-  type: vless
-  server: 169.40.42.179
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: ios
-- name: ' '
-  type: vless
-  server: 169.40.42.15
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: ios
 - name: Germany
   type: vless
-  server: 169.40.42.231
+  server: 169.40.42.232
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   flow: xtls-rprx-vision
@@ -98,18 +49,13 @@ proxies:
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
-  client-fingerprint: chrome
+  client-fingerprint: ios
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX down
-  - Telegram👉@v2rayNG_Matsuri
-  - '@V2ray_Alpha💎 11'
-  - 𝗝𝗼𝗶𝗻 ➠ @vpnplusee_free | 🇺🇸
-  - United
-  - 🆔lrnbymaa 🔒 VL-TCP- ❔ XX 8ms
-  - ' '
+  - 🆔surfboardv2ray 🔒 VL-TCP- 🇺🇸 US 9ms
+  - 🆔lrnbymaa 🔒 VL-TCP- ❔ XX 63ms
   - Germany
   url: https://www.gstatic.com/generate_204
   interval: 300
