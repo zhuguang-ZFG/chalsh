@@ -14,6 +14,42 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
+- name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 65ms
+  type: vless
+  server: 169.40.42.231
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: chrome
+- name: CA 🇨🇦 | @Raydikalx | 028A48
+  type: vmess
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+- name: Server 29
+  type: vless
+  server: 169.40.42.104
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: ios
 - name: US 🇺🇸 | @Raydikalx | 3B1D0A
   type: vmess
   server: 67.220.95.3
@@ -25,6 +61,9 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
+  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 65ms
+  - CA 🇨🇦 | @Raydikalx | 028A48
+  - Server 29
   - US 🇺🇸 | @Raydikalx | 3B1D0A
   url: https://www.gstatic.com/generate_204
   interval: 300
