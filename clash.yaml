@@ -14,9 +14,28 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 64ms
+- name: CA 🇨🇦 | @Raydikalx | A1CD58
+  type: vmess
+  server: cf.0sm.com
+  port: 80
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: US 🇺🇸 | @Raydikalx | 602935
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🆔anty_filter 🔒 VL-TCP- ❔ XX 62ms
   type: vless
-  server: 169.40.42.179
+  server: 169.40.42.16
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   flow: xtls-rprx-vision
@@ -26,19 +45,14 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   client-fingerprint: ios
-- name: United
-  type: vless
-  server: ww13.levikogjgfdd.ir
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: '@V2ray_Alpha💎 11'
+- name: US 🇺🇸 | @Raydikalx | E38DDB
+  type: vmess
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: CA 🇨🇦 | @Raydikalx | 8F8AB8
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -47,7 +61,7 @@ proxies:
   cipher: auto
 - name: Germany
   type: vless
-  server: 169.40.42.212
+  server: 169.40.42.224
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   flow: xtls-rprx-vision
@@ -56,28 +70,17 @@ proxies:
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
-  client-fingerprint: chrome
-- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 63ms
-  type: vless
-  server: 169.40.42.232
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
+  client-fingerprint: ios
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 64ms
-  - United
-  - '@V2ray_Alpha💎 11'
+  - CA 🇨🇦 | @Raydikalx | A1CD58
+  - US 🇺🇸 | @Raydikalx | 602935
+  - 🆔anty_filter 🔒 VL-TCP- ❔ XX 62ms
+  - US 🇺🇸 | @Raydikalx | E38DDB
+  - CA 🇨🇦 | @Raydikalx | 8F8AB8
   - Germany
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 63ms
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
