@@ -14,9 +14,9 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: Germany
+- name: 🆔anty_filter 🔒 VL-TCP- ❔ XX 19ms
   type: vless
-  server: 169.40.42.224
+  server: 169.40.42.179
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   flow: xtls-rprx-vision
@@ -26,11 +26,34 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   client-fingerprint: ios
+- name: US 🇺🇸 | @Raydikalx | 56DF02
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: '@V2ray_Alpha💎 11'
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: United
+  type: ss
+  server: 82.38.31.205
+  port: 8080
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  cipher: chacha20-ietf-poly1305
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - Germany
+  - 🆔anty_filter 🔒 VL-TCP- ❔ XX 19ms
+  - US 🇺🇸 | @Raydikalx | 56DF02
+  - '@V2ray_Alpha💎 11'
+  - United
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
