@@ -14,59 +14,52 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: United
-  type: ss
-  server: 173.244.56.6
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-- name: US 🇺🇸 | @Raydikalx | 2B97CF
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | FC15CE
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | F65B9D
-  type: vmess
-  server: 104.17.147.222
-  port: 80
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: 🏳️_未知_134
+- name: 🆔lrnbymaa 🔒 VL-TCP- ❔ XX 56ms
   type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  server: 15.204.97.206
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
   tls: true
-  servername: lucasjow.us.ci
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
+- name: CA 🇨🇦 | @Raydikalx | 8F8AB8
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🏳️_未知_434
+  type: vless
+  server: js.org
+  port: 443
+  uuid: 44d636ef-7056-4bdf-a3f4-acabe2adfc6f
+  tls: true
+  servername: i5be.fbk.hhll.vavava.kdns.fr
   network: ws
   ws-opts:
-    path: /?TELEGRAM-TOOTFFARANGI
+    path: /?auto=1&ed=2560
     headers:
-      Host: lucasjow.us.ci
+      Host: i5be.fbk.hhll.vavava.kdns.fr
+- name: US 🇺🇸 | @Raydikalx | 56DF02
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - United
-  - US 🇺🇸 | @Raydikalx | 2B97CF
-  - US 🇺🇸 | @Raydikalx | FC15CE
-  - CA 🇨🇦 | @Raydikalx | F65B9D
-  - 🏳️_未知_134
+  - 🆔lrnbymaa 🔒 VL-TCP- ❔ XX 56ms
+  - CA 🇨🇦 | @Raydikalx | 8F8AB8
+  - 🏳️_未知_434
+  - US 🇺🇸 | @Raydikalx | 56DF02
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
