@@ -14,34 +14,59 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: CA 🇨🇦 | @Raydikalx | CD4179
+- name: United
+  type: ss
+  server: 173.244.56.6
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: US 🇺🇸 | @Raydikalx | 2B97CF
   type: vmess
-  server: 134.195.196.211
+  server: 38.110.1.246
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | BA5E42
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 94BA12
+- name: US 🇺🇸 | @Raydikalx | FC15CE
   type: vmess
   server: 84.17.41.2
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
+- name: CA 🇨🇦 | @Raydikalx | F65B9D
+  type: vmess
+  server: 104.17.147.222
+  port: 80
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: 🏳️_未知_134
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  tls: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM-TOOTFFARANGI
+    headers:
+      Host: lucasjow.us.ci
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - CA 🇨🇦 | @Raydikalx | CD4179
-  - CA 🇨🇦 | @Raydikalx | BA5E42
-  - US 🇺🇸 | @Raydikalx | 94BA12
+  - United
+  - US 🇺🇸 | @Raydikalx | 2B97CF
+  - US 🇺🇸 | @Raydikalx | FC15CE
+  - CA 🇨🇦 | @Raydikalx | F65B9D
+  - 🏳️_未知_134
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
