@@ -14,34 +14,72 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: CA 🇨🇦 | @Raydikalx | A53DAC
+- name: 🏳️_未知_221
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  tls: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--i10VPN?ed
+    headers:
+      Host: lucasjow.us.ci
+- name: US 🇺🇸 | @Raydikalx | 56DF02
   type: vmess
-  server: 134.195.196.211
+  server: 38.91.107.49
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 110621
-  type: vmess
-  server: Rib9JXAYoqjGN2KW.v.3dns.vip
+- name: 🆔lrnbymaa 🔒 VL-TCP- ❔ XX 4ms
+  type: vless
+  server: 47.253.226.114
   port: 443
-  uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
+  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+  client-fingerprint: chrome
+- name: 🆔vpnserverrr 🔒 VL-TCP- 🇺🇸 US 8ms
+  type: vless
+  server: 169.40.42.231
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: chrome
+- name: CA 🇨🇦 | @Raydikalx | 46B566
+  type: vmess
+  server: cf.0sm.com
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
   cipher: auto
   tls: true
-  servername: Rib9JXAYoqjGN2KW.v.3dns.vip
+  servername: vmess.lbw666.dpdns.org
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /ws
     headers:
-      Host: Rib9JXAYoqjGN2KW.v.3dns.vip
+      Host: vmess.lbw666.dpdns.org
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - CA 🇨🇦 | @Raydikalx | A53DAC
-  - US 🇺🇸 | @Raydikalx | 110621
+  - 🏳️_未知_221
+  - US 🇺🇸 | @Raydikalx | 56DF02
+  - 🆔lrnbymaa 🔒 VL-TCP- ❔ XX 4ms
+  - 🆔vpnserverrr 🔒 VL-TCP- 🇺🇸 US 8ms
+  - CA 🇨🇦 | @Raydikalx | 46B566
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
