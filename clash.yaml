@@ -14,44 +14,30 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: CA 🇨🇦 | @Raydikalx | 00DD16
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: United
+- name: 🏳️_未知_350
   type: vless
-  server: 188.114.97.6
+  server: cf.877774.xyz
   port: 443
-  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  uuid: d342d11e-d224-4463-b982-532309285094
   tls: true
-  servername: lucasjow.us.ci
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---@MTMVPN
+    path: /
     headers:
-      Host: lucasjow.us.ci
-- name: 🆔lrnbymaa 🔒 VL-TCP- ❔ XX 66ms
-  type: vless
-  server: 15.204.97.219
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
+      Host: ccc.010304.xyz
+- name: 🇩🇪[www.v2nodes.com] ss-DE-1602...
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - CA 🇨🇦 | @Raydikalx | 00DD16
-  - United
-  - 🆔lrnbymaa 🔒 VL-TCP- ❔ XX 66ms
+  - 🏳️_未知_350
+  - 🇩🇪[www.v2nodes.com] ss-DE-1602...
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
