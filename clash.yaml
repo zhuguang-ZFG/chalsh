@@ -14,9 +14,9 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🏳️_未知_350
+- name: 🏳️_未知_546
   type: vless
-  server: cf.877774.xyz
+  server: cf.130519.xyz
   port: 443
   uuid: d342d11e-d224-4463-b982-532309285094
   tls: true
@@ -26,18 +26,47 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
-- name: 🇩🇪[www.v2nodes.com] ss-DE-1602...
-  type: ss
-  server: 185.176.204.18
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
+- name: United
+  type: vless
+  server: b2n.ir
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  tls: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#TELEGRAM---@MTMVPN---@MTMVPN---@MTMVPN---@MTMVPN
+    headers:
+      Host: lucasjow.us.ci
+- name: US 🇺🇸 | @Raydikalx | 602935
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸_美国_35
+  type: trojan
+  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  port: 443
+  password: f0eb8c92ce8946aaba856569cff1a16b
+  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
+- name: US 🇺🇸 | @Raydikalx | 101269
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🏳️_未知_350
-  - 🇩🇪[www.v2nodes.com] ss-DE-1602...
+  - 🏳️_未知_546
+  - United
+  - US 🇺🇸 | @Raydikalx | 602935
+  - 🇺🇸_美国_35
+  - US 🇺🇸 | @Raydikalx | 101269
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
