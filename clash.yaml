@@ -14,18 +14,29 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: United
-  type: vless
-  server: 51.89.194.151
-  port: 2053
-  uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
+- name: US 🇺🇸 | @Raydikalx | 8D9E8F
+  type: vmess
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: CA 🇨🇦 | @Raydikalx | B52D10
+  type: vmess
+  server: us16-4.998998.best
+  port: 443
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: www.apple.com
-  reality-opts:
-    public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
-    short-id: d051f678212f9d54
-  client-fingerprint: chrome
-- name: CA 🇨🇦 | @Raydikalx | 00DD16
+  servername: server1.9966338.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /efrsdioy98wert
+    headers:
+      Host: server1.9966338.xyz
+- name: '@V2ray_Alpha💎 11'
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -36,8 +47,9 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - United
-  - CA 🇨🇦 | @Raydikalx | 00DD16
+  - US 🇺🇸 | @Raydikalx | 8D9E8F
+  - CA 🇨🇦 | @Raydikalx | B52D10
+  - '@V2ray_Alpha💎 11'
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
