@@ -14,7 +14,27 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🆔surfboardv2ray 🔒 VL-TCP- 🇺🇸 US 42ms
+- name: US 🇺🇸 | @Raydikalx | CE2CEA
+  type: vmess
+  server: rib9jxayoqjgn2kw.v.3dns.vip
+  port: 443
+  uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: rib9jxayoqjgn2kw.v.3dns.vip
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+- name: US 🇺🇸 | @Raydikalx | 8D9E8F
+  type: vmess
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 63ms
   type: vless
   server: 169.40.42.231
   port: 443
@@ -26,48 +46,29 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   client-fingerprint: chrome
-- name: 🆔vpnbaz 🔒 VL-TCP- ❔ XX 55ms
-  type: vless
-  server: 15.204.97.206
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
+- name: US 🇺🇸 | @Raydikalx | 110621
+  type: vmess
+  server: Rib9JXAYoqjGN2KW.v.3dns.vip
+  port: 443
+  uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | 8D9E8F
-  type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | 0940F6
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | A53DAC
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  servername: Rib9JXAYoqjGN2KW.v.3dns.vip
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: Rib9JXAYoqjGN2KW.v.3dns.vip
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🆔surfboardv2ray 🔒 VL-TCP- 🇺🇸 US 42ms
-  - 🆔vpnbaz 🔒 VL-TCP- ❔ XX 55ms
+  - US 🇺🇸 | @Raydikalx | CE2CEA
   - US 🇺🇸 | @Raydikalx | 8D9E8F
-  - CA 🇨🇦 | @Raydikalx | 0940F6
-  - CA 🇨🇦 | @Raydikalx | A53DAC
+  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 63ms
+  - US 🇺🇸 | @Raydikalx | 110621
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
