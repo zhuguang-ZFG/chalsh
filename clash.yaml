@@ -14,82 +14,26 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: CA 🇨🇦 | @Raydikalx | CBFA26
+- name: CA 🇨🇦 | @Raydikalx | E5A8AD
   type: vmess
-  server: cf.090227.xyz
+  server: us16-4.998998.best
   port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
   alterId: 0
   cipher: auto
   tls: true
-  servername: vmess.lbw666.dpdns.org
+  servername: server1.9966338.xyz
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /ws
+    path: /efrsdioy98wert
     headers:
-      Host: vmess.lbw666.dpdns.org
-- name: US 🇺🇸 | @Raydikalx | AAB7BB
-  type: vmess
-  server: us-23.hihu.net
-  port: 80
-  uuid: 8a9aaa70-ced9-11f1-b934-205c6d5f5d78
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /870ao26f
-    headers:
-      Host: 172.66.0.251
-- name: US 🇺🇸 | @Raydikalx | CE2CEA
-  type: vmess
-  server: rib9jxayoqjgn2kw.v.3dns.vip
-  port: 443
-  uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: rib9jxayoqjgn2kw.v.3dns.vip
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-- name: CA 🇨🇦 | @Raydikalx | 618C2B
-  type: vmess
-  server: www.shopify.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: guanwang.awsno.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: guanwang.awsno.com
-- name: CA 🇨🇦 | @Raydikalx | 028A48
-  type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
+      Host: server1.9966338.xyz
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - CA 🇨🇦 | @Raydikalx | CBFA26
-  - US 🇺🇸 | @Raydikalx | AAB7BB
-  - US 🇺🇸 | @Raydikalx | CE2CEA
-  - CA 🇨🇦 | @Raydikalx | 618C2B
-  - CA 🇨🇦 | @Raydikalx | 028A48
+  - CA 🇨🇦 | @Raydikalx | E5A8AD
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
