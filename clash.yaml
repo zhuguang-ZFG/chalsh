@@ -14,50 +14,18 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: '@FarazV2ray'
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: aes-128-gcm
-- name: 🇺🇸_美国_50
-  type: trojan
-  server: 216.106.186.32
+- name: 🏳️_未知_259
+  type: vless
+  server: cf.090227.xyz
   port: 443
-  password: dba20dcb635e430fa4d3bfc303a149d2
-  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
-- name: 🇨🇦_加拿大_67
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | 22A83C
-  type: vmess
-  server: 104.21.7.133
-  port: 80
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
+  uuid: d342d11e-d224-4463-b982-532309285094
+  tls: true
+  servername: ccc.010304.xyz
   network: ws
   ws-opts:
-    path: /ws
+    path: /
     headers:
-      Host: vmess.lbw666.dpdns.org
-- name: 🆔anty_filter 🔒 VL-TCP- ❔ XX 31ms
-  type: vless
-  server: 15.204.97.206
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
+      Host: ccc.010304.xyz
 - name: 🇩🇪_德国_63
   type: vless
   server: 169.40.42.225
@@ -70,16 +38,42 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   client-fingerprint: chrome
+- name: DE 🇩🇪 | @Raydikalx | 34EFB3
+  type: vmess
+  server: 31.76.11.83
+  port: 22366
+  uuid: 632cfa69-ae00-49d1-81e0-554979d1e9fa
+  alterId: 0
+  cipher: auto
+- name: 🇫🇷_法国_127
+  type: vless
+  server: connect.wecantos.site
+  port: 10000
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
+- name: CA 🇨🇦 | @Raydikalx | 96482D
+  type: vmess
+  server: cf.0sm.com
+  port: 443
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - '@FarazV2ray'
-  - 🇺🇸_美国_50
-  - 🇨🇦_加拿大_67
-  - CA 🇨🇦 | @Raydikalx | 22A83C
-  - 🆔anty_filter 🔒 VL-TCP- ❔ XX 31ms
+  - 🏳️_未知_259
   - 🇩🇪_德国_63
+  - DE 🇩🇪 | @Raydikalx | 34EFB3
+  - 🇫🇷_法国_127
+  - CA 🇨🇦 | @Raydikalx | 96482D
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
