@@ -14,73 +14,57 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🏳️_未知_240
-  type: vless
-  server: cf.877774.xyz
-  port: 443
-  uuid: d342d11e-d224-4463-b982-532309285094
-  tls: true
-  servername: ccc.010304.xyz
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ccc.010304.xyz
-- name: CA 🇨🇦 | @Raydikalx | F25C32
+- name: CA 🇨🇦 | @Raydikalx | 391CAA
   type: vmess
-  server: 104.17.147.222
-  port: 80
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: US 🇺🇸 | @Raydikalx | CE19FB
-  type: vmess
-  server: rib9jxayoqjgn2kw.v.3dns.vip
-  port: 443
-  uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: rib9jxayoqjgn2kw.v.3dns.vip
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: rib9jxayoqjgn2kw.v.3dns.vip
-- name: CA 🇨🇦 | @Raydikalx | CD5754
-  type: vmess
-  server: 134.195.196.211
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | 7C97A1
+- name: CA 🇨🇦 | @Raydikalx | 46B566
   type: vmess
-  server: 104.21.7.133
-  port: 80
+  server: cf.0sm.com
+  port: 443
   uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
   cipher: auto
+  tls: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /ws
     headers:
       Host: vmess.lbw666.dpdns.org
+- name: 🏳️_未知_157
+  type: vless
+  server: ccc.010304.xyz
+  port: 443
+  uuid: d342d11e-d224-4463-b982-532309285094
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+- name: 🆔surfboardv2ray 🔒 VL-TCP- 🇺🇸 US 32ms
+  type: vless
+  server: 169.40.42.163
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: chrome
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🏳️_未知_240
-  - CA 🇨🇦 | @Raydikalx | F25C32
-  - US 🇺🇸 | @Raydikalx | CE19FB
-  - CA 🇨🇦 | @Raydikalx | CD5754
-  - CA 🇨🇦 | @Raydikalx | 7C97A1
+  - CA 🇨🇦 | @Raydikalx | 391CAA
+  - CA 🇨🇦 | @Raydikalx | 46B566
+  - 🏳️_未知_157
+  - 🆔surfboardv2ray 🔒 VL-TCP- 🇺🇸 US 32ms
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
