@@ -14,23 +14,47 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 129ms
-  type: vless
-  server: 169.40.42.231
+- name: CA 🇨🇦 | @Raydikalx | CBFA26
+  type: vmess
+  server: cf.090227.xyz
   port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vmess.lbw666.dpdns.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: CA 🇨🇦 | @Raydikalx | A53DAC
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇧🇬_保加利亚
+  type: vless
+  server: us5.pc-peervax.top
+  port: 443
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
   flow: xtls-rprx-vision
   tls: true
-  servername: yahoo.com
+  servername: us5.pc-peervax.top
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
+    public-key: v36yrZJ-5Zikx9eh_SXaoDS2GuobOA4_WLagBVO0vxk
+    short-id: a9c3f7e2
+  client-fingerprint: qq
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 129ms
+  - CA 🇨🇦 | @Raydikalx | CBFA26
+  - CA 🇨🇦 | @Raydikalx | A53DAC
+  - 🇧🇬_保加利亚
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
