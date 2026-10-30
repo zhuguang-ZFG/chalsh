@@ -14,59 +14,92 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: United+States
-  type: vless
-  server: 172.64.150.28
-  port: 2082
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+- name: CA 🇨🇦 | @Raydikalx | 0AD519
+  type: vmess
+  server: 172.67.187.145
+  port: 80
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /fp
+    path: /ws
     headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-- name: CA 🇨🇦 | @Raydikalx | CD4179
+      Host: vmess.lbw666.dpdns.org
+- name: 🇺🇸_美国 (33)
+  type: trojan
+  server: 216.152.155.158
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: resources.nextjobopportunityandclaimyouridealrole.com
+- name: CA 🇨🇦 | @Raydikalx | 6600C1
+  type: vmess
+  server: www.windowsmsidownloads.com
+  port: 443
+  uuid: 80be2deb-3b27-4775-9bd1-7f2a2b9c261b
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: www.windowsmsidownloads.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.windowsmsidownloads.com
+- name: 🇺🇸_美国 (23)
+  type: trojan
+  server: 216.152.155.54
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: learn.nextjobopportunityandclaimyouridealrole.com
+- name: 🇸🇨_塞舌尔 (3)
+  type: vless
+  server: 154.83.2.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime28.workers.dev
+- name: 🇺🇸_美国 (51)
+  type: trojan
+  server: 66.163.122.113
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: api.searchnationwidecareerchangehelperandguidancetoday.com
+- name: 🆔surfboardv2ray 🔒 VL-TCP- 🇺🇸 US 67ms
+  type: vless
+  server: 169.40.42.231
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: chrome
+- name: CA 🇨🇦 | @Raydikalx | 91E816
   type: vmess
   server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: United
-  type: ss
-  server: 138.199.43.159
-  port: 8080
-  password: 14fFPrbezE3HDZzsMOr6
-  cipher: rc4-md5
-- name: US 🇺🇸 | @Raydikalx | DE08A7
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸_美国 (27)
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸_美国 (3)
-  type: trojan
-  server: 66.163.112.142
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: cdn.unlockyourfuturefindyourperfectcareer.com
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - United+States
-  - CA 🇨🇦 | @Raydikalx | CD4179
-  - United
-  - US 🇺🇸 | @Raydikalx | DE08A7
-  - 🇺🇸_美国 (27)
-  - 🇺🇸_美国 (3)
+  - CA 🇨🇦 | @Raydikalx | 0AD519
+  - 🇺🇸_美国 (33)
+  - CA 🇨🇦 | @Raydikalx | 6600C1
+  - 🇺🇸_美国 (23)
+  - 🇸🇨_塞舌尔 (3)
+  - 🇺🇸_美国 (51)
+  - 🆔surfboardv2ray 🔒 VL-TCP- 🇺🇸 US 67ms
+  - CA 🇨🇦 | @Raydikalx | 91E816
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
