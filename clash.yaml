@@ -14,46 +14,34 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 30ms
-  type: vless
-  server: 15.204.97.219
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-  client-fingerprint: chrome
-- name: CA 🇨🇦 | @Raydikalx | 02EBF1
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | B7DF3B
+- name: US 🇺🇸 | @Raydikalx | F52172
   type: vmess
   server: 38.91.107.49
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | E38DDB
+- name: US 🇺🇸 | @Raydikalx | CE19FB
   type: vmess
-  server: 169.197.142.22
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: rib9jxayoqjgn2kw.v.3dns.vip
+  port: 443
+  uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
   alterId: 0
   cipher: auto
+  tls: true
+  servername: rib9jxayoqjgn2kw.v.3dns.vip
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: rib9jxayoqjgn2kw.v.3dns.vip
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 30ms
-  - CA 🇨🇦 | @Raydikalx | 02EBF1
-  - US 🇺🇸 | @Raydikalx | B7DF3B
-  - US 🇺🇸 | @Raydikalx | E38DDB
+  - US 🇺🇸 | @Raydikalx | F52172
+  - US 🇺🇸 | @Raydikalx | CE19FB
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
