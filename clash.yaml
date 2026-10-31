@@ -14,34 +14,31 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | F52172
+- name: US 🇺🇸 | @Raydikalx | 98D357
   type: vmess
-  server: 38.91.107.49
+  server: 84.17.41.2
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | CE19FB
+- name: CA 🇨🇦 | @Raydikalx | F25C32
   type: vmess
-  server: rib9jxayoqjgn2kw.v.3dns.vip
-  port: 443
-  uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
+  server: 104.17.147.222
+  port: 80
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
   cipher: auto
-  tls: true
-  servername: rib9jxayoqjgn2kw.v.3dns.vip
-  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /ws
     headers:
-      Host: rib9jxayoqjgn2kw.v.3dns.vip
+      Host: vmess.lbw666.dpdns.org
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | F52172
-  - US 🇺🇸 | @Raydikalx | CE19FB
+  - US 🇺🇸 | @Raydikalx | 98D357
+  - CA 🇨🇦 | @Raydikalx | F25C32
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
