@@ -14,47 +14,30 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 101269
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 56DF02
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸_美国 (20)
-  type: vless
-  server: 167.17.69.171
-  port: 443
-  uuid: 00144519-7e0d-476b-8d28-435576af9262
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: ALT8hIGeZEhi0sQFbXP_ntBg8Xo-v7i0YCLrqTnBxRk
-    short-id: 0990d22f
-  client-fingerprint: chrome
 - name: 🇺🇸_美国 (4)
   type: trojan
   server: 169.197.140.171
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: cdn.discoverfreshgraduatejobsstartyourprofessionaljourney.com
-  skip-cert-verify: true
+- name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 19ms
+  type: vless
+  server: 169.40.42.104
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  client-fingerprint: chrome
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 101269
-  - US 🇺🇸 | @Raydikalx | 56DF02
-  - 🇺🇸_美国 (20)
   - 🇺🇸_美国 (4)
+  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 19ms
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
