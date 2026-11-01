@@ -14,30 +14,58 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
+- name: 🇺🇸_美国 (5)
+  type: trojan
+  server: 66.163.122.81
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.searchnationwidecareerchangehelperandguidancetoday.com
+- name: US 🇺🇸 | @Raydikalx | FC15CE
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 𝗝𝗼𝗶𝗻➠@PlanB_net
+  type: vless
+  server: 172.64.150.28
+  port: 2082
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  network: ws
+  ws-opts:
+    path: /fp
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+- name: CA 🇨🇦 | @Raydikalx | F744E2
+  type: vmess
+  server: www.windowsmsidownloads.com
+  port: 443
+  uuid: 80be2deb-3b27-4775-9bd1-7f2a2b9c261b
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: www.windowsmsidownloads.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /truth
 - name: 🇺🇸_美国 (4)
   type: trojan
   server: 169.197.140.171
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: cdn.discoverfreshgraduatejobsstartyourprofessionaljourney.com
-- name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 19ms
-  type: vless
-  server: 169.40.42.104
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: chrome
+  skip-cert-verify: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
+  - 🇺🇸_美国 (5)
+  - US 🇺🇸 | @Raydikalx | FC15CE
+  - 𝗝𝗼𝗶𝗻➠@PlanB_net
+  - CA 🇨🇦 | @Raydikalx | F744E2
   - 🇺🇸_美国 (4)
-  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 19ms
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
