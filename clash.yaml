@@ -14,16 +14,28 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 66526B
+- name: United
+  type: vless
+  server: 15.204.97.216
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  servername: fuck.rkn
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  client-fingerprint: chrome
+- name: US 🇺🇸 | @Raydikalx | 3A610C
   type: vmess
-  server: 67.220.85.46
+  server: 38.91.107.49
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
-  cipher: aes-128-gcm
-- name: US 🇺🇸 | @Raydikalx | 4D7399
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | B8F2C7
   type: vmess
-  server: 169.197.142.22
+  server: 84.17.41.2
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -35,12 +47,14 @@ proxies:
   uuid: 86a83d11-d751-4b60-aa4e-1dca5cff7028
   tls: true
   servername: us3.shtil.io
+  skip-cert-verify: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 66526B
-  - US 🇺🇸 | @Raydikalx | 4D7399
+  - United
+  - US 🇺🇸 | @Raydikalx | 3A610C
+  - US 🇺🇸 | @Raydikalx | B8F2C7
   - 🇺🇸_美国 (8)
   url: https://www.gstatic.com/generate_204
   interval: 300
