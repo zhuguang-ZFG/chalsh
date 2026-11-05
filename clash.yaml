@@ -14,23 +14,54 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | E0A4A0
+- name: US 🇺🇸 | @Raydikalx | 6B18E0
   type: vmess
-  server: 169.197.142.22
+  server: 38.110.1.246
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: CA 🇨🇦 | @Raydikalx | A53DAC
+- name: United
+  type: ss
+  server: 156.146.38.168
+  port: 443
+  password: shadowsocks
+  cipher: aes-128-gcm
+- name: US 🇺🇸 | @Raydikalx | 0CBFCD
   type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 38.91.106.182
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
-- name: 🆔surfboardv2ray 🔒 VL-TCP- 🇺🇸 US 28ms
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | 6D6C73
+  type: vmess
+  server: 38.91.107.84
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | 9B4F83
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 129.146.77.248
+- name: 🇩🇪_德国 (5)
   type: vless
-  server: 169.40.42.163
+  server: 169.40.42.168
   port: 443
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   flow: xtls-rprx-vision
@@ -40,28 +71,23 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   client-fingerprint: chrome
-- name: 🇺🇸_美国 (4)
+- name: 🇺🇸_美国 (19)
   type: trojan
-  server: 66.163.112.13
+  server: 170.101.101.19
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: blog.unlockyourfuturefindyourperfectcareer.com
-- name: US 🇺🇸 | @Raydikalx | F52172
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  sni: learn.explorecreativejobsandenhanceyourcareerportfolio.com
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | E0A4A0
-  - CA 🇨🇦 | @Raydikalx | A53DAC
-  - 🆔surfboardv2ray 🔒 VL-TCP- 🇺🇸 US 28ms
-  - 🇺🇸_美国 (4)
-  - US 🇺🇸 | @Raydikalx | F52172
+  - US 🇺🇸 | @Raydikalx | 6B18E0
+  - United
+  - US 🇺🇸 | @Raydikalx | 0CBFCD
+  - US 🇺🇸 | @Raydikalx | 6D6C73
+  - US 🇺🇸 | @Raydikalx | 9B4F83
+  - 🇩🇪_德国 (5)
+  - 🇺🇸_美国 (19)
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
