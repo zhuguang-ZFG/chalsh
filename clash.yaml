@@ -14,9 +14,22 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 375870
+- name: US 🇺🇸 | @Raydikalx | FC15CE
   type: vmess
-  server: 142.202.48.87
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸_美国 (41)
+  type: trojan
+  server: 66.163.112.121
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: www.unlockyourfuturefindyourperfectcareer.com
+- name: US 🇺🇸 | @Raydikalx | 2334B9
+  type: vmess
+  server: 172.111.36.123
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -24,80 +37,20 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: true
-- name: US 🇺🇸 | @Raydikalx | 6B18E0
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸_美国 (94)
-  type: vmess
-  server: 172.111.38.246
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-- name: CA 🇨🇦 | @Raydikalx | 00DD16
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: United
-  type: ss
-  server: 82.38.31.155
-  port: 8080
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  cipher: chacha20-ietf-poly1305
-- name: 🆔soskeynet 🔒 VL-TCP- 🇺🇸 US 41ms
-  type: vless
-  server: 47.253.226.114
+- name: 🇺🇸_美国 (40)
+  type: trojan
+  server: 66.163.112.76
   port: 443
-  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
-  client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | 143737
-  type: vmess
-  server: 172.111.36.137
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: true
-- name: 🇨🇦_加拿大 (10)
-  type: vless
-  server: 209.200.246.148
-  port: 443
-  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
-    short-id: f98843107912e782
-  client-fingerprint: chrome
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: api.unlockyourfuturefindyourperfectcareer.com
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 375870
-  - US 🇺🇸 | @Raydikalx | 6B18E0
-  - 🇺🇸_美国 (94)
-  - CA 🇨🇦 | @Raydikalx | 00DD16
-  - United
-  - 🆔soskeynet 🔒 VL-TCP- 🇺🇸 US 41ms
-  - US 🇺🇸 | @Raydikalx | 143737
-  - 🇨🇦_加拿大 (10)
+  - US 🇺🇸 | @Raydikalx | FC15CE
+  - 🇺🇸_美国 (41)
+  - US 🇺🇸 | @Raydikalx | 2334B9
+  - 🇺🇸_美国 (40)
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
