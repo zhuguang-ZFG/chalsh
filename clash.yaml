@@ -14,62 +14,25 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸_美国 (12)
-  type: trojan
-  server: 167.88.61.20
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: api.browseseniorrolesandenhanceyourcareertoday.com
-- name: US 🇺🇸 | @Raydikalx | 60BC4E
-  type: vmess
-  server: 162.251.62.31
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: true
-- name: US 🇺🇸 | @Raydikalx | F4B84A
-  type: vmess
-  server: 67.220.95.3
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: none
-- name: US 🇺🇸 | @Raydikalx | B8F2C7
-  type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: United
-  type: ss
-  server: 156.146.38.168
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-- name: US 🇺🇸 | @Raydikalx | FC978E
-  type: vmess
-  server: 38.64.138.135
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: true
-- name: '@V2ray_Alpha🚝 4'
+- name: US 🇺🇸 | @Raydikalx | B7DF3B
   type: vmess
   server: 38.91.107.49
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | D57224
+- name: CA 🇨🇦 | @Raydikalx | F2383C
   type: vmess
-  server: 172.111.38.246
+  server: 134.195.196.154
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+- name: US2
+  type: vmess
+  server: 38.128.66.212
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -77,9 +40,42 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: true
-- name: US28
+- name: US 🇺🇸 | @Raydikalx | 9B4F83
   type: vmess
-  server: 67.220.74.197
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 129.146.77.248
+- name: US 🇺🇸 | @Raydikalx | D43BAC
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: aes-128-gcm
+- name: US 🇺🇸 | @Raydikalx | 6B18E0
+  type: vmess
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | FC15CE
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | FC2D02
+  type: vmess
+  server: 172.111.36.126
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -87,19 +83,26 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | F2583B
+  type: vmess
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸_美国 (12)
-  - US 🇺🇸 | @Raydikalx | 60BC4E
-  - US 🇺🇸 | @Raydikalx | F4B84A
-  - US 🇺🇸 | @Raydikalx | B8F2C7
-  - United
-  - US 🇺🇸 | @Raydikalx | FC978E
-  - '@V2ray_Alpha🚝 4'
-  - US 🇺🇸 | @Raydikalx | D57224
-  - US28
+  - US 🇺🇸 | @Raydikalx | B7DF3B
+  - CA 🇨🇦 | @Raydikalx | F2383C
+  - US2
+  - US 🇺🇸 | @Raydikalx | 9B4F83
+  - US 🇺🇸 | @Raydikalx | D43BAC
+  - US 🇺🇸 | @Raydikalx | 6B18E0
+  - US 🇺🇸 | @Raydikalx | FC15CE
+  - US 🇺🇸 | @Raydikalx | FC2D02
+  - US 🇺🇸 | @Raydikalx | F2583B
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
