@@ -1,0 +1,116 @@
+mixed-port: 7890
+allow-lan: false
+bind-address: '*'
+mode: global
+log-level: info
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+  - https://dns.google/dns-query
+  - https://1.1.1.1/dns-query
+  fallback:
+  - https://dns.alidns.com/dns-query
+proxies:
+- name: US 🇺🇸 | @Raydikalx | B7DF3B
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: CA 🇨🇦 | @Raydikalx | F2383C
+  type: vmess
+  server: 134.195.196.154
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+- name: US2
+  type: vmess
+  server: 38.128.66.212
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | 9B4F83
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 129.146.77.248
+- name: US 🇺🇸 | @Raydikalx | D43BAC
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: aes-128-gcm
+- name: US 🇺🇸 | @Raydikalx | 6B18E0
+  type: vmess
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | FC15CE
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | FC2D02
+  type: vmess
+  server: 172.111.36.126
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | F2583B
+  type: vmess
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+proxy-groups:
+- name: AUTO
+  type: url-test
+  proxies:
+  - US 🇺🇸 | @Raydikalx | B7DF3B
+  - CA 🇨🇦 | @Raydikalx | F2383C
+  - US2
+  - US 🇺🇸 | @Raydikalx | 9B4F83
+  - US 🇺🇸 | @Raydikalx | D43BAC
+  - US 🇺🇸 | @Raydikalx | 6B18E0
+  - US 🇺🇸 | @Raydikalx | FC15CE
+  - US 🇺🇸 | @Raydikalx | FC2D02
+  - US 🇺🇸 | @Raydikalx | F2583B
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+rules:
+- DOMAIN,storeedge.microsoft.com,DIRECT
+- DOMAIN,displaycatalog.mp.microsoft.com,DIRECT
+- DOMAIN,login.live.com,DIRECT
+- DOMAIN,store-images.microsoft.com,DIRECT
+- DOMAIN-SUFFIX,mp.microsoft.com,DIRECT
+- DOMAIN-SUFFIX,microsoftstore.com,DIRECT
+- DOMAIN-SUFFIX,store.microsoft.com,DIRECT
