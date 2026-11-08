@@ -14,16 +14,18 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: CA 🇨🇦 | @Raydikalx | 0940F6
+- name: US 🇺🇸 | @Raydikalx | 5B2842
   type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  server: 142.202.48.87
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 923D7E
+  tls: true
+  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | 143737
   type: vmess
-  server: 38.22.17.89
+  server: 172.111.36.137
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -31,29 +33,25 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: true
-- name: US 🇺🇸 | @Raydikalx | 8C331C
+- name: US 🇺🇸 | @Raydikalx | D57224
   type: vmess
-  server: 129.146.143.80
-  port: 48111
-  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+  server: 172.111.38.246
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: true
 - name: 🇺🇸_美国 (11)
   type: trojan
   server: 169.197.140.218
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: learn.discoverfreshgraduatejobsstartyourprofessionaljourney.com
-- name: US 🇺🇸 | @Raydikalx | B723A6
+- name: US 🇺🇸 | @Raydikalx | E7611E
   type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: none
-- name: US 🇺🇸 | @Raydikalx | 60BC4E
-  type: vmess
-  server: 162.251.62.31
+  server: 38.22.17.251
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -61,9 +59,16 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: true
-- name: US 🇺🇸 | @Raydikalx | 2334B9
+- name: US 🇺🇸 | @Raydikalx | 836C7D
   type: vmess
-  server: 172.111.36.123
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 572B79
+  type: vmess
+  server: 38.128.66.249
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -75,13 +80,13 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - CA 🇨🇦 | @Raydikalx | 0940F6
-  - US 🇺🇸 | @Raydikalx | 923D7E
-  - US 🇺🇸 | @Raydikalx | 8C331C
+  - US 🇺🇸 | @Raydikalx | 5B2842
+  - US 🇺🇸 | @Raydikalx | 143737
+  - US 🇺🇸 | @Raydikalx | D57224
   - 🇺🇸_美国 (11)
-  - US 🇺🇸 | @Raydikalx | B723A6
-  - US 🇺🇸 | @Raydikalx | 60BC4E
-  - US 🇺🇸 | @Raydikalx | 2334B9
+  - US 🇺🇸 | @Raydikalx | E7611E
+  - US 🇺🇸 | @Raydikalx | 836C7D
+  - US 🇺🇸 | @Raydikalx | 572B79
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
