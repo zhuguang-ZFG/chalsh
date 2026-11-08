@@ -14,61 +14,61 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 5B2842
-  type: vmess
-  server: 142.202.48.87
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-- name: US 🇺🇸 | @Raydikalx | 143737
-  type: vmess
-  server: 172.111.36.137
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: true
-- name: US 🇺🇸 | @Raydikalx | D57224
-  type: vmess
-  server: 172.111.38.246
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: true
-- name: 🇺🇸_美国 (11)
-  type: trojan
-  server: 169.197.140.218
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: learn.discoverfreshgraduatejobsstartyourprofessionaljourney.com
-- name: US 🇺🇸 | @Raydikalx | E7611E
-  type: vmess
-  server: 38.22.17.251
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: true
-- name: US 🇺🇸 | @Raydikalx | 836C7D
+- name: US 🇺🇸 | @Raydikalx | 6B18E0
   type: vmess
   server: 38.110.1.246
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 572B79
+- name: US 🇺🇸 | @Raydikalx | 2334B9
   type: vmess
-  server: 38.128.66.249
+  server: 172.111.36.123
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | 94BA12
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 6D6C73
+  type: vmess
+  server: 38.91.107.84
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: true
+- name: 🆔soskeynet 🔒 VL-TCP- 🇺🇸 US 41ms
+  type: vless
+  server: 47.253.226.114
+  port: 443
+  uuid: 055a1ce8-2a16-4a0d-a2c2-22826c9b2413
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc
+  client-fingerprint: chrome
+- name: CA 🇨🇦 | @Raydikalx | 91E816
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US21
+  type: vmess
+  server: 38.91.107.57
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -80,13 +80,13 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 5B2842
-  - US 🇺🇸 | @Raydikalx | 143737
-  - US 🇺🇸 | @Raydikalx | D57224
-  - 🇺🇸_美国 (11)
-  - US 🇺🇸 | @Raydikalx | E7611E
-  - US 🇺🇸 | @Raydikalx | 836C7D
-  - US 🇺🇸 | @Raydikalx | 572B79
+  - US 🇺🇸 | @Raydikalx | 6B18E0
+  - US 🇺🇸 | @Raydikalx | 2334B9
+  - US 🇺🇸 | @Raydikalx | 94BA12
+  - US 🇺🇸 | @Raydikalx | 6D6C73
+  - 🆔soskeynet 🔒 VL-TCP- 🇺🇸 US 41ms
+  - CA 🇨🇦 | @Raydikalx | 91E816
+  - US21
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
