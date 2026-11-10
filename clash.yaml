@@ -14,9 +14,9 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | AD2F7C
+- name: CA 🇨🇦 | @Raydikalx | 8E778B
   type: vmess
-  server: 66.163.125.51
+  server: 158.51.121.246
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -24,47 +24,68 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: true
-- name: 🇨🇦[www.v2nodes.com] ss-CA-1546...
-  type: ss
-  server: 51.222.155.113
-  port: 5601
-  password: Y6R9pAtvxxzmGC
-  cipher: aes-256-gcm
-- name: CA 🇨🇦 | @Raydikalx | C6C15A
+- name: US 🇺🇸 | @Raydikalx | B8F2C7
   type: vmess
-  server: cf.090227.xyz
-  port: 443
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 882A7F
+  type: vmess
+  server: 38.128.66.212
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
   tls: true
-  servername: vmess.lbw666.dpdns.org
+  servername: xmfhlpy.com
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: vmess.lbw666.dpdns.org
-- name: CA 🇨🇦 | @Raydikalx | 101470
+- name: US4
   type: vmess
-  server: 188.114.97.6
-  port: 80
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  server: 23.150.152.65
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
-  network: ws
-  ws-opts:
-    path: /ws?ed
-    headers:
-      Host: vmess.lbw666.dpdns.org
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | 26F84C
+  type: vmess
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: CA 🇨🇦 | @Raydikalx | 3E7C3F
+  type: vmess
+  server: 134.195.196.154
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | 978E21
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: none
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | AD2F7C
-  - 🇨🇦[www.v2nodes.com] ss-CA-1546...
-  - CA 🇨🇦 | @Raydikalx | C6C15A
-  - CA 🇨🇦 | @Raydikalx | 101470
+  - CA 🇨🇦 | @Raydikalx | 8E778B
+  - US 🇺🇸 | @Raydikalx | B8F2C7
+  - US 🇺🇸 | @Raydikalx | 882A7F
+  - US4
+  - US 🇺🇸 | @Raydikalx | 26F84C
+  - CA 🇨🇦 | @Raydikalx | 3E7C3F
+  - US 🇺🇸 | @Raydikalx | 978E21
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
