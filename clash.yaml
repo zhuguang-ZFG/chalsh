@@ -14,54 +14,64 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 64D2F8
+- name: NL 🇳🇱 | @Raydikalx | 7DB573
   type: vmess
-  server: 38.64.138.187
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  server: 176.65.151.175
+  port: 11674
+  uuid: a98a98cb-ae86-43ae-b695-cf0dbcad3fc2
   alterId: 0
   cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: true
-- name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 66ms
-  type: vless
-  server: 136.176.65.251
-  port: 443
-  uuid: 39826f32-f5ca-42a5-ab33-188f7d199478
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.apple.com
-  reality-opts:
-    public-key: O5NcKiTtNcJZiLMJhxT5d0Pn8KjVBvXGmztGd4_D-RI
-    short-id: cdac1a856b81390f
-  client-fingerprint: chrome
-- name: United
+- name: US 🇺🇸 | @Raydikalx | 6B18E0
+  type: vmess
+  server: 38.110.1.246
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇫🇷[www.v2nodes.com] ss-FR-1616...
   type: ss
-  server: 149.40.57.134
+  server: 23.162.152.22
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   cipher: aes-256-gcm
-- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 15ms
-  type: vless
-  server: 15.204.97.195
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
+- name: US 🇺🇸 | @Raydikalx | 251558
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: '@V2ray_Alpha🚝 4'
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: CA 🇨🇦 | @Raydikalx | CD4179
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪[www.v2nodes.com] ss-DE-1616...
+  type: ss
+  server: 57.129.83.85
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 64D2F8
-  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 66ms
-  - United
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 15ms
+  - NL 🇳🇱 | @Raydikalx | 7DB573
+  - US 🇺🇸 | @Raydikalx | 6B18E0
+  - 🇫🇷[www.v2nodes.com] ss-FR-1616...
+  - US 🇺🇸 | @Raydikalx | 251558
+  - '@V2ray_Alpha🚝 4'
+  - CA 🇨🇦 | @Raydikalx | CD4179
+  - 🇩🇪[www.v2nodes.com] ss-DE-1616...
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
