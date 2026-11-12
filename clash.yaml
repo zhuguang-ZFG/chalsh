@@ -14,54 +14,134 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇺🇸_美国 (28)
+- name: US 🇺🇸 | @Raydikalx | 882A7F
+  type: vmess
+  server: 38.128.66.212
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: true
+- name: 🇺🇸_美国 (13)
   type: trojan
-  server: 169.197.140.245
+  server: 66.163.112.142
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: www.discoverfreshgraduatejobsstartyourprofessionaljourney.com
-  skip-cert-verify: true
-- name: 🇺🇸_美国 (7)
+  sni: cdn.unlockyourfuturefindyourperfectcareer.com
+- name: 🇨🇦_加拿大 (2)
   type: trojan
-  server: 167.88.61.20
+  server: 216.152.147.74
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: api.browseseniorrolesandenhanceyourcareertoday.com
+  sni: api.connectingpeoplewithgreatjobs.com
+- name: US 🇺🇸 | @Raydikalx | 586AD0
+  type: vmess
+  server: 172.111.36.253
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
   skip-cert-verify: true
-- name: 🇺🇸_美国 (46)
+- name: 🇺🇸_美国 (76)
+  type: trojan
+  server: 167.88.61.175
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: blog.browseseniorrolesandenhanceyourcareertoday.com
+  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | 452ED5
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+- name: 🇺🇸_美国 (33)
+  type: vmess
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦_加拿大
+  type: trojan
+  server: 216.152.147.79
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: blog.connectingpeoplewithgreatjobs.com
+  skip-cert-verify: true
+- name: 🇺🇸_美国 (12)
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | D57224
+  type: vmess
+  server: 172.111.38.246
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: true
+- name: 🇺🇸_美国 (54)
+  type: trojan
+  server: 170.101.101.67
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.explorecreativejobsandenhanceyourcareerportfolio.com
+- name: US 🇺🇸 | @Raydikalx | B7DF3B
   type: vmess
   server: 38.91.107.49
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇺🇸_美国 (25)
-  type: vmess
-  server: 38.64.138.135
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
+- name: 🇺🇸_美国 (8)
+  type: trojan
+  server: 66.163.112.31
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: unlockyourfuturefindyourperfectcareer.com
   skip-cert-verify: true
-- name: US 🇺🇸 | @Raydikalx | 910430
+- name: US 🇺🇸 | @Raydikalx | 788142
   type: vmess
-  server: 167.88.62.51
+  server: 67.220.74.250
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
   tls: true
+  servername: xmfhlpy.com
   skip-cert-verify: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇺🇸_美国 (28)
-  - 🇺🇸_美国 (7)
-  - 🇺🇸_美国 (46)
-  - 🇺🇸_美国 (25)
-  - US 🇺🇸 | @Raydikalx | 910430
+  - US 🇺🇸 | @Raydikalx | 882A7F
+  - 🇺🇸_美国 (13)
+  - 🇨🇦_加拿大 (2)
+  - US 🇺🇸 | @Raydikalx | 586AD0
+  - 🇺🇸_美国 (76)
+  - US 🇺🇸 | @Raydikalx | 452ED5
+  - 🇺🇸_美国 (33)
+  - 🇨🇦_加拿大
+  - 🇺🇸_美国 (12)
+  - US 🇺🇸 | @Raydikalx | D57224
+  - 🇺🇸_美国 (54)
+  - US 🇺🇸 | @Raydikalx | B7DF3B
+  - 🇺🇸_美国 (8)
+  - US 🇺🇸 | @Raydikalx | 788142
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
