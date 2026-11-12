@@ -14,79 +14,70 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 882A7F
+- name: 🇺🇸_美国 (80)
   type: vmess
-  server: 38.128.66.212
+  server: 142.202.48.87
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
   tls: true
-  servername: xmfhlpy.com
   skip-cert-verify: true
-- name: 🇺🇸_美国 (13)
-  type: trojan
-  server: 66.163.112.142
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: cdn.unlockyourfuturefindyourperfectcareer.com
-- name: 🇨🇦_加拿大 (2)
-  type: trojan
-  server: 216.152.147.74
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: api.connectingpeoplewithgreatjobs.com
-- name: US 🇺🇸 | @Raydikalx | 586AD0
+- name: US 🇺🇸 | @Raydikalx | 00658F
   type: vmess
-  server: 172.111.36.253
+  server: 38.22.17.64
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
   tls: true
-  servername: xmfhlpy.com
   skip-cert-verify: true
-- name: 🇺🇸_美国 (76)
+- name: 🇺🇸_美国 (39)
   type: trojan
-  server: 167.88.61.175
+  server: 216.106.186.33
   port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: blog.browseseniorrolesandenhanceyourcareertoday.com
-  skip-cert-verify: true
-- name: US 🇺🇸 | @Raydikalx | 452ED5
+  password: f0eb8c92ce8946aaba856569cff1a16b
+  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
+- name: '@V2ray_Alpha🚝 4'
   type: vmess
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-- name: 🇺🇸_美国 (33)
-  type: vmess
-  server: 67.220.85.46
+  server: 38.91.107.49
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇨🇦_加拿大
+- name: 🇺🇸_美国 (14)
   type: trojan
-  server: 216.152.147.79
+  server: 216.106.186.82
   port: 443
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: blog.connectingpeoplewithgreatjobs.com
+  sni: courses.findlocaljobnetworkandbuildcommunityconnections.com
   skip-cert-verify: true
-- name: 🇺🇸_美国 (12)
+- name: 🇺🇸_美国 (31)
   type: vmess
   server: 84.17.41.2
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | D57224
+- name: 🇺🇸_美国 (95)
   type: vmess
-  server: 172.111.38.246
+  server: 38.22.17.89
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | C88267
+  type: vmess
+  server: 67.220.85.46
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 6DB3A4
+  type: vmess
+  server: 162.251.62.35
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -95,53 +86,46 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: true
 - name: 🇺🇸_美国 (54)
-  type: trojan
-  server: 170.101.101.67
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.explorecreativejobsandenhanceyourcareerportfolio.com
-- name: US 🇺🇸 | @Raydikalx | B7DF3B
   type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇺🇸_美国 (8)
-  type: trojan
-  server: 66.163.112.31
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: unlockyourfuturefindyourperfectcareer.com
-  skip-cert-verify: true
-- name: US 🇺🇸 | @Raydikalx | 788142
-  type: vmess
-  server: 67.220.74.250
+  server: 167.88.62.56
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
   tls: true
-  servername: xmfhlpy.com
   skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | 71C30A
+  type: vmess
+  server: 167.88.63.39
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | E0A4A0
+  type: vmess
+  server: 169.197.142.22
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 882A7F
-  - 🇺🇸_美国 (13)
-  - 🇨🇦_加拿大 (2)
-  - US 🇺🇸 | @Raydikalx | 586AD0
-  - 🇺🇸_美国 (76)
-  - US 🇺🇸 | @Raydikalx | 452ED5
-  - 🇺🇸_美国 (33)
-  - 🇨🇦_加拿大
-  - 🇺🇸_美国 (12)
-  - US 🇺🇸 | @Raydikalx | D57224
+  - 🇺🇸_美国 (80)
+  - US 🇺🇸 | @Raydikalx | 00658F
+  - 🇺🇸_美国 (39)
+  - '@V2ray_Alpha🚝 4'
+  - 🇺🇸_美国 (14)
+  - 🇺🇸_美国 (31)
+  - 🇺🇸_美国 (95)
+  - US 🇺🇸 | @Raydikalx | C88267
+  - US 🇺🇸 | @Raydikalx | 6DB3A4
   - 🇺🇸_美国 (54)
-  - US 🇺🇸 | @Raydikalx | B7DF3B
-  - 🇺🇸_美国 (8)
-  - US 🇺🇸 | @Raydikalx | 788142
+  - US 🇺🇸 | @Raydikalx | 71C30A
+  - US 🇺🇸 | @Raydikalx | E0A4A0
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
