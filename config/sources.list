@@ -1,0 +1,5 @@
+# chalsh sources list
+# Format: [!blocked] [+date] URL[#options]
+# +date: resolve strftime placeholders in URL
+# *: treat response as list of URLs to expand
+# !: disabled/blocked source
