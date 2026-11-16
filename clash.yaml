@@ -14,70 +14,23 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 723EDE
-  type: vmess
-  server: 67.220.74.188
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: true
-- name: US 🇺🇸 | @Raydikalx | A8D213
-  type: vmess
-  server: 162.251.62.42
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: true
-- name: CA 🇨🇦 | @Raydikalx | 27326A
-  type: vmess
-  server: 158.51.121.246
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-- name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 36ms
+- name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 57ms
   type: vless
-  server: 169.40.42.168
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  server: 15.204.97.198
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
   flow: xtls-rprx-vision
   tls: true
-  servername: yahoo.com
+  servername: fuck.rkn
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
   client-fingerprint: chrome
-- name: US 🇺🇸 | @Raydikalx | 0B0847
-  type: vmess
-  server: 38.110.1.246
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇨🇦[www.v2nodes.com] ss-CA-1559...
-  type: ss
-  server: 51.222.141.125
-  port: 445
-  password: zDNVedRFPQexG9v
-  cipher: aes-256-gcm
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 723EDE
-  - US 🇺🇸 | @Raydikalx | A8D213
-  - CA 🇨🇦 | @Raydikalx | 27326A
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 36ms
-  - US 🇺🇸 | @Raydikalx | 0B0847
-  - 🇨🇦[www.v2nodes.com] ss-CA-1559...
+  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 57ms
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
