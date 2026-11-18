@@ -14,27 +14,59 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: United
-  type: ss
-  server: 156.146.38.168
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-- name: 🇺🇸_美国 (30)
-  type: trojan
-  server: 66.163.112.242
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.unlockyourfuturefindyourperfectcareer.com
-- name: US 🇺🇸 | @Raydikalx | 143737
+- name: US 🇺🇸 | @Raydikalx | 910430
   type: vmess
-  server: 172.111.36.137
+  server: 167.88.62.51
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
   tls: true
-  servername: xmfhlpy.com
+  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | 00658F
+  type: vmess
+  server: 38.22.17.64
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+- name: CA 🇨🇦 | @Raydikalx | 391CAA
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸_美国 (62)
+  type: trojan
+  server: 169.197.140.208
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: blog.discoverfreshgraduatejobsstartyourprofessionaljourney.com
+  skip-cert-verify: true
+- name: US 🇺🇸 | @Raydikalx | 302E66
+  type: vmess
+  server: 162.251.62.44
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸_美国 (21)
+  type: trojan
+  server: 66.163.114.166
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: blog.findconnectwithemployersandbuildprofessionalnetwork.com
+- name: 🇺🇸_美国 (28)
+  type: trojan
+  server: 66.163.112.31
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: unlockyourfuturefindyourperfectcareer.com
   skip-cert-verify: true
 - name: 🇺🇸_美国 (11)
   type: trojan
@@ -43,34 +75,18 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: cdn.findlocaljobnetworkandbuildcommunityconnections.com
   skip-cert-verify: true
-- name: US 🇺🇸 | @Raydikalx | C5EEAC
-  type: vmess
-  server: 216.106.182.225
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-- name: US 🇺🇸 | @Raydikalx | F01C09
-  type: vmess
-  server: 67.220.74.188
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - United
-  - 🇺🇸_美国 (30)
-  - US 🇺🇸 | @Raydikalx | 143737
+  - US 🇺🇸 | @Raydikalx | 910430
+  - US 🇺🇸 | @Raydikalx | 00658F
+  - CA 🇨🇦 | @Raydikalx | 391CAA
+  - 🇺🇸_美国 (62)
+  - US 🇺🇸 | @Raydikalx | 302E66
+  - 🇺🇸_美国 (21)
+  - 🇺🇸_美国 (28)
   - 🇺🇸_美国 (11)
-  - US 🇺🇸 | @Raydikalx | C5EEAC
-  - US 🇺🇸 | @Raydikalx | F01C09
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
