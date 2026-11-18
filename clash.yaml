@@ -14,7 +14,7 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 910430
+- name: US 🇺🇸 | @Raydikalx | D57391
   type: vmess
   server: 167.88.62.51
   port: 1270
@@ -22,71 +22,85 @@ proxies:
   alterId: 0
   cipher: auto
   tls: true
+  servername: xmfhlpy.com
   skip-cert-verify: true
-- name: US 🇺🇸 | @Raydikalx | 00658F
+- name: US 🇺🇸 | @Raydikalx | 978E21
   type: vmess
-  server: 38.22.17.64
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: none
+- name: US 🇺🇸 | @Raydikalx | 143737
+  type: vmess
+  server: 172.111.36.137
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
   tls: true
+  servername: xmfhlpy.com
   skip-cert-verify: true
-- name: CA 🇨🇦 | @Raydikalx | 391CAA
+- name: CA 🇨🇦 | @Raydikalx | 17785B
   type: vmess
-  server: 23.162.200.198
+  server: guanwang.awsno.com
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: guanwang.awsno.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+- name: CA 🇨🇦 | @Raydikalx | 8F8AB8
+  type: vmess
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇺🇸_美国 (62)
-  type: trojan
-  server: 169.197.140.208
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: blog.discoverfreshgraduatejobsstartyourprofessionaljourney.com
-  skip-cert-verify: true
-- name: US 🇺🇸 | @Raydikalx | 302E66
+- name: US 🇺🇸 | @Raydikalx | A18BA0
   type: vmess
-  server: 162.251.62.44
+  server: 162.251.61.46
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
-- name: 🇺🇸_美国 (21)
-  type: trojan
-  server: 66.163.114.166
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: blog.findconnectwithemployersandbuildprofessionalnetwork.com
-- name: 🇺🇸_美国 (28)
-  type: trojan
-  server: 66.163.112.31
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: unlockyourfuturefindyourperfectcareer.com
+- name: US 🇺🇸 | @Raydikalx | A46964
+  type: vmess
+  server: 169.197.142.68
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
   skip-cert-verify: true
-- name: 🇺🇸_美国 (11)
-  type: trojan
-  server: 216.106.186.46
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: cdn.findlocaljobnetworkandbuildcommunityconnections.com
+- name: US 🇺🇸 | @Raydikalx | 5B2842
+  type: vmess
+  server: 142.202.48.87
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
   skip-cert-verify: true
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 910430
-  - US 🇺🇸 | @Raydikalx | 00658F
-  - CA 🇨🇦 | @Raydikalx | 391CAA
-  - 🇺🇸_美国 (62)
-  - US 🇺🇸 | @Raydikalx | 302E66
-  - 🇺🇸_美国 (21)
-  - 🇺🇸_美国 (28)
-  - 🇺🇸_美国 (11)
+  - US 🇺🇸 | @Raydikalx | D57391
+  - US 🇺🇸 | @Raydikalx | 978E21
+  - US 🇺🇸 | @Raydikalx | 143737
+  - CA 🇨🇦 | @Raydikalx | 17785B
+  - CA 🇨🇦 | @Raydikalx | 8F8AB8
+  - US 🇺🇸 | @Raydikalx | A18BA0
+  - US 🇺🇸 | @Raydikalx | A46964
+  - US 🇺🇸 | @Raydikalx | 5B2842
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
