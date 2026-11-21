@@ -14,21 +14,42 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: 🇨🇦_加拿大 (10)
-  type: ss
-  server: 51.222.141.125
-  port: 445
-  password: zDNVedRFPQexG9v
-  cipher: aes-256-gcm
 - name: United
   type: ss
-  server: 156.146.38.170
+  server: 173.244.56.6
   port: 443
   password: shadowsocks
   cipher: aes-128-gcm
-- name: US 🇺🇸 | @Raydikalx | FC2D02
+- name: 🇺🇸_美国 (145)
   type: vmess
-  server: 172.111.36.126
+  server: 38.91.107.188
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸_美国 (80)
+  type: trojan
+  server: www.findlocaljobnetworkandbuildcommunityconnections.com
+  port: 443
+  password: 242a3d8eee5e4ed1a6bfa4141d549a25
+- name: 🇺🇸_美国 (56)
+  type: ss
+  server: 38.91.100.39
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+- name: US 🇺🇸 | @Raydikalx | 964397
+  type: vmess
+  server: 84.17.41.2
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: US 🇺🇸 | @Raydikalx | 60BC4E
+  type: vmess
+  server: 162.251.62.31
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -36,53 +57,59 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: true
-- name: US 🇺🇸 | @Raydikalx | 4318A4
+- name: 🇺🇸_美国 (139)
+  type: trojan
+  server: 216.152.156.81
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: www.healthcarejobshubenhancemedicalprofessionalskillstoday.com
+- name: US16
   type: vmess
-  server: 167.88.62.56
+  server: 172.111.36.123
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
   tls: true
+  servername: <nil>
   skip-cert-verify: true
-- name: 🇺🇸_美国 (12)
+- name: 🇺🇸_美国 (52)
   type: ss
-  server: 38.128.66.32
+  server: 38.91.107.188
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   cipher: aes-256-gcm
-- name: 🇺🇸_美国 (20)
-  type: ss
-  server: 149.40.57.138
-  port: 19999
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  cipher: aes-256-gcm
-- name: US 🇺🇸 | @Raydikalx | B723A6
+- name: US 🇺🇸 | @Raydikalx | 882A7F
   type: vmess
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: none
-- name: US 🇺🇸 | @Raydikalx | 50E1FD
-  type: vmess
-  server: 23.147.56.181
-  port: 52843
-  uuid: 88be793c-c368-4eb1-8809-057e5df96606
+  server: 38.128.66.212
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: true
+- name: 🇺🇸_美国 (51)
+  type: ss
+  server: 40.160.86.43
+  port: 8388
+  password: itzvpn@321
+  cipher: aes-256-gcm
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - 🇨🇦_加拿大 (10)
   - United
-  - US 🇺🇸 | @Raydikalx | FC2D02
-  - US 🇺🇸 | @Raydikalx | 4318A4
-  - 🇺🇸_美国 (12)
-  - 🇺🇸_美国 (20)
-  - US 🇺🇸 | @Raydikalx | B723A6
-  - US 🇺🇸 | @Raydikalx | 50E1FD
+  - 🇺🇸_美国 (145)
+  - 🇺🇸_美国 (80)
+  - 🇺🇸_美国 (56)
+  - US 🇺🇸 | @Raydikalx | 964397
+  - US 🇺🇸 | @Raydikalx | 60BC4E
+  - 🇺🇸_美国 (139)
+  - US16
+  - 🇺🇸_美国 (52)
+  - US 🇺🇸 | @Raydikalx | 882A7F
+  - 🇺🇸_美国 (51)
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
