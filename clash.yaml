@@ -14,74 +14,80 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: United
-  type: ss
-  server: 173.244.56.6
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-- name: 🇺🇸_美国 (145)
-  type: vmess
-  server: 38.91.107.188
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-- name: 🇺🇸_美国 (80)
+- name: 🇺🇸_美国 (128)
   type: trojan
-  server: www.findlocaljobnetworkandbuildcommunityconnections.com
+  server: 216.152.156.49
   port: 443
-  password: 242a3d8eee5e4ed1a6bfa4141d549a25
-- name: 🇺🇸_美国 (56)
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: cdn.healthcarejobshubenhancemedicalprofessionalskillstoday.com
+- name: 🇨🇦_加拿大 (21)
+  type: trojan
+  server: 216.152.147.93
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: connectingpeoplewithgreatjobs.com
+- name: 🇺🇸_美国 (13)
   type: ss
-  server: 38.91.100.39
+  server: 167.88.62.56
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   cipher: aes-256-gcm
-- name: US 🇺🇸 | @Raydikalx | 964397
+- name: 🇩🇪_德国 (6)
+  type: ss
+  server: 47.254.169.3
+  port: 443
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  cipher: 2022-blake3-chacha20-poly1305
+- name: US 🇺🇸 | @Raydikalx | CA0DCB
   type: vmess
-  server: 84.17.41.2
+  server: 38.91.107.49
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 60BC4E
-  type: vmess
-  server: 162.251.62.31
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: true
-- name: 🇺🇸_美国 (139)
-  type: trojan
-  server: 216.152.156.81
-  port: 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: www.healthcarejobshubenhancemedicalprofessionalskillstoday.com
-- name: US16
-  type: vmess
-  server: 172.111.36.123
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: <nil>
-  skip-cert-verify: true
-- name: 🇺🇸_美国 (52)
+- name: 🇺🇸_美国 (57)
   type: ss
-  server: 38.91.107.188
+  server: 193.151.163.18
   port: 19999
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   cipher: aes-256-gcm
-- name: US 🇺🇸 | @Raydikalx | 882A7F
+- name: 🇺🇸_美国 (45)
+  type: ss
+  server: 38.91.107.19
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+- name: US 🇺🇸 | @Raydikalx | 50E1FD
   type: vmess
-  server: 38.128.66.212
+  server: 23.147.56.181
+  port: 52843
+  uuid: 88be793c-c368-4eb1-8809-057e5df96606
+  alterId: 0
+  cipher: auto
+- name: 🇺🇸_美国 (59)
+  type: ss
+  server: 132.226.77.186
+  port: 50356
+  password: YG3nrWleyOJy8hUVHF1Nc8vOY0JgKdiT4n627Bj32+8=
+  cipher: 2022-blake3-chacha20-poly1305
+- name: US 🇺🇸 | @Raydikalx | 4568F0
+  type: vmess
+  server: 66.163.125.51
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+- name: 🇺🇸_美国 (5)
+  type: ss
+  server: 95.215.201.18
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-gcm
+- name: US 🇺🇸 | @Raydikalx | FC978E
+  type: vmess
+  server: 38.64.138.135
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
@@ -89,27 +95,29 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: true
-- name: 🇺🇸_美国 (51)
+- name: 🇬🇧_英国 (45)
   type: ss
-  server: 40.160.86.43
-  port: 8388
-  password: itzvpn@321
+  server: 198.244.201.129
+  port: 19999
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   cipher: aes-256-gcm
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - United
-  - 🇺🇸_美国 (145)
-  - 🇺🇸_美国 (80)
-  - 🇺🇸_美国 (56)
-  - US 🇺🇸 | @Raydikalx | 964397
-  - US 🇺🇸 | @Raydikalx | 60BC4E
-  - 🇺🇸_美国 (139)
-  - US16
-  - 🇺🇸_美国 (52)
-  - US 🇺🇸 | @Raydikalx | 882A7F
-  - 🇺🇸_美国 (51)
+  - 🇺🇸_美国 (128)
+  - 🇨🇦_加拿大 (21)
+  - 🇺🇸_美国 (13)
+  - 🇩🇪_德国 (6)
+  - US 🇺🇸 | @Raydikalx | CA0DCB
+  - 🇺🇸_美国 (57)
+  - 🇺🇸_美国 (45)
+  - US 🇺🇸 | @Raydikalx | 50E1FD
+  - 🇺🇸_美国 (59)
+  - US 🇺🇸 | @Raydikalx | 4568F0
+  - 🇺🇸_美国 (5)
+  - US 🇺🇸 | @Raydikalx | FC978E
+  - 🇬🇧_英国 (45)
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
