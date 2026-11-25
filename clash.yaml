@@ -14,25 +14,6 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | C286F0
-  type: vmess
-  server: 38.91.100.16
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: true
-- name: US 🇺🇸 | @Raydikalx | 377EA9
-  type: vmess
-  server: 38.64.138.135
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
 - name: CA 🇨🇦 | @Raydikalx | 17785B
   type: vmess
   server: guanwang.awsno.com
@@ -50,8 +31,6 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | C286F0
-  - US 🇺🇸 | @Raydikalx | 377EA9
   - CA 🇨🇦 | @Raydikalx | 17785B
   url: https://www.gstatic.com/generate_204
   interval: 300
