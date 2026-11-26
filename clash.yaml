@@ -14,34 +14,22 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 66526B
+- name: CA 🇨🇦 | @Raydikalx | 592D34
   type: vmess
-  server: 67.220.85.46
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
-  cipher: aes-128-gcm
-- name: 🇺🇸_美国 (15)
+  cipher: auto
+- name: 🇺🇸_美国 (16)
   type: ss
-  server: 173.244.56.6
+  server: 37.19.198.236
   port: 443
   password: shadowsocks
   cipher: aes-128-gcm
-- name: 🇺🇸_美国 (23)
-  type: ss
-  server: 198.98.53.130
-  port: 443
-  password: eDfN7SODQceIOmIAbtJJtK
-  cipher: chacha20-ietf-poly1305
-- name: 🇺🇸_美国 (21)
-  type: ss
-  server: 37.19.198.160
-  port: 443
-  password: shadowsocks
-  cipher: aes-128-gcm
-- name: CA 🇨🇦 | @Raydikalx | 91E816
+- name: US 🇺🇸 | @Raydikalx | F2583B
   type: vmess
-  server: 134.195.196.211
+  server: 67.220.85.46
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -50,11 +38,9 @@ proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 66526B
-  - 🇺🇸_美国 (15)
-  - 🇺🇸_美国 (23)
-  - 🇺🇸_美国 (21)
-  - CA 🇨🇦 | @Raydikalx | 91E816
+  - CA 🇨🇦 | @Raydikalx | 592D34
+  - 🇺🇸_美国 (16)
+  - US 🇺🇸 | @Raydikalx | F2583B
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
