@@ -14,59 +14,21 @@ dns:
   fallback:
   - https://dns.alidns.com/dns-query
 proxies:
-- name: US 🇺🇸 | @Raydikalx | 8186DD
+- name: US 🇺🇸 | @Raydikalx | 9CAC3B
   type: vmess
-  server: 172.111.36.244
+  server: 169.197.142.68
   port: 1270
   uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
   alterId: 0
   cipher: auto
   tls: true
-  servername: xmfhlpy.com
+  servername: <nil>
   skip-cert-verify: true
-- name: Germany
-  type: vless
-  server: 169.40.42.231
-  port: 443
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  client-fingerprint: ios
-- name: US 🇺🇸 | @Raydikalx | BA43A3
-  type: vmess
-  server: 67.220.85.46
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: US 🇺🇸 | @Raydikalx | 00658F
-  type: vmess
-  server: 38.22.17.64
-  port: 1270
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-- name: United
-  type: ss
-  server: 67.220.73.247
-  port: 443
-  password: DGjtV63aPW3E
-  cipher: chacha20-ietf-poly1305
 proxy-groups:
 - name: AUTO
   type: url-test
   proxies:
-  - US 🇺🇸 | @Raydikalx | 8186DD
-  - Germany
-  - US 🇺🇸 | @Raydikalx | BA43A3
-  - US 🇺🇸 | @Raydikalx | 00658F
-  - United
+  - US 🇺🇸 | @Raydikalx | 9CAC3B
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
